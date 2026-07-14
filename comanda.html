@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+    <html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Trimite o cerere demonstrativă pentru o mașină la comandă prin CarZone.">
+        <meta name="theme-color" content="#0a0a0b">
+        <link rel="canonical" href="https://car-zone-five.vercel.app/comanda.html">
+        <meta property="og:title" content="Mașini pe comandă — CarZone">
+        <meta property="og:description" content="Configurează o cerere demonstrativă pentru o mașină la comandă.">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="CarZone">
+        <meta property="og:url" content="https://car-zone-five.vercel.app/comanda.html">
+        <meta property="og:image" content="https://car-zone-five.vercel.app/assets/img/offer.png">
+        <meta property="og:image:alt" content="Experiența CarZone pentru mașini la comandă">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Mașini pe comandă — CarZone">
+        <meta name="twitter:description" content="Configurează o cerere demonstrativă pentru o mașină la comandă.">
+        <meta name="twitter:image" content="https://car-zone-five.vercel.app/assets/img/offer.png">
+
+        <!--=============== FAVICON ===============-->
+          <link rel="shortcut icon" href="assets/img/carzone.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles-comanda.css">
+
+
+        <title>Mașini pe comandă - CarZone</title>
+    </head>
+    <body>
+
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Acasă</a></li>
+                        <li class="nav__item"><a href="stoc.html" class="nav__link">Mașini pe stoc</a></li>
+                        <li class="nav__item"><a href="comanda.html" class="nav__link active-link">Mașini la comandă</a></li>
+                        <li class="nav__item"><a href="vinde.html" class="nav__link">Vinde-ți mașina</a></li>
+                        <li class="nav__item"><a href="finantare.html" class="nav__link">Finanțare</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                    <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+                </div>
+                <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+            </nav>
+        </header>
+        <!--==================== VIDEO BACKGROUND SECTION ====================-->
+        <section class="video-section">
+            <div class="video-container">
+                <!-- Videoclipul ca fundal -->
+                <video autoplay loop muted playsinline preload="metadata" class="video-bg">
+                    <source src="assets/img/mclarenp1.mp4" type="video/mp4">
+                    Videoclipul nu este susținut de browserul tău.
+                </video>
+
+                <!-- Suprapunerea semi-transparentă pentru text lizibil -->
+                <div class="video-overlay"></div>
+
+                <!-- Text deasupra videoclipului -->
+                <div class="video-content">
+                    <h1 class="video-title">Mașini pe comandă</h1>
+                    <p class="video-subtitle">Nu gasesti masina cautata? Nici o problema!<br>
+                                            Iti putem aduce masina dorita, pe comanda. Cu garantie si verificare tehnica.<br>
+                                             Tot ce trebuie sa faci este sa completezi formularul de comanda si <br>
+                                             noi te vom contacta in cel mai scurt timp pentru stabilirea detaliilor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ORDER FORM SECTION ====================-->
+        <section class="contact section" id="contact">
+            <!-- Order Form -->
+            <form class="contact__form" data-demo-form data-demo-label="Cererea pentru mașina configurată" aria-describedby="order-demo-note" style="max-width: 800px; margin: 0 auto;">
+                <p class="form-status form-status--demo" id="order-demo-note">Mod demo: poți completa și valida fluxul, dar datele nu sunt trimise și nu sunt stocate.</p>
+                <div class="contact__inputs grid">
+                    <!-- First Row -->
+                    <div class="contact__content">
+                        <label for="vehicle-type" class="contact__label">Tip vehicul</label>
+                        <select id="vehicle-type" name="vehicleType" class="contact__input" required>
+                            <option></option>
+                            <option>Autoturism</option>
+                            <option>Motocicletă</option>
+                            <option>Camion</option>
+                        </select>
+                    </div>
+                    <div class="contact__content">
+                        <label for="gearbox-type" class="contact__label">Tip cutie</label>
+                        <select id="gearbox-type" name="gearboxType" class="contact__input" required>
+                            <option></option>
+                            <option>Manuală</option>
+                            <option>Automată</option>
+                            <option>Semi-automată</option>
+                        </select>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="contact__content">
+                        <label for="fuel-type" class="contact__label">Tip combustibil</label>
+                        <select id="fuel-type" name="fuelType" class="contact__input" required>
+                            <option></option>
+                            <option>Benzină</option>
+                            <option>Motorină</option>
+                            <option>GLP</option>
+                            <option>LPG</option>
+                            <option>Hibrid/Benzină</option>
+                            <option>Hibrid/Motorină</option>
+                            <option>Hidrogen</option>
+                            <option>Electric</option>
+                        </select>
+                    </div>
+                    <div class="contact__content">
+                        <label for="manufacturer" class="contact__label">Producător</label>
+                        <input type="text" id="manufacturer" name="manufacturer" class="contact__input" required>
+                    </div>
+
+                    <!-- Third Row -->
+                    <div class="contact__content">
+                        <label for="model" class="contact__label">Model</label>
+                        <input type="text" id="model" name="model" class="contact__input" required>
+                    </div>
+                    <div class="contact__content">
+                        <label for="year-from" class="contact__label">An fabricat (de la)</label>
+                        <input type="number" id="year-from" name="yearFrom" min="1950" max="2030" class="contact__input" required>
+                    </div>
+
+                    <!-- Fourth Row -->
+                    <div class="contact__content">
+                        <label for="year-to" class="contact__label">An fabricat (până la)</label>
+                        <input type="number" id="year-to" name="yearTo" min="1950" max="2030" class="contact__input" required>
+                    </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="budget" class="contact__label">Buget (Euro)</label>
+                        <input type="number" id="budget" name="budget" min="1000" step="500" class="contact__input" required>
+                    </div>
+
+                    <!-- Fifth Row -->
+                    <div class="contact__content">
+                        <label for="mileage" class="contact__label">Nr. Kilometri</label>
+                        <input type="number" id="mileage" name="mileage" min="0" step="1000" class="contact__input" required>
+                    </div>
+                    <div class="contact__content">
+                        <label for="county" class="contact__label">Județ</label>
+                        <input type="text" id="county" name="county" class="contact__input" required>
+
+                    </div>
+
+                    <!-- Sixth Row -->
+                    <div class="contact__content">
+                        <label for="locality" class="contact__label">Localitate</label>
+                        <input type="text" id="locality" name="locality" class="contact__input" required>
+                    </div>
+                    <div class="contact__content">
+                        <label for="name" class="contact__label">Nume</label>
+                        <input type="text" id="name" name="name" autocomplete="name" class="contact__input" required>
+                    </div>
+
+                    <!-- Seventh Row -->
+                    <div class="contact__content">
+                        <label for="email" class="contact__label">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" class="contact__input" required>
+                    </div>
+                    <div class="contact__content">
+                        <label for="phone" class="contact__label">Telefon</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" class="contact__input" required>
+                    </div>
+
+                <!-- Eighth Row -->
+                <div class="contact__content">
+                    <label for="details" class="contact__label">Detalii suplimentare</label>
+                    <textarea id="details" name="message" class="contact__input" rows="4" required></textarea>
+                </div>
+
+
+                <button type="submit" class="button">Verifică cererea demo</button>
+            </form>
+        </section>
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                  <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+                    <p class="footer__description">Oferim cele mai bune mașini ale celor mai recunoscute branduri din lume.</p>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Companie</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Despre</a></li>
+                        <li><a href="#" class="footer__link">Mașini</a></li>
+                        <li><a href="#" class="footer__link">Istoric</a></li>
+                        <li><a href="#" class="footer__link">Magazin</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Informații</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Solicită o ofertă</a></li>
+                        <li><a href="#" class="footer__link">Găsește un dealer</a></li>
+                        <li><a href="#" class="footer__link">Contactează-ne</a></li>
+                        <li><a href="#" class="footer__link">Servicii</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Urmărește-ne</h3>
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-twitter-line"></i></a>
+                    </ul>
+                </div>
+            </div>
+            <span class="footer__copy"></span>
+        </footer>
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/form-status.js"></script>
+        <script src="assets/js/site-nav.js"></script>
+        <script src="assets/js/main-comanda.js"></script>
+      </body>
+      </html>

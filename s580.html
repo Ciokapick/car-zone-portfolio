@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prezentare detaliată Mercedes-Benz S580 în conceptul auto CarZone.">
+    <meta name="theme-color" content="#0a0a0b">
+    <link rel="canonical" href="https://car-zone-five.vercel.app/s580.html">
+    <meta property="og:title" content="Mercedes-Benz S580 — CarZone">
+    <meta property="og:description" content="Prezentare detaliată Mercedes-Benz S580 în conceptul auto CarZone.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CarZone">
+    <meta property="og:url" content="https://car-zone-five.vercel.app/s580.html">
+    <meta property="og:image" content="https://car-zone-five.vercel.app/assets/img/s/1.jpg">
+    <meta property="og:image:alt" content="Mercedes-Benz S580 prezentat în CarZone">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mercedes-Benz S580 — CarZone">
+    <meta name="twitter:description" content="Prezentare detaliată Mercedes-Benz S580 în conceptul auto CarZone.">
+    <meta name="twitter:image" content="https://car-zone-five.vercel.app/assets/img/s/1.jpg">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/carzone.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles-stoc.css">
+
+    <title>Mercedes-Benz S580 - CarZone</title>
+
+    <style>
+        .car-detail {
+            padding: 7rem 0 2rem;
+            background: #000;
+        }
+
+        .car-detail__container {
+            row-gap: 2rem;
+        }
+
+        .car-detail__images {
+            position: relative;
+        }
+
+        /*=============== CAROUSEL STYLES ===============*/
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-slide video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .carousel-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-nav.prev {
+            left: 20px;
+        }
+
+        .carousel-nav.next {
+            right: 20px;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .carousel-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-indicator.active {
+            background: #fff;
+            transform: scale(1.2);
+        }
+
+        .car-detail__3d-model {
+            width: 100%;
+            height: 400px;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .car-detail__3d-model iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 1rem;
+        }
+
+        .car-detail__thumbnails {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+        }
+
+        .car-detail__thumb {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .car-detail__thumb:hover {
+            transform: scale(1.05);
+        }
+
+        .car-detail__info {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+
+        .car-detail__title {
+            font-family: var(--body-font);
+            font-size: var(--h1-font-size);
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .car-detail__subtitle {
+            font-family: var(--body-font);
+            font-size: var(--h2-font-size);
+            color: #ccc;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .car-detail__stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #1a1a1a;
+            border-radius: 0.75rem;
+        }
+
+        .car-detail__stat {
+            text-align: center;
+        }
+
+        .car-detail__stat-number {
+            font-size: var(--h2-font-size);
+            font-weight: var(--font-semi-bold);
+            color: #fff;
+            display: block;
+        }
+
+        .car-detail__stat-label {
+            font-size: var(--small-font-size);
+            color: #ccc;
+            text-transform: uppercase;
+        }
+
+        .car-detail__price {
+            font-size: 2rem;
+            font-weight: var(--font-semi-bold);
+            color: var(--first-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .car-detail__actions {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .car-detail__button {
+            flex: 1;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: var(--font-semi-bold);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .car-detail__button--primary {
+            background: var(--first-color);
+            color: var(--white-color);
+        }
+
+        .car-detail__button--secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .car-detail__button:hover {
+            transform: translateY(-2px);
+        }
+
+        .car-detail__specs {
+            margin-top: 3rem;
+        }
+
+        .specs-section {
+            margin-bottom: 3rem;
+        }
+
+        .specs-title {
+            font-size: var(--h2-font-size);
+            color: #fff;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--first-color);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem;
+            background: #1a1a1a;
+            border-radius: 0.5rem;
+        }
+
+        .spec-label {
+            color: #ccc;
+        }
+
+        .spec-value {
+            color: #fff;
+            font-weight: var(--font-medium);
+        }
+
+        .features-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        .features-list li {
+            padding: 0.5rem 0;
+            color: #ccc;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            color: var(--first-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /*=============== VIDEO BACKGROUND SECTION ===============*/
+        .video-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .video-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .video-title {
+            font-family: var(--body-font);
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            letter-spacing: 2px;
+        }
+
+        .video-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        @media screen and (max-width: 768px) {
+            .video-title {
+                font-size: 2.5rem;
+            }
+
+            .video-subtitle {
+                font-size: 1rem;
+            }
+
+            .car-detail__3d-model {
+                height: 300px;
+            }
+
+            .car-detail__stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-list {
+                grid-template-columns: 1fr;
+            }
+
+            .car-detail__actions {
+                flex-direction: column;
+            }
+
+            .carousel-wrapper {
+                height: 300px;
+            }
+
+            .carousel-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .carousel-nav.prev {
+                left: 10px;
+            }
+
+            .carousel-nav.next {
+                right: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .video-title {
+                font-size: 2rem;
+            }
+
+            .carousel-wrapper {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Acasă</a></li>
+                    <li class="nav__item"><a href="stoc.html" class="nav__link">Mașini pe stoc</a></li>
+                    <li class="nav__item"><a href="comanda.html" class="nav__link">Mașini la comandă</a></li>
+                    <li class="nav__item"><a href="vinde.html" class="nav__link">Vinde-ți mașina</a></li>
+                    <li class="nav__item"><a href="finantare.html" class="nav__link">Finanțare</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+      <!--==================== VIDEO BACKGROUND SECTION ====================-->
+<section class="video-section">
+    <div class="video-container">
+        <!-- Videoclipul ca fundal -->
+        <video autoplay loop muted playsinline preload="metadata" class="video-bg">
+            <source src="assets/img/w223.mp4" type="video/mp4">
+            Videoclipul nu este susținut de browserul tău.
+        </video>
+
+        <!-- Suprapunerea semi-transparentă pentru text lizibil -->
+        <div class="video-overlay"></div>
+
+        <!-- Text deasupra videoclipului -->
+        <div class="video-content">
+            <h1 class="video-title" style="font-size: 4rem; letter-spacing: 2px;">Mercedes-Benz S580</h1>
+        </div>
+    </div>
+</section>
+
+        <!--==================== CAROUSEL SECTION ====================-->
+        <section class="carousel-section" style="background: #000; padding: 2rem 0;">
+            <div class="container">
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/1.jpg" alt="Mercedes S580 Image 1">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/2.jpg" alt="Mercedes S580 Image 2">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/3.jpg" alt="Mercedes S580 Image 3">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/4.jpg" alt="Mercedes S580 Image 4">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/5.jpg" alt="Mercedes S580 Image 5">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/6.jpg" alt="Mercedes S580 Image 6">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/7.jpg" alt="Mercedes S580 Image 7">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/8.jpg" alt="Mercedes S580 Image 8">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/9.jpg" alt="Mercedes S580 Image 9">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/10.jpg" alt="Mercedes S580 Image 10">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/11.jpg" alt="Mercedes S580 Image 11">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/12.jpg" alt="Mercedes S580 Image 12">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/13.jpg" alt="Mercedes S580 Image 13">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/img/s/14.jpg" alt="Mercedes S580 Image 14">
+                            </div>
+                            <div class="carousel-slide">
+                                <video controls muted playsinline preload="none">
+                                    <source src="assets/img/s/s580.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-nav prev" id="prevBtn">
+                        <i class="ri-arrow-left-line"></i>
+                    </button>
+                    <button class="carousel-nav next" id="nextBtn">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+
+                    <div class="carousel-indicators" id="carouselIndicators">
+                        <!-- Indicators will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CAR DETAIL ====================-->
+        <section class="car-detail section">
+            <div class="car-detail__container container grid">
+                <div class="car-detail__images">
+                    <div class="car-detail__3d-model">
+                        <iframe title="Mercedes S Class"
+                                frameborder="0"
+                                allowfullscreen
+                                mozallowfullscreen="true"
+                                webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking"
+                                xr-spatial-tracking
+                                execution-while-out-of-viewport
+                                execution-while-not-rendered
+                                web-share
+                                src="https://sketchfab.com/models/7be62285accb409bb6f7e28bce32f973/embed?camera=0">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="car-detail__info">
+                    <h1 class="car-detail__title">Mercedes-Benz</h1>
+                    <h2 class="car-detail__subtitle">S580</h2>
+
+                    <div class="car-detail__stats">
+                        <div class="car-detail__stat">
+                            <span class="car-detail__stat-number">2023</span>
+                            <span class="car-detail__stat-label">An</span>
+                        </div>
+                        <div class="car-detail__stat">
+                            <span class="car-detail__stat-number">30,000</span>
+                            <span class="car-detail__stat-label">KM</span>
+                        </div>
+                        <div class="car-detail__stat">
+                            <span class="car-detail__stat-number">Benzină</span>
+                            <span class="car-detail__stat-label">Combustibil</span>
+                        </div>
+                        <div class="car-detail__stat">
+                            <span class="car-detail__stat-number">496 CP</span>
+                            <span class="car-detail__stat-label">Putere</span>
+                        </div>
+                    </div>
+
+                    <div class="car-detail__price">€120,900</div>
+
+                    <div class="car-detail__actions">
+                        <button class="car-detail__button car-detail__button--primary">
+                            <i class="ri-phone-line"></i> Contact
+                        </button>
+                        <button class="car-detail__button car-detail__button--secondary">
+                            <i class="ri-chat-3-line"></i> Chat Online
+                        </button>
+                        <button class="car-detail__button car-detail__button--secondary">
+                            <i class="ri-file-text-line"></i> Raport Vehicul
+                        </button>
+                        <button class="car-detail__button car-detail__button--secondary">
+                            <i class="ri-history-line"></i> Istoric Reprezentanță
+                        </button>
+                    </div>
+                </div>
+
+            <div class="car-detail__specs container">
+                <div class="specs-section">
+                    <h3 class="specs-title">Informații de bază</h3>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Marcă</span>
+                            <span class="spec-value">Mercedes-Benz</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Model</span>
+                            <span class="spec-value">S-Class</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">VIN</span>
+                            <span class="spec-value">W1K2223033131A155375</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Anul producției</span>
+                            <span class="spec-value">2023</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Prima înmatriculare</span>
+                            <span class="spec-value">15.03.2023</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Capacitatea motorului</span>
+                            <span class="spec-value">3.982 cm³</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-section">
+                    <h3 class="specs-title">Specificații tehnice</h3>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Putere</span>
+                            <span class="spec-value">496 CP</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Cutie de viteze</span>
+                            <span class="spec-value">Automată</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Combustibil</span>
+                            <span class="spec-value">Benzină + Mild-Hybrid</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Culoare</span>
+                            <span class="spec-value">Negru Obsidian</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Garanție</span>
+                            <span class="spec-value">24 Luni Garanție</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Tracțiune</span>
+                            <span class="spec-value">4x4 - 4MATIC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specs-section">
+                    <h3 class="specs-title">Performanță și dinamică</h3>
+                    <ul class="features-list">
+                      <li>Motor benzină 4.0L V8 biturbo cu EQ Boost - mild-hybrid</li>
+                        <li>4MATIC all-wheel drive</li>
+                        <li>9G-TRONIC automatic transmission</li>
+                        <li>AIRMATIC semi-active suspension - comfort and stability</li>
+                        <li>High-performance sport brakes</li>
+                        <li>BlueTEC SCR system - Euro 6 standard - particulate filter</li>
+                        <li>Adjust speed according to route and topography</li>
+                    </ul>
+                </div>
+
+                <div class="specs-section">
+                    <h3 class="specs-title">Confort și funcționalitate</h3>
+                    <ul class="features-list">
+                        <li>Scaune față încălzite cu reglaj electric lumbar</li>
+                        <li>Aer condiționat dual-zone</li>
+                        <li>Climatizare automată multi-zone</li>
+                        <li>Plafon panoramic glisant automatic</li>
+                        <li>Volan încărcat în piele Supersport</li>
+                        <li>Iluminare ambientală premium</li>
+                        <li>Încărcare wireless pentru telefon în consola centrală</li>
+                        <li>Portbagaj cu blocare automată</li>
+                        <li>Oglinzi exterioare și interioare cu atenuare automată</li>
+                        <li>Geamuri atermice cu protecție IR</li>
+                        <li>Parbriz încălzit și spălătoare cu duze încălzite</li>
+                        <li>Spălare parbriz cu rezervor fluid</li>
+                        <li>Geamuri fumurii cu protecție IR</li>
+                        <li>Sistem audio premium</li>
+                        <li>Protecție logo Mercedes-Benz la deschiderea ușilor</li>
+                        <li>Tavă în portbagaj</li>
+                        <li>Tapițerie din piele bej/semi-anilină</li>
+                        <li>Garnitură interioară în aluminiu/negru - stil metalic</li>
+                        <li>Covorașe AMG originale</li>
+                    </ul>
+                </div>
+
+                <div class="specs-section">
+                    <h3 class="specs-title">Siguranță și asistență la condus</h3>
+                    <ul class="features-list">
+                        <li>Pachet Driving Assistance (nivel de autonomie L2)</li>
+                        <li>DISTRONIC PLUS adaptive autopilot cu funcție stop-and-go</li>
+                        <li>Active Lane Keep Assist</li>
+                        <li>Asistent schimbare bandă activ</li>
+                        <li>Asistent parcare activ cu cameră 360°</li>
+                        <li>Sistem de avertizare și intervenție pedestrian - active bonnet</li>
+                        <li>Sistem PRE-SAFE® Impulse Side pentru protecție laterală</li>
+                        <li>Asistent Stop de Urgență</li>
+                        <li>Cameră 360° + senzori de parcare față/spate</li>
+                        <li>Monitorizare presiune anvelope în timp real</li>
+                        <li>Sistem de apel de urgență Ecall</li>
+                        <li>Sistem de alarmă antifurt cu sirenă și senzori</li>
+                        <li>Închidere centralizată cu funcție KEYLESS-GO</li>
+                        <li>Airbag-uri laterale față și spate center</li>
+                        <li>Sistem activ de recunoaștere coridor de urgență</li>
+                        <li>Indicator stare centuri de siguranță pasageri spate</li>
+                        <li>Sistem scaune pentru copii ISOFIX (i-Size)</li>
+                        <li>Vestă reflectorizantă de siguranță inclusă</li>
+                    </ul>
+                </div>
+
+                <div class="specs-section">
+                    <h3 class="specs-title">Tehnologie și infotainment</h3>
+                    <ul class="features-list">
+                        <li>Sistem multimedia MBUX cu ecran central mare</li>
+                        <li>Navigație pe hard disk + actualizări OTA măsurabile</li>
+                        <li>Realitate augmentată pentru navigare</li>
+                        <li>Head-Up Display (afișare informații direct pe parbriz)</li>
+                        <li>Integrare smartphone Apple CarPlay & Android Auto</li>
+                        <li>Sistem de recunoaștere trafic</li>
+                        <li>Integrare smartphone + Pachet USB</li>
+                        <li>Conectivitate 4G și caracteristici online cu Mercedes Me Connect</li>
+                        <li>Servicii de acces la distanță (servicii la distanță)</li>
+                        <li>Recunoaștere voce pentru personalizarea profilului</li>
+                        <li>Personalizare sunet conform preferințelor utilizatorului</li>
+                    </ul>
+                </div>
+
+                <div class="specs-section">
+                    <h3 class="specs-title">Design și exterior</h3>
+                    <ul class="features-list">
+                        <li>Pachet AMG (exterior - front spoiler, side sills, aggressive elements)</li>
+                        <li>Pachet Night (elemente exterioare în negru lucios)</li>
+                        <li>Jante AMG originale cu design multispoke și anvelope mixte</li>
+                        <li>Anvelope de vară cu absorbție sonoră optimizată</li>
+                        <li>Finisaj MANALITE cu Diamond White exclusiv - finisaj metalic</li>
+                        <li>Proiecție simboluri, linii și animații prin farurile LED digitale</li>
+                        <li>Faruri LED digitale adaptate pentru traficul de dreapta</li>
+                        <li>Stopuri LED cu semnalizare dinamică</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+                </a>
+                <p class="footer__description">
+                    Oferim cele mai bune mașini ale <br>
+                    celor mai recunoscute branduri din <br>
+                    lume.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Companie
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Acasă</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Mașini pe stoc</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Mașini la comandă</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Vinde-ți mașina</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Finanțare</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Informații
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Solicită o ofertă</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Găsește un dealer</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Contactează-ne</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Servicii</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Termeni și condiții</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Garanție</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Urmărește-ne
+                </h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+        </span>
+    </footer>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navClose = document.getElementById('nav-close');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu');
+            });
+        }
+
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        }
+
+        // Close menu when clicking on nav links
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        });
+
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        /*=============== SCROLL REVEAL ANIMATION ===============*/
+          const sr = ScrollReveal({
+              origin: 'top',
+              distance: '60px',
+              duration: 2500,
+              delay: 400,
+              // reset: true // Uncomment to make animations repeat
+          });
+
+          // Video section animations
+          sr.reveal('.video-title', {
+              origin: 'bottom',
+              distance: '100px',
+              duration: 3000,
+              delay: 600
+          });
+
+          sr.reveal('.video-subtitle', {
+              origin: 'bottom',
+              distance: '80px',
+              duration: 2800,
+              delay: 800
+          });
+
+          sr.reveal('.video-description', {
+              origin: 'bottom',
+              distance: '60px',
+              duration: 2600,
+              delay: 1000
+          });
+
+          // Spacer content animations
+          sr.reveal('.spacer h2', {
+              origin: 'left',
+              distance: '100px',
+              duration: 2000
+          });
+
+          sr.reveal('.spacer p', {
+              origin: 'right',
+              distance: '100px',
+              duration: 2000,
+              delay: 200
+          });
+
+          sr.reveal('.spacer-bottom h2', {
+              origin: 'left',
+              distance: '100px',
+              duration: 2000
+          });
+
+          sr.reveal('.spacer-bottom p', {
+              origin: 'right',
+              distance: '100px',
+              duration: 2000,
+              delay: 200
+          });
+
+          // Car detail animations (if you have these elements)
+          sr.reveal('.car-detail__images', {origin: 'left'});
+          sr.reveal('.car-detail__info', {origin: 'right'});
+          sr.reveal('.car-detail__title', {delay: 600});
+          sr.reveal('.car-detail__subtitle', {delay: 700});
+          sr.reveal('.car-detail__stats', {delay: 800});
+          sr.reveal('.car-detail__price', {delay: 900});
+          sr.reveal('.car-detail__actions', {delay: 1000});
+
+          // Specs sections animations (if you have these elements)
+          sr.reveal('.specs-section', {
+              origin: 'bottom',
+              distance: '100px',
+              interval: 200
+          });
+
+          sr.reveal('.specs-title', {
+              origin: 'left',
+              distance: '80px',
+              delay: 300
+          });
+
+          sr.reveal('.specs-grid .spec-item', {
+              origin: 'bottom',
+              distance: '60px',
+              interval: 100
+          });
+
+          sr.reveal('.features-list li', {
+              origin: 'left',
+              distance: '50px',
+              interval: 50
+          });
+
+          // Footer animations (if you have footer elements)
+          sr.reveal('.footer__content', {
+              origin: 'bottom',
+              distance: '100px',
+              interval: 100
+          });
+
+
+
+        // Add fade-in animation for the 3D model iframe when it loads
+        const iframe = document.querySelector('.car-detail__3d-model iframe');
+        if (iframe) {
+            iframe.addEventListener('load', function() {
+                this.style.opacity = '0';
+                this.style.transition = 'opacity 1s ease-in-out';
+                setTimeout(() => {
+                    this.style.opacity = '1';
+                }, 100);
+            });
+        }
+
+        // Add staggered animation for action buttons
+        const actionButtons = document.querySelectorAll('.car-detail__button');
+        actionButtons.forEach((button, index) => {
+            sr.reveal(button, {
+                origin: 'bottom',
+                distance: '30px',
+                delay: 1100 + (index * 100)
+            });
+        });
+
+        // Add hover animations for stats
+        const stats = document.querySelectorAll('.car-detail__stat');
+        stats.forEach(stat => {
+            stat.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px) scale(1.05)';
+                this.style.transition = 'all 0.3s ease';
+            });
+
+            stat.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Progressive reveal for feature lists
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const listItems = entry.target.querySelectorAll('li');
+                    listItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateX(0)';
+                        }, index * 50);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Carousel functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselTrack = document.getElementById('carouselTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicatorsContainer = document.getElementById('carouselIndicators');
+
+    if (!carouselTrack || !prevBtn || !nextBtn || !indicatorsContainer) {
+        console.error('Carousel elements not found');
+        return;
+    }
+
+    const slides = carouselTrack.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+    let currentSlide = 0;
+
+    // Create indicators
+    function createIndicators() {
+        indicatorsContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('div');
+            indicator.classList.add('carousel-indicator');
+            if (i === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => goToSlide(i));
+            indicatorsContainer.appendChild(indicator);
+        }
+    }
+
+    // Update indicators
+    function updateIndicators() {
+        const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === currentSlide);
+        });
+    }
+
+    // Go to specific slide
+    function goToSlide(slideIndex) {
+        currentSlide = slideIndex;
+        const translateX = -currentSlide * 100;
+        carouselTrack.style.transform = `translateX(${translateX}%)`;
+        updateIndicators();
+    }
+
+    // Next slide
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        goToSlide(currentSlide);
+    }
+
+    // Previous slide
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        goToSlide(currentSlide);
+    }
+
+    // Event listeners
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Auto-play functionality (optional)
+    let autoplayInterval;
+
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+
+    function stopAutoplay() {
+        clearInterval(autoplayInterval);
+    }
+
+    // Pause autoplay on hover
+    const carouselContainer = document.querySelector('.carousel-container');
+    if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', stopAutoplay);
+        carouselContainer.addEventListener('mouseleave', startAutoplay);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+        }
+    });
+
+    // Touch/swipe support for mobile
+    let startX = 0;
+    let currentX = 0;
+    let isDragging = false;
+
+    carouselTrack.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+        stopAutoplay();
+    });
+
+    carouselTrack.addEventListener('touchmove', function(e) {
+        if (!isDragging) return;
+        currentX = e.touches[0].clientX;
+        e.preventDefault();
+    });
+
+    carouselTrack.addEventListener('touchend', function(e) {
+        if (!isDragging) return;
+        isDragging = false;
+
+        const diffX = startX - currentX;
+        const threshold = 50; // Minimum distance for swipe
+
+        if (Math.abs(diffX) > threshold) {
+            if (diffX > 0) {
+                nextSlide(); // Swipe left - next slide
+            } else {
+                prevSlide(); // Swipe right - previous slide
+            }
+        }
+
+        startAutoplay();
+    });
+
+    // Mouse drag support for desktop
+    let mouseStartX = 0;
+    let mouseCurrentX = 0;
+    let isMouseDragging = false;
+
+    carouselTrack.addEventListener('mousedown', function(e) {
+        mouseStartX = e.clientX;
+        isMouseDragging = true;
+        carouselTrack.style.cursor = 'grabbing';
+        stopAutoplay();
+        e.preventDefault();
+    });
+
+    carouselTrack.addEventListener('mousemove', function(e) {
+        if (!isMouseDragging) return;
+        mouseCurrentX = e.clientX;
+        e.preventDefault();
+    });
+
+    carouselTrack.addEventListener('mouseup', function(e) {
+        if (!isMouseDragging) return;
+        isMouseDragging = false;
+        carouselTrack.style.cursor = 'grab';
+
+        const diffX = mouseStartX - mouseCurrentX;
+        const threshold = 50;
+
+        if (Math.abs(diffX) > threshold) {
+            if (diffX > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+
+        startAutoplay();
+    });
+
+    // Prevent drag on mouse leave
+    carouselTrack.addEventListener('mouseleave', function() {
+        if (isMouseDragging) {
+            isMouseDragging = false;
+            carouselTrack.style.cursor = 'grab';
+            startAutoplay();
+        }
+    });
+
+    // Initialize carousel
+    createIndicators();
+    startAutoplay();
+
+    // Handle video elements in carousel
+    slides.forEach((slide, index) => {
+        const video = slide.querySelector('video');
+        if (video) {
+            // Pause video when not active
+            if (index !== currentSlide) {
+                video.pause();
+            }
+
+            // Play/pause video based on slide visibility
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        video.play().catch(e => console.log('Video autoplay failed:', e));
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            observer.observe(slide);
+        }
+    });
+
+    // Update video play/pause when slide changes
+    function handleVideoPlayback() {
+        slides.forEach((slide, index) => {
+            const video = slide.querySelector('video');
+            if (video) {
+                if (index === currentSlide) {
+                    video.play().catch(e => console.log('Video autoplay failed:', e));
+                } else {
+                    video.pause();
+                }
+            }
+        });
+    }
+
+    // Override goToSlide function to handle video
+    const originalGoToSlide = goToSlide;
+    goToSlide = function(slideIndex) {
+        originalGoToSlide(slideIndex);
+        handleVideoPlayback();
+    };
+});
+
+        // Observe all feature lists
+        document.querySelectorAll('.features-list').forEach(list => {
+            // Initially hide all list items
+            list.querySelectorAll('li').forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateX(-20px)';
+                item.style.transition = 'all 0.5s ease';
+            });
+
+            observer.observe(list);
+        });
+    </script>
+    <script src="assets/js/site-nav.js"></script>
+</body>
+</html>

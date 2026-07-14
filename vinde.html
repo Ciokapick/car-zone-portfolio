@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Descrie mașina pe care vrei să o vinzi și pregătește o solicitare CarZone.">
+        <meta name="theme-color" content="#0a0a0b">
+        <link rel="canonical" href="https://car-zone-five.vercel.app/vinde.html">
+        <meta property="og:title" content="Vinde-ți mașina — CarZone">
+        <meta property="og:description" content="Completează fluxul demonstrativ CarZone pentru evaluarea unei mașini.">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="CarZone">
+        <meta property="og:url" content="https://car-zone-five.vercel.app/vinde.html">
+        <meta property="og:image" content="https://car-zone-five.vercel.app/assets/img/about.png">
+        <meta property="og:image:alt" content="Fluxul demonstrativ CarZone pentru vânzarea unei mașini">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Vinde-ți mașina — CarZone">
+        <meta name="twitter:description" content="Completează fluxul demonstrativ CarZone pentru evaluarea unei mașini.">
+        <meta name="twitter:image" content="https://car-zone-five.vercel.app/assets/img/about.png">
+    <title>Vinde-ți mașina - CarZone</title>
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/carzone.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== STYLESHEET ===============-->
+    <link rel="stylesheet" href="assets/css/styles-vinde.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+      <nav class="nav container">
+          <a href="index.html" class="nav__logo">
+              <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+          </a>
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="index.html" class="nav__link">Acasă</a></li>
+                  <li class="nav__item"><a href="stoc.html" class="nav__link">Mașini pe stoc</a></li>
+                  <li class="nav__item"><a href="comanda.html" class="nav__link">Mașini la comandă</a></li>
+                  <li class="nav__item"><a href="vinde.html" class="nav__link active-link">Vinde-ți mașina</a></li>
+                  <li class="nav__item"><a href="finantare.html" class="nav__link">Finanțare</a></li>
+                  <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+              </ul>
+              <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+          </div>
+          <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+      </nav>
+  </header>
+    <!--==================== VIDEO BACKGROUND SECTION ====================-->
+    <section class="video-section">
+        <div class="video-container">
+            <!-- Videoclipul ca fundal -->
+            <video autoplay loop muted playsinline preload="metadata" class="video-bg">
+                <source src="assets/img/bmwm5f90.mp4" type="video/mp4">
+                Videoclipul nu este susținut de browserul tău.
+            </video>
+
+            <!-- Suprapunerea semi-transparentă pentru text lizibil -->
+            <div class="video-overlay"></div>
+
+            <!-- Text deasupra videoclipului -->
+            <div class="video-content">
+                <h1 class="video-title">Vinde-ți mașina</h1>
+                <p class="video-subtitle">
+                    Ai o mașină și vrei să o vinzi, dar nu vrei să te complici cu procesul de <br>
+                    publicare a anunțului, răspunsuri la telefoane și întâlniri cu potențiali clienți <br>
+                    sau doar curioși? Noi te putem ajuta! Completează formularul <br>
+                    și ne ocupăm noi de vânzarea mașinii tale!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== SELL YOUR CAR FORM SECTION ====================-->
+    <section class="sell-car-form container">
+    <form class="form-container" data-demo-form data-demo-label="Cererea de evaluare" aria-describedby="sell-demo-note">
+        <p class="form-status form-status--demo" id="sell-demo-note">Mod demo: poți completa și valida fluxul, dar datele nu sunt trimise și nu sunt stocate.</p>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Nume</label>
+                <input type="text" id="name" name="name" autocomplete="given-name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Prenume</label>
+                <input type="text" id="surname" name="surname" autocomplete="family-name" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="county">Județ</label>
+                <input type="text" id="county" name="county" autocomplete="address-level1" required>
+            </div>
+            <div class="form-group">
+                <label for="locality">Localitate</label>
+                <input type="text" id="locality" name="locality" autocomplete="address-level2" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="carBrand">Marca mașină</label>
+                <input type="text" id="carBrand" name="carBrand" required>
+            </div>
+            <div class="form-group">
+                <label for="carModel">Model mașină</label>
+                <input type="text" id="carModel" name="carModel" required>
+            </div>
+        </div>
+        <div class="form-row">
+    <div class="form-group">
+        <label for="details">Detalii autoturism</label>
+        <textarea id="details" name="message" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="images">Imagini</label>
+        <div class="file-upload">
+            <input type="file" id="images" accept="image/jpeg,image/png,image/webp" multiple disabled>
+            <span class="file-label">Alege fișiere</span>
+            <span class="file-info">Imaginile se trimit după primul contact</span>
+        </div>
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group">
+        <label>Tip client</label>
+        <div class="radio-group">
+            <input type="radio" id="individual" name="clientType" value="individual" required>
+            <label for="individual">Persoană fizică</label>
+            <input type="radio" id="company" name="clientType" value="company">
+            <label for="company">Persoană juridică</label>
+        </div>
+    </div>
+    <div class="form-group align-right">
+        <button type="submit" class="submit-btn">Verifică cererea demo</button>
+    </div>
+</div>
+
+    </form>
+</section>
+
+
+<!--==================== FOOTER ====================-->
+<footer class="footer section">
+    <div class="shape shape__big"></div>
+    <div class="shape shape__small"></div>
+    <div class="footer__container container grid">
+        <div class="footer__content">
+          <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+            <p class="footer__description">Oferim cele mai bune mașini ale celor mai recunoscute branduri din lume.</p>
+        </div>
+        <div class="footer__content">
+            <h3 class="footer__title">Companie</h3>
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Despre</a></li>
+                <li><a href="#" class="footer__link">Mașini</a></li>
+                <li><a href="#" class="footer__link">Istoric</a></li>
+                <li><a href="#" class="footer__link">Magazin</a></li>
+            </ul>
+        </div>
+        <div class="footer__content">
+            <h3 class="footer__title">Informații</h3>
+            <ul class="footer__links">
+                <li><a href="#" class="footer__link">Solicită o ofertă</a></li>
+                <li><a href="#" class="footer__link">Găsește un dealer</a></li>
+                <li><a href="#" class="footer__link">Contactează-ne</a></li>
+                <li><a href="#" class="footer__link">Servicii</a></li>
+            </ul>
+        </div>
+        <div class="footer__content">
+            <h3 class="footer__title">Urmărește-ne</h3>
+            <ul class="footer__social">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-twitter-line"></i></a>
+            </ul>
+        </div>
+    </div>
+    <span class="footer__copy"></span>
+</footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/form-status.js"></script>
+    <script src="assets/js/site-nav.js"></script>
+    <script src="assets/js/main-vinde.js"></script>
+</body>
+</html>

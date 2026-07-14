@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+    <html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CarZone este un concept de marketplace auto premium cu stoc extins, pagini de prezentare și cereri pentru mașini la comandă.">
+        <meta name="theme-color" content="#0a0a0b">
+        <link rel="canonical" href="https://car-zone-five.vercel.app/">
+        <meta property="og:title" content="CarZone — Marketplace auto premium">
+        <meta property="og:description" content="Stoc auto premium, prezentări detaliate și cereri pentru mașini la comandă.">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="CarZone">
+        <meta property="og:url" content="https://car-zone-five.vercel.app/">
+        <meta property="og:image" content="https://car-zone-five.vercel.app/assets/img/home.png">
+        <meta property="og:image:alt" content="Interfața conceptului auto CarZone">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="CarZone — Marketplace auto premium">
+        <meta name="twitter:description" content="Stoc auto demonstrativ, prezentări detaliate și fluxuri de solicitare în mod demo.">
+        <meta name="twitter:image" content="https://car-zone-five.vercel.app/assets/img/home.png">
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "name": "CarZone",
+                "url": "https://car-zone-five.vercel.app/",
+                "description": "Concept independent de marketplace auto premium, creat ca proiect de portofoliu.",
+                "inLanguage": "ro"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "CarZone automotive marketplace concept",
+                "url": "https://car-zone-five.vercel.app/",
+                "image": "https://car-zone-five.vercel.app/assets/img/home.png",
+                "description": "Proiect demonstrativ de portofoliu pentru descoperirea, prezentarea și solicitarea automobilelor.",
+                "creator": {
+                  "@type": "Person",
+                  "name": "Denis Paval",
+                  "url": "https://github.com/Ciokapick"
+                }
+              }
+            ]
+          }
+        </script>
+
+        <!--=============== FAVICON ===============-->
+          <link rel="shortcut icon" href="assets/img/carzone.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>CarZone — Marketplace auto premium</title>
+    </head>
+    <body class="home-page">
+      <!--==================== HEADER ====================-->
+      <a class="skip-link" href="#main-content">Sari la conținut</a>
+      <header class="header" id="header">
+          <nav class="nav container">
+              <a href="index.html" class="nav__logo">
+                  <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+              </a>
+              <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                      <li class="nav__item"><a href="index.html" class="nav__link active-link">Acasă</a></li>
+                      <li class="nav__item"><a href="stoc.html" class="nav__link">Mașini pe stoc</a></li>
+                      <li class="nav__item"><a href="comanda.html" class="nav__link">Mașini la comandă</a></li>
+                      <li class="nav__item"><a href="vinde.html" class="nav__link">Vinde-ți mașina</a></li>
+                      <li class="nav__item"><a href="finantare.html" class="nav__link">Finanțare</a></li>
+                      <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                  </ul>
+                  <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+              </div>
+              <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+          </nav>
+      </header>
+
+
+
+        <!--==================== MAIN ====================-->
+        <main class="main" id="main-content">
+
+
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <p class="home__eyebrow">
+                            Alege cea mai bună mașină
+                        </p>
+
+                        <h1 class="home__title">
+                            Porsche Taycan
+                        </h1>
+
+                        <p class="home__elec">
+                            <i class="ri-flashlight-fill"></i> Mașină electrică
+                        </p>
+                    </div>
+
+                    <img src="assets/img/home.png" alt="Porsche Taycan alb prezentat pe pagina principală CarZone" class="home__img">
+
+                    <div class="home__car">
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class=" ri-car-line"></i>
+                            </div>
+                            <h2 class="home__car-number">872 CP</h2>
+                            <h3 class="home__car-name">PUTERE</h3>
+                        </div>
+
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-dashboard-3-line"></i>
+                            </div>
+                            <h2 class="home__car-number">2.7 S</h2>
+                            <h3 class="home__car-name">TIMP 0-100</h3>
+                        </div>
+
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-flashlight-fill"></i>
+                            </div>
+                            <h2 class="home__car-number">634 KM</h2>
+                            <h3 class="home__car-name">AUTONOMIE</h3>
+                        </div>
+                    </div>
+
+                    <div class="home__actions">
+                        <a href="#about" class="home__cta home__cta--primary">Descoperă Taycan</a>
+                        <a href="stoc.html" class="home__cta home__cta--secondary">Vezi toate mașinile</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__group">
+                        <img src="assets/img/about.png" alt="" class="about__img">
+
+                        <div class="about__card">
+                            <h3 class="about__card-title">Premium</h3>
+                            <p class="about__card-description">
+                                Selecție auto atent prezentată
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Dealer Auto Premium <br> Îți aducem visul pe 4 roți la realitate!
+                        </h2>
+
+                        <p class="about__description">
+                            ți oferim o selecție exclusivă de mașini premium, verificate riguros și susținute de garanție, alături de servicii personalizate care transformă fiecare achiziție într-o experiență memorabilă. Alege calitatea, alege excelența – vino să descoperi diferența!
+                        </p>
+
+                        <a href="#" class="button">Rezervă-ți o progarmare azi!</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== POPULAR ====================-->
+            <section class="popular section" id="popular">
+            <h2 class="section__title">
+                <img src="assets/img/porsche-logo.png" alt="Porsche Logo" class="logo-image">
+                <br> Putere, eleganță și inovație la un click distanță
+            </h2>
+
+
+                <div class="popular__container container swiper">
+                    <div class="swiper-wrapper">
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Porsche</h1>
+                            <h3 class="popular__subtitle">Turbo S</h3>
+
+                            <img src="assets/img/popular1.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> Electric
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">€175,900</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Porsche</h1>
+                            <h3 class="popular__subtitle">Taycan</h3>
+
+                            <img src="assets/img/popular2.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> Electric
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">€114,900</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Porsche</h1>
+                            <h3 class="popular__subtitle">Turbo S Cross</h3>
+
+                            <img src="assets/img/popular3.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> Electric
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">€150,900</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Porsche</h1>
+                            <h3 class="popular__subtitle">Boxster 718</h3>
+
+                            <img src="assets/img/popular4.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> Electric
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">€125,900</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">Porsche</h1>
+                            <h3 class="popular__subtitle">Cayman</h3>
+
+                            <img src="assets/img/popular5.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i> 356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i> Electric
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">€128,900</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== FEATURES ====================-->
+            <section class="features section">
+                <h2 class="section__title">
+                  De ce să alegi
+            <br>      <img src="assets/img/logo.png" alt="Porsche Logo" class="logo-image">
+                </h2>
+
+                <div class="features__container container grid">
+                    <div class="features__group">
+                        <img src="assets/img/features.png" alt="" class="features__img">
+
+                        <div class="features__card features__card-1">
+                            <h3 class="features__card-title">Istoric</h3>
+                            <p class="features__card-description">verificat </p>
+                        </div>
+
+                        <div class="features__card features__card-2">
+                            <h3 class="features__card-title">Livrare </h3>
+                            <p class="features__card-description">rapidă</p>
+                        </div>
+
+                        <div class="features__card features__card-3">
+                            <h3 class="features__card-title">Garanție</h3>
+                            <p class="features__card-description">extinsă</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="assets/img/map.svg" alt="" class="features__map">
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section" id="featured">
+                <h2 class="section__title">
+                    Mașini Populare
+                </h2>
+
+                <div class="featured__container container">
+                    <ul class="featured__filters">
+                        <li>
+                            <button class="featured__item active-featured" data-filter="all">
+                              <img src="assets/img/all.png" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured__item" data-filter=".tesla">
+                                <img src="assets/img/brands/tesla.png" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured__item" data-filter=".audi">
+                                <img src="assets/img/brands/audi.png" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="featured__item" data-filter=".porsche">
+                                <img src="assets/img/brands/porsche.png" alt="">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="featured__content grid">
+                        <article class="featured__card mix tesla">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Tesla</h1>
+                            <h3 class="featured__subtitle">Model X</h3>
+
+                            <img src="assets/img/featured1.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">€98,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix tesla">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Tesla</h1>
+                            <h3 class="featured__subtitle">Model 3</h3>
+
+                            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">€45,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix audi">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Audi</h1>
+                            <h3 class="featured__subtitle">E-tron</h3>
+
+                            <img src="assets/img/featured3.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">€175,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix porsche">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Porsche</h1>
+                            <h3 class="featured__subtitle">Boxster 987</h3>
+
+                            <img src="assets/img/featured4.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">€126,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix porsche">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="featured__title">Porsche</h1>
+                            <h3 class="featured__subtitle">Panamera</h3>
+
+                            <img src="assets/img/featured5.png" alt="" class="featured__img">
+
+                            <h3 class="featured__price">€133,900</h3>
+
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== OFFER ====================-->
+            <section class="offer section">
+                <div class="offer__container container grid">
+                    <img src="assets/img/offer-bg.png" alt="" class="offer__bg">
+
+                    <div class="offer__data">
+        <h2 class="section__title offer__title">
+            Viziunea ta. Mașina noastră. <br> O combinație perfectă.
+        </h2>
+
+        <p class="offer__description">
+          Descoperă colecția noastră premium și lasă-ne să îți surprindem așteptările!
+        </p>
+
+        <a href="contact.html" class="button">
+            Găsește mașina viselor acum!
+        </a>
+        </div>
+
+
+                    <img src="assets/img/popular3.png" alt="" class="offer__img">
+                </div>
+            </section>
+            <!--==================== LOGOS ====================-->
+             <section class="logos section">
+               <div class="logos__container container swiper logos-swiper">
+                 <div class="swiper-wrapper">
+                   <div class="logos__content swiper-slide">
+                         <img src="assets/img/brands/porsche.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/audi.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/tesla.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/lamborghini.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/bmw.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/mitsubishi.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/alfa-romeo.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/lancia.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/fiat.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/ferrari.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/honda.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/jeep.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/koenigsegg.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/lotus.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/mercedes.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/rolls-royce.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/subaru.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/toyota.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/volkswagen.png" alt="" class="logos__img">
+                       </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/opel.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/tvr.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/ford.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/lincoln.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/corvette.png" alt="" class="logos__img">
+                     </div>
+
+
+
+
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/bugatti.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/caddilac.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/chevrolet.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/dacia.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/citroen.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/dodge.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/ds.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/genesis.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/hennessey.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/hyundai.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/jaguar.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/land-rover.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/kia.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/lada.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/lexus.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/maybach.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/mazda.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/mclaren.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/nissan.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/peugeot.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/renault.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/seat.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/skoda.png" alt="" class="logos__img">
+                     </div>
+                     <div class="logos__content swiper-slide">
+
+                         <img src="assets/img/brands/suzuki.png" alt="" class="logos__img">
+                     </div>
+
+                 </div>
+               </div>
+             </section>
+         </main>
+
+        <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+      <div class="shape shape__big"></div>
+      <div class="shape shape__small"></div>
+
+      <div class="footer__container container grid">
+          <div class="footer__content">
+              <a href="index.html" class="footer__logo">
+                <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+              </a>
+              <p class="footer__description">
+                  Oferim cele mai bune mașini ale <br>
+                  celor mai recunoscute branduri din <br>
+                  lume.
+              </p>
+          </div>
+
+          <div class="footer__content">
+              <h3 class="footer__title">
+                  Companie
+              </h3>
+
+              <ul class="footer__links">
+                  <li>
+                      <a href="index.html" class="footer__link">Acasă</a>
+                  </li>
+                  <li>
+                      <a href="stoc.html" class="footer__link">Mașini pe stoc</a>
+                  </li>
+                  <li>
+                      <a href="comanda.html" class="footer__link">Mașini la comandă</a>
+                  </li>
+                  <li>
+                      <a href="vinde.html" class="footer__link">Vinde-ți mașina</a>
+                  </li>
+                  <li>
+                      <a href="finantare.html" class="footer__link">Finanțare</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" class="footer__link">Contact</a>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="footer__content">
+              <h3 class="footer__title">
+                  Informații
+              </h3>
+
+              <ul class="footer__links">
+                  <li>
+                      <a href="contact.html" class="footer__link">Solicită o ofertă</a>
+                  </li>
+                  <li>
+                      <a href="#" class="footer__link">Găsește un dealer</a>
+                  </li>
+                  <li>
+                      <a href="contact.html" class="footer__link">Contactează-ne</a>
+                  </li>
+                  <li>
+                      <a href="#" class="footer__link">Servicii</a>
+                  </li>
+                  <li>
+                      <a href="#" class="footer__link">Termeni și condiții</a>
+                  </li>
+                  <li>
+                      <a href="#" class="footer__link">Garanție</a>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="footer__content">
+              <h3 class="footer__title">
+                  Urmărește-ne
+              </h3>
+
+              <ul class="footer__social">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="CarZone pe Facebook" class="footer__social-link">
+                      <i class="ri-facebook-fill"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="CarZone pe Instagram" class="footer__social-link">
+                      <i class="ri-instagram-line"></i>
+                  </a>
+
+              </ul>
+          </div>
+      </div>
+
+      <span class="footer__copy">
+      </span>
+  </footer>
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+  </a>
+
+  <!--=============== SCROLL REVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
+
+  <!--=============== SWIPER JS ===============-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/inventory-filter.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+  </body>
+  </html>

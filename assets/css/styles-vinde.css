@@ -1,0 +1,374 @@
+/* Importă stilurile generale */
+@import url("styles.css");
+
+/* Stiluri pentru Hero Section */
+.hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+/* Stiluri pentru secțiunea Video Background */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.video-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.video-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+/* Stiluri pentru Formularul de Vânzare */
+.sell-car-form {
+    padding: 3rem 2rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+    color: #ffffff; /* alb */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+/* Stiluri pentru div-ul radio-group */
+.radio-group {
+    display: flex;
+    gap: 2rem;
+    align-items: center; /* Aliniază elementele pe verticală */
+    justify-content: flex-start; /* Aliniază elementele pe orizontală */
+    margin-top: 0; /* Elimină spațiul de sus */
+}
+
+/* Stiluri pentru inputurile radio */
+.radio-group input[type="radio"] {
+    appearance: none; /* Elimină stilul implicit al browserului */
+    width: 18px;
+    height: 18px;
+    border: 2px solid #3498db; /* Border albastru */
+    border-radius: 50%; /* Formă rotundă */
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    vertical-align: middle; /* Asigură centrare verticală */
+}
+
+/* Stiluri pentru inputurile radio când sunt selectate */
+.radio-group input[type="radio"]:checked {
+    background-color: #3498db; /* Umple cercul cu albastru când e selectat */
+    border-color: #2980b9; /* Border mai închis când e selectat */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Glow albastru */
+}
+
+/* Stiluri pentru inputurile radio când sunt focusate */
+.radio-group input[type="radio"]:focus {
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.7); /* Glow mai puternic la focus */
+}
+
+/* Stiluri pentru etichetele radio */
+.radio-group label {
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex; /* Elementul conține atât textul, cât și bulina */
+    align-items: center; /* Centrează vertical textul și bulina */
+    gap: 0.25rem; /* Spațiu între bulină și text */
+    line-height: 1; /* Fixarea înălțimii liniei */
+    margin-top: 0.5rem; /* Ajustare fină pentru text */
+}
+
+
+
+/* Efect de hover cu glow albastru pentru inputuri, select și textarea */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border: 1px solid #3498db; /* Border albastru la focus */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Glow albastru la focus */
+    outline: none; /* Elimină outline-ul implicit */
+}
+
+/* Efect de hover pe formular */
+.sell-car-form:hover {
+    transform: translateY(-5px); /* Lift effect la hover */
+    transition: transform 0.3s; /* Tranziție lină */
+}
+
+/*buton trimite */
+.submit-btn {
+    display: inline-block;
+    padding: 0.5rem 1.0rem; /* Adjust padding for a smaller, more compact button */
+    margin-top: 3rem;
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold;
+    color: #fff;
+    background-color: #3498db; /* Blue background color */
+    border: 2px solid #3498db; /* Match border with the background */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Subtle blue glow */
+}
+
+.submit-btn:hover {
+    background-color: #2980b9; /* Darker blue for hover */
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.8); /* Stronger blue glow on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.submit-btn:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 1); /* Intense blue glow on focus */
+}
+
+/* camp alta locatie */
+#custom-locality {
+    display: none; /* Initially hidden */
+    margin-top: 0.5rem; /* Add space above the input */
+    padding: 0.5rem; /* Keep consistent padding with other fields */
+    border: 1px solid #3498db; /* Same border style */
+    border-radius: 5px; /* Rounded corners for consistency */
+    background-color: #2c2c2c; /* Match the background with other fields */
+    color: #fff; /* Text color */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Glow effect when focused */
+    transition: all 0.3s ease; /* Smooth transition for appearance */
+}
+
+#custom-locality:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.8); /* Enhanced glow on focus */
+}
+
+
+
+/* Stiluri pentru footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer__content {
+    max-width: 250px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #3498db; /* Albastru */
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer__description {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Scroll-up button */
+.scrollup {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #3498db; /* Albastru */
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scrollup:hover {
+    background-color: #2980b9; /* Albastru mai închis */
+}
+
+
+.nav__logo-img {
+    max-width: 150px; /* Adjust the size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+
+/* CAMPUL DE UPLOAD FISISERE */
+.file-upload {
+    position: relative;
+    display: inline-block;
+    text-align: left; /* Aliniere centrală */
+}
+
+.file-upload input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.file-upload .file-label {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* La fel ca pentru butonul "Trimite" */
+    background-color: #3498db; /* Fundal albastru */
+    color: #fff; /* Text alb */
+    border: 2px solid #3498db; /* Bordură */
+    border-radius: 5px; /* Colțuri rotunjite */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Glow subtil */
+}
+
+.file-upload .file-label:hover {
+    background-color: #2980b9; /* Fundal albastru închis */
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.8); /* Glow intens */
+    transform: translateY(-3px); /* Ridicare la hover */
+}
+
+.file-upload .file-label:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 1); /* Glow intens */
+}
+
+/* Stilizare text pentru fișiere selectate */
+.file-upload .file-info {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #bbb; /* Gri subtil */
+    text-align: left;
+}
+.form-honeypot {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+}
+
+.form-status { margin-bottom: 1.25rem; padding: 1rem 1.1rem; border: 1px solid currentColor; border-radius: .75rem; line-height: 1.5; }
+.form-status--success { color: #63d79a; background: rgba(99, 215, 154, .08); }
+.form-status--error { color: #ff8f8f; background: rgba(255, 143, 143, .08); }

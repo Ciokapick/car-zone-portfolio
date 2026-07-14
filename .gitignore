@@ -1,0 +1,12 @@
+.DS_Store
+desktop.ini
+*.pdf
+*.docx
+
+# Local database notes and private screenshots
+assets/php/*.txt
+assets/php/*.PNG
+assets/ss/
+
+# Local-only admin prototype
+admin.html

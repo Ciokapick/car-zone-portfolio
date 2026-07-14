@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explorează stocul demonstrativ CarZone și filtrează modelele după marcă.">
+        <meta name="theme-color" content="#0a0a0b">
+        <link rel="canonical" href="https://car-zone-five.vercel.app/stoc.html">
+        <meta property="og:title" content="Mașini pe stoc — CarZone">
+        <meta property="og:description" content="Explorează stocul demonstrativ CarZone și filtrează modelele după marcă.">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="CarZone">
+        <meta property="og:url" content="https://car-zone-five.vercel.app/stoc.html">
+        <meta property="og:image" content="https://car-zone-five.vercel.app/assets/img/s580.png">
+        <meta property="og:image:alt" content="Selecție de automobile în stocul demonstrativ CarZone">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Mașini pe stoc — CarZone">
+        <meta name="twitter:description" content="Explorează stocul demonstrativ CarZone și filtrează modelele după marcă.">
+        <meta name="twitter:image" content="https://car-zone-five.vercel.app/assets/img/s580.png">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/carzone.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== STYLESHEET ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles-stoc.css">
+
+    <title>Mașini pe stoc - CarZone</title>
+
+</head>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+      <nav class="nav container">
+          <a href="index.html" class="nav__logo">
+              <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+          </a>
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="index.html" class="nav__link">Acasă</a></li>
+                  <li class="nav__item"><a href="stoc.html" class="nav__link active-link">Mașini pe stoc</a></li>
+                  <li class="nav__item"><a href="comanda.html" class="nav__link">Mașini la comandă</a></li>
+                  <li class="nav__item"><a href="vinde.html" class="nav__link">Vinde-ți mașina</a></li>
+                  <li class="nav__item"><a href="finantare.html" class="nav__link">Finanțare</a></li>
+                  <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+              </ul>
+              <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+          </div>
+          <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+      </nav>
+  </header>
+    <!--==================== VIDEO BACKGROUND SECTION ====================-->
+<section class="video-section">
+    <div class="video-container">
+        <!-- Videoclipul ca fundal -->
+        <video autoplay loop muted playsinline preload="metadata" class="video-bg">
+            <source src="assets/img/s63amg.mp4" type="video/mp4">
+            Videoclipul nu este susținut de browserul tău.
+        </video>
+
+        <!-- Suprapunerea semi-transparentă pentru text lizibil -->
+        <div class="video-overlay"></div>
+
+        <!-- Text deasupra videoclipului -->
+        <div class="video-content">
+            <h1 class="video-title">Mașini pe stoc</h1>
+            <p class="video-subtitle"></p>
+        </div>
+    </div>
+</section>
+
+
+<!--==================== FEATURED ====================-->
+<div class="featured__container container">
+
+       </div>
+
+       <!-- Filtre -->
+       <ul class="featured__filters">
+           <li>
+               <button class="featured__item active-featured" data-filter="all">
+                   <img src="assets/img/all.png" alt="">
+               </button>
+           </li>
+           <li>
+               <button class="featured__item" data-filter=".tesla">
+                   <img src="assets/img/brands/tesla.png" alt="">
+               </button>
+           </li>
+           <li>
+               <button class="featured__item" data-filter=".audi">
+                   <img src="assets/img/brands/audi.png" alt="">
+               </button>
+           </li>
+           <li>
+               <button class="featured__item" data-filter=".porsche">
+                   <img src="assets/img/brands/porsche.png" alt="">
+               </button>
+           </li>
+
+           <li>
+               <button class="featured__item" data-filter=".corvette">
+                   <img src="assets/img/brands/corvette.png" alt="">
+               </button>
+           </li>
+
+           <li>
+               <button class="featured__item" data-filter=".alfa-romeo">
+                   <img src="assets/img/brands/alfa-romeo.png" alt="">
+               </button>
+           </li>
+
+           <li>
+               <button class="featured__item" data-filter=".gennesis">
+                   <img src="assets/img/brands/genesis.png" alt="">
+               </button>
+           </li>
+
+
+           <li>
+               <button class="featured__item" data-filter=".lexus">
+                   <img src="assets/img/brands/lexus.png" alt="">
+               </button>
+           </li>
+
+
+           <li>
+               <button class="featured__item" data-filter=".lotus">
+                   <img src="assets/img/brands/lotus.png" alt="">
+               </button>
+           </li>
+
+
+           <li>
+               <button class="featured__item" data-filter=".koenigsegg">
+                   <img src="assets/img/brands/koenigsegg.png" alt="">
+               </button>
+           </li>
+
+
+
+           <li>
+               <button class="featured__item" data-filter=".mercedes">
+                   <img src="assets/img/brands/mercedes.png" alt="">
+               </button>
+           </li>
+
+
+           <li>
+               <button class="featured__item" data-filter=".bmw">
+                   <img src="assets/img/brands/bmw.png" alt="">
+               </button>
+           </li>
+       </ul>
+
+       <!-- Conținutul filtrat -->
+        <div class="featured__content grid">
+            <article class="featured__card mix tesla">
+                <h1 class="featured__title">Tesla</h1>
+                <h3 class="featured__subtitle">Model X</h3>
+                <img src="assets/img/featured1.png" alt="" class="featured__img">
+                <h3 class="featured__price">€108,990</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix tesla">
+                <h1 class="featured__title">Tesla</h1>
+                <h3 class="featured__subtitle">Model Y</h3>
+                <img src="assets/img/tesla-model-y.png" alt="" class="featured__img">
+                <h3 class="featured__price">€56,990</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix tesla">
+                <h1 class="featured__title">Tesla</h1>
+                <h3 class="featured__subtitle">Model S</h3>
+                <img src="assets/img/tesla-model-s.png" alt="" class="featured__img">
+                <h3 class="featured__price">€94,990</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix lotus">
+                <h1 class="featured__title">Lotus</h1>
+                <h3 class="featured__subtitle">Emira</h3>
+                <img src="assets/img/lotusemira.png" alt="" class="featured__img">
+                <h3 class="featured__price">€89,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix lotus">
+                <h1 class="featured__title">Lotus</h1>
+                <h3 class="featured__subtitle">Seletre</h3> <br>
+                <img src="assets/img/lotuseletre.png" alt="" class="featured__img">
+                <h3 class="featured__price">€112,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix lotus">
+                <h1 class="featured__title">Lotus</h1>
+                <h3 class="featured__subtitle">Elise</h3>
+                <img src="assets/img/lotuselise.png" alt="" class="featured__img">
+                <h3 class="featured__price">€65,800</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">Q3</h3>
+                <img src="assets/img/audiq3.png" alt="" class="featured__img">
+                <h3 class="featured__price">€38,750</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">Q7</h3>
+                <img src="assets/img/audiq7.png" alt="" class="featured__img">
+                <h3 class="featured__price">€73,200</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">R8</h3>
+                <img src="assets/img/audir8.png" alt="" class="featured__img">
+                <h3 class="featured__price">€198,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">RS4</h3>
+                <img src="assets/img/audirs4b8.png" alt="" class="featured__img">
+                <h3 class="featured__price">€29,300</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">RS5</h3> <br>
+                <img src="assets/img/audirs5.png" alt="" class="featured__img">
+                <h3 class="featured__price">€26,400</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">RSQ8</h3> <br>
+                <img src="assets/img/audirsq8.png" alt="" class="featured__img">
+                <h3 class="featured__price">€135,700</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">ES</h3> <br>
+                <img src="assets/img/lexuses.png" alt="" class="featured__img">
+                <h3 class="featured__price">€45,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">IS</h3> <br>
+                <img src="assets/img/lexusis.png" alt="" class="featured__img">
+                <h3 class="featured__price">€42,800</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">LC</h3> <br>
+                <img src="assets/img/lexuslc.png" alt="" class="featured__img">
+                <h3 class="featured__price">€98,750</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">LFA</h3>
+                <img src="assets/img/lexuslfa.png" alt="" class="featured__img">
+                <h3 class="featured__price">€450,000</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">LX</h3> <br>
+                <img src="assets/img/lexuslx.png" alt="" class="featured__img">
+                <h3 class="featured__price">€98,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">UX h</h3> <br>
+                <img src="assets/img/lexusuxh.png" alt="" class="featured__img">
+                <h3 class="featured__price">€38,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">918 Spyder</h3> <br> <br><br>
+                <img src="assets/img/porsche918.png" alt="" class="featured__img">
+                <h3 class="featured__price">€1,200,000</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">4C</h3> <br>
+                <img src="assets/img/4c.png" alt="" class="featured__img">
+                <h3 class="featured__price">€68,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">33 Stradale</h3>
+                <img src="assets/img/33stradale.png" alt="" class="featured__img">
+                <h3 class="featured__price">€2,000,000</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">Giulia</h3>
+                <img src="assets/img/giulia.png" alt="" class="featured__img">
+                <h3 class="featured__price">€39,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">Tonale</h3>
+                <img src="assets/img/tonale.png" alt="" class="featured__img">
+                <h3 class="featured__price">€42,400</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">Stelvio</h3>
+                <img src="assets/img/stelvio.png" alt="" class="featured__img">
+                <h3 class="featured__price">€44,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Gennesis</h1>
+                <h3 class="featured__subtitle">G70 Shooting Brake</h3>
+                <img src="assets/img/gennesisg70shootingbrake.png" alt="" class="featured__img">
+                <h3 class="featured__price">€48,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Gennesis</h1>
+                <h3 class="featured__subtitle">G80</h3>
+                <img src="assets/img/gennesisg80.png" alt="" class="featured__img">
+                <h3 class="featured__price">€52,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Gennesis</h1>
+                <h3 class="featured__subtitle">G90</h3> <br>
+                <img src="assets/img/gennesisg90.png" alt="" class="featured__img">
+                <h3 class="featured__price">€68,700</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Gennesis</h1>
+                <h3 class="featured__subtitle">G90 Long Wheelbase</h3>
+                <img src="assets/img/gennesisg90longwheelbase.png" alt="" class="featured__img">
+                <h3 class="featured__price">€75,800</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Gennesis</h1>
+                <h3 class="featured__subtitle">GV60</h3>
+                <img src="assets/img/gennesisgv60.png" alt="" class="featured__img">
+                <h3 class="featured__price">€59,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Gennesis</h1>
+                <h3 class="featured__subtitle">GV70</h3>
+                <img src="assets/img/gennesisgv70.png" alt="" class="featured__img">
+                <h3 class="featured__price">€49,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes</h1>
+                <h3 class="featured__subtitle">S400d</h3> <br> <br>
+                <img src="assets/img/s400d.png" alt="" class="featured__img">
+                <h3 class="featured__price">€104,600</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes</h1>
+                <h3 class="featured__subtitle">E55 AMG</h3> <br>
+                <img src="assets/img/e55-amg.png" alt="" class="featured__img">
+                <h3 class="featured__price">€25,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes</h1>
+                <h3 class="featured__subtitle">S580</h3> <br> <br><br>
+                <img src="assets/img/s580.png" alt="" class="featured__img">
+                <h3 class="featured__price">€120,900</h3>
+                <button class="button featured__button" onclick="window.location.href='s580.html'">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes</h1>
+                <h3 class="featured__subtitle">G65 AMG</h3> <br> <br> <br>
+                <img src="assets/img/g65-amg.png" alt="" class="featured__img">
+                <h3 class="featured__price">€245,000</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes</h1>
+                <h3 class="featured__subtitle">C63 AMG</h3> <br>  <br>
+                <img src="assets/img/mercedes-c63-w204.png" alt="" class="featured__img">
+                <h3 class="featured__price">€28,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes</h1>
+                <h3 class="featured__subtitle">C43 AMG</h3>  <br>
+                <img src="assets/img/mercedes-c63-w206.png" alt="" class="featured__img">
+                <h3 class="featured__price">€68,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes</h1>
+                <h3 class="featured__subtitle">CLS63 AMG</h3>
+                <img src="assets/img/cls63-amg.png" alt="" class="featured__img">
+                <h3 class="featured__price">€41,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes</h1>
+                <h3 class="featured__subtitle">S63 SMG</h3>
+                <img src="assets/img/s63-amg-w221.png" alt="" class="featured__img">
+                <h3 class="featured__price">€28,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">X5</h3> <br> <br>
+                <img src="assets/img/x5.png" alt="" class="featured__img">
+                <h3 class="featured__price">€72,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">M6</h3> <br> <br>
+                <img src="assets/img/bmw-m6.png" alt="" class="featured__img">
+                <h3 class="featured__price">€45,800</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">X6</h3> <br> <br>
+                <img src="assets/img/bmw-x6.png" alt="" class="featured__img">
+                <h3 class="featured__price">€78,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">M5</h3> <br> <br>
+                <img src="assets/img/bmw-m5-e60.png" alt="" class="featured__img">
+                <h3 class="featured__price">€28,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">M8</h3> <br> <br> <br>
+                <img src="assets/img/bmw-m8.png" alt="" class="featured__img">
+                <h3 class="featured__price">€105,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">M3</h3> <br>
+                <img src="assets/img/bmw-m3-e92.png" alt="" class="featured__img">
+                <h3 class="featured__price">€29,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix corvette">
+                <h1 class="featured__title">Corvette</h1>
+                <h3 class="featured__subtitle">Z51</h3> <br> <br> <br>
+                <img src="assets/img/corvettez51.png" alt="" class="featured__img">
+                <h3 class="featured__price">€89,500</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix corvette">
+                <h1 class="featured__title">Corvette</h1>
+                <h3 class="featured__subtitle">C8</h3> <br> <br> <br>
+                <img src="assets/img/corvettezc8.png" alt="" class="featured__img">
+                <h3 class="featured__price">€84,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix corvette">
+                <h1 class="featured__title">Corvette</h1>
+                <h3 class="featured__subtitle">Stingray C7</h3> <br><br>
+                <img src="assets/img/corvettestingrayc7.png" alt="" class="featured__img">
+                <h3 class="featured__price">€69,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix koenigsegg">
+                <h1 class="featured__title">Koenigsegg</h1>
+                <h3 class="featured__subtitle">CC 850</h3> <br><br> <br>  <br> <br>
+                <img src="assets/img/koenigsegg-cc850.png" alt="" class="featured__img">
+                <h3 class="featured__price">€3,200,000</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix koenigsegg">
+                <h1 class="featured__title">Koenigsegg</h1>
+                <h3 class="featured__subtitle">Gemera</h3> <br><br>
+                <img src="assets/img/koenigsegg-gemera.png" alt="" class="featured__img">
+                <h3 class="featured__price">€1,700,000</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix koenigsegg">
+                <h1 class="featured__title">Koenigsegg</h1>
+                <h3 class="featured__subtitle">Jesko Attack</h3> <br><br> <br>
+                <img src="assets/img/koenigsegg-jesko-attack.png" alt="" class="featured__img">
+                <h3 class="featured__price">€2,800,000</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Turbo S</h3> <br><br><br> <br><br>
+                <img src="assets/img/popular1.png" alt="" class="featured__img">
+                <h3 class="featured__price">€225,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Taycan</h3> <br> <br> <br> <br> <br>
+                <img src="assets/img/popular2.png" alt="" class="featured__img">
+                <h3 class="featured__price">€89,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Turbo S Cross</h3>
+                <img src="assets/img/popular3.png" alt="" class="featured__img">
+                <h3 class="featured__price">€205,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Boxster 718</h3>
+                <img src="assets/img/popular4.png" alt="" class="featured__img">
+                <h3 class="featured__price">€62,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Cayman</h3>
+                <img src="assets/img/popular5.png" alt="" class="featured__img">
+                <h3 class="featured__price">€67,900</h3>
+                <button class="button featured__button">
+                    <i class="ri-shopping-bag-2-line"></i>
+                </button>
+            </article>
+
+
+
+
+
+
+
+       </div>
+   </div>
+</section>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+        <div class="footer__container container grid">
+            <div class="footer__content">
+              <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+                <p class="footer__description">Oferim cele mai bune mașini ale celor mai recunoscute branduri din lume.</p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Companie</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Despre</a></li>
+                    <li><a href="#" class="footer__link">Mașini</a></li>
+                    <li><a href="#" class="footer__link">Istoric</a></li>
+                    <li><a href="#" class="footer__link">Magazin</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Informații</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Solicită o ofertă</a></li>
+                    <li><a href="#" class="footer__link">Găsește un dealer</a></li>
+                    <li><a href="#" class="footer__link">Contactează-ne</a></li>
+                    <li><a href="#" class="footer__link">Servicii</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Urmărește-ne</h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-twitter-line"></i></a>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy"></span>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/inventory-filter.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/site-nav.js"></script>
+    <script src="assets/js/main-stoc.js"></script>
+  </body>
+  </html>

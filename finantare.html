@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Estimează orientativ finanțarea unei mașini cu instrumentul demonstrativ CarZone.">
+        <meta name="theme-color" content="#0a0a0b">
+        <link rel="canonical" href="https://car-zone-five.vercel.app/finantare.html">
+        <meta property="og:title" content="Calculator de finanțare — CarZone">
+        <meta property="og:description" content="Estimează orientativ finanțarea unei mașini cu instrumentul demonstrativ CarZone.">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="CarZone">
+        <meta property="og:url" content="https://car-zone-five.vercel.app/finantare.html">
+        <meta property="og:image" content="https://car-zone-five.vercel.app/assets/img/offer-bg.png">
+        <meta property="og:image:alt" content="Calculatorul demonstrativ de finanțare CarZone">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Calculator de finanțare — CarZone">
+        <meta name="twitter:description" content="Estimează orientativ finanțarea unei mașini cu instrumentul demonstrativ CarZone.">
+        <meta name="twitter:image" content="https://car-zone-five.vercel.app/assets/img/offer-bg.png">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/carzone.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== STYLESHEET ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles-finantare.css">
+
+    <title>Finanțare - CarZone</title>
+
+</head>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+      <nav class="nav container">
+          <a href="index.html" class="nav__logo">
+              <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+          </a>
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="index.html" class="nav__link">Acasă</a></li>
+                  <li class="nav__item"><a href="stoc.html" class="nav__link">Mașini pe stoc</a></li>
+                  <li class="nav__item"><a href="comanda.html" class="nav__link">Mașini la comandă</a></li>
+                  <li class="nav__item"><a href="vinde.html" class="nav__link">Vinde-ți mașina</a></li>
+                  <li class="nav__item"><a href="finantare.html" class="nav__link active-link">Finanțare</a></li>
+                  <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+              </ul>
+              <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+          </div>
+          <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+      </nav>
+  </header>
+    <!--==================== VIDEO BACKGROUND SECTION ====================-->
+<section class="video-section">
+    <div class="video-container">
+        <!-- Videoclipul ca fundal -->
+        <video autoplay loop muted playsinline preload="metadata" class="video-bg">
+            <source src="assets/img/porsche992gt3.mp4" type="video/mp4">
+            Videoclipul nu este susținut de browserul tău.
+        </video>
+
+        <!-- Suprapunerea semi-transparentă pentru text lizibil -->
+        <div class="video-overlay"></div>
+
+        <!-- Text deasupra videoclipului -->
+        <div class="video-content">
+            <h1 class="video-title">Finanțare</h1>
+            <p class="video-subtitle">Ești interesat de o metodă de finanțare pentru a achiziționa mașina dorită? Noi te putem ajuta!</p>
+            <p class="video-subtitle">Oferim finanțare atât pentru persoane fizice, cât și pentru persoane juridice, în termeni foarte avantajoși.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!--==================== FINANCING OPTIONS SECTION ====================-->
+    <section class="financing-options container">
+        <div class="financing-card">
+            <i class="ri-user-line"></i>
+            <h2>Persoana Fizică</h2>
+            <p>Poți opta pentru un credit auto sau leasing operational doar cu cartea de identitate.</p>
+            <ul>
+                <li>Avans între 0 - 70%</li>
+                <li>Se acceptă venituri declarate la ANAF</li>
+                <li>Se acceptă venituri din străinătate</li>
+            </ul>
+        </div>
+        <div class="financing-card">
+            <i class="ri-building-line"></i>
+            <h2>Persoana Juridică</h2>
+            <p>Firma trebuie să fie înființată în România, să fie pe profit și să aibă bilanț închis.</p>
+            <ul>
+                <li>Avans între 20 - 70%</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--==================== FINANCING CALCULATOR SECTION ====================-->
+    <section class="calculator-section container">
+    <h2>Calculator Finanțare</h2>
+    <p>Folosește formularul pentru a calcula valoarea ratelor.</p>
+    <form class="calculator-form">
+        <div class="form-group">
+            <label for="loan-amount">Suma totală (EUR)</label>
+            <input type="number" id="loan-amount" placeholder="Ex: 10000" required>
+        </div>
+        <div class="form-group">
+            <label for="advance">Avans (EUR)</label>
+            <input type="number" id="advance" placeholder="Ex: 2000" required>
+        </div>
+        <div class="form-group">
+            <label for="interest-rate">Dobândă (%)</label>
+            <input type="number" id="interest-rate" placeholder="Ex: 5" required>
+        </div>
+        <div class="form-group">
+            <label for="loan-term">Durata (ani)</label>
+            <input type="number" id="loan-term" placeholder="Ex: 5" required>
+        </div>
+        <button type="submit" class="calculate-btn">Calculează</button>
+    </form>
+    <div class="calculator-results">
+        <p>Total Dobândă: <span id="total-interest">0</span> EUR</p>
+        <p>Rata lunară: <span id="monthly-payment">0</span> EUR</p>
+        <p>Total de plată: <span id="total-payment">0</span> EUR</p>
+    </div>
+</section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+        <div class="footer__container container grid">
+            <div class="footer__content">
+              <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+                <p class="footer__description">Oferim cele mai bune mașini ale celor mai recunoscute branduri din lume.</p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Companie</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Despre</a></li>
+                    <li><a href="#" class="footer__link">Mașini</a></li>
+                    <li><a href="#" class="footer__link">Istoric</a></li>
+                    <li><a href="#" class="footer__link">Magazin</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Informații</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Solicită o ofertă</a></li>
+                    <li><a href="#" class="footer__link">Găsește un dealer</a></li>
+                    <li><a href="#" class="footer__link">Contactează-ne</a></li>
+                    <li><a href="#" class="footer__link">Servicii</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Urmărește-ne</h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-twitter-line"></i></a>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy"></span>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/site-nav.js"></script>
+    <script src="assets/js/main-finantare.js"></script>
+  </body>
+  </html>

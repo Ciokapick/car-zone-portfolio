@@ -1,0 +1,274 @@
+@import url("styles.css");
+
+/* Stiluri generale pentru calculator */
+
+
+.calculator-section h2 {
+    font-size: 1.8rem;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+.calculator-section p {
+    font-size: 1rem;
+    color: var(--text-color-light);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* Formular pentru calculator */
+.calculator-form {
+    display: grid;
+    gap: 1rem; /* Ajustează distanța dintre câmpuri */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--text-color-light);
+    border-radius: 0.5rem;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--first-color);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Buton pentru calculator */
+.calculate-btn {
+    padding: 0.75rem 2rem;
+    background-color: var(--first-color);
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.calculate-btn:hover {
+    background-color: var(--first-color-alt);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+}
+
+/* Rezultate pentru calculator */
+/* Stiluri generale pentru calculator */
+.calculator-section {
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Lățimea maximă a calculatorului */
+    margin: 2rem auto; /* Centrează calculatorul */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* Titlul și subtitlul calculatorului */
+.calculator-section h2 {
+    font-size: 1.8rem;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+.calculator-section p {
+    font-size: 1rem;
+    color: var(--text-color-light);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* Formular pentru calculator */
+.calculator-form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Stiluri pentru grupurile de câmpuri */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--text-color-light);
+    border-radius: 0.5rem;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--first-color);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Buton pentru calculator */
+.calculate-btn {
+    padding: 0.75rem 2rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Colțuri rotunjite mari */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold; /* Adaugă text îngroșat */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: center;
+  }
+
+    .calculate-btn:hover {
+        background-color: #2980b9;
+        transform: translateY(-3px);
+    }
+
+/* Rezultate pentru calculator */
+.calculator-results {
+    margin-top: 2rem;
+    background-color: var(--body-color);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.calculator-results p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.calculator-results span {
+    font-weight: bold;
+    color: var(--first-color);
+}
+
+
+/* Stiluri pentru cardurile de opțiuni */
+.financing-options {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.financing-card {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.financing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.financing-card i {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.financing-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #3498db;
+}
+
+.financing-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.financing-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.financing-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Stiluri pentru secțiunea video */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.video-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.video-subtitle {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,302 @@
+/* Importă stilurile generale */
+@import url("styles.css");
+
+/* Stiluri specifice pentru pagina de contact */
+/* General contact section styling */
+.contact {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Contact Information Styling */
+.contact__info {
+    text-align: left;
+}
+
+.contact__info-title {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+.contact__info-description {
+    font-size: 1rem;
+    color: var(--text-color-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.contact__details {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact__detail {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.contact__detail i {
+    color: var(--first-color);
+    font-size: 1.5rem;
+}
+
+/* Contact Form Styling */
+.contact__form {
+    background-color: var(--container-color);
+    padding: 2.5rem;
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s;
+}
+
+.contact__form:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.contact__inputs {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact__label {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+}
+
+.contact__input {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color-light);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem; /* Rounded input corners */
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact__input:focus {
+    border-color: var(--first-color);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Blue focus glow */
+}
+
+textarea.contact__input {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px; /* Minimum height for the textarea */
+}
+
+
+/* Stiluri pentru secțiunea video */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupă toată înălțimea vizibilă a ferestrei */
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustează opacitatea */
+    z-index: 1;
+}
+
+.video-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.video-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.video-subtitle {
+    font-size: 1.5rem;
+}
+
+/* Stiluri pentru formularul de contact */
+.contact {
+    padding: 4rem 0;
+    background-color: var(--body-color);
+}
+
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact__form {
+    background-color: var(--container-color);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact__inputs {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact__label {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+}
+/* Stiluri pentru alinierea textului la dreapta în formular */
+.contact__form {
+    background-color: var(--container-color);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Aliniere text la dreapta */
+}
+
+.contact__label {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    text-align: left;; /* Aliniere text etichete la dreapta */
+}
+
+.contact__input {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color-light);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    width: 100%; /* Asigură lățimea completă a inputurilor */
+}
+
+.contact__input {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color-light);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+
+
+
+/* Button Styling */
+.button {
+    background-color: #3498db; /* Fundal albastru */
+    color: #fff; /* Text alb */
+    border: 2px solid #3498db; /* Bordură albastră */
+    padding: 0.75rem 2rem; /* Dimensiuni ajustate */
+    margin-top: 1.5rem; /* Distanță deasupra butonului */
+    border-radius: 2rem; /* Colțuri rotunjite */
+    cursor: pointer;
+    font-size: 1rem; /* Dimensiunea textului */
+    font-weight: bold; /* Text îngroșat */
+    transition: all 0.3s ease; /* Tranziții pentru toate proprietățile */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Glow subtil */
+}
+
+/* Efect de hover */
+.button:hover {
+    background-color: #2980b9; /* Fundal albastru mai închis */
+    border-color: #2980b9; /* Bordură mai închisă */
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.8); /* Glow intens */
+    transform: translateY(-3px); /* Ridicare ușoară */
+}
+
+/* Efect de focus */
+.button:focus {
+    outline: none; /* Eliminare contur implicit */
+    box-shadow: 0 0 20px rgba(52, 152, 219, 1); /* Glow foarte intens */
+}
+
+.contact__info {
+    text-align: left;
+}
+
+.contact__info-title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1rem;
+    color: var(--title-color);
+}
+
+.contact__info-description {
+    font-size: var(--normal-font-size);
+    color: var(--text-color-light);
+    margin-bottom: 1.5rem;
+}
+
+.contact__details {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact__detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+.contact__detail i {
+    color: var(--first-color);
+    font-size: 1.25rem;
+}
+.form-honeypot {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+}
+
+.form-status { margin-bottom: 1.25rem; padding: 1rem 1.1rem; border: 1px solid currentColor; border-radius: .75rem; line-height: 1.5; }
+.form-status--success { color: #63d79a; background: rgba(99, 215, 154, .08); }
+.form-status--error { color: #ff8f8f; background: rgba(255, 143, 143, .08); }

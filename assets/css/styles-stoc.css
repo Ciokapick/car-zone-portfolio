@@ -1,0 +1,92 @@
+@import url("styles.css");
+
+
+/* Stiluri pentru secțiunea video */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.video-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.video-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.video-subtitle {
+    font-size: 1.5rem;
+}
+
+/* Bara de căutare */
+.featured__search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.search__icon {
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search__icon:hover {
+    transform: scale(1.1);
+}
+
+.search__bar {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--text-color-light);
+    border-radius: 20px;
+    width: 250px;
+    display: none;
+}
+
+.search__bar.hidden {
+    display: none;
+}
