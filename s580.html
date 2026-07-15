@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prezentare detaliată Mercedes-Benz S580 în conceptul auto CarZone.">
+    <meta name="description" data-i18n-content="meta.s580.desc" content="Detailed Mercedes-Benz S580 presentation in the CarZone automotive concept.">
     <meta name="theme-color" content="#0a0a0b">
     <link rel="canonical" href="https://car-zone-five.vercel.app/s580.html">
     <meta property="og:title" content="Mercedes-Benz S580 — CarZone">
-    <meta property="og:description" content="Prezentare detaliată Mercedes-Benz S580 în conceptul auto CarZone.">
+    <meta property="og:description" content="Detailed Mercedes-Benz S580 presentation in the CarZone automotive concept.">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="CarZone">
     <meta property="og:url" content="https://car-zone-five.vercel.app/s580.html">
     <meta property="og:image" content="https://car-zone-five.vercel.app/assets/img/s/1.jpg">
-    <meta property="og:image:alt" content="Mercedes-Benz S580 prezentat în CarZone">
+    <meta property="og:image:alt" content="Mercedes-Benz S580 presented in CarZone">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mercedes-Benz S580 — CarZone">
-    <meta name="twitter:description" content="Prezentare detaliată Mercedes-Benz S580 în conceptul auto CarZone.">
+    <meta name="twitter:description" content="Detailed Mercedes-Benz S580 presentation in the CarZone automotive concept.">
     <meta name="twitter:image" content="https://car-zone-five.vercel.app/assets/img/s/1.jpg">
 
     <!--=============== FAVICON ===============-->
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=3">
     <link rel="stylesheet" href="assets/css/styles-stoc.css">
 
     <title>Mercedes-Benz S580 - CarZone</title>
@@ -456,16 +456,21 @@
             </a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Acasă</a></li>
-                    <li class="nav__item"><a href="stoc.html" class="nav__link">Mașini pe stoc</a></li>
-                    <li class="nav__item"><a href="comanda.html" class="nav__link">Mașini la comandă</a></li>
-                    <li class="nav__item"><a href="vinde.html" class="nav__link">Vinde-ți mașina</a></li>
-                    <li class="nav__item"><a href="finantare.html" class="nav__link">Finanțare</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link" data-i18n="nav.home">Home</a></li>
+                    <li class="nav__item"><a href="stoc.html" class="nav__link" data-i18n="nav.stock">Inventory</a></li>
+                    <li class="nav__item"><a href="comanda.html" class="nav__link" data-i18n="nav.order">Custom order</a></li>
+                    <li class="nav__item"><a href="vinde.html" class="nav__link" data-i18n="nav.sell">Sell your car</a></li>
+                    <li class="nav__item"><a href="finantare.html" class="nav__link" data-i18n="nav.financing">Financing</a></li>
                     <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
-                <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+                <div class="nav__lang" role="group" aria-label="Language selection" data-i18n-aria="nav.langLabel">
+                      <button type="button" class="nav__lang-btn active-lang" data-lang="en" aria-pressed="true">EN</button>
+                      <span aria-hidden="true">/</span>
+                      <button type="button" class="nav__lang-btn" data-lang="ro" aria-pressed="false">RO</button>
+                  </div>
+                  <button type="button" class="nav__close" id="nav-close" aria-label="Close menu" data-i18n-aria="aria.closeMenu"><i class="ri-close-line" aria-hidden="true"></i></button>
             </div>
-            <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+            <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu" data-i18n-aria="aria.openMenu" aria-expanded="false" aria-controls="nav-menu"><i class="ri-menu-line" aria-hidden="true"></i></button>
         </nav>
     </header>
 
@@ -478,7 +483,7 @@
         <!-- Videoclipul ca fundal -->
         <video autoplay loop muted playsinline preload="metadata" class="video-bg">
             <source src="assets/img/w223.mp4" type="video/mp4">
-            Videoclipul nu este susținut de browserul tău.
+            Your browser does not support this video.
         </video>
 
         <!-- Suprapunerea semi-transparentă pentru text lizibil -->
@@ -588,19 +593,19 @@
                     <div class="car-detail__stats">
                         <div class="car-detail__stat">
                             <span class="car-detail__stat-number">2023</span>
-                            <span class="car-detail__stat-label">An</span>
+                            <span class="car-detail__stat-label" data-i18n="s580.stat.year">Year</span>
                         </div>
                         <div class="car-detail__stat">
                             <span class="car-detail__stat-number">30,000</span>
                             <span class="car-detail__stat-label">KM</span>
                         </div>
                         <div class="car-detail__stat">
-                            <span class="car-detail__stat-number">Benzină</span>
-                            <span class="car-detail__stat-label">Combustibil</span>
+                            <span class="car-detail__stat-number" data-i18n="common.petrol">Petrol</span>
+                            <span class="car-detail__stat-label" data-i18n="s580.stat.fuel">Fuel</span>
                         </div>
                         <div class="car-detail__stat">
-                            <span class="car-detail__stat-number">496 CP</span>
-                            <span class="car-detail__stat-label">Putere</span>
+                            <span class="car-detail__stat-number" data-i18n="s580.stat.powerValue">496 HP</span>
+                            <span class="car-detail__stat-label" data-i18n="common.power">Power</span>
                         </div>
                     </div>
 
@@ -614,20 +619,20 @@
                             <i class="ri-chat-3-line"></i> Chat Online
                         </button>
                         <button class="car-detail__button car-detail__button--secondary">
-                            <i class="ri-file-text-line"></i> Raport Vehicul
+                            <i class="ri-file-text-line"></i> <span data-i18n="s580.btn.report">Vehicle report</span>
                         </button>
                         <button class="car-detail__button car-detail__button--secondary">
-                            <i class="ri-history-line"></i> Istoric Reprezentanță
+                            <i class="ri-history-line"></i> <span data-i18n="s580.btn.history">Service history</span>
                         </button>
                     </div>
                 </div>
 
             <div class="car-detail__specs container">
                 <div class="specs-section">
-                    <h3 class="specs-title">Informații de bază</h3>
+                    <h3 class="specs-title" data-i18n="s580.sec.basic">Basic information</h3>
                     <div class="specs-grid">
                         <div class="spec-item">
-                            <span class="spec-label">Marcă</span>
+                            <span class="spec-label" data-i18n="s580.spec.make">Make</span>
                             <span class="spec-value">Mercedes-Benz</span>
                         </div>
                         <div class="spec-item">
@@ -639,54 +644,54 @@
                             <span class="spec-value">W1K2223033131A155375</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Anul producției</span>
+                            <span class="spec-label" data-i18n="s580.spec.prodYear">Production year</span>
                             <span class="spec-value">2023</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Prima înmatriculare</span>
+                            <span class="spec-label" data-i18n="s580.spec.firstReg">First registration</span>
                             <span class="spec-value">15.03.2023</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Capacitatea motorului</span>
+                            <span class="spec-label" data-i18n="s580.spec.engine">Engine capacity</span>
                             <span class="spec-value">3.982 cm³</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="specs-section">
-                    <h3 class="specs-title">Specificații tehnice</h3>
+                    <h3 class="specs-title" data-i18n="s580.sec.tech">Technical specifications</h3>
                     <div class="specs-grid">
                         <div class="spec-item">
-                            <span class="spec-label">Putere</span>
-                            <span class="spec-value">496 CP</span>
+                            <span class="spec-label" data-i18n="common.power">Power</span>
+                            <span class="spec-value" data-i18n="s580.stat.powerValue">496 HP</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Cutie de viteze</span>
-                            <span class="spec-value">Automată</span>
+                            <span class="spec-label" data-i18n="s580.spec.gearbox">Gearbox</span>
+                            <span class="spec-value" data-i18n="common.automatic">Automatic</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Combustibil</span>
-                            <span class="spec-value">Benzină + Mild-Hybrid</span>
+                            <span class="spec-label" data-i18n="s580.stat.fuel">Fuel</span>
+                            <span class="spec-value" data-i18n="s580.spec.fuelValue">Petrol + mild hybrid</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Culoare</span>
-                            <span class="spec-value">Negru Obsidian</span>
+                            <span class="spec-label" data-i18n="s580.spec.color">Color</span>
+                            <span class="spec-value" data-i18n="s580.spec.colorValue">Obsidian Black</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Garanție</span>
-                            <span class="spec-value">24 Luni Garanție</span>
+                            <span class="spec-label" data-i18n="footer.warranty">Warranty</span>
+                            <span class="spec-value" data-i18n="s580.spec.warrantyValue">24-month warranty</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Tracțiune</span>
+                            <span class="spec-label" data-i18n="s580.spec.traction">Drivetrain</span>
                             <span class="spec-value">4x4 - 4MATIC</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="specs-section">
-                    <h3 class="specs-title">Performanță și dinamică</h3>
+                    <h3 class="specs-title" data-i18n="s580.sec.perf">Performance & dynamics</h3>
                     <ul class="features-list">
-                      <li>Motor benzină 4.0L V8 biturbo cu EQ Boost - mild-hybrid</li>
+                      <li data-i18n="s580.perf.engine">4.0L V8 biturbo petrol engine with EQ Boost - mild hybrid</li>
                         <li>4MATIC all-wheel drive</li>
                         <li>9G-TRONIC automatic transmission</li>
                         <li>AIRMATIC semi-active suspension - comfort and stability</li>
@@ -697,82 +702,82 @@
                 </div>
 
                 <div class="specs-section">
-                    <h3 class="specs-title">Confort și funcționalitate</h3>
+                    <h3 class="specs-title" data-i18n="s580.sec.comfort">Comfort & convenience</h3>
                     <ul class="features-list">
-                        <li>Scaune față încălzite cu reglaj electric lumbar</li>
-                        <li>Aer condiționat dual-zone</li>
-                        <li>Climatizare automată multi-zone</li>
-                        <li>Plafon panoramic glisant automatic</li>
-                        <li>Volan încărcat în piele Supersport</li>
-                        <li>Iluminare ambientală premium</li>
-                        <li>Încărcare wireless pentru telefon în consola centrală</li>
-                        <li>Portbagaj cu blocare automată</li>
-                        <li>Oglinzi exterioare și interioare cu atenuare automată</li>
-                        <li>Geamuri atermice cu protecție IR</li>
-                        <li>Parbriz încălzit și spălătoare cu duze încălzite</li>
-                        <li>Spălare parbriz cu rezervor fluid</li>
-                        <li>Geamuri fumurii cu protecție IR</li>
-                        <li>Sistem audio premium</li>
-                        <li>Protecție logo Mercedes-Benz la deschiderea ușilor</li>
-                        <li>Tavă în portbagaj</li>
-                        <li>Tapițerie din piele bej/semi-anilină</li>
-                        <li>Garnitură interioară în aluminiu/negru - stil metalic</li>
-                        <li>Covorașe AMG originale</li>
+                        <li data-i18n="s580.comfort.1">Heated front seats with electric lumbar adjustment</li>
+                        <li data-i18n="s580.comfort.2">Dual-zone air conditioning</li>
+                        <li data-i18n="s580.comfort.3">Multi-zone automatic climate control</li>
+                        <li data-i18n="s580.comfort.4">Automatic panoramic sliding sunroof</li>
+                        <li data-i18n="s580.comfort.5">Supersport leather-wrapped steering wheel</li>
+                        <li data-i18n="s580.comfort.6">Premium ambient lighting</li>
+                        <li data-i18n="s580.comfort.7">Wireless phone charging in the center console</li>
+                        <li data-i18n="s580.comfort.8">Trunk with automatic locking</li>
+                        <li data-i18n="s580.comfort.9">Auto-dimming exterior and interior mirrors</li>
+                        <li data-i18n="s580.comfort.10">Athermal glass with IR protection</li>
+                        <li data-i18n="s580.comfort.11">Heated windshield and heated washer nozzles</li>
+                        <li data-i18n="s580.comfort.12">Windshield washer with fluid reservoir</li>
+                        <li data-i18n="s580.comfort.13">Tinted windows with IR protection</li>
+                        <li data-i18n="s580.comfort.14">Premium audio system</li>
+                        <li data-i18n="s580.comfort.15">Mercedes-Benz logo door sill protection</li>
+                        <li data-i18n="s580.comfort.16">Trunk storage tray</li>
+                        <li data-i18n="s580.comfort.17">Beige semi-aniline leather upholstery</li>
+                        <li data-i18n="s580.comfort.18">Aluminium/black interior trim - metallic style</li>
+                        <li data-i18n="s580.comfort.19">Genuine AMG floor mats</li>
                     </ul>
                 </div>
 
                 <div class="specs-section">
-                    <h3 class="specs-title">Siguranță și asistență la condus</h3>
+                    <h3 class="specs-title" data-i18n="s580.sec.safety">Safety & driver assistance</h3>
                     <ul class="features-list">
-                        <li>Pachet Driving Assistance (nivel de autonomie L2)</li>
-                        <li>DISTRONIC PLUS adaptive autopilot cu funcție stop-and-go</li>
+                        <li data-i18n="s580.safety.1">Driving Assistance package (L2 autonomy level)</li>
+                        <li data-i18n="s580.safety.2">DISTRONIC PLUS adaptive cruise control with stop-and-go</li>
                         <li>Active Lane Keep Assist</li>
-                        <li>Asistent schimbare bandă activ</li>
-                        <li>Asistent parcare activ cu cameră 360°</li>
-                        <li>Sistem de avertizare și intervenție pedestrian - active bonnet</li>
-                        <li>Sistem PRE-SAFE® Impulse Side pentru protecție laterală</li>
-                        <li>Asistent Stop de Urgență</li>
-                        <li>Cameră 360° + senzori de parcare față/spate</li>
-                        <li>Monitorizare presiune anvelope în timp real</li>
-                        <li>Sistem de apel de urgență Ecall</li>
-                        <li>Sistem de alarmă antifurt cu sirenă și senzori</li>
-                        <li>Închidere centralizată cu funcție KEYLESS-GO</li>
-                        <li>Airbag-uri laterale față și spate center</li>
-                        <li>Sistem activ de recunoaștere coridor de urgență</li>
-                        <li>Indicator stare centuri de siguranță pasageri spate</li>
-                        <li>Sistem scaune pentru copii ISOFIX (i-Size)</li>
-                        <li>Vestă reflectorizantă de siguranță inclusă</li>
+                        <li data-i18n="s580.safety.3">Active lane change assist</li>
+                        <li data-i18n="s580.safety.4">Active parking assist with 360° camera</li>
+                        <li data-i18n="s580.safety.5">Pedestrian warning and intervention system - active bonnet</li>
+                        <li data-i18n="s580.safety.6">PRE-SAFE® Impulse Side system for side-impact protection</li>
+                        <li data-i18n="s580.safety.7">Emergency stop assist</li>
+                        <li data-i18n="s580.safety.8">360° camera + front/rear parking sensors</li>
+                        <li data-i18n="s580.safety.9">Real-time tire pressure monitoring</li>
+                        <li data-i18n="s580.safety.10">eCall emergency call system</li>
+                        <li data-i18n="s580.safety.11">Anti-theft alarm with siren and sensors</li>
+                        <li data-i18n="s580.safety.12">Central locking with KEYLESS-GO</li>
+                        <li data-i18n="s580.safety.13">Front side and rear center airbags</li>
+                        <li data-i18n="s580.safety.14">Active emergency corridor recognition system</li>
+                        <li data-i18n="s580.safety.15">Rear passenger seat belt status indicator</li>
+                        <li data-i18n="s580.safety.16">ISOFIX child seat system (i-Size)</li>
+                        <li data-i18n="s580.safety.17">Reflective safety vest included</li>
                     </ul>
                 </div>
 
                 <div class="specs-section">
-                    <h3 class="specs-title">Tehnologie și infotainment</h3>
+                    <h3 class="specs-title" data-i18n="s580.sec.techno">Technology & infotainment</h3>
                     <ul class="features-list">
-                        <li>Sistem multimedia MBUX cu ecran central mare</li>
-                        <li>Navigație pe hard disk + actualizări OTA măsurabile</li>
-                        <li>Realitate augmentată pentru navigare</li>
-                        <li>Head-Up Display (afișare informații direct pe parbriz)</li>
-                        <li>Integrare smartphone Apple CarPlay & Android Auto</li>
-                        <li>Sistem de recunoaștere trafic</li>
-                        <li>Integrare smartphone + Pachet USB</li>
-                        <li>Conectivitate 4G și caracteristici online cu Mercedes Me Connect</li>
-                        <li>Servicii de acces la distanță (servicii la distanță)</li>
-                        <li>Recunoaștere voce pentru personalizarea profilului</li>
-                        <li>Personalizare sunet conform preferințelor utilizatorului</li>
+                        <li data-i18n="s580.techno.1">MBUX multimedia system with large central display</li>
+                        <li data-i18n="s580.techno.2">Hard-disk navigation + OTA updates</li>
+                        <li data-i18n="s580.techno.3">Augmented reality navigation</li>
+                        <li data-i18n="s580.techno.4">Head-Up Display (information projected onto the windshield)</li>
+                        <li data-i18n="s580.techno.5">Apple CarPlay & Android Auto smartphone integration</li>
+                        <li data-i18n="s580.techno.6">Traffic sign recognition system</li>
+                        <li data-i18n="s580.techno.7">Smartphone integration + USB package</li>
+                        <li data-i18n="s580.techno.8">4G connectivity and online features with Mercedes me connect</li>
+                        <li data-i18n="s580.techno.9">Remote access services</li>
+                        <li data-i18n="s580.techno.10">Voice recognition for profile personalization</li>
+                        <li data-i18n="s580.techno.11">Sound personalization to the user's preferences</li>
                     </ul>
                 </div>
 
                 <div class="specs-section">
-                    <h3 class="specs-title">Design și exterior</h3>
+                    <h3 class="specs-title" data-i18n="s580.sec.design">Design & exterior</h3>
                     <ul class="features-list">
-                        <li>Pachet AMG (exterior - front spoiler, side sills, aggressive elements)</li>
-                        <li>Pachet Night (elemente exterioare în negru lucios)</li>
-                        <li>Jante AMG originale cu design multispoke și anvelope mixte</li>
-                        <li>Anvelope de vară cu absorbție sonoră optimizată</li>
-                        <li>Finisaj MANALITE cu Diamond White exclusiv - finisaj metalic</li>
-                        <li>Proiecție simboluri, linii și animații prin farurile LED digitale</li>
-                        <li>Faruri LED digitale adaptate pentru traficul de dreapta</li>
-                        <li>Stopuri LED cu semnalizare dinamică</li>
+                        <li data-i18n="s580.design.1">AMG package (exterior - front spoiler, side sills, aggressive styling)</li>
+                        <li data-i18n="s580.design.2">Night package (gloss black exterior elements)</li>
+                        <li data-i18n="s580.design.3">Genuine AMG multi-spoke wheels with mixed tires</li>
+                        <li data-i18n="s580.design.4">Summer tires with optimized noise absorption</li>
+                        <li data-i18n="s580.design.5">MANALITE finish with exclusive Diamond White - metallic paint</li>
+                        <li data-i18n="s580.design.6">Symbols, lines and animations projected by the digital LED headlights</li>
+                        <li data-i18n="s580.design.7">Digital LED headlights adapted for right-hand traffic</li>
+                        <li data-i18n="s580.design.8">LED taillights with dynamic turn signals</li>
                     </ul>
                 </div>
             </div>
@@ -786,33 +791,33 @@
                 <a href="#" class="footer__logo">
                     <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
                 </a>
-                <p class="footer__description">
-                    Oferim cele mai bune mașini ale <br>
-                    celor mai recunoscute branduri din <br>
-                    lume.
+                <p class="footer__description" data-i18n="footer.descriptionBr">
+                    We offer the finest cars from <br>
+                    the world's most renowned <br>
+                    brands.
                 </p>
             </div>
 
             <div class="footer__content">
-                <h3 class="footer__title">
-                    Companie
+                <h3 class="footer__title" data-i18n="footer.company">
+                    Company
                 </h3>
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#" class="footer__link">Acasă</a>
+                        <a href="#" class="footer__link" data-i18n="nav.home">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Mașini pe stoc</a>
+                        <a href="#" class="footer__link" data-i18n="nav.stock">Inventory</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Mașini la comandă</a>
+                        <a href="#" class="footer__link" data-i18n="nav.order">Custom order</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Vinde-ți mașina</a>
+                        <a href="#" class="footer__link" data-i18n="nav.sell">Sell your car</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Finanțare</a>
+                        <a href="#" class="footer__link" data-i18n="nav.financing">Financing</a>
                     </li>
                     <li>
                         <a href="#" class="footer__link">Contact</a>
@@ -821,35 +826,35 @@
             </div>
 
             <div class="footer__content">
-                <h3 class="footer__title">
-                    Informații
+                <h3 class="footer__title" data-i18n="footer.info">
+                    Information
                 </h3>
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#" class="footer__link">Solicită o ofertă</a>
+                        <a href="#" class="footer__link" data-i18n="footer.requestOffer">Request a quote</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Găsește un dealer</a>
+                        <a href="#" class="footer__link" data-i18n="footer.findDealer">Find a dealer</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Contactează-ne</a>
+                        <a href="#" class="footer__link" data-i18n="footer.contactUs">Contact us</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Servicii</a>
+                        <a href="#" class="footer__link" data-i18n="footer.services">Services</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Termeni și condiții</a>
+                        <a href="#" class="footer__link" data-i18n="footer.terms">Terms & conditions</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Garanție</a>
+                        <a href="#" class="footer__link" data-i18n="footer.warranty">Warranty</a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer__content">
-                <h3 class="footer__title">
-                    Urmărește-ne
+                <h3 class="footer__title" data-i18n="footer.follow">
+                    Follow us
                 </h3>
 
                 <ul class="footer__social">
@@ -1295,6 +1300,7 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(list);
         });
     </script>
+    <script src="assets/js/i18n.js?v=6"></script>
     <script src="assets/js/site-nav.js"></script>
 </body>
 </html>

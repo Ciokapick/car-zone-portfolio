@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initFinancingPage() {
     // Selectăm formularul și câmpurile de input
     const loanAmountInput = document.getElementById("loan-amount");
     const interestRateInput = document.getElementById("interest-rate");
@@ -10,11 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const monthlyPaymentOutput = document.getElementById("monthly-payment");
     const totalPaymentOutput = document.getElementById("total-payment");
 
-    // Selectăm butonul de calcul
+    const calculatorForm = document.querySelector(".calculator-form");
     const calculateButton = document.querySelector(".calculate-btn");
 
-    // Adăugăm un eveniment de click pe butonul de calcul
-    calculateButton.addEventListener("click", (event) => {
+    if (!calculatorForm || !calculateButton || !loanAmountInput || !interestRateInput || !loanTermInput || !advanceInput || !totalInterestOutput || !monthlyPaymentOutput || !totalPaymentOutput) {
+        return;
+    }
+
+    function calculateFinancing(event) {
         event.preventDefault(); // Prevenim trimiterea formularului
 
         // Obținem valorile din câmpurile de input
@@ -25,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Verificăm dacă valorile sunt valide
         if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(loanTerm) || isNaN(advance)) {
-            alert("Te rugăm să introduci valori valide în toate câmpurile.");
+            alert(window.carzoneI18n?.t('fin.alertInvalid') || 'Please enter valid values in all fields.');
             return;
         }
 
@@ -34,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Verificăm dacă suma finanțată este validă
         if (financedAmount <= 0) {
-            alert("Avansul nu poate fi mai mare decât suma totală.");
+            alert(window.carzoneI18n?.t('fin.alertAdvance') || 'The down payment cannot be greater than the total amount.');
             return;
         }
 
@@ -44,10 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
         const monthlyPayment = totalPayment / (loanTerm * 12);
 
         // Afișăm rezultatele
-        totalInterestOutput.textContent = totalInterest.toFixed(2) + " EUR";
-        monthlyPaymentOutput.textContent = monthlyPayment.toFixed(2) + " EUR";
-        totalPaymentOutput.textContent = totalPayment.toFixed(2) + " EUR";
-    });
+        totalInterestOutput.textContent = totalInterest.toFixed(2);
+        monthlyPaymentOutput.textContent = monthlyPayment.toFixed(2);
+        totalPaymentOutput.textContent = totalPayment.toFixed(2);
+    }
+
+    calculatorForm.addEventListener("submit", calculateFinancing);
+    calculateButton.addEventListener("click", calculateFinancing);
 
     // Adăugăm animații ScrollReveal pentru finanțare
     const srFinance = ScrollReveal({
@@ -84,4 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
     srFooter.reveal(`.footer__title`, { origin: "top", delay: 400 }); // Titlurile secțiunilor
     srFooter.reveal(`.footer__links li`, { interval: 100, origin: "top", delay: 500 }); // Link-urile
     srFooter.reveal(`.footer__social a`, { interval: 150, origin: "bottom", delay: 600 }); // Iconițele sociale
-});
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initFinancingPage, { once: true });
+} else {
+    initFinancingPage();
+}

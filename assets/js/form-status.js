@@ -1,8 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
+function initDemoForms() {
   document.querySelectorAll('[data-demo-form]').forEach((form) => {
-    form.addEventListener('submit', (event) => {
+    function handleDemoSubmit(event) {
       event.preventDefault();
-
       if (!form.reportValidity()) return;
 
       form.querySelector('[data-demo-result]')?.remove();
@@ -12,10 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
       message.dataset.demoResult = '';
       message.setAttribute('role', 'status');
       message.setAttribute('tabindex', '-1');
-      message.textContent = `${form.dataset.demoLabel || 'Solicitarea'} a trecut validarea locală. Acesta este un proiect de portofoliu: nimic nu a fost trimis sau stocat.`;
+      const translate = window.carzoneI18n?.t ?? ((key) => key);
+      const label = form.dataset.demoI18n
+        ? translate(form.dataset.demoI18n)
+        : translate('form.fallbackLabel');
+      message.textContent = `${label} ${translate('form.demoResult')}`;
 
       form.prepend(message);
       message.focus();
-    });
+    }
+
+    form.addEventListener('submit', handleDemoSubmit);
+    form.querySelector('[type="submit"]')?.addEventListener('click', handleDemoSubmit);
   });
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initDemoForms, { once: true });
+} else {
+  initDemoForms();
+}

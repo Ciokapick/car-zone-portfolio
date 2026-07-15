@@ -73,14 +73,23 @@
         &__close{
             display: none;
         }
+        &__menu{
+            display: flex;
+            align-items: center;
+            column-gap: clamp(.65rem, 1.6vw, 1.5rem);
+        }
         &__list{
             flex-direction: row;
-            column-gap: 3rem;
+            column-gap: clamp(.65rem, 1.6vw, 1.5rem);
             padding-top: 0;
         }
         &__link{
             font-size: var(--normal-font-size);
             text-transform: initial;
+        }
+        &__lang{
+            flex: 0 0 auto;
+            padding-top: 0;
         }
     }
 

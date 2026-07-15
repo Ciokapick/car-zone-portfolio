@@ -38,6 +38,7 @@ Beyond the visual layer, the project carries complete interaction flows: a finan
 - Dependency-free inventory filtering by brand
 - Financing calculator with live, client-side computation of monthly payments and total interest
 - Responsive layout across breakpoints, built with SCSS
+- English-first interface with a persistent, accessible Romanian language toggle across all seven pages
 - Progressive JavaScript interactions (scroll reveal, navigation, gallery and filter behaviour)
 - Transparent demo-mode forms with native browser validation and no data transmission
 - Per-page canonical, Open Graph and Twitter metadata for the canonical Vercel deployment
@@ -49,7 +50,7 @@ Beyond the visual layer, the project carries complete interaction flows: a finan
 - SCSS organized into config/base/layout/component partials, compiled to plain CSS — no build step needed to run the site
 - Vanilla JavaScript per page, no framework
 - Third-party interaction libraries are served locally; only the version-pinned Remix Icon font stylesheet is loaded from a CDN
-- A zero-dependency validation script checks metadata, links, local assets, form safety, structured data and media budgets in CI
+- A zero-dependency validation script checks metadata, translation keys, links, local assets, form safety, structured data and media budgets in CI
 
 ## Running locally
 
