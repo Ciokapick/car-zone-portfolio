@@ -36,6 +36,12 @@
         font-size: 1.25rem;
         cursor: pointer;
     }
+    &__toggle,
+    &__close{
+        border: 0;
+        padding: 0;
+        background: transparent;
+    }
     &__menu{
         @media screen and (max-width: 767px){
             position: fixed;
@@ -64,6 +70,39 @@
 
         &:hover{
             color: var(--first-color);
+        }
+    }
+    &__lang{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .35rem;
+        padding-top: 1.5rem;
+        color: var(--text-color-light);
+        font-size: .72rem;
+        font-weight: var(--font-medium);
+        letter-spacing: .08em;
+    }
+    &__lang-btn{
+        border: 0;
+        padding: .3rem .2rem;
+        background: transparent;
+        color: inherit;
+        font: inherit;
+        cursor: pointer;
+        opacity: .55;
+        transition: color .2s ease, opacity .2s ease;
+
+        &:hover,
+        &:focus-visible,
+        &.active-lang{
+            color: var(--first-color);
+            opacity: 1;
+        }
+        &:focus-visible{
+            outline: 2px solid currentColor;
+            outline-offset: 2px;
+            border-radius: .25rem;
         }
     }
     &__close{

@@ -13,6 +13,9 @@ const pages = [
   ['contact.html', `${siteUrl}/contact.html`],
 ];
 const errors = [];
+const i18nSource = readFileSync(resolve(root, 'assets/js/i18n.js'), 'utf8');
+const translationKeys = new Set([...i18nSource.matchAll(/^\s*'([^']+)':\s*\{\s*ro:/gm)].map((match) => match[1]));
+const referencedTranslationKeys = new Map();
 
 const fail = (file, message) => errors.push(`${file}: ${message}`);
 const attribute = (tag, name) => tag.match(new RegExp(`\\b${name}=["']([^"']+)["']`, 'i'))?.[1];
@@ -20,9 +23,12 @@ const attribute = (tag, name) => tag.match(new RegExp(`\\b${name}=["']([^"']+)["
 for (const [file, canonical] of pages) {
   const html = readFileSync(resolve(root, file), 'utf8');
 
-  if (!/<html\b[^>]*lang="ro"/i.test(html)) fail(file, 'missing Romanian language declaration');
-  if (!/<title>[^<]+<\/title>/i.test(html)) fail(file, 'missing title');
-  if (!/<meta\s+name="description"\s+content="[^"]+"/i.test(html)) fail(file, 'missing description');
+  if (!/<html\b[^>]*lang="en"/i.test(html)) fail(file, 'missing English language declaration');
+  if (!/<title\b[^>]*>[^<]+<\/title>/i.test(html)) fail(file, 'missing title');
+  if (!/<meta\s+name="description"[^>]*content="[^"]+"/i.test(html)) fail(file, 'missing description');
+  if (!html.includes('assets/js/i18n.js')) fail(file, 'missing bilingual language controller');
+  if (!html.includes('class="nav__lang"')) fail(file, 'missing EN/RO language control');
+  if (!html.includes('data-lang="en"') || !html.includes('data-lang="ro"')) fail(file, 'language control must expose EN and RO');
   if (!html.includes(`<link rel="canonical" href="${canonical}">`)) fail(file, `canonical must be ${canonical}`);
   if (!html.includes(`<meta property="og:url" content="${canonical}">`)) fail(file, `og:url must be ${canonical}`);
 
@@ -41,12 +47,24 @@ for (const [file, canonical] of pages) {
   if (/<form\b[^>]*(?:action=["'][^"']*\.php|method=["']post)/i.test(html)) fail(file, 'contains a server form submission');
   if (html.includes('data-demo-form') && !html.includes('assets/js/form-status.js')) fail(file, 'demo form is missing its local handler');
 
+  for (const match of html.matchAll(/(?:data-i18n(?:-placeholder|-alt|-aria|-content)?|data-demo-i18n)="([^"]+)"/g)) {
+    referencedTranslationKeys.set(match[1], file);
+  }
+
   for (const tag of html.match(/<(?:a|img|script|link|source)\b[^>]*(?:href|src)=["'][^"']+["'][^>]*>/gi) ?? []) {
     const value = attribute(tag, 'href') ?? attribute(tag, 'src');
     if (!value || /^(?:https?:|mailto:|tel:|#|data:)/i.test(value)) continue;
     const localPath = value.split(/[?#]/)[0];
     if (!existsSync(resolve(root, localPath))) fail(file, `missing local asset ${localPath}`);
   }
+}
+
+for (const file of ['assets/js/form-status.js', 'assets/js/main-finantare.js']) {
+  const source = readFileSync(resolve(root, file), 'utf8');
+  for (const match of source.matchAll(/\.t\(['"]([^'"]+)['"]\)/g)) referencedTranslationKeys.set(match[1], file);
+}
+for (const [key, file] of referencedTranslationKeys) {
+  if (!translationKeys.has(key)) fail(file, `references undefined translation key ${key}`);
 }
 
 const index = readFileSync(resolve(root, 'index.html'), 'utf8');
