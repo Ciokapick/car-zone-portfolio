@@ -1216,12 +1216,10 @@ img {
 }
 
 .home-page .home {
-  width: calc(100% - 4rem);
+  width: 100%;
   min-height: clamp(640px, calc(100svh - 2rem), 880px);
-  margin: 1rem auto 0;
+  margin: 0;
   padding: 0;
-  border: 2px solid rgba(139, 130, 151, .45);
-  border-radius: 2.2rem;
   background:
     radial-gradient(circle at 82% 52%, rgba(105, 70, 142, .2), transparent 42%),
     linear-gradient(118deg, #0c1017 0%, #0c0c12 43%, #171021 100%);
@@ -1410,9 +1408,7 @@ img {
   }
 
   .home-page .home {
-    width: calc(100% - 2rem);
     min-height: 780px;
-    border-radius: 1.5rem;
   }
 
   .home-page .home__container {
