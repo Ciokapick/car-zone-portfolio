@@ -61,6 +61,17 @@
         <title data-i18n="meta.home.title">CarZone — Premium automotive marketplace</title>
     </head>
     <body class="home-page">
+      <div class="hero-loader" aria-hidden="true" hidden>
+          <div class="hero-loader__inner">
+              <img src="assets/img/logo.png" alt="" class="hero-loader__logo">
+              <p class="hero-loader__label">Automotive experience</p>
+              <div class="hero-loader__track"><i></i></div>
+              <div class="hero-loader__meta">
+                  <span>Loading</span>
+                  <span class="hero-loader__count">00</span>
+              </div>
+          </div>
+      </div>
       <!--==================== HEADER ====================-->
       <a class="skip-link" href="#main-content" data-i18n="common.skip">Skip to content</a>
       <header class="header" id="header">
@@ -114,7 +125,12 @@
                         </p>
                     </div>
 
-                    <img src="assets/img/home.png" data-i18n-alt="home.imgAlt" alt="White Porsche Taycan showcased on the CarZone homepage" class="home__img">
+                    <div class="home__visual">
+                        <img src="assets/img/home.png" data-i18n-alt="home.imgAlt" alt="White Porsche Taycan showcased on the CarZone homepage" class="home__img">
+                        <span class="home__headlight home__headlight--left" aria-hidden="true"></span>
+                        <span class="home__headlight home__headlight--right" aria-hidden="true"></span>
+                        <span class="home__scan" aria-hidden="true"></span>
+                    </div>
 
                     <div class="home__car">
                         <div class="home__car-data">
@@ -145,6 +161,18 @@
                     <div class="home__actions">
                         <a href="#about" class="home__cta home__cta--primary" data-i18n="home.ctaDiscover">Discover the Taycan</a>
                         <a href="stoc.html" class="home__cta home__cta--secondary" data-i18n="home.ctaAll">Browse all cars</a>
+                    </div>
+
+                    <div class="home__tech-copy" aria-hidden="true">
+                        <p class="home__tech-kicker" data-i18n="home.motion.kicker">Performance architecture</p>
+                        <h2 class="home__tech-title" data-i18n="home.motion.title">Electric.<br>Uncompromised.</h2>
+                        <p class="home__tech-meta">800 V <span></span> AWD <span></span> LAUNCH CONTROL</p>
+                    </div>
+
+                    <div class="home__motion-hud" aria-hidden="true">
+                        <span data-i18n="home.motion.scroll">Scroll to explore</span>
+                        <span class="home__motion-line"><i></i></span>
+                        <span>01 / 02</span>
                     </div>
                 </div>
             </section>
@@ -802,6 +830,9 @@
 
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/i18n.js?v=6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="assets/js/hero-motion.js"></script>
   <script src="assets/js/main.js"></script>
   </body>
   </html>

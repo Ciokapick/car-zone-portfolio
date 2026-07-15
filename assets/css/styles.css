@@ -716,6 +716,12 @@ img {
   margin-bottom: .25rem;
 }
 
+.featured__card.mercedes .featured__title {
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: .035em;
+}
+
 .featured__subtitle {
   font-size: var(--normal-font-size);
   color: var(--text-color);
@@ -1175,15 +1181,93 @@ img {
 }
 
 /*=============== CINEMATIC TAYCAN HERO ===============*/
+html.is-loading,
+html.is-loading body {
+  overflow: hidden;
+}
+
+.hero-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: #f4f3f7;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(75, 75, 112, .14), transparent 34%),
+    #030405;
+}
+
+.hero-loader[hidden] {
+  display: none;
+}
+
+.hero-loader__inner {
+  width: min(28rem, calc(100vw - 3rem));
+  transform-origin: center;
+}
+
+.hero-loader__logo {
+  display: block;
+  width: min(22rem, 70vw);
+  margin: 0 auto;
+  filter: drop-shadow(0 0 28px rgba(119, 119, 255, .1));
+}
+
+.hero-loader__label {
+  margin: 1rem 0 2rem;
+  color: #666270;
+  font-size: .58rem;
+  letter-spacing: .34em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-loader__track {
+  height: 1px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, .1);
+}
+
+.hero-loader__track i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(90deg, #55e6d2, #7777ff);
+  box-shadow: 0 0 14px rgba(85, 230, 210, .55);
+}
+
+.hero-loader__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .75rem;
+  color: #77727e;
+  font-size: .58rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.hero-loader__count {
+  color: #aaa5b2;
+  font-variant-numeric: tabular-nums;
+}
+
 .home-page {
   background: #050505;
 }
 
 .home-page .home {
+  --hero-accent: #55e6d2;
+  --hero-violet: #7777ff;
   width: 100%;
   min-height: clamp(640px, calc(100svh - 2rem), 880px);
   margin: 0;
   padding: 0;
+  isolation: isolate;
+  overflow: hidden;
   background:
     radial-gradient(circle at 82% 52%, rgba(105, 70, 142, .2), transparent 42%),
     linear-gradient(118deg, #0c1017 0%, #0c0c12 43%, #171021 100%);
@@ -1196,6 +1280,17 @@ img {
   pointer-events: none;
   background: linear-gradient(90deg, transparent 42%, rgba(85, 45, 112, .08));
   z-index: 0;
+}
+
+.home-page .home::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .17;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.32'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
 }
 
 .home-page .home__container {
@@ -1245,15 +1340,57 @@ img {
   font-size: clamp(.75rem, 1.25vw, 1.2rem);
 }
 
-.home-page .home__img {
+.home-page .home__visual {
   position: absolute;
   z-index: 1;
   top: clamp(6.5rem, 14vh, 8rem);
   left: calc(-1 * clamp(160px, 24vw, 330px));
   width: clamp(470px, 78vw, 1050px);
   max-width: none;
-  transform: none !important;
+  transform-origin: 52% 55%;
+  will-change: transform, clip-path;
+}
+
+.home-page .home__img {
+  display: block;
+  width: 100%;
+  max-width: none;
   filter: drop-shadow(28px 32px 34px rgba(0, 0, 0, .55));
+  will-change: transform, filter;
+}
+
+.home-page .home__headlight {
+  position: absolute;
+  z-index: 2;
+  top: 39%;
+  width: 19%;
+  height: 18%;
+  border-radius: 50%;
+  pointer-events: none;
+  transform-origin: center;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, .86) 0 7%, rgba(116, 236, 255, .36) 19%, rgba(72, 156, 255, .12) 42%, transparent 70%);
+  filter: blur(7px);
+  mix-blend-mode: screen;
+}
+
+.home-page .home__headlight--left {
+  left: 2.6%;
+}
+
+.home-page .home__headlight--right {
+  right: 2.6%;
+}
+
+.home-page .home__scan {
+  position: absolute;
+  z-index: 3;
+  inset: 6% auto 3% -14%;
+  width: 18%;
+  pointer-events: none;
+  opacity: 0;
+  transform: skewX(-10deg);
+  background: linear-gradient(90deg, transparent, rgba(153, 238, 255, .27), rgba(255, 255, 255, .54), transparent);
+  filter: blur(12px);
 }
 
 .home-page .home__car {
@@ -1296,6 +1433,81 @@ img {
   gap: .9rem;
 }
 
+.home-page .home__tech-copy {
+  position: absolute;
+  z-index: 4;
+  top: 31%;
+  left: clamp(2rem, 6vw, 7rem);
+  width: min(34rem, 43vw);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.home-page .home__tech-kicker {
+  margin-bottom: .75rem;
+  color: var(--hero-accent);
+  font-size: clamp(.62rem, .85vw, .82rem);
+  font-weight: var(--font-medium);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.home-page .home__tech-title {
+  color: #f2eff7;
+  font-size: clamp(2.6rem, 4.35vw, 5.35rem);
+  line-height: .88;
+  letter-spacing: -.055em;
+}
+
+.home-page .home__tech-meta {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-top: 1.55rem;
+  color: #8b8397;
+  font-size: clamp(.58rem, .75vw, .74rem);
+  letter-spacing: .12em;
+}
+
+.home-page .home__tech-meta span {
+  width: 2rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--hero-accent), transparent);
+}
+
+.home-page .home__motion-hud {
+  position: absolute;
+  z-index: 4;
+  right: clamp(2rem, 6vw, 7rem);
+  bottom: 2rem;
+  left: clamp(2rem, 6vw, 7rem);
+  display: grid;
+  grid-template-columns: auto minmax(5rem, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  color: #696273;
+  font-size: .56rem;
+  font-weight: var(--font-medium);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.home-page .home__motion-line {
+  height: 1px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, .11);
+}
+
+.home-page .home__motion-line i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(90deg, var(--hero-accent), var(--hero-violet));
+  box-shadow: 0 0 12px var(--hero-accent);
+}
+
 .home-page .home__cta {
   display: inline-flex;
   align-items: center;
@@ -1320,11 +1532,38 @@ img {
   box-shadow: 0 10px 30px rgba(41, 125, 112, .2);
 }
 
+.home-page .home__cta--primary:hover {
+  box-shadow: 0 12px 42px rgba(74, 228, 202, .3), inset 0 0 0 1px rgba(183, 255, 243, .18);
+}
+
 .home-page .home__cta--secondary {
   color: #c9c2d5;
   border: 1px solid #5e62c8;
   background: rgba(32, 29, 52, .7);
   box-shadow: 0 0 18px rgba(80, 83, 205, .24);
+}
+
+.home-page .nav__link {
+  position: relative;
+}
+
+.home-page .nav__link::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -.45rem;
+  left: 0;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: right;
+  background: linear-gradient(90deg, var(--hero-accent), var(--hero-violet));
+  transition: transform .35s cubic-bezier(.2, .75, .25, 1);
+}
+
+.home-page .nav__link:hover::after,
+.home-page .nav__link.active-link::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .home-page .home .shape {
@@ -1338,7 +1577,7 @@ img {
     row-gap: 1.1rem;
   }
 
-  .home-page .home__img {
+  .home-page .home__visual {
     top: 5.5rem;
   }
 
@@ -1385,14 +1624,17 @@ img {
     white-space: normal;
   }
 
-  .home-page .home__img {
+  .home-page .home__visual {
     position: relative;
     top: auto;
     left: 50%;
     width: min(138%, 560px);
     margin: 1.5rem 0 .5rem;
-    transform: translateX(-50%) !important;
+    transform: translateX(-50%);
     z-index: 3;
+  }
+
+  .home-page .home__img {
     filter: drop-shadow(0 24px 24px rgba(0, 0, 0, .55));
   }
 
@@ -1401,6 +1643,47 @@ img {
     position: relative;
     z-index: 4;
     justify-content: center;
+  }
+
+  .home-page .home__motion-hud {
+    right: 1.25rem;
+    bottom: 1rem;
+    left: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-page .home__tech-copy {
+    display: none;
+  }
+
+  .home-page .home__motion-hud {
+    font-size: .48rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-loader {
+    display: none;
+  }
+
+  .home-page .home__visual,
+  .home-page .home__img,
+  .home-page .home__headlight,
+  .home-page .home__scan,
+  .home-page .home__data,
+  .home-page .home__car-data,
+  .home-page .home__actions,
+  .home-page .home__motion-hud {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+
+  .home-page .home__headlight,
+  .home-page .home__scan,
+  .home-page .home__tech-copy {
+    display: none;
   }
 }
 
