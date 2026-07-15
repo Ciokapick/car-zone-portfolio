@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sr.reveal(`.video-title, .video-subtitle`, { interval: 200 });
     sr.reveal(`.featured__filters`, { delay: 400, origin: "top" });
-    sr.reveal(`.featured__card`, { interval: 100, origin: "bottom" });
+    /* Inventory cards are shown/hidden by inventory-filter.js. ScrollReveal
+       leaves off-screen cards at opacity: 0, so a filtered brand would be
+       correctly selected but invisible after it moves to the top of the grid. */
     sr.reveal(`.footer__content`, { interval: 100, duration: 2000, origin: "bottom" });
 });
