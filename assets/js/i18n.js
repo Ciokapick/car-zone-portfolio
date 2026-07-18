@@ -80,6 +80,8 @@
         'home.aboutCta': { ro: 'Rezervă-ți o programare astăzi!', en: 'Book an appointment today!' },
         'home.popularTitle': { ro: 'Putere, eleganță și inovație la un clic distanță', en: 'Power, elegance and innovation, one click away' },
         'home.whyTitle': { ro: 'De ce să alegi', en: 'Why choose' },
+        'home.zoom.kicker': { ro: 'Colecția', en: 'The collection' },
+        'home.zoom.headline': { ro: 'Făcute să fie conduse', en: 'Built to be driven' },
         'home.featHistory': { ro: 'Istoric', en: 'Verified' },
         'home.featHistoryDesc': { ro: 'verificat', en: 'history' },
         'home.featDelivery': { ro: 'Livrare', en: 'Fast' },

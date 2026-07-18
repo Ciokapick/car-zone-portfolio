@@ -112,7 +112,11 @@ const sr = ScrollReveal({
     delay: 300,
 });
 
-sr.reveal(`.popular__container, .features__img, .featured__filters`);
+/* When the GSAP scroll cinematics own the features stage (desktop,
+   motion-safe), ScrollReveal must not fight it for the same elements. */
+const czCinematic = document.body.classList.contains('cz-cinematic');
+
+sr.reveal(czCinematic ? `.popular__container, .featured__filters` : `.popular__container, .features__img, .featured__filters`);
 
 /* The homepage hero has its own GSAP sequence. Keep the legacy entrance as a
    graceful fallback if GSAP cannot load. */
@@ -126,8 +130,10 @@ if (!document.body.classList.contains('home-page') || !window.gsap) {
 }
 sr.reveal(`.about__group, .offer__data`, { origin: 'left' });
 sr.reveal(`.about__data, .offer__img`, { origin: 'right' });
-sr.reveal(`.features__map`, { delay: 600, origin: 'bottom' });
-sr.reveal(`.features__card`, { interval: 300 });
+if (!czCinematic) {
+    sr.reveal(`.features__map`, { delay: 600, origin: 'bottom' });
+    sr.reveal(`.features__card`, { interval: 300 });
+}
 sr.reveal(`.featured__card, .logos__content, .footer__content`, { interval: 100 });
 /* Specific pentru logo-uri și footer */
 sr.reveal(`.logos__container`, { delay: 300, duration: 2000, origin: 'bottom' });
