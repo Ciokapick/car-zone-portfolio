@@ -33,21 +33,24 @@
 
     <title>Car Details - CarZone</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Cormorant+Garamond:ital,wght@1,600&family=Encode+Sans:wght@600;700&family=Exo+2:wght@600;700&family=Jost:wght@500;600&family=Michroma&family=Montserrat:wght@600;700&family=Playfair+Display:wght@600;700&family=Saira:ital,wght@1,600;1,700&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
     <style>
-        /* Brand-specific fonts */
+        /* Brand-specific display fonts (free faces that echo each marque) */
         :root {
-            --mercedes-font: "Times New Roman", Times, serif;
+            --mercedes-font: "Playfair Display", "Times New Roman", serif;
             --bmw-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            --audi-font: "Audi Type", "Arial", sans-serif;
-            --porsche-font: "Porsche Design", "Arial", sans-serif;
-            --tesla-font: "Gotham", "Arial", sans-serif;
-            --lexus-font: "Lexus", "Arial", sans-serif;
-            --genesis-font: "Genesis", "Arial", sans-serif;
-            --alfa-romeo-font: "Arial", sans-serif;
-            --lotus-font: "Arial", sans-serif;
-            --corvette-font: "Corvette", "Arial", sans-serif;
-            --koenigsegg-font: "Arial", sans-serif;
-            --default-font: "Arial", sans-serif;
+            --audi-font: "Encode Sans", Arial, sans-serif;
+            --porsche-font: "Exo 2", Arial, sans-serif;
+            --tesla-font: "Montserrat", Arial, sans-serif;
+            --lexus-font: "Jost", Arial, sans-serif;
+            --genesis-font: "Archivo", Arial, sans-serif;
+            --alfa-romeo-font: "Cormorant Garamond", Georgia, serif;
+            --lotus-font: "Titillium Web", Arial, sans-serif;
+            --corvette-font: "Saira", Arial, sans-serif;
+            --koenigsegg-font: "Michroma", Arial, sans-serif;
+            --default-font: "Montserrat", Arial, sans-serif;
         }
 
         .car-detail {
@@ -395,7 +398,7 @@
         }
 
         .video-title {
-            font-family: var(--mercedes-font);
+            font-family: var(--cz-brand-font, var(--default-font));
             font-size: 3rem;
             font-weight: 400;
             margin-bottom: 1rem;
@@ -702,6 +705,7 @@
             };
 
             const brandFont = brandFontMap[car.make] || 'var(--default-font)';
+            document.documentElement.style.setProperty('--cz-brand-font', brandFont);
 
             // Build car detail HTML
             let carHTML = `
@@ -718,8 +722,8 @@
                             <h1 class="video-title">${car.make} ${car.model}</h1>
                         </div>
                         ` : `
-                        ${car.image ? `<div class="video-bg" style="background: radial-gradient(70% 60% at 50% 60%, #191c22 0%, #0a0a0b 80%); display: flex; align-items: center; justify-content: center;"><img src="${car.image}" alt="${car.make} ${car.model}" style="max-width: min(72%, 900px); max-height: 78%; object-fit: contain; filter: drop-shadow(0 30px 40px rgba(0,0,0,.55));"></div>` : ''}
-                        <div class="video-overlay" style="background: linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.15) 45%, rgba(0,0,0,.65) 100%);"></div>
+                        ${(car.images && car.images[0]) ? `<img class="video-bg" src="${car.images[0]}" alt="${car.make} ${car.model} interior">` : ''}
+                        <div class="video-overlay" style="background: linear-gradient(180deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.2) 45%, rgba(0,0,0,.7) 100%);"></div>
                         <div class="video-content">
                             <h1 class="video-title">${car.make} ${car.model}</h1>
                         </div>

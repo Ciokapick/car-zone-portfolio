@@ -10,7 +10,6 @@
     "price": "€108,990",
     "image": "assets/img/featured1.png",
     "images": [
-      "assets/img/featured1.png",
       "assets/img/interiors/tesla-model-x.webp"
     ],
     "video": "",
@@ -84,9 +83,7 @@
     "power": "496 HP",
     "price": "€120,900",
     "image": "assets/img/s580.png",
-    "images": [
-      "assets/img/s580.png"
-    ],
+    "images": [],
     "video": "assets/img/w223.mp4",
     "sketchfab": "https://sketchfab.com/models/7be62285accb409bb6f7e28bce32f973/embed?camera=0",
     "specs": {
@@ -159,7 +156,6 @@
     "price": "€198,500",
     "image": "assets/img/audir8.png",
     "images": [
-      "assets/img/audir8.png",
       "assets/img/interiors/audi-r8.webp"
     ],
     "video": "",
@@ -306,7 +302,6 @@
     "price": "€56,990",
     "image": "assets/img/tesla-model-y.png",
     "images": [
-      "assets/img/tesla-model-y.png",
       "assets/img/interiors/tesla-model-y.webp"
     ],
     "video": "",
@@ -381,7 +376,6 @@
     "price": "€94,990",
     "image": "assets/img/tesla-model-s.png",
     "images": [
-      "assets/img/tesla-model-s.png",
       "assets/img/interiors/tesla-model-s.webp"
     ],
     "video": "",
@@ -456,10 +450,9 @@
     "price": "€89,500",
     "image": "assets/img/lotusemira.png",
     "images": [
-      "assets/img/lotusemira.png",
       "assets/img/interiors/lotus-emira.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/lotus-emira.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -530,9 +523,7 @@
     "power": "600 HP",
     "price": "€112,900",
     "image": "assets/img/lotuseletre.png",
-    "images": [
-      "assets/img/lotuseletre.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -605,7 +596,6 @@
     "price": "€65,800",
     "image": "assets/img/lotuselise.png",
     "images": [
-      "assets/img/lotuselise.png",
       "assets/img/interiors/lotus-elise.webp"
     ],
     "video": "",
@@ -680,7 +670,6 @@
     "price": "€38,750",
     "image": "assets/img/audiq3.png",
     "images": [
-      "assets/img/audiq3.png",
       "assets/img/interiors/audi-q3.webp"
     ],
     "video": "",
@@ -755,7 +744,6 @@
     "price": "€73,200",
     "image": "assets/img/audiq7.png",
     "images": [
-      "assets/img/audiq7.png",
       "assets/img/interiors/audi-q7.webp"
     ],
     "video": "",
@@ -830,7 +818,6 @@
     "price": "€29,300",
     "image": "assets/img/audirs4b8.png",
     "images": [
-      "assets/img/audirs4b8.png",
       "assets/img/interiors/audi-rs4.webp"
     ],
     "video": "",
@@ -904,9 +891,7 @@
     "power": "450 HP",
     "price": "€26,400",
     "image": "assets/img/audirs5.png",
-    "images": [
-      "assets/img/audirs5.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -978,9 +963,7 @@
     "power": "600 HP",
     "price": "€135,700",
     "image": "assets/img/audirsq8.png",
-    "images": [
-      "assets/img/audirsq8.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1052,9 +1035,7 @@
     "power": "218 HP",
     "price": "€45,900",
     "image": "assets/img/lexuses.png",
-    "images": [
-      "assets/img/lexuses.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1126,9 +1107,7 @@
     "power": "241 HP",
     "price": "€42,800",
     "image": "assets/img/lexusis.png",
-    "images": [
-      "assets/img/lexusis.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1200,9 +1179,7 @@
     "power": "471 HP",
     "price": "€98,750",
     "image": "assets/img/lexuslc.png",
-    "images": [
-      "assets/img/lexuslc.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1275,7 +1252,6 @@
     "price": "€450,000",
     "image": "assets/img/lexuslfa.png",
     "images": [
-      "assets/img/lexuslfa.png",
       "assets/img/interiors/lexus-lfa.webp"
     ],
     "video": "",
@@ -1349,9 +1325,7 @@
     "power": "409 HP",
     "price": "€98,900",
     "image": "assets/img/lexuslx.png",
-    "images": [
-      "assets/img/lexuslx.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1423,9 +1397,7 @@
     "power": "181 HP",
     "price": "€38,500",
     "image": "assets/img/lexusuxh.png",
-    "images": [
-      "assets/img/lexusuxh.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1497,9 +1469,7 @@
     "power": "887 HP",
     "price": "€1,200,000",
     "image": "assets/img/porsche918.png",
-    "images": [
-      "assets/img/porsche918.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1571,9 +1541,7 @@
     "power": "240 HP",
     "price": "€68,500",
     "image": "assets/img/4c.png",
-    "images": [
-      "assets/img/4c.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1646,10 +1614,9 @@
     "price": "€2,000,000",
     "image": "assets/img/33stradale.png",
     "images": [
-      "assets/img/33stradale.png",
       "assets/img/interiors/alfa-romeo-33-stradale.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/alfa-romeo-33-stradale.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -1721,10 +1688,9 @@
     "price": "€39,900",
     "image": "assets/img/giulia.png",
     "images": [
-      "assets/img/giulia.png",
       "assets/img/interiors/alfa-romeo-giulia.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/alfa-romeo-giulia.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -1796,10 +1762,9 @@
     "price": "€42,400",
     "image": "assets/img/tonale.png",
     "images": [
-      "assets/img/tonale.png",
       "assets/img/interiors/alfa-romeo-tonale.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/alfa-romeo-tonale.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -1871,10 +1836,9 @@
     "price": "€44,900",
     "image": "assets/img/stelvio.png",
     "images": [
-      "assets/img/stelvio.png",
       "assets/img/interiors/alfa-romeo-stelvio.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/alfa-romeo-stelvio.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -1946,7 +1910,6 @@
     "price": "€48,500",
     "image": "assets/img/gennesisg70shootingbrake.png",
     "images": [
-      "assets/img/gennesisg70shootingbrake.png",
       "assets/img/interiors/genesis-g70-shooting-brake.webp"
     ],
     "video": "",
@@ -2021,7 +1984,6 @@
     "price": "€52,900",
     "image": "assets/img/gennesisg80.png",
     "images": [
-      "assets/img/gennesisg80.png",
       "assets/img/interiors/genesis-g80.webp"
     ],
     "video": "",
@@ -2095,9 +2057,7 @@
     "power": "380 HP",
     "price": "€68,700",
     "image": "assets/img/gennesisg90.png",
-    "images": [
-      "assets/img/gennesisg90.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2170,7 +2130,6 @@
     "price": "€75,800",
     "image": "assets/img/gennesisg90longwheelbase.png",
     "images": [
-      "assets/img/gennesisg90longwheelbase.png",
       "assets/img/interiors/genesis-g90-long-wheelbase.webp"
     ],
     "video": "",
@@ -2245,7 +2204,6 @@
     "price": "€59,900",
     "image": "assets/img/gennesisgv60.png",
     "images": [
-      "assets/img/gennesisgv60.png",
       "assets/img/interiors/genesis-gv60.webp"
     ],
     "video": "",
@@ -2320,7 +2278,6 @@
     "price": "€49,900",
     "image": "assets/img/gennesisgv70.png",
     "images": [
-      "assets/img/gennesisgv70.png",
       "assets/img/interiors/genesis-gv70.webp"
     ],
     "video": "",
@@ -2394,9 +2351,7 @@
     "power": "330 HP",
     "price": "€104,600",
     "image": "assets/img/s400d.png",
-    "images": [
-      "assets/img/s400d.png"
-    ],
+    "images": [],
     "video": "assets/img/w223.mp4",
     "sketchfab": "",
     "specs": {
@@ -2468,9 +2423,7 @@
     "power": "476 HP",
     "price": "€25,900",
     "image": "assets/img/e55-amg.png",
-    "images": [
-      "assets/img/e55-amg.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2542,9 +2495,7 @@
     "power": "630 HP",
     "price": "€245,000",
     "image": "assets/img/g65-amg.png",
-    "images": [
-      "assets/img/g65-amg.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2616,9 +2567,7 @@
     "power": "457 HP",
     "price": "€28,500",
     "image": "assets/img/c63.png",
-    "images": [
-      "assets/img/c63.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2763,7 +2712,6 @@
     "price": "€41,500",
     "image": "assets/img/cls63-amg.png",
     "images": [
-      "assets/img/cls63-amg.png",
       "assets/img/interiors/mercedes-cls63-amg.webp"
     ],
     "video": "",
@@ -2838,7 +2786,6 @@
     "price": "€28,900",
     "image": "assets/img/s63-amg-w221.png",
     "images": [
-      "assets/img/s63-amg-w221.png",
       "assets/img/interiors/mercedes-s63-smg.webp"
     ],
     "video": "assets/img/s63amg.mp4",
@@ -2912,9 +2859,7 @@
     "power": "286 HP",
     "price": "€72,500",
     "image": "assets/img/x5.png",
-    "images": [
-      "assets/img/x5.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2986,9 +2931,7 @@
     "power": "560 HP",
     "price": "€45,800",
     "image": "assets/img/bmw-m6.png",
-    "images": [
-      "assets/img/bmw-m6.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3060,9 +3003,7 @@
     "power": "340 HP",
     "price": "€78,900",
     "image": "assets/img/bmw-x6.png",
-    "images": [
-      "assets/img/bmw-x6.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3134,9 +3075,7 @@
     "power": "507 HP",
     "price": "€28,500",
     "image": "assets/img/bmw-m5-e60.png",
-    "images": [
-      "assets/img/bmw-m5-e60.png"
-    ],
+    "images": [],
     "video": "assets/img/bmwm5f90.mp4",
     "sketchfab": "",
     "specs": {
@@ -3208,9 +3147,7 @@
     "power": "600 HP",
     "price": "€105,900",
     "image": "assets/img/bmw-m8.png",
-    "images": [
-      "assets/img/bmw-m8.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3282,9 +3219,7 @@
     "power": "420 HP",
     "price": "€29,900",
     "image": "assets/img/bmw-m3-e92.png",
-    "images": [
-      "assets/img/bmw-m3-e92.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3356,9 +3291,7 @@
     "power": "495 HP",
     "price": "€89,500",
     "image": "assets/img/corvettez51.png",
-    "images": [
-      "assets/img/corvettez51.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3430,9 +3363,7 @@
     "power": "495 HP",
     "price": "€84,900",
     "image": "assets/img/corvettezc8.png",
-    "images": [
-      "assets/img/corvettezc8.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3504,9 +3435,7 @@
     "power": "460 HP",
     "price": "€69,900",
     "image": "assets/img/corvettestingrayc7.png",
-    "images": [
-      "assets/img/corvettestingrayc7.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3578,9 +3507,7 @@
     "power": "1,385 HP",
     "price": "€3,200,000",
     "image": "assets/img/koenigsegg-cc850.png",
-    "images": [
-      "assets/img/koenigsegg-cc850.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3652,9 +3579,7 @@
     "power": "1,700 HP",
     "price": "€1,700,000",
     "image": "assets/img/koenigsegg-gemera.png",
-    "images": [
-      "assets/img/koenigsegg-gemera.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3726,9 +3651,7 @@
     "power": "1,600 HP",
     "price": "€2,800,000",
     "image": "assets/img/koenigsegg-jesko-attack.png",
-    "images": [
-      "assets/img/koenigsegg-jesko-attack.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3800,9 +3723,7 @@
     "power": "408 HP",
     "price": "€89,900",
     "image": "assets/img/home.png",
-    "images": [
-      "assets/img/home.png"
-    ],
+    "images": [],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3875,7 +3796,6 @@
     "price": "€205,900",
     "image": "assets/img/popular3.png",
     "images": [
-      "assets/img/popular3.png",
       "assets/img/interiors/porsche-turbo-s-cross.webp"
     ],
     "video": "",
@@ -3950,7 +3870,6 @@
     "price": "€62,900",
     "image": "assets/img/popular4.png",
     "images": [
-      "assets/img/popular4.png",
       "assets/img/interiors/porsche-boxster-718.webp"
     ],
     "video": "",
@@ -4025,7 +3944,6 @@
     "price": "€67,900",
     "image": "assets/img/popular5.png",
     "images": [
-      "assets/img/popular5.png",
       "assets/img/interiors/porsche-cayman.webp"
     ],
     "video": "",
