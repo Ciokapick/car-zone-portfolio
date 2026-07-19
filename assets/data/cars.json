@@ -1,0 +1,4068 @@
+{
+  "tesla-model-x": {
+    "id": "tesla-model-x",
+    "make": "Tesla",
+    "model": "Model X",
+    "year": 2023,
+    "km": 15000,
+    "fuel": "Electric",
+    "power": "750 HP",
+    "price": "€108,990",
+    "image": "assets/img/featured1.png",
+    "images": [
+      "assets/img/featured1.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Tesla",
+        "Model": "Model X",
+        "VIN": "5YJXCBE40MBF12345",
+        "Production year": "2023",
+        "First registration": "10.01.2023",
+        "Engine capacity": "Electric"
+      },
+      "technical": {
+        "Power": "750 HP",
+        "Gearbox": "Automatic",
+        "Fuel": "Electric",
+        "Color": "Pearl White",
+        "Warranty": "48-month warranty",
+        "Drivetrain": "AWD - Dual Motor"
+      },
+      "performance": [
+        "Dual motor All-Wheel Drive",
+        "0-100 km/h in 3.1 seconds",
+        "Top speed: 250 km/h",
+        "Autopilot system included",
+        "Full self-driving capability",
+        "Adaptive air suspension"
+      ],
+      "comfort": [
+        "Heated front seats",
+        "Premium audio system",
+        "Panoramic glass roof",
+        "Autopilot convenience features",
+        "Wireless phone charging",
+        "Premium interior materials"
+      ],
+      "safety": [
+        "Autopilot emergency braking",
+        "Collision avoidance system",
+        "360° camera + parking sensors",
+        "Blind spot monitoring",
+        "Lane keep assist",
+        "Emergency braking"
+      ],
+      "technology": [
+        "17-inch touchscreen display",
+        "Over-the-air updates",
+        "Navigation system",
+        "Premium audio system",
+        "Smartphone integration",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Falcon wing doors",
+        "Aerodynamic design",
+        "LED headlights",
+        "Premium paint finish",
+        "Alloy wheels",
+        "LED taillights"
+      ]
+    }
+  },
+  "mercedes-s580": {
+    "id": "mercedes-s580",
+    "make": "Mercedes-Benz",
+    "model": "S580",
+    "year": 2023,
+    "km": 30000,
+    "fuel": "Petrol",
+    "power": "496 HP",
+    "price": "€120,900",
+    "image": "assets/img/s580.png",
+    "images": [
+      "assets/img/s580.png"
+    ],
+    "video": "assets/img/w223.mp4",
+    "sketchfab": "https://sketchfab.com/models/7be62285accb409bb6f7e28bce32f973/embed?camera=0",
+    "specs": {
+      "basic": {
+        "Make": "Mercedes-Benz",
+        "Model": "S-Class",
+        "VIN": "W1K2223033131A155375",
+        "Production year": "2023",
+        "First registration": "15.03.2023",
+        "Engine capacity": "3.982 cm³"
+      },
+      "technical": {
+        "Power": "496 HP",
+        "Gearbox": "Automatic",
+        "Fuel": "Petrol + mild hybrid",
+        "Color": "Obsidian Black",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "4x4 - 4MATIC"
+      },
+      "performance": [
+        "4.0L V8 biturbo petrol engine with EQ Boost - mild hybrid",
+        "4MATIC all-wheel drive",
+        "9G-TRONIC automatic transmission",
+        "AIRMATIC semi-active suspension",
+        "High-performance sport brakes",
+        "BlueTEC SCR system - Euro 6"
+      ],
+      "comfort": [
+        "Heated front seats with electric lumbar adjustment",
+        "Dual-zone air conditioning",
+        "Multi-zone automatic climate control",
+        "Automatic panoramic sliding sunroof",
+        "Premium ambient lighting",
+        "Wireless phone charging"
+      ],
+      "safety": [
+        "Driving Assistance package (L2 autonomy)",
+        "DISTRONIC PLUS adaptive cruise control",
+        "Active Lane Keep Assist",
+        "Active parking assist with 360° camera",
+        "PRE-SAFE® Impulse Side system",
+        "Emergency stop assist"
+      ],
+      "technology": [
+        "MBUX multimedia system",
+        "Hard-disk navigation + OTA updates",
+        "Augmented reality navigation",
+        "Head-Up Display",
+        "Apple CarPlay & Android Auto",
+        "Mercedes me connect services"
+      ],
+      "design": [
+        "AMG package",
+        "Night package",
+        "AMG multi-spoke wheels",
+        "Digital LED headlights",
+        "LED taillights with dynamic signals",
+        "Premium paint finish"
+      ]
+    }
+  },
+  "audi-r8": {
+    "id": "audi-r8",
+    "make": "Audi",
+    "model": "R8",
+    "year": 2022,
+    "km": 12000,
+    "fuel": "Petrol",
+    "power": "602 HP",
+    "price": "€198,500",
+    "image": "assets/img/audir8.png",
+    "images": [
+      "assets/img/audir8.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Audi",
+        "Model": "R8",
+        "VIN": "WAUZZZF72KA000001",
+        "Production year": "2022",
+        "First registration": "20.06.2022",
+        "Engine capacity": "5.2 cm³"
+      },
+      "technical": {
+        "Power": "602 HP",
+        "Gearbox": "Automatic S tronic",
+        "Fuel": "Petrol",
+        "Color": "Sonoma Green",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "quattro AWD"
+      },
+      "performance": [
+        "5.2L V10 naturally aspirated engine",
+        "quattro all-wheel drive system",
+        "7-speed S tronic transmission",
+        "Magnetic ride suspension",
+        "Carbon ceramic brakes",
+        "Performance exhaust system"
+      ],
+      "comfort": [
+        "Sport seats with diamond stitching",
+        "Premium leather interior",
+        "Dual-zone climate control",
+        "Bang & Olufsen audio system",
+        "Virtual cockpit plus",
+        "Sport steering wheel"
+      ],
+      "safety": [
+        "Audi pre sense basic",
+        "Audi pre sense front",
+        "Adaptive cruise control",
+        "Lane departure warning",
+        "Park assist with cameras",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "MMI navigation plus",
+        "Audi virtual cockpit",
+        "Apple CarPlay & Android Auto",
+        "Bang & Olufsen 3D sound",
+        "Audi connect services",
+        "WiFi hotspot"
+      ],
+      "design": [
+        "RS design package",
+        "Carbon fiber interior",
+        "20-inch alloy wheels",
+        "LED headlights with animation",
+        "LED taillights with dynamic signals",
+        "High gloss black exterior"
+      ]
+    }
+  },
+  "porsche-911-turbo-s": {
+    "id": "porsche-911-turbo-s",
+    "make": "Porsche",
+    "model": "Turbo S",
+    "year": 2023,
+    "km": 8000,
+    "fuel": "Petrol",
+    "power": "650 HP",
+    "price": "€225,900",
+    "image": "",
+    "images": [],
+    "video": "assets/img/porsche992gt3.mp4",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Porsche",
+        "Model": "911 Turbo S",
+        "VIN": "WP0AB2A91PS000001",
+        "Production year": "2023",
+        "First registration": "05.03.2023",
+        "Engine capacity": "3.7 cm³"
+      },
+      "technical": {
+        "Power": "650 HP",
+        "Gearbox": "Automatic PDK",
+        "Fuel": "Petrol",
+        "Color": "Neumünster Silver",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "3.7L Twin-Turbo Boxer engine",
+        "8-speed PDK transmission",
+        "Porsche Active Suspension Management",
+        "Porsche Dynamic Chassis Control",
+        "Sport Chrono package",
+        "Porsche Sport Exhaust"
+      ],
+      "comfort": [
+        "Adaptive sport seats",
+        "Premium leather interior",
+        "Burmester audio system",
+        "Navigation module",
+        "Wireless smartphone charger",
+        "Climate control"
+      ],
+      "safety": [
+        "Porsche Wetzler design",
+        "Adaptive cruise control",
+        "Lane change assist",
+        "Park assist with surround cameras",
+        "Night vision assist",
+        "Collision avoidance system"
+      ],
+      "technology": [
+        "Porsche Communication Management",
+        "Burmester 3D sound system",
+        "Apple CarPlay & Android Auto",
+        "Real-time navigation",
+        "Porsche Connect services",
+        "Voice control"
+      ],
+      "design": [
+        "SportDesign package",
+        "Lightweight package",
+        "20-inch/21-inch wheels",
+        "Matrix LED headlights",
+        "LED taillight strip",
+        "Exclusive paint finish"
+      ]
+    }
+  },
+  "tesla-model-y": {
+    "id": "tesla-model-y",
+    "make": "Tesla",
+    "model": "Model Y",
+    "year": 2023,
+    "km": 18000,
+    "fuel": "Electric",
+    "power": "450 HP",
+    "price": "€56,990",
+    "image": "assets/img/tesla-model-y.png",
+    "images": [
+      "assets/img/tesla-model-y.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Tesla",
+        "Model": "Model Y",
+        "VIN": "5YJ3E1EA8PF000001",
+        "Production year": "2023",
+        "First registration": "12.02.2023",
+        "Engine capacity": "Electric"
+      },
+      "technical": {
+        "Power": "450 HP",
+        "Gearbox": "Automatic",
+        "Fuel": "Electric",
+        "Color": "Midnight Silver",
+        "Warranty": "48-month warranty",
+        "Drivetrain": "AWD - Dual Motor"
+      },
+      "performance": [
+        "Dual motor All-Wheel Drive",
+        "0-100 km/h in 4.8 seconds",
+        "Top speed: 217 km/h",
+        "Autopilot system included",
+        "Full self-driving capability",
+        "Adaptive air suspension"
+      ],
+      "comfort": [
+        "Heated front and rear seats",
+        "Premium audio system",
+        "Panoramic glass roof",
+        "Autopilot convenience features",
+        "Wireless phone charging",
+        "Premium interior materials"
+      ],
+      "safety": [
+        "Autopilot emergency braking",
+        "Collision avoidance system",
+        "360° camera + parking sensors",
+        "Blind spot monitoring",
+        "Lane keep assist",
+        "Emergency braking"
+      ],
+      "technology": [
+        "15-inch touchscreen display",
+        "Over-the-air updates",
+        "Navigation system",
+        "Premium audio system",
+        "Smartphone integration",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Aerodynamic design",
+        "LED headlights",
+        "Premium paint finish",
+        "Alloy wheels",
+        "LED taillights",
+        "Modern minimalist interior"
+      ]
+    }
+  },
+  "tesla-model-s": {
+    "id": "tesla-model-s",
+    "make": "Tesla",
+    "model": "Model S",
+    "year": 2023,
+    "km": 12000,
+    "fuel": "Electric",
+    "power": "670 HP",
+    "price": "€94,990",
+    "image": "assets/img/tesla-model-s.png",
+    "images": [
+      "assets/img/tesla-model-s.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Tesla",
+        "Model": "Model S",
+        "VIN": "5YJSA1E28MF000001",
+        "Production year": "2023",
+        "First registration": "08.01.2023",
+        "Engine capacity": "Electric"
+      },
+      "technical": {
+        "Power": "670 HP",
+        "Gearbox": "Automatic",
+        "Fuel": "Electric",
+        "Color": "Pearl White",
+        "Warranty": "48-month warranty",
+        "Drivetrain": "AWD - Dual Motor"
+      },
+      "performance": [
+        "Tri motor All-Wheel Drive",
+        "0-100 km/h in 3.2 seconds",
+        "Top speed: 322 km/h",
+        "Autopilot system included",
+        "Full self-driving capability",
+        "Adaptive air suspension"
+      ],
+      "comfort": [
+        "Heated and ventilated front seats",
+        "Premium audio system",
+        "Panoramic glass roof",
+        "Autopilot convenience features",
+        "Wireless phone charging",
+        "Premium interior materials"
+      ],
+      "safety": [
+        "Autopilot emergency braking",
+        "Collision avoidance system",
+        "360° camera + parking sensors",
+        "Blind spot monitoring",
+        "Lane keep assist",
+        "Emergency braking"
+      ],
+      "technology": [
+        "17-inch touchscreen display",
+        "Over-the-air updates",
+        "Navigation system",
+        "Premium audio system",
+        "Smartphone integration",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Sleek sedan design",
+        "LED headlights",
+        "Premium paint finish",
+        "Alloy wheels",
+        "LED taillights",
+        "Modern minimalist interior"
+      ]
+    }
+  },
+  "lotus-emira": {
+    "id": "lotus-emira",
+    "make": "Lotus",
+    "model": "Emira",
+    "year": 2023,
+    "km": 5000,
+    "fuel": "Petrol",
+    "power": "400 HP",
+    "price": "€89,500",
+    "image": "assets/img/lotusemira.png",
+    "images": [
+      "assets/img/lotusemira.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Lotus",
+        "Model": "Emira",
+        "VIN": "SCCPC0A00NG000001",
+        "Production year": "2023",
+        "First registration": "20.07.2023",
+        "Engine capacity": "2.0 cm³"
+      },
+      "technical": {
+        "Power": "400 HP",
+        "Gearbox": "Automatic",
+        "Fuel": "Petrol",
+        "Color": "Nebula Red",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "2.0L Turbocharged V6 engine",
+        "8-speed automatic transmission",
+        "Sports suspension",
+        "High-performance brakes",
+        "Active exhaust system",
+        "Limited-slip differential"
+      ],
+      "comfort": [
+        "Sports seats with leather",
+        "Premium audio system",
+        "Air conditioning",
+        "Cruise control",
+        "Keyless entry",
+        "Electric windows"
+      ],
+      "safety": [
+        "ABS with EBD",
+        "Traction control",
+        "Dynamic stability control",
+        "Parking sensors",
+        "Airbags",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "10-inch touchscreen",
+        "Apple CarPlay & Android Auto",
+        "Navigation system",
+        "Premium audio system",
+        "Bluetooth connectivity",
+        "USB ports"
+      ],
+      "design": [
+        "Mid-engine design",
+        "Aerodynamic body",
+        "LED headlights",
+        "Alloy wheels",
+        "LED taillights",
+        "Sculpted bodywork"
+      ]
+    }
+  },
+  "lotus-seletre": {
+    "id": "lotus-seletre",
+    "make": "Lotus",
+    "model": "Eletre",
+    "year": 2023,
+    "km": 8000,
+    "fuel": "Electric",
+    "power": "600 HP",
+    "price": "€112,900",
+    "image": "assets/img/lotuseletre.png",
+    "images": [
+      "assets/img/lotuseletre.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Lotus",
+        "Model": "Eletre",
+        "VIN": "SCCPC0A10PG000001",
+        "Production year": "2023",
+        "First registration": "15.06.2023",
+        "Engine capacity": "Electric"
+      },
+      "technical": {
+        "Power": "600 HP",
+        "Gearbox": "Automatic",
+        "Fuel": "Electric",
+        "Color": "Solar Yellow",
+        "Warranty": "48-month warranty",
+        "Drivetrain": "AWD - Dual Motor"
+      },
+      "performance": [
+        "Dual electric motors",
+        "0-100 km/h in 4.5 seconds",
+        "Top speed: 260 km/h",
+        "Air suspension",
+        "Active aerodynamics",
+        "Torque vectoring"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Premium audio system",
+        "Panoramic roof",
+        "Four-zone climate control",
+        "Wireless charging",
+        "Premium interior"
+      ],
+      "safety": [
+        "Autonomous emergency braking",
+        "Lane keep assist",
+        "Adaptive cruise control",
+        "360° camera",
+        "Blind spot monitoring",
+        "Traffic sign recognition"
+      ],
+      "technology": [
+        "15.6-inch touchscreen",
+        "OTA updates",
+        "Navigation system",
+        "Premium sound system",
+        "Smartphone integration",
+        "5G connectivity"
+      ],
+      "design": [
+        "SUV design",
+        "Active rear spoiler",
+        "LED matrix headlights",
+        "22-inch alloy wheels",
+        "LED taillights",
+        "Futuristic interior"
+      ]
+    }
+  },
+  "lotus-elise": {
+    "id": "lotus-elise",
+    "make": "Lotus",
+    "model": "Elise",
+    "year": 2021,
+    "km": 15000,
+    "fuel": "Petrol",
+    "power": "217 HP",
+    "price": "€65,800",
+    "image": "assets/img/lotuselise.png",
+    "images": [
+      "assets/img/lotuselise.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Lotus",
+        "Model": "Elise",
+        "VIN": "SCCPC0A05NG000001",
+        "Production year": "2021",
+        "First registration": "10.09.2021",
+        "Engine capacity": "1.8 cm³"
+      },
+      "technical": {
+        "Power": "217 HP",
+        "Gearbox": "Manual 6-speed",
+        "Fuel": "Petrol",
+        "Color": "Metallic Blue",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "1.8L Supercharged engine",
+        "6-speed manual transmission",
+        "Sports suspension",
+        "High-performance brakes",
+        "Lightweight chassis",
+        "Limited-slip differential"
+      ],
+      "comfort": [
+        "Sports seats",
+        "Basic audio system",
+        "Manual air conditioning",
+        "Leather steering wheel",
+        "Keyless start",
+        "Removable roof panel"
+      ],
+      "safety": [
+        "ABS with EBD",
+        "Traction control",
+        "Driver and passenger airbags",
+        "Side impact protection",
+        "Rear parking sensors",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "Basic infotainment",
+        "Bluetooth connectivity",
+        "USB port",
+        "Digital instrument cluster",
+        "Keyless entry",
+        "Immobilizer"
+      ],
+      "design": [
+        "Classic roadster design",
+        "Composite bodywork",
+        "Halogen headlights",
+        "Alloy wheels",
+        "LED taillights",
+        "Minimalist interior"
+      ]
+    }
+  },
+  "audi-q3": {
+    "id": "audi-q3",
+    "make": "Audi",
+    "model": "Q3",
+    "year": 2022,
+    "km": 25000,
+    "fuel": "Diesel",
+    "power": "150 HP",
+    "price": "€38,750",
+    "image": "assets/img/audiq3.png",
+    "images": [
+      "assets/img/audiq3.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Audi",
+        "Model": "Q3",
+        "VIN": "WAUZZZGY7L000001",
+        "Production year": "2022",
+        "First registration": "12.04.2022",
+        "Engine capacity": "2.0 cm³"
+      },
+      "technical": {
+        "Power": "150 HP",
+        "Gearbox": "Automatic S tronic",
+        "Fuel": "Diesel",
+        "Color": "Mythos Black",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "quattro AWD"
+      },
+      "performance": [
+        "2.0L TDI diesel engine",
+        "7-speed S tronic transmission",
+        "quattro all-wheel drive",
+        "Sport suspension",
+        "Drive select system",
+        "Efficiency mode"
+      ],
+      "comfort": [
+        "Heated front seats",
+        "Three-zone climate control",
+        "Panoramic sunroof",
+        "Leather steering wheel",
+        "Keyless entry",
+        "Electric tailgate"
+      ],
+      "safety": [
+        "Audi pre sense city",
+        "Adaptive cruise control",
+        "Lane departure warning",
+        "Parking assist with cameras",
+        "Hill descent assist",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "MMI navigation",
+        "10.1-inch touchscreen",
+        "Apple CarPlay & Android Auto",
+        "Audi connect services",
+        "DAB radio",
+        "Bluetooth audio"
+      ],
+      "design": [
+        "SUV design",
+        "LED headlights",
+        "18-inch alloy wheels",
+        "LED taillights",
+        "S line exterior",
+        "Chrome accents"
+      ]
+    }
+  },
+  "audi-q7": {
+    "id": "audi-q7",
+    "make": "Audi",
+    "model": "Q7",
+    "year": 2022,
+    "km": 35000,
+    "fuel": "Diesel",
+    "power": "286 HP",
+    "price": "€73,200",
+    "image": "assets/img/audiq7.png",
+    "images": [
+      "assets/img/audiq7.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Audi",
+        "Model": "Q7",
+        "VIN": "WAUZZZGY8M000001",
+        "Production year": "2022",
+        "First registration": "08.03.2022",
+        "Engine capacity": "3.0 cm³"
+      },
+      "technical": {
+        "Power": "286 HP",
+        "Gearbox": "Automatic Tiptronic",
+        "Fuel": "Diesel",
+        "Color": "Florett Silver",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "quattro AWD"
+      },
+      "performance": [
+        "3.0L V6 TDI engine",
+        "8-speed Tiptronic transmission",
+        "quattro all-wheel drive",
+        "Adaptive air suspension",
+        "Mild hybrid system",
+        "Trail assist"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Four-zone climate control",
+        "Panoramic sunroof",
+        "Premium leather interior",
+        "Massage function",
+        "Electric third row seats"
+      ],
+      "safety": [
+        "Audi pre sense 360",
+        "Adaptive cruise assist",
+        "Intersection assist",
+        "Parking assist with 360° camera",
+        "Night vision assist",
+        "Emergency steering assist"
+      ],
+      "technology": [
+        "MMI touch response",
+        "Dual touchscreen displays",
+        "Apple CarPlay & Android Auto",
+        "Bang & Olufsen 3D sound",
+        "Audi connect services",
+        "WiFi hotspot"
+      ],
+      "design": [
+        "Large SUV design",
+        "Matrix LED headlights",
+        "20-inch alloy wheels",
+        "OLED taillights",
+        "S line package",
+        "Chrome exterior trim"
+      ]
+    }
+  },
+  "audi-rs4": {
+    "id": "audi-rs4",
+    "make": "Audi",
+    "model": "RS4",
+    "year": 2020,
+    "km": 45000,
+    "fuel": "Petrol",
+    "power": "450 HP",
+    "price": "€29,300",
+    "image": "assets/img/audirs4b8.png",
+    "images": [
+      "assets/img/audirs4b8.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Audi",
+        "Model": "RS4",
+        "VIN": "WAUZZZKY8L000001",
+        "Production year": "2020",
+        "First registration": "05.08.2020",
+        "Engine capacity": "2.9 cm³"
+      },
+      "technical": {
+        "Power": "450 HP",
+        "Gearbox": "Automatic Tiptronic",
+        "Fuel": "Petrol",
+        "Color": "Nardo Gray",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "quattro AWD"
+      },
+      "performance": [
+        "2.9L V6 biturbo engine",
+        "8-speed Tiptronic transmission",
+        "quattro permanent AWD",
+        "RS sport suspension",
+        "Dynamic ride control",
+        "RS sport exhaust"
+      ],
+      "comfort": [
+        "RS sport seats",
+        "Three-zone climate control",
+        "Sunroof",
+        "Leather interior",
+        "Sport steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Audi pre sense",
+        "Adaptive cruise control",
+        "Lane departure warning",
+        "Park assist with cameras",
+        "Blind spot assist",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "MMI navigation plus",
+        "Virtual cockpit",
+        "Apple CarPlay & Android Auto",
+        "Bang & Olufsen sound",
+        "Audi connect",
+        "Voice control"
+      ],
+      "design": [
+        "Avant design",
+        "RS front bumper",
+        "Matrix LED headlights",
+        "19-inch alloy wheels",
+        "RS exhaust tips",
+        "Carbon fiber accents"
+      ]
+    }
+  },
+  "audi-rs5": {
+    "id": "audi-rs5",
+    "make": "Audi",
+    "model": "RS5",
+    "year": 2019,
+    "km": 55000,
+    "fuel": "Petrol",
+    "power": "450 HP",
+    "price": "€26,400",
+    "image": "assets/img/audirs5.png",
+    "images": [
+      "assets/img/audirs5.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Audi",
+        "Model": "RS5",
+        "VIN": "WAUZZZGY7K000001",
+        "Production year": "2019",
+        "First registration": "10.06.2019",
+        "Engine capacity": "2.9 cm³"
+      },
+      "technical": {
+        "Power": "450 HP",
+        "Gearbox": "Automatic Tiptronic",
+        "Fuel": "Petrol",
+        "Color": "Tango Red",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "quattro AWD"
+      },
+      "performance": [
+        "2.9L V6 biturbo engine",
+        "8-speed Tiptronic transmission",
+        "quattro sport differential",
+        "RS sport suspension",
+        "Dynamic ride control",
+        "RS exhaust system"
+      ],
+      "comfort": [
+        "RS sport seats",
+        "Three-zone climate control",
+        "Sunroof",
+        "Leather interior",
+        "Sport steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Audi pre sense",
+        "Adaptive cruise control",
+        "Lane departure warning",
+        "Park assist with cameras",
+        "Blind spot assist",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "MMI navigation plus",
+        "Virtual cockpit plus",
+        "Apple CarPlay & Android Auto",
+        "Bang & Olufsen sound",
+        "Audi connect",
+        "Voice control"
+      ],
+      "design": [
+        "Coupe design",
+        "RS body kit",
+        "Matrix LED headlights",
+        "20-inch alloy wheels",
+        "RS oval exhaust",
+        "Carbon fiber mirror caps"
+      ]
+    }
+  },
+  "audi-rsq8": {
+    "id": "audi-rsq8",
+    "make": "Audi",
+    "model": "RS Q8",
+    "year": 2022,
+    "km": 20000,
+    "fuel": "Petrol",
+    "power": "600 HP",
+    "price": "€135,700",
+    "image": "assets/img/audirsq8.png",
+    "images": [
+      "assets/img/audirsq8.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Audi",
+        "Model": "RS Q8",
+        "VIN": "WAUZZZGY9N000001",
+        "Production year": "2022",
+        "First registration": "15.02.2022",
+        "Engine capacity": "4.0 cm³"
+      },
+      "technical": {
+        "Power": "600 HP",
+        "Gearbox": "Automatic Tiptronic",
+        "Fuel": "Petrol",
+        "Color": "Navarra Blue",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "quattro AWD"
+      },
+      "performance": [
+        "4.0L V8 TFSI biturbo",
+        "8-speed Tiptronic transmission",
+        "quattro AWD with sport differential",
+        "Adaptive air suspension",
+        "RS ceramic brakes",
+        "RS sport exhaust"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Four-zone climate control",
+        "Panoramic sunroof",
+        "Premium leather interior",
+        "Massage function",
+        "Electric tailgate"
+      ],
+      "safety": [
+        "Audi pre sense 360",
+        "Adaptive cruise assist",
+        "Intersection assist",
+        "Park assist with 360° camera",
+        "Night vision assist",
+        "Emergency steering assist"
+      ],
+      "technology": [
+        "MMI touch response",
+        "Dual touchscreen displays",
+        "Apple CarPlay & Android Auto",
+        "Bang & Olufsen 3D sound",
+        "Audi connect services",
+        "WiFi hotspot"
+      ],
+      "design": [
+        "Coupe SUV design",
+        "Matrix LED headlights",
+        "23-inch alloy wheels",
+        "OLED taillights",
+        "RS widebody kit",
+        "Carbon fiber accents"
+      ]
+    }
+  },
+  "lexus-es": {
+    "id": "lexus-es",
+    "make": "Lexus",
+    "model": "ES",
+    "year": 2022,
+    "km": 28000,
+    "fuel": "Hybrid",
+    "power": "218 HP",
+    "price": "€45,900",
+    "image": "assets/img/lexuses.png",
+    "images": [
+      "assets/img/lexuses.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Lexus",
+        "Model": "ES",
+        "VIN": "JTHB1K1KXM000001",
+        "Production year": "2022",
+        "First registration": "18.03.2022",
+        "Engine capacity": "2.5 cm³"
+      },
+      "technical": {
+        "Power": "218 HP",
+        "Gearbox": "Automatic E-CVT",
+        "Fuel": "Hybrid",
+        "Color": "Matte Silver",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "FWD"
+      },
+      "performance": [
+        "2.5L 4-cylinder hybrid",
+        "E-CVT transmission",
+        "ECO driving mode",
+        "Normal and Sport modes",
+        "Regenerative braking",
+        "Efficient fuel economy"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Dual-zone climate control",
+        "Panoramic glass roof",
+        "Premium leather interior",
+        "Wood trim",
+        "Quiet cabin"
+      ],
+      "safety": [
+        "Lexus Safety System+ 2.0",
+        "Pre-collision system",
+        "Lane departure alert",
+        "Parking assist with cameras",
+        "Radar cruise control",
+        "Automatic high beams"
+      ],
+      "technology": [
+        "12.3-inch navigation display",
+        "Apple CarPlay & Android Auto",
+        "Mark Levinson premium audio",
+        "Lexus Enform services",
+        "Voice recognition",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Sedan design",
+        "LED headlights",
+        "18-inch alloy wheels",
+        "LED taillights",
+        "Spindle grille",
+        "Elegant lines"
+      ]
+    }
+  },
+  "lexus-is": {
+    "id": "lexus-is",
+    "make": "Lexus",
+    "model": "IS",
+    "year": 2022,
+    "km": 32000,
+    "fuel": "Petrol",
+    "power": "241 HP",
+    "price": "€42,800",
+    "image": "assets/img/lexusis.png",
+    "images": [
+      "assets/img/lexusis.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Lexus",
+        "Model": "IS",
+        "VIN": "JTHCK1K14M000001",
+        "Production year": "2022",
+        "First registration": "22.05.2022",
+        "Engine capacity": "2.0 cm³"
+      },
+      "technical": {
+        "Power": "241 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Petrol",
+        "Color": "Ultra White",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "2.0L Turbocharged engine",
+        "8-speed automatic transmission",
+        "Sport driving mode",
+        "Normal and Eco modes",
+        "Sport-tuned suspension",
+        "Performance exhaust"
+      ],
+      "comfort": [
+        "Heated sport seats",
+        "Dual-zone climate control",
+        "Power sunroof",
+        "Leather interior",
+        "Sport steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Lexus Safety System+ 2.5",
+        "Pre-collision system",
+        "Lane tracing assist",
+        "Rear cross traffic alert",
+        "Blind spot monitor",
+        "Dynamic radar cruise control"
+      ],
+      "technology": [
+        "10.3-inch display",
+        "Apple CarPlay & Android Auto",
+        "Premium audio system",
+        "Lexus Enform services",
+        "Voice recognition",
+        "Bluetooth connectivity"
+      ],
+      "design": [
+        "Sport sedan design",
+        "LED triple-beam headlights",
+        "19-inch alloy wheels",
+        "LED taillights",
+        "F sport styling",
+        "Aggressive stance"
+      ]
+    }
+  },
+  "lexus-lc": {
+    "id": "lexus-lc",
+    "make": "Lexus",
+    "model": "LC",
+    "year": 2023,
+    "km": 12000,
+    "fuel": "Petrol",
+    "power": "471 HP",
+    "price": "€98,750",
+    "image": "assets/img/lexuslc.png",
+    "images": [
+      "assets/img/lexuslc.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Lexus",
+        "Model": "LC",
+        "VIN": "JTHKB1U10P000001",
+        "Production year": "2023",
+        "First registration": "10.01.2023",
+        "Engine capacity": "5.0 cm³"
+      },
+      "technical": {
+        "Power": "471 HP",
+        "Gearbox": "Automatic 10-speed",
+        "Fuel": "Petrol",
+        "Color": "Opulent Blue",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "5.0L V8 engine",
+        "10-speed automatic transmission",
+        "Sport driving modes",
+        "Adaptive suspension",
+        "Performance exhaust",
+        "LSD differential"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Dual-zone climate control",
+        "Alcantara headliner",
+        "Premium leather interior",
+        "Sport seats",
+        "Quiet cabin"
+      ],
+      "safety": [
+        "Lexus Safety System+",
+        "Pre-collision system",
+        "Lane departure alert",
+        "Intelligent high beams",
+        "Rear cross traffic alert",
+        "Blind spot monitor"
+      ],
+      "technology": [
+        "10.3-inch navigation",
+        "Apple CarPlay & Android Auto",
+        "Mark Levinson audio",
+        "Lexus Enform services",
+        "Voice recognition",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Coupe design",
+        "LED headlights",
+        "21-inch forged wheels",
+        "LED taillights",
+        "Spindle grille",
+        "Sculpted body"
+      ]
+    }
+  },
+  "lexus-lfa": {
+    "id": "lexus-lfa",
+    "make": "Lexus",
+    "model": "LFA",
+    "year": 2012,
+    "km": 8500,
+    "fuel": "Petrol",
+    "power": "552 HP",
+    "price": "€450,000",
+    "image": "assets/img/lexuslfa.png",
+    "images": [
+      "assets/img/lexuslfa.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Lexus",
+        "Model": "LFA",
+        "VIN": "JTHKB000000000001",
+        "Production year": "2012",
+        "First registration": "15.08.2012",
+        "Engine capacity": "4.8 cm³"
+      },
+      "technical": {
+        "Power": "552 HP",
+        "Gearbox": "Automated Manual 6-speed",
+        "Fuel": "Petrol",
+        "Color": "Nurburgring Edition",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "4.8L V10 engine",
+        "6-speed sequential transmission",
+        "Carbon fiber chassis",
+        "Brembo carbon ceramic brakes",
+        "Lightweight construction",
+        "High-revving engine"
+      ],
+      "comfort": [
+        "Carbon fiber seats",
+        "Air conditioning",
+        "Premium audio system",
+        "Alcantara interior",
+        "Sport steering wheel",
+        "Minimalist cabin"
+      ],
+      "safety": [
+        "ABS with EBD",
+        "Traction control",
+        "Dynamic stability control",
+        "Airbags",
+        "Parking sensors",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "Digital instrument cluster",
+        "Premium audio system",
+        "Bluetooth connectivity",
+        "Keyless start",
+        "Immobilizer",
+        "Track telemetry"
+      ],
+      "design": [
+        "Supercar design",
+        "Carbon fiber body",
+        "LED headlights",
+        "Magical forged wheels",
+        "Center exit exhaust",
+        "Active rear wing"
+      ]
+    }
+  },
+  "lexus-lx": {
+    "id": "lexus-lx",
+    "make": "Lexus",
+    "model": "LX",
+    "year": 2022,
+    "km": 30000,
+    "fuel": "Petrol",
+    "power": "409 HP",
+    "price": "€98,900",
+    "image": "assets/img/lexuslx.png",
+    "images": [
+      "assets/img/lexuslx.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Lexus",
+        "Model": "LX",
+        "VIN": "JTHKJ1M1XM000001",
+        "Production year": "2022",
+        "First registration": "20.04.2022",
+        "Engine capacity": "5.7 cm³"
+      },
+      "technical": {
+        "Power": "409 HP",
+        "Gearbox": "Automatic 10-speed",
+        "Fuel": "Petrol",
+        "Color": "Eminent White",
+        "Warranty": "48-month warranty",
+        "Drivetrain": "4WD"
+      },
+      "performance": [
+        "5.7L V8 engine",
+        "10-speed automatic transmission",
+        "Four-wheel drive system",
+        "Multi-terrain select",
+        "Crawl control",
+        "Kinetic suspension"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Four-zone climate control",
+        "Panoramic sunroof",
+        "Premium leather interior",
+        "Captain's chairs",
+        "Power third row"
+      ],
+      "safety": [
+        "Lexus Safety System+ 2.5",
+        "Pre-collision system",
+        "Lane departure alert",
+        "Parking assist with cameras",
+        "Radar cruise control",
+        "Multi terrain monitor"
+      ],
+      "technology": [
+        "12.3-inch navigation",
+        "Apple CarPlay & Android Auto",
+        "Mark Levinson premium audio",
+        "Lexus Enform services",
+        "Voice recognition",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Large SUV design",
+        "LED headlights",
+        "21-inch alloy wheels",
+        "LED taillights",
+        "Spindle grille",
+        "Luxury styling"
+      ]
+    }
+  },
+  "lexus-uxh": {
+    "id": "lexus-uxh",
+    "make": "Lexus",
+    "model": "UX h",
+    "year": 2023,
+    "km": 15000,
+    "fuel": "Hybrid",
+    "power": "181 HP",
+    "price": "€38,500",
+    "image": "assets/img/lexusuxh.png",
+    "images": [
+      "assets/img/lexusuxh.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Lexus",
+        "Model": "UX 250h",
+        "VIN": "JTHKK1K23P000001",
+        "Production year": "2023",
+        "First registration": "12.06.2023",
+        "Engine capacity": "2.0 cm³"
+      },
+      "technical": {
+        "Power": "181 HP",
+        "Gearbox": "Automatic E-CVT",
+        "Fuel": "Hybrid",
+        "Color": "Obsidian Gray",
+        "Warranty": "48-month warranty",
+        "Drivetrain": "FWD"
+      },
+      "performance": [
+        "2.0L 4-cylinder hybrid",
+        "E-CVT transmission",
+        "ECO driving mode",
+        "Normal and Sport modes",
+        "Regenerative braking",
+        "Excellent fuel economy"
+      ],
+      "comfort": [
+        "Heated seats",
+        "Automatic climate control",
+        "Power moonroof",
+        "Premium cloth interior",
+        "Sport steering wheel",
+        "Quiet cabin"
+      ],
+      "safety": [
+        "Lexus Safety System+ 2.0",
+        "Pre-collision system",
+        "Lane departure alert",
+        "Parking assist with cameras",
+        "Radar cruise control",
+        "Automatic high beams"
+      ],
+      "technology": [
+        "8-inch display",
+        "Apple CarPlay & Android Auto",
+        "Premium audio system",
+        "Lexus Enform services",
+        "Voice recognition",
+        "Bluetooth connectivity"
+      ],
+      "design": [
+        "Crossover design",
+        "LED headlights",
+        "18-inch alloy wheels",
+        "LED taillights",
+        "Spindle grille",
+        "Urban styling"
+      ]
+    }
+  },
+  "porsche-918-spyder": {
+    "id": "porsche-918-spyder",
+    "make": "Porsche",
+    "model": "918 Spyder",
+    "year": 2015,
+    "km": 3000,
+    "fuel": "Hybrid",
+    "power": "887 HP",
+    "price": "€1,200,000",
+    "image": "assets/img/porsche918.png",
+    "images": [
+      "assets/img/porsche918.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Porsche",
+        "Model": "918 Spyder",
+        "VIN": "WP0AB2E12S0000001",
+        "Production year": "2015",
+        "First registration": "20.09.2015",
+        "Engine capacity": "4.6 cm³"
+      },
+      "technical": {
+        "Power": "887 HP",
+        "Gearbox": "Automated Manual 7-speed",
+        "Fuel": "Hybrid",
+        "Color": "Liquid Silver",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "4.6L V8 + dual electric motors",
+        "7-speed PDK transmission",
+        "Hybrid hypercar system",
+        "Active suspension",
+        "Carbon ceramic brakes",
+        "Top speed: 345 km/h"
+      ],
+      "comfort": [
+        "Carbon fiber seats",
+        "Air conditioning",
+        "Burmester audio system",
+        "Alcantara interior",
+        "Sport steering wheel",
+        "Minimalist cabin"
+      ],
+      "safety": [
+        "ABS with EBD",
+        "Traction control",
+        "Stability management",
+        "Airbags",
+        "Parking sensors",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "Digital instrument cluster",
+        "Burmester premium audio",
+        "Bluetooth connectivity",
+        "Keyless start",
+        "Hybrid management display",
+        "Track telemetry"
+      ],
+      "design": [
+        "Hypercar design",
+        "Carbon fiber monocoque",
+        "LED headlights",
+        "Magnesium wheels",
+        "Top-exit exhaust",
+        "Active aerodynamics"
+      ]
+    }
+  },
+  "alfa-romeo-4c": {
+    "id": "alfa-romeo-4c",
+    "make": "Alfa Romeo",
+    "model": "4C",
+    "year": 2019,
+    "km": 18000,
+    "fuel": "Petrol",
+    "power": "240 HP",
+    "price": "€68,500",
+    "image": "assets/img/4c.png",
+    "images": [
+      "assets/img/4c.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Alfa Romeo",
+        "Model": "4C",
+        "VIN": "ZAR960000P0000001",
+        "Production year": "2019",
+        "First registration": "25.07.2019",
+        "Engine capacity": "1.7 cm³"
+      },
+      "technical": {
+        "Power": "240 HP",
+        "Gearbox": "Automated Manual 6-speed",
+        "Fuel": "Petrol",
+        "Color": "Rosso Competizione",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "1.7L Turbocharged 4-cylinder",
+        "6-speed twin-clutch transmission",
+        "Carbon fiber chassis",
+        "Alcon brakes",
+        "Sport suspension",
+        "Lightweight construction"
+      ],
+      "comfort": [
+        "Carbon fiber seats",
+        "Air conditioning",
+        "Basic audio system",
+        "Alcantara interior",
+        "Sport steering wheel",
+        "Minimalist cabin"
+      ],
+      "safety": [
+        "ABS with EBD",
+        "Traction control",
+        "Stability control",
+        "Airbags",
+        "Rear parking sensors",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "Digital instrument cluster",
+        "Basic infotainment",
+        "Bluetooth connectivity",
+        "Keyless start",
+        "Immobilizer",
+        "USB port"
+      ],
+      "design": [
+        "Sports car design",
+        "Carbon fiber body",
+        "Xenon headlights",
+        "18-inch alloy wheels",
+        "Center exhaust",
+        "Aggressive styling"
+      ]
+    }
+  },
+  "alfa-romeo-33-stradale": {
+    "id": "alfa-romeo-33-stradale",
+    "make": "Alfa Romeo",
+    "model": "33 Stradale",
+    "year": 2024,
+    "km": 500,
+    "fuel": "Petrol",
+    "power": "620 HP",
+    "price": "€2,000,000",
+    "image": "assets/img/33stradale.png",
+    "images": [
+      "assets/img/33stradale.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Alfa Romeo",
+        "Model": "33 Stradale",
+        "VIN": "ZAR00000000000001",
+        "Production year": "2024",
+        "First registration": "01.01.2024",
+        "Engine capacity": "3.0 cm³"
+      },
+      "technical": {
+        "Power": "620 HP",
+        "Gearbox": "Automated Manual 8-speed",
+        "Fuel": "Petrol",
+        "Color": "Rosso Alfa",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "3.0L Twin-Turbo V6",
+        "8-speed dual-clutch transmission",
+        "Carbon fiber monocoque",
+        "Brembo carbon ceramic brakes",
+        "Active aerodynamics",
+        "Top speed: 333 km/h"
+      ],
+      "comfort": [
+        "Carbon fiber racing seats",
+        "Air conditioning",
+        "Premium audio system",
+        "Alcantara interior",
+        "Digital instrument cluster",
+        "Minimalist luxury"
+      ],
+      "safety": [
+        "ABS with EBD",
+        "Traction control",
+        "Stability management",
+        "Airbags",
+        "Racing safety cell",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "Digital dashboard",
+        "Premium sound system",
+        "Smartphone integration",
+        "Keyless entry",
+        "Performance telemetry",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Supercar design",
+        "Butterfly doors",
+        "LED headlights",
+        "Center-lock wheels",
+        "Active rear wing",
+        "Coachbuilt Italian styling"
+      ]
+    }
+  },
+  "alfa-romeo-giulia": {
+    "id": "alfa-romeo-giulia",
+    "make": "Alfa Romeo",
+    "model": "Giulia",
+    "year": 2022,
+    "km": 35000,
+    "fuel": "Diesel",
+    "power": "190 HP",
+    "price": "€39,900",
+    "image": "assets/img/giulia.png",
+    "images": [
+      "assets/img/giulia.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Alfa Romeo",
+        "Model": "Giulia",
+        "VIN": "ZAR916000K0000001",
+        "Production year": "2022",
+        "First registration": "18.05.2022",
+        "Engine capacity": "2.2 cm³"
+      },
+      "technical": {
+        "Power": "190 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Diesel",
+        "Color": "Alfa Rosso",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "2.2L Turbo diesel",
+        "8-speed automatic transmission",
+        "Alfa DNA drive modes",
+        "Sport suspension",
+        "Efficient diesel engine",
+        "Responsive handling"
+      ],
+      "comfort": [
+        "Heated sports seats",
+        "Dual-zone climate control",
+        "Sunroof",
+        "Leather interior",
+        "Sport steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Alfa Romeo DNA safety",
+        "Pre-collision system",
+        "Lane departure warning",
+        "Parking sensors",
+        "Blind spot monitoring",
+        "Traffic sign recognition"
+      ],
+      "technology": [
+        "8.8-inch infotainment",
+        "Apple CarPlay & Android Auto",
+        "Premium audio system",
+        "Alfa connect services",
+        "Voice recognition",
+        "Bluetooth connectivity"
+      ],
+      "design": [
+        "Sedan design",
+        "LED headlights",
+        "18-inch alloy wheels",
+        "LED taillights",
+        "Trilobe grille",
+        "Italian styling"
+      ]
+    }
+  },
+  "alfa-romeo-tonale": {
+    "id": "alfa-romeo-tonale",
+    "make": "Alfa Romeo",
+    "model": "Tonale",
+    "year": 2023,
+    "km": 20000,
+    "fuel": "Hybrid",
+    "power": "160 HP",
+    "price": "€42,400",
+    "image": "assets/img/tonale.png",
+    "images": [
+      "assets/img/tonale.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Alfa Romeo",
+        "Model": "Tonale",
+        "VIN": "ZAR917000P0000001",
+        "Production year": "2023",
+        "First registration": "22.06.2023",
+        "Engine capacity": "1.5 cm³"
+      },
+      "technical": {
+        "Power": "160 HP",
+        "Gearbox": "Automatic 7-speed",
+        "Fuel": "Hybrid",
+        "Color": "Misano Blue",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "FWD"
+      },
+      "performance": [
+        "1.5L Turbo hybrid",
+        "7-speed dual-clutch transmission",
+        "Alfa DNA drive modes",
+        "Sport suspension",
+        "Regenerative braking",
+        "Efficient hybrid system"
+      ],
+      "comfort": [
+        "Heated sports seats",
+        "Dual-zone climate control",
+        "Panoramic sunroof",
+        "Leather interior",
+        "Sport steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Alfa Romeo DNA safety",
+        "Pre-collision system",
+        "Lane departure warning",
+        "Parking sensors with camera",
+        "Blind spot monitoring",
+        "Traffic sign recognition"
+      ],
+      "technology": [
+        "10.25-inch infotainment",
+        "Apple CarPlay & Android Auto",
+        "Premium audio system",
+        "Alfa connect services",
+        "Wireless charging",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Crossover design",
+        "LED headlights",
+        "20-inch alloy wheels",
+        "LED taillights",
+        "Trilobe grille",
+        "Italian styling"
+      ]
+    }
+  },
+  "alfa-romeo-stelvio": {
+    "id": "alfa-romeo-stelvio",
+    "make": "Alfa Romeo",
+    "model": "Stelvio",
+    "year": 2022,
+    "km": 38000,
+    "fuel": "Diesel",
+    "power": "210 HP",
+    "price": "€44,900",
+    "image": "assets/img/stelvio.png",
+    "images": [
+      "assets/img/stelvio.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Alfa Romeo",
+        "Model": "Stelvio",
+        "VIN": "ZAR918000L0000001",
+        "Production year": "2022",
+        "First registration": "15.04.2022",
+        "Engine capacity": "2.2 cm³"
+      },
+      "technical": {
+        "Power": "210 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Diesel",
+        "Color": "Alfa White",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "2.2L Turbo diesel",
+        "8-speed automatic transmission",
+        "Q4 all-wheel drive",
+        "Alfa DNA drive modes",
+        "Sport suspension",
+        "Excellent handling"
+      ],
+      "comfort": [
+        "Heated sports seats",
+        "Dual-zone climate control",
+        "Panoramic sunroof",
+        "Leather interior",
+        "Sport steering wheel",
+        "Electric tailgate"
+      ],
+      "safety": [
+        "Alfa Romeo DNA safety",
+        "Pre-collision system",
+        "Lane departure warning",
+        "Parking sensors with camera",
+        "Blind spot monitoring",
+        "Traffic sign recognition"
+      ],
+      "technology": [
+        "8.8-inch infotainment",
+        "Apple CarPlay & Android Auto",
+        "Premium audio system",
+        "Alfa connect services",
+        "Voice recognition",
+        "Bluetooth connectivity"
+      ],
+      "design": [
+        "SUV design",
+        "LED headlights",
+        "20-inch alloy wheels",
+        "LED taillights",
+        "Trilobe grille",
+        "Italian styling"
+      ]
+    }
+  },
+  "genesis-g70-shooting-brake": {
+    "id": "genesis-g70-shooting-brake",
+    "make": "Genesis",
+    "model": "G70 Shooting Brake",
+    "year": 2023,
+    "km": 22000,
+    "fuel": "Diesel",
+    "power": "200 HP",
+    "price": "€48,500",
+    "image": "assets/img/gennesisg70shootingbrake.png",
+    "images": [
+      "assets/img/gennesisg70shootingbrake.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Genesis",
+        "Model": "G70 Shooting Brake",
+        "VIN": "KMTG4141XP0000001",
+        "Production year": "2023",
+        "First registration": "20.03.2023",
+        "Engine capacity": "2.0 cm³"
+      },
+      "technical": {
+        "Power": "200 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Diesel",
+        "Color": "Makalu Gray",
+        "Warranty": "60-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "2.0L Turbo diesel",
+        "8-speed automatic transmission",
+        "Sport driving modes",
+        "Brembo brakes",
+        "Sport suspension",
+        "Limited-slip differential"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Dual-zone climate control",
+        "Panoramic sunroof",
+        "Premium leather interior",
+        "Nappa leather seats",
+        "Electric trunk"
+      ],
+      "safety": [
+        "Highway Driving Assist 2",
+        "Forward collision avoidance",
+        "Lane keeping assist",
+        "Smart cruise control",
+        "Rear cross traffic alert",
+        "Blind spot collision warning"
+      ],
+      "technology": [
+        "10.25-inch infotainment",
+        "Apple CarPlay & Android Auto",
+        "Lexicon premium audio",
+        "Genesis connected services",
+        "Wireless charging",
+        "Head-up display"
+      ],
+      "design": [
+        "Shooting brake design",
+        "LED headlights",
+        "19-inch alloy wheels",
+        "LED taillights",
+        "Crest grille",
+        "Elegant lines"
+      ]
+    }
+  },
+  "genesis-g80": {
+    "id": "genesis-g80",
+    "make": "Genesis",
+    "model": "G80",
+    "year": 2023,
+    "km": 25000,
+    "fuel": "Diesel",
+    "power": "210 HP",
+    "price": "€52,900",
+    "image": "assets/img/gennesisg80.png",
+    "images": [
+      "assets/img/gennesisg80.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Genesis",
+        "Model": "G80",
+        "VIN": "KMTG4142LP0000001",
+        "Production year": "2023",
+        "First registration": "18.02.2023",
+        "Engine capacity": "2.2 cm³"
+      },
+      "technical": {
+        "Power": "210 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Diesel",
+        "Color": "Vik Black",
+        "Warranty": "60-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "2.2L Turbo diesel",
+        "8-speed automatic transmission",
+        "HTRAC AWD system",
+        "Multiple drive modes",
+        "Air suspension",
+        "Smooth ride quality"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Three-zone climate control",
+        "Panoramic sunroof",
+        "Premium leather interior",
+        "Nappa leather seats",
+        "Massage function"
+      ],
+      "safety": [
+        "Highway Driving Assist 2",
+        "Forward collision avoidance",
+        "Lane keeping assist",
+        "Smart cruise control",
+        "Rear cross traffic alert",
+        "Blind spot collision warning"
+      ],
+      "technology": [
+        "14.5-inch infotainment",
+        "Apple CarPlay & Android Auto",
+        "Lexicon premium audio",
+        "Genesis connected services",
+        "Wireless charging",
+        "Digital instrument cluster"
+      ],
+      "design": [
+        "Sedan design",
+        "LED headlights",
+        "19-inch alloy wheels",
+        "LED taillights",
+        "Crest grille",
+        "Elegant styling"
+      ]
+    }
+  },
+  "genesis-g90": {
+    "id": "genesis-g90",
+    "make": "Genesis",
+    "model": "G90",
+    "year": 2023,
+    "km": 18000,
+    "fuel": "Petrol",
+    "power": "380 HP",
+    "price": "€68,700",
+    "image": "assets/img/gennesisg90.png",
+    "images": [
+      "assets/img/gennesisg90.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Genesis",
+        "Model": "G90",
+        "VIN": "KMTG4143MP0000001",
+        "Production year": "2023",
+        "First registration": "12.04.2023",
+        "Engine capacity": "3.5 cm³"
+      },
+      "technical": {
+        "Power": "380 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Petrol",
+        "Color": "Barcelona Burgundy",
+        "Warranty": "60-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "3.5L Twin-Turbo V6",
+        "8-speed automatic transmission",
+        "HTRAC AWD system",
+        "Air suspension",
+        "Multiple drive modes",
+        "Powerful acceleration"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Four-zone climate control",
+        "Panoramic sunroof",
+        "Premium leather interior",
+        "Nappa leather seats",
+        "Rear seat entertainment"
+      ],
+      "safety": [
+        "Highway Driving Assist 2",
+        "Forward collision avoidance",
+        "Lane keeping assist",
+        "Smart cruise control",
+        "Rear cross traffic alert",
+        "360-degree camera"
+      ],
+      "technology": [
+        "14.5-inch infotainment",
+        "Apple CarPlay & Android Auto",
+        "Lexicon premium audio",
+        "Genesis connected services",
+        "Wireless charging",
+        "Rear seat controls"
+      ],
+      "design": [
+        "Luxury sedan design",
+        "LED headlights",
+        "20-inch alloy wheels",
+        "LED taillights",
+        "Crest grille",
+        "Premium styling"
+      ]
+    }
+  },
+  "genesis-g90-long-wheelbase": {
+    "id": "genesis-g90-long-wheelbase",
+    "make": "Genesis",
+    "model": "G90 Long Wheelbase",
+    "year": 2023,
+    "km": 15000,
+    "fuel": "Petrol",
+    "power": "409 HP",
+    "price": "€75,800",
+    "image": "assets/img/gennesisg90longwheelbase.png",
+    "images": [
+      "assets/img/gennesisg90longwheelbase.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Genesis",
+        "Model": "G90 Long Wheelbase",
+        "VIN": "KMTG4144NP0000001",
+        "Production year": "2023",
+        "First registration": "20.05.2023",
+        "Engine capacity": "3.5 cm³"
+      },
+      "technical": {
+        "Power": "409 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Petrol",
+        "Color": "Saville Silver",
+        "Warranty": "60-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "3.5L Twin-Turbo V6",
+        "8-speed automatic transmission",
+        "HTRAC AWD system",
+        "Air suspension",
+        "Enhanced wheelbase",
+        "Executive ride"
+      ],
+      "comfort": [
+        "Executive rear seats",
+        "Four-zone climate control",
+        "Panoramic sunroof",
+        "Premium leather interior",
+        "Nappa leather seats",
+        "Rear seat entertainment"
+      ],
+      "safety": [
+        "Highway Driving Assist 2",
+        "Forward collision avoidance",
+        "Lane keeping assist",
+        "Smart cruise control",
+        "Rear cross traffic alert",
+        "360-degree camera"
+      ],
+      "technology": [
+        "14.5-inch infotainment",
+        "Apple CarPlay & Android Auto",
+        "Lexicon premium audio",
+        "Genesis connected services",
+        "Wireless charging",
+        "Rear seat tablets"
+      ],
+      "design": [
+        "Long wheelbase design",
+        "LED headlights",
+        "20-inch alloy wheels",
+        "LED taillights",
+        "Crest grille",
+        "Executive styling"
+      ]
+    }
+  },
+  "genesis-gv60": {
+    "id": "genesis-gv60",
+    "make": "Genesis",
+    "model": "GV60",
+    "year": 2023,
+    "km": 12000,
+    "fuel": "Electric",
+    "power": "329 HP",
+    "price": "€59,900",
+    "image": "assets/img/gennesisgv60.png",
+    "images": [
+      "assets/img/gennesisgv60.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Genesis",
+        "Model": "GV60",
+        "VIN": "KMTG4145OP0000001",
+        "Production year": "2023",
+        "First registration": "10.07.2023",
+        "Engine capacity": "Electric"
+      },
+      "technical": {
+        "Power": "329 HP",
+        "Gearbox": "Automatic",
+        "Fuel": "Electric",
+        "Color": "Sao Paulo Green",
+        "Warranty": "60-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "Dual electric motors",
+        "0-100 km/h in 5.5 seconds",
+        "Top speed: 235 km/h",
+        "77.4 kWh battery",
+        "Fast charging capability",
+        "Regenerative braking"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Dual-zone climate control",
+        "Fixed glass roof",
+        "Premium interior materials",
+        "Spacious cabin",
+        "Electric tailgate"
+      ],
+      "safety": [
+        "Highway Driving Assist 2",
+        "Forward collision avoidance",
+        "Lane keeping assist",
+        "Smart cruise control",
+        "Rear cross traffic alert",
+        "360-degree camera"
+      ],
+      "technology": [
+        "12.3-inch touchscreen",
+        "Apple CarPlay & Android Auto",
+        "Premium audio system",
+        "Genesis connected services",
+        "Wireless charging",
+        "OTA updates"
+      ],
+      "design": [
+        "Crossover design",
+        "LED headlights",
+        "21-inch alloy wheels",
+        "LED taillights",
+        "EV styling",
+        "Futuristic interior"
+      ]
+    }
+  },
+  "genesis-gv70": {
+    "id": "genesis-gv70",
+    "make": "Genesis",
+    "model": "GV70",
+    "year": 2023,
+    "km": 20000,
+    "fuel": "Diesel",
+    "power": "210 HP",
+    "price": "€49,900",
+    "image": "assets/img/gennesisgv70.png",
+    "images": [
+      "assets/img/gennesisgv70.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Genesis",
+        "Model": "GV70",
+        "VIN": "KMTG4146NP0000001",
+        "Production year": "2023",
+        "First registration": "15.06.2023",
+        "Engine capacity": "2.2 cm³"
+      },
+      "technical": {
+        "Power": "210 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Diesel",
+        "Color": "Utah Gray",
+        "Warranty": "60-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "2.2L Turbo diesel",
+        "8-speed automatic transmission",
+        "HTRAC AWD system",
+        "Multiple drive modes",
+        "Sport suspension",
+        "Responsive handling"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Dual-zone climate control",
+        "Panoramic sunroof",
+        "Premium leather interior",
+        "Nappa leather seats",
+        "Electric tailgate"
+      ],
+      "safety": [
+        "Highway Driving Assist 2",
+        "Forward collision avoidance",
+        "Lane keeping assist",
+        "Smart cruise control",
+        "Rear cross traffic alert",
+        "360-degree camera"
+      ],
+      "technology": [
+        "14.5-inch infotainment",
+        "Apple CarPlay & Android Auto",
+        "Lexicon premium audio",
+        "Genesis connected services",
+        "Wireless charging",
+        "Digital instrument cluster"
+      ],
+      "design": [
+        "SUV design",
+        "LED headlights",
+        "20-inch alloy wheels",
+        "LED taillights",
+        "Crest grille",
+        "Elegant styling"
+      ]
+    }
+  },
+  "mercedes-s400d": {
+    "id": "mercedes-s400d",
+    "make": "Mercedes-Benz",
+    "model": "S400d",
+    "year": 2023,
+    "km": 28000,
+    "fuel": "Diesel",
+    "power": "330 HP",
+    "price": "€104,600",
+    "image": "assets/img/s400d.png",
+    "images": [
+      "assets/img/s400d.png"
+    ],
+    "video": "assets/img/w223.mp4",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Mercedes-Benz",
+        "Model": "S-Class",
+        "VIN": "W1K2223033131A166892",
+        "Production year": "2023",
+        "First registration": "18.02.2023",
+        "Engine capacity": "2.9 cm³"
+      },
+      "technical": {
+        "Power": "330 HP",
+        "Gearbox": "Automatic",
+        "Fuel": "Diesel",
+        "Color": "Selenite Grey",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "4x4 - 4MATIC"
+      },
+      "performance": [
+        "2.9L Inline 6-cylinder diesel",
+        "9G-TRONIC automatic transmission",
+        "4MATIC all-wheel drive",
+        "AIRMATIC semi-active suspension",
+        "BlueTEC SCR system",
+        "Efficient diesel technology"
+      ],
+      "comfort": [
+        "Heated front seats with ventilation",
+        "Executive rear seats",
+        "Multi-zone automatic climate control",
+        "Automatic panoramic sliding sunroof",
+        "Premium ambient lighting",
+        "Wireless phone charging"
+      ],
+      "safety": [
+        "Driving Assistance package",
+        "DISTRONIC PLUS adaptive cruise control",
+        "Active Lane Keep Assist",
+        "Active parking assist with 360° camera",
+        "PRE-SAFE® Impulse Side system",
+        "Emergency stop assist"
+      ],
+      "technology": [
+        "MBUX multimedia system",
+        "Hard-disk navigation + OTA updates",
+        "Augmented reality navigation",
+        "Head-Up Display",
+        "Apple CarPlay & Android Auto",
+        "Mercedes me connect services"
+      ],
+      "design": [
+        "Executive line package",
+        "Night package",
+        "Multi-spoke wheels",
+        "Digital LED headlights",
+        "LED taillights with dynamic signals",
+        "Premium paint finish"
+      ]
+    }
+  },
+  "mercedes-e55-amg": {
+    "id": "mercedes-e55-amg",
+    "make": "Mercedes-Benz",
+    "model": "E55 AMG",
+    "year": 2006,
+    "km": 145000,
+    "fuel": "Petrol",
+    "power": "476 HP",
+    "price": "€25,900",
+    "image": "assets/img/e55-amg.png",
+    "images": [
+      "assets/img/e55-amg.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Mercedes-Benz",
+        "model": "E55 AMG",
+        "VIN": "WDB2117651A000001",
+        "Production year": "2006",
+        "First registration": "15.08.2006",
+        "Engine capacity": "5.4 cm³"
+      },
+      "technical": {
+        "Power": "476 HP",
+        "Gearbox": "Automatic 5-speed",
+        "Fuel": "Petrol",
+        "Color": "Black",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "4x4 - 4MATIC"
+      },
+      "performance": [
+        "5.4L V8 supercharged engine",
+        "5-speed automatic transmission",
+        "4MATIC all-wheel drive",
+        "AMG sport suspension",
+        "High-performance braking system",
+        "AMG exhaust system"
+      ],
+      "comfort": [
+        "AMG sport seats",
+        "Dual-zone climate control",
+        "Sunroof",
+        "Leather interior",
+        "Wood trim",
+        "Keyless entry"
+      ],
+      "safety": [
+        "ABS with ESP",
+        "Traction control",
+        "Airbags",
+        "Parking sensors",
+        "Rear view camera",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "COMAND navigation",
+        "Harman Kardon audio",
+        "Bluetooth connectivity",
+        "CD changer",
+        "Voice control",
+        "On-board computer"
+      ],
+      "design": [
+        "Classic AMG styling",
+        "Xenon headlights",
+        "18-inch AMG wheels",
+        "LED taillights",
+        "AMG body kit",
+        "Quad exhaust tips"
+      ]
+    }
+  },
+  "mercedes-g65-amg": {
+    "id": "mercedes-g65-amg",
+    "make": "Mercedes-Benz",
+    "model": "G65 AMG",
+    "year": 2016,
+    "km": 65000,
+    "fuel": "Petrol",
+    "power": "630 HP",
+    "price": "€245,000",
+    "image": "assets/img/g65-amg.png",
+    "images": [
+      "assets/img/g65-amg.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Mercedes-Benz",
+        "Model": "G-Class",
+        "VIN": "WDC4682861A000001",
+        "Production year": "2016",
+        "First registration": "20.07.2016",
+        "Engine capacity": "6.0 cm³"
+      },
+      "technical": {
+        "Power": "630 HP",
+        "Gearbox": "Automatic 7-speed",
+        "Fuel": "Petrol",
+        "Color": "Designo Diamond White",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "4x4"
+      },
+      "performance": [
+        "6.0L V12 biturbo engine",
+        "7G-TRONIC automatic transmission",
+        "Three locking differentials",
+        "Off-road reduction gears",
+        "AMG high-performance brakes",
+        "AMG sports exhaust"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Multi-zone climate control",
+        "Leather interior throughout",
+        "Designo leather package",
+        "Wood trim",
+        "Electric everything"
+      ],
+      "safety": [
+        "ABS with ESP",
+        "Traction control",
+        "Multiple airbags",
+        "Parking sensors",
+        "360-degree camera",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "COMAND Online navigation",
+        "Harman Kardon Logic7 audio",
+        "Blu-ray player",
+        "Bluetooth connectivity",
+        "Voice control",
+        "On-board computer"
+      ],
+      "design": [
+        "Iconic G-Class design",
+        "LED headlights",
+        "20-inch AMG wheels",
+        "LED taillights",
+        "AMG exterior package",
+        "Classic boxy shape"
+      ]
+    }
+  },
+  "mercedes-c63-amg": {
+    "id": "mercedes-c63-amg",
+    "make": "Mercedes-Benz",
+    "model": "C63 AMG",
+    "year": 2011,
+    "km": 125000,
+    "fuel": "Petrol",
+    "power": "457 HP",
+    "price": "€28,500",
+    "image": "assets/img/c63.png",
+    "images": [
+      "assets/img/c63.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Mercedes-Benz",
+        "Model": "C63 AMG",
+        "VIN": "WDB2043771A000001",
+        "Production year": "2011",
+        "First registration": "12.09.2011",
+        "Engine capacity": "6.2 cm³"
+      },
+      "technical": {
+        "Power": "457 HP",
+        "Gearbox": "Automatic 7-speed",
+        "Fuel": "Petrol",
+        "Color": "Polar White",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "6.2L V8 naturally aspirated",
+        "7G-TRONIC automatic transmission",
+        "AMG sports suspension",
+        "Limited-slip differential",
+        "High-performance brakes",
+        "AMG exhaust system"
+      ],
+      "comfort": [
+        "AMG sport seats",
+        "Dual-zone climate control",
+        "Sunroof",
+        "Leather interior",
+        "Alcantara accents",
+        "Keyless entry"
+      ],
+      "safety": [
+        "ABS with ESP",
+        "Traction control",
+        "Multiple airbags",
+        "Parking sensors",
+        "Blind spot assist",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "COMAND navigation",
+        "Harman Kardon audio",
+        "Bluetooth connectivity",
+        "iPod integration",
+        "Voice control",
+        "On-board computer"
+      ],
+      "design": [
+        "AMG body styling",
+        "Bi-Xenon headlights",
+        "19-inch AMG wheels",
+        "LED taillights",
+        "AMG quad exhaust",
+        "Aggressive stance"
+      ]
+    }
+  },
+  "mercedes-c43-amg": {
+    "id": "mercedes-c43-amg",
+    "make": "Mercedes-Benz",
+    "model": "C43 AMG",
+    "year": 2023,
+    "km": 22000,
+    "fuel": "Petrol",
+    "power": "405 HP",
+    "price": "€68,900",
+    "image": "",
+    "images": [],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Mercedes-Benz",
+        "Model": "C43 AMG",
+        "VIN": "W1K2063871A000001",
+        "Production year": "2023",
+        "First registration": "25.04.2023",
+        "Engine capacity": "3.0 cm³"
+      },
+      "technical": {
+        "Power": "405 HP",
+        "Gearbox": "Automatic 9-speed",
+        "Fuel": "Petrol",
+        "Color": "Hyper Blue",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "4x4 - 4MATIC"
+      },
+      "performance": [
+        "3.0L V6 biturbo",
+        "9G-TRONIC automatic transmission",
+        "4MATIC all-wheel drive",
+        "AMG ride control suspension",
+        "AMG high-performance brakes",
+        "AMG sports exhaust"
+      ],
+      "comfort": [
+        "AMG sport seats",
+        "Three-zone climate control",
+        "Panoramic sunroof",
+        "Leather interior",
+        "AMG steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Driving Assistance package",
+        "Active Brake Assist",
+        "Active Lane Keeping Assist",
+        "Parking assist with camera",
+        "Blind spot assist",
+        "PRE-SAFE® system"
+      ],
+      "technology": [
+        "MBUX multimedia system",
+        "Wireless smartphone integration",
+        "Premium audio system",
+        "Mercedes me connect",
+        "Voice control",
+        "Real-time traffic"
+      ],
+      "design": [
+        "AMG Line exterior",
+        "Multibeam LED headlights",
+        "19-inch AMG wheels",
+        "LED taillights",
+        "AMG styling elements",
+        "Chrome accents"
+      ]
+    }
+  },
+  "mercedes-cls63-amg": {
+    "id": "mercedes-cls63-amg",
+    "make": "Mercedes-Benz",
+    "model": "CLS63 AMG",
+    "year": 2012,
+    "km": 135000,
+    "fuel": "Petrol",
+    "power": "525 HP",
+    "price": "€41,500",
+    "image": "assets/img/cls63-amg.png",
+    "images": [
+      "assets/img/cls63-amg.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Mercedes-Benz",
+        "Model": "CLS63 AMG",
+        "VIN": "WDD2183761A000001",
+        "Production year": "2012",
+        "First registration": "20.08.2012",
+        "Engine capacity": "5.5 cm³"
+      },
+      "technical": {
+        "Power": "525 HP",
+        "Gearbox": "Automatic 7-speed",
+        "Fuel": "Petrol",
+        "Color": "Black",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "4x4 - 4MATIC"
+      },
+      "performance": [
+        "5.5L V8 biturbo engine",
+        "7G-TRONIC automatic transmission",
+        "4MATIC all-wheel drive",
+        "AMG sports suspension",
+        "High-performance brakes",
+        "AMG sports exhaust"
+      ],
+      "comfort": [
+        "AMG sport seats",
+        "Dual-zone climate control",
+        "Panoramic sunroof",
+        "Leather interior",
+        "Wood trim",
+        "Keyless entry"
+      ],
+      "safety": [
+        "ABS with ESP",
+        "Traction control",
+        "Multiple airbags",
+        "Parking sensors",
+        "Blind spot assist",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "COMAND navigation",
+        "Harman Kardon audio",
+        "Bluetooth connectivity",
+        "iPod integration",
+        "Voice control",
+        "On-board computer"
+      ],
+      "design": [
+        "CLS coupe styling",
+        "Bi-Xenon headlights",
+        "19-inch AMG wheels",
+        "LED taillights",
+        "AMG body kit",
+        "Elegant profile"
+      ]
+    }
+  },
+  "mercedes-s63-smg": {
+    "id": "mercedes-s63-smg",
+    "make": "Mercedes-Benz",
+    "model": "S63 AMG",
+    "year": 2007,
+    "km": 185000,
+    "fuel": "Petrol",
+    "power": "525 HP",
+    "price": "€28,900",
+    "image": "assets/img/s63-amg-w221.png",
+    "images": [
+      "assets/img/s63-amg-w221.png"
+    ],
+    "video": "assets/img/s63amg.mp4",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Mercedes-Benz",
+        "Model": "S63 AMG",
+        "VIN": "WDD2210781A000001",
+        "Production year": "2007",
+        "First registration": "10.11.2007",
+        "Engine capacity": "6.2 cm³"
+      },
+      "technical": {
+        "Power": "525 HP",
+        "Gearbox": "Automated Manual 7-speed",
+        "Fuel": "Petrol",
+        "Color": "Black",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "6.2L V8 naturally aspirated",
+        "7G-TRONIC Sport automatic",
+        "AMG sports suspension",
+        "High-performance brakes",
+        "LSD differential",
+        "AMG exhaust system"
+      ],
+      "comfort": [
+        "Executive rear seats",
+        "Four-zone climate control",
+        "Panoramic sunroof",
+        "Leather interior throughout",
+        "Wood trim",
+        "Air suspension"
+      ],
+      "safety": [
+        "ABS with ESP",
+        "Traction control",
+        "Multiple airbags",
+        "Parking sensors",
+        "Rear view camera",
+        "Night view assist"
+      ],
+      "technology": [
+        "COMAND navigation",
+        "Harman Kardon Logic7 audio",
+        "Bluetooth connectivity",
+        "6-disc CD changer",
+        "Voice control",
+        "On-board computer"
+      ],
+      "design": [
+        "Luxury sedan design",
+        "Bi-Xenon headlights",
+        "20-inch AMG wheels",
+        "LED taillights",
+        "AMG body kit",
+        "Presence grille"
+      ]
+    }
+  },
+  "bmw-x5": {
+    "id": "bmw-x5",
+    "make": "BMW",
+    "model": "X5",
+    "year": 2022,
+    "km": 35000,
+    "fuel": "Diesel",
+    "power": "286 HP",
+    "price": "€72,500",
+    "image": "assets/img/x5.png",
+    "images": [
+      "assets/img/x5.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "BMW",
+        "Model": "X5",
+        "VIN": "WBAJK0106L0000001",
+        "Production year": "2022",
+        "First registration": "15.03.2022",
+        "Engine capacity": "3.0 cm³"
+      },
+      "technical": {
+        "Power": "286 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Diesel",
+        "Color": "Phytonic Blue",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "xDrive AWD"
+      },
+      "performance": [
+        "3.0L Inline 6-cylinder diesel",
+        "8-speed Steptronic transmission",
+        "xDrive intelligent AWD",
+        "Adaptive suspension",
+        "Mild hybrid system",
+        "Towing capability"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Four-zone climate control",
+        "Panoramic sunroof",
+        "Leather interior",
+        "Electric third row",
+        "Air suspension"
+      ],
+      "safety": [
+        "Driving Assistance Professional",
+        "Active Cruise Control",
+        "Lane Keeping Assistant",
+        "Parking Assistant Plus",
+        "Reversing Assistant",
+        "360-degree camera"
+      ],
+      "technology": [
+        "BMW Live Cockpit Professional",
+        "12.3-inch instrument cluster",
+        "Apple CarPlay & Android Auto",
+        "Harman Kardon surround sound",
+        "BMW ConnectedDrive services",
+        "WiFi hotspot"
+      ],
+      "design": [
+        "SAV design",
+        "Laser LED headlights",
+        "21-inch alloy wheels",
+        "LED taillights",
+        "M Sport package",
+        "Modern styling"
+      ]
+    }
+  },
+  "bmw-m6": {
+    "id": "bmw-m6",
+    "make": "BMW",
+    "model": "M6",
+    "year": 2013,
+    "km": 95000,
+    "fuel": "Petrol",
+    "power": "560 HP",
+    "price": "€45,800",
+    "image": "assets/img/bmw-m6.png",
+    "images": [
+      "assets/img/bmw-m6.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "BMW",
+        "Model": "M6",
+        "VIN": "WBNRK1C50DK000001",
+        "Production year": "2013",
+        "First registration": "20.08.2013",
+        "Engine capacity": "4.4 cm³"
+      },
+      "technical": {
+        "Power": "560 HP",
+        "Gearbox": "Automated Manual 7-speed",
+        "Fuel": "Petrol",
+        "Color": "Melbourne Red",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "4.4L V8 TwinPower Turbo",
+        "7-speed M DCT transmission",
+        "M differential",
+        "Adaptive M suspension",
+        "M compound brakes",
+        "M exhaust system"
+      ],
+      "comfort": [
+        "M sport seats",
+        "Dual-zone climate control",
+        "Carbon fiber roof",
+        "Leather interior",
+        "M steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "ABS with DSC",
+        "Traction control",
+        "Multiple airbags",
+        "Parking sensors",
+        "Rear view camera",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "BMW iDrive navigation",
+        "Harman Kardon audio",
+        "Bluetooth connectivity",
+        "HUD display",
+        "Voice control",
+        "On-board computer"
+      ],
+      "design": [
+        "M6 coupe styling",
+        "Xenon headlights",
+        "20-inch M wheels",
+        "LED taillights",
+        "M aerodynamic kit",
+        "Carbon fiber accents"
+      ]
+    }
+  },
+  "bmw-x6": {
+    "id": "bmw-x6",
+    "make": "BMW",
+    "model": "X6",
+    "year": 2022,
+    "km": 30000,
+    "fuel": "Diesel",
+    "power": "340 HP",
+    "price": "€78,900",
+    "image": "assets/img/bmw-x6.png",
+    "images": [
+      "assets/img/bmw-x6.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "BMW",
+        "Model": "X6",
+        "VIN": "WBAJK0207M0000001",
+        "Production year": "2022",
+        "First registration": "10.06.2022",
+        "Engine capacity": "3.0 cm³"
+      },
+      "technical": {
+        "Power": "340 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Diesel",
+        "Color": "Black Sapphire",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "xDrive AWD"
+      },
+      "performance": [
+        "3.0L Inline 6-cylinder diesel",
+        "8-speed Steptronic transmission",
+        "xDrive intelligent AWD",
+        "Adaptive suspension",
+        "M mild hybrid system",
+        "Sport automatic transmission"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Four-zone climate control",
+        "Panoramic sunroof",
+        "Leather interior",
+        "Electric seats with memory",
+        "Air suspension"
+      ],
+      "safety": [
+        "Driving Assistance Professional",
+        "Active Cruise Control",
+        "Lane Keeping Assistant",
+        "Parking Assistant Plus",
+        "Reversing Assistant",
+        "360-degree camera"
+      ],
+      "technology": [
+        "BMW Live Cockpit Professional",
+        "12.3-inch instrument cluster",
+        "Apple CarPlay & Android Auto",
+        "Harman Kardon surround sound",
+        "BMW ConnectedDrive services",
+        "WiFi hotspot"
+      ],
+      "design": [
+        "SAC design",
+        "Laser LED headlights",
+        "22-inch M wheels",
+        "LED taillights",
+        "M Sport package",
+        "Coupe-like profile"
+      ]
+    }
+  },
+  "bmw-m5": {
+    "id": "bmw-m5",
+    "make": "BMW",
+    "model": "M5",
+    "year": 2007,
+    "km": 175000,
+    "fuel": "Petrol",
+    "power": "507 HP",
+    "price": "€28,500",
+    "image": "assets/img/bmw-m5-e60.png",
+    "images": [
+      "assets/img/bmw-m5-e60.png"
+    ],
+    "video": "assets/img/bmwm5f90.mp4",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "BMW",
+        "Model": "M5",
+        "VIN": "WBNRK5C50GK000001",
+        "Production year": "2007",
+        "First registration": "15.09.2007",
+        "Engine capacity": "5.0 cm³"
+      },
+      "technical": {
+        "Power": "507 HP",
+        "Gearbox": "Automated Manual 7-speed",
+        "Fuel": "Petrol",
+        "Color": "Silverstone II",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "5.0L V10 engine",
+        "7-speed SMG transmission",
+        "M differential",
+        "M suspension",
+        "M compound brakes",
+        "Individual throttle bodies"
+      ],
+      "comfort": [
+        "M sport seats",
+        "Dual-zone climate control",
+        "Sunroof",
+        "Leather interior",
+        "M steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "ABS with DSC",
+        "Traction control",
+        "Multiple airbags",
+        "Parking sensors",
+        "Rear view camera",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "BMW iDrive navigation",
+        "Harman Kardon audio",
+        "Bluetooth connectivity",
+        "HUD display",
+        "Voice control",
+        "On-board computer"
+      ],
+      "design": [
+        "E60 M5 styling",
+        "Xenon headlights",
+        "19-inch M wheels",
+        "LED taillights",
+        "M aerodynamic kit",
+        "Quad exhaust tips"
+      ]
+    }
+  },
+  "bmw-m8": {
+    "id": "bmw-m8",
+    "make": "BMW",
+    "model": "M8",
+    "year": 2022,
+    "km": 18000,
+    "fuel": "Petrol",
+    "power": "600 HP",
+    "price": "€105,900",
+    "image": "assets/img/bmw-m8.png",
+    "images": [
+      "assets/img/bmw-m8.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "BMW",
+        "model": "M8",
+        "VIN": "WBAKR0C10N0000001",
+        "Production year": "2022",
+        "First registration": "12.05.2022",
+        "Engine capacity": "4.4 cm³"
+      },
+      "technical": {
+        "Power": "600 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Petrol",
+        "Color": "Toronto Red",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "xDrive AWD"
+      },
+      "performance": [
+        "4.4L V8 TwinPower Turbo",
+        "8-speed M Steptronic transmission",
+        "M xDrive AWD system",
+        "Adaptive M suspension",
+        "M carbon ceramic brakes",
+        "M sport exhaust"
+      ],
+      "comfort": [
+        "M carbon bucket seats",
+        "Four-zone climate control",
+        "Panoramic sunroof",
+        "Merino leather interior",
+        "M steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Driving Assistance Professional",
+        "Active Cruise Control",
+        "Lane Keeping Assistant",
+        "Parking Assistant Plus",
+        "Reversing Assistant",
+        "360-degree camera"
+      ],
+      "technology": [
+        "BMW Live Cockpit Professional",
+        "12.3-inch instrument cluster",
+        "Apple CarPlay & Android Auto",
+        "Harman Kardon surround sound",
+        "BMW ConnectedDrive services",
+        "WiFi hotspot"
+      ],
+      "design": [
+        "M8 coupe design",
+        "Laser LED headlights",
+        "20-inch M wheels",
+        "OLED taillights",
+        "M carbon package",
+        "Aggressive styling"
+      ]
+    }
+  },
+  "bmw-m3": {
+    "id": "bmw-m3",
+    "make": "BMW",
+    "model": "M3",
+    "year": 2010,
+    "km": 145000,
+    "fuel": "Petrol",
+    "power": "420 HP",
+    "price": "€29,900",
+    "image": "assets/img/bmw-m3-e92.png",
+    "images": [
+      "assets/img/bmw-m3-e92.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "BMW",
+        "Model": "M3",
+        "VIN": "WBRNR9C50AK000001",
+        "Production year": "2010",
+        "First registration": "22.07.2010",
+        "Engine capacity": "4.0 cm³"
+      },
+      "technical": {
+        "Power": "420 HP",
+        "Gearbox": "Automated Manual 7-speed",
+        "Fuel": "Petrol",
+        "Color": "Jerez Black",
+        "Warranty": "12-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "4.0L V8 engine",
+        "7-speed M DCT transmission",
+        "M differential",
+        "M suspension",
+        "M compound brakes",
+        "Individual throttle bodies"
+      ],
+      "comfort": [
+        "M sport seats",
+        "Dual-zone climate control",
+        "Carbon fiber roof",
+        "Leather interior",
+        "M steering wheel",
+        "Keyless entry"
+      ],
+      "safety": [
+        "ABS with DSC",
+        "Traction control",
+        "Multiple airbags",
+        "Parking sensors",
+        "Rear view camera",
+        "Tire pressure monitoring"
+      ],
+      "technology": [
+        "BMW iDrive navigation",
+        "Harman Kardon audio",
+        "Bluetooth connectivity",
+        "USB integration",
+        "Voice control",
+        "On-board computer"
+      ],
+      "design": [
+        "E92 M3 styling",
+        "Xenon headlights",
+        "19-inch M wheels",
+        "LED taillights",
+        "M aerodynamic kit",
+        "Quad exhaust tips"
+      ]
+    }
+  },
+  "corvette-z51": {
+    "id": "corvette-z51",
+    "make": "Chevrolet",
+    "model": "Corvette Z51",
+    "year": 2022,
+    "km": 12000,
+    "fuel": "Petrol",
+    "power": "495 HP",
+    "price": "€89,500",
+    "image": "assets/img/corvettez51.png",
+    "images": [
+      "assets/img/corvettez51.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Chevrolet",
+        "Model": "Corvette Z51",
+        "VIN": "1G1YY2D00N0000001",
+        "Production year": "2022",
+        "First registration": "18.08.2022",
+        "Engine capacity": "6.2 cm³"
+      },
+      "technical": {
+        "Power": "495 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Petrol",
+        "Color": "Torch Red",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "6.2L V8 LT2 engine",
+        "8-speed dual-clutch transmission",
+        "Magnetic Ride Control",
+        "Z51 performance package",
+        "High-performance brakes",
+        "Electronic limited-slip differential"
+      ],
+      "comfort": [
+        "GT1 seats",
+        "Dual-zone climate control",
+        "Removable roof panel",
+        "Leather interior",
+        "Bose audio system",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Rear view camera",
+        "Rear park assist",
+        "Forward collision alert",
+        "Lane keep assist",
+        "Side blind zone alert",
+        "Rear cross traffic alert"
+      ],
+      "technology": [
+        "8-inch touchscreen",
+        "Apple CarPlay & Android Auto",
+        "Bose premium audio",
+        "Performance data recorder",
+        "Navigation system",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Mid-engine design",
+        "LED headlights",
+        "20-inch alloy wheels",
+        "LED taillights",
+        "Widebody styling",
+        "Aggressive appearance"
+      ]
+    }
+  },
+  "corvette-c8": {
+    "id": "corvette-c8",
+    "make": "Chevrolet",
+    "model": "Corvette C8",
+    "year": 2022,
+    "km": 15000,
+    "fuel": "Petrol",
+    "power": "495 HP",
+    "price": "€84,900",
+    "image": "assets/img/corvettezc8.png",
+    "images": [
+      "assets/img/corvettezc8.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Chevrolet",
+        "Model": "Corvette C8",
+        "VIN": "1G1YY2D01N0000001",
+        "Production year": "2022",
+        "First registration": "25.06.2022",
+        "Engine capacity": "6.2 cm³"
+      },
+      "technical": {
+        "Power": "495 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Petrol",
+        "Color": "Elkhart Lake Blue",
+        "Warranty": "36-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "6.2L V8 LT2 engine",
+        "8-speed dual-clutch transmission",
+        "Magnetic Ride Control",
+        "Performance traction management",
+        "High-performance brakes",
+        "Dry sump oil system"
+      ],
+      "comfort": [
+        "GT1 seats",
+        "Dual-zone climate control",
+        "Removable roof panel",
+        "Leather interior",
+        "Bose audio system",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Rear view camera",
+        "Rear park assist",
+        "Forward collision alert",
+        "Lane keep assist",
+        "Side blind zone alert",
+        "Rear cross traffic alert"
+      ],
+      "technology": [
+        "8-inch touchscreen",
+        "Apple CarPlay & Android Auto",
+        "Bose premium audio",
+        "Performance data recorder",
+        "Navigation system",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Mid-engine design",
+        "LED headlights",
+        "19-inch front wheels",
+        "LED taillights",
+        "Aerodynamic styling",
+        "Futuristic appearance"
+      ]
+    }
+  },
+  "corvette-stingray-c7": {
+    "id": "corvette-stingray-c7",
+    "make": "Chevrolet",
+    "model": "Corvette Stingray C7",
+    "year": 2016,
+    "km": 55000,
+    "fuel": "Petrol",
+    "power": "460 HP",
+    "price": "€69,900",
+    "image": "assets/img/corvettestingrayc7.png",
+    "images": [
+      "assets/img/corvettestingrayc7.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Chevrolet",
+        "Model": "Corvette Stingray",
+        "VIN": "1G1YY2D76G0000001",
+        "Production year": "2016",
+        "First registration": "12.09.2016",
+        "Engine capacity": "6.2 cm³"
+      },
+      "technical": {
+        "Power": "460 HP",
+        "Gearbox": "Automatic 8-speed",
+        "Fuel": "Petrol",
+        "Color": "Corvette Racing Yellow",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "6.2L V8 LT1 engine",
+        "8-speed automatic transmission",
+        "Magnetic Ride Control",
+        "Z51 performance package",
+        "High-performance brakes",
+        "Electronic limited-slip differential"
+      ],
+      "comfort": [
+        "GT seats",
+        "Dual-zone climate control",
+        "Removable roof panel",
+        "Leather interior",
+        "Bose audio system",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Rear view camera",
+        "Rear park assist",
+        "Forward collision alert",
+        "Side blind zone alert",
+        "Rear cross traffic alert",
+        "Head-up display"
+      ],
+      "technology": [
+        "8-inch touchscreen",
+        "Apple CarPlay & Android Auto",
+        "Bose premium audio",
+        "Performance data recorder",
+        "Navigation system",
+        "Bluetooth connectivity"
+      ],
+      "design": [
+        "Front-engine design",
+        "Xenon headlights",
+        "19-inch wheels",
+        "LED taillights",
+        "Stingray styling",
+        "Classic American look"
+      ]
+    }
+  },
+  "koenigsegg-cc850": {
+    "id": "koenigsegg-cc850",
+    "make": "Koenigsegg",
+    "model": "CC850",
+    "year": 2024,
+    "km": 500,
+    "fuel": "Petrol",
+    "power": "1,385 HP",
+    "price": "€3,200,000",
+    "image": "assets/img/koenigsegg-cc850.png",
+    "images": [
+      "assets/img/koenigsegg-cc850.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Koenigsegg",
+        "Model": "CC850",
+        "VIN": "Y00000000000000001",
+        "Production year": "2024",
+        "First registration": "01.01.2024",
+        "Engine capacity": "5.0 cm³"
+      },
+      "technical": {
+        "Power": "1,385 HP",
+        "Gearbox": "Manual 9-speed",
+        "Fuel": "Petrol",
+        "Color": "Ice White",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "5.0L Twin-Turbo V8",
+        "9-speed manual transmission",
+        "Lightweight carbon construction",
+        "Carbon ceramic brakes",
+        "Active aerodynamics",
+        "Top speed: 430 km/h"
+      ],
+      "comfort": [
+        "Carbon fiber seats",
+        "Air conditioning",
+        "Premium audio system",
+        "Alcantara interior",
+        "Minimalist cabin",
+        "Manual transmission"
+      ],
+      "safety": [
+        "Carbon fiber safety cell",
+        "Racing harness",
+        "Rear view camera",
+        "ABS with EBD",
+        "Traction control",
+        "Stability management"
+      ],
+      "technology": [
+        "Digital instrument cluster",
+        "Premium sound system",
+        "Smartphone integration",
+        "Keyless entry",
+        "Performance telemetry",
+        "Data logging"
+      ],
+      "design": [
+        "Retro-inspired design",
+        "Carbon fiber body",
+        "LED headlights",
+        "Center-lock forged wheels",
+        "Active rear wing",
+        "Swedish craftsmanship"
+      ]
+    }
+  },
+  "koenigsegg-gemera": {
+    "id": "koenigsegg-gemera",
+    "make": "Koenigsegg",
+    "model": "Gemera",
+    "year": 2024,
+    "km": 100,
+    "fuel": "Hybrid",
+    "power": "1,700 HP",
+    "price": "€1,700,000",
+    "image": "assets/img/koenigsegg-gemera.png",
+    "images": [
+      "assets/img/koenigsegg-gemera.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Koenigsegg",
+        "Model": "Gemera",
+        "VIN": "Y00000000000000002",
+        "Production year": "2024",
+        "First registration": "01.01.2024",
+        "Engine capacity": "2.0 cm³"
+      },
+      "technical": {
+        "Power": "1,700 HP",
+        "Gearbox": "Automatic 1-speed",
+        "Fuel": "Hybrid",
+        "Color": "Macho Green",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "2.0L Twin-Turbo + 3 electric motors",
+        "Direct drive transmission",
+        "Carbon fiber monocoque",
+        "Carbon ceramic brakes",
+        "Active aerodynamics",
+        "Top speed: 400 km/h"
+      ],
+      "comfort": [
+        "Four luxury seats",
+        "Individual climate control",
+        "Premium audio system",
+        "Leather interior",
+        "Spacious cabin",
+        "Tech-focused interior"
+      ],
+      "safety": [
+        "Carbon fiber safety cell",
+        "Multiple airbags",
+        "360-degree camera",
+        "ABS with EBD",
+        "Traction control",
+        "Stability management"
+      ],
+      "technology": [
+        "Digital instrument cluster",
+        "Premium sound system",
+        "Smartphone integration",
+        "Keyless entry",
+        "Performance telemetry",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "4-seater hypercar design",
+        "Carbon fiber body",
+        "LED headlights",
+        "21-inch forged wheels",
+        "Active rear wing",
+        "Futuristic styling"
+      ]
+    }
+  },
+  "koenigsegg-jesko-attack": {
+    "id": "koenigsegg-jesko-attack",
+    "make": "Koenigsegg",
+    "model": "Jesko Attack",
+    "year": 2024,
+    "km": 200,
+    "fuel": "Petrol",
+    "power": "1,600 HP",
+    "price": "€2,800,000",
+    "image": "assets/img/koenigsegg-jesko-attack.png",
+    "images": [
+      "assets/img/koenigsegg-jesko-attack.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Koenigsegg",
+        "Model": "Jesko Attack",
+        "VIN": "Y00000000000000003",
+        "Production year": "2024",
+        "First registration": "01.01.2024",
+        "Engine capacity": "5.0 cm³"
+      },
+      "technical": {
+        "Power": "1,600 HP",
+        "Gearbox": "Automatic 9-speed",
+        "Fuel": "Petrol",
+        "Color": "Red Hot",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "5.0L Twin-Turbo V8",
+        "Light Speed Transmission",
+        "Carbon fiber chassis",
+        "Carbon ceramic brakes",
+        "Active aerodynamics",
+        "Top speed: 531 km/h"
+      ],
+      "comfort": [
+        "Carbon fiber seats",
+        "Air conditioning",
+        "Premium audio system",
+        "Alcantara interior",
+        "Minimalist cabin",
+        "Track-focused design"
+      ],
+      "safety": [
+        "Carbon fiber safety cell",
+        "Racing harness",
+        "Rear view camera",
+        "ABS with EBD",
+        "Traction control",
+        "Launch control"
+      ],
+      "technology": [
+        "Digital telemetry display",
+        "Advanced data logging",
+        "Smartphone integration",
+        "Keyless entry",
+        "Performance analytics",
+        "WiFi connectivity"
+      ],
+      "design": [
+        "Track-focused hypercar",
+        "Carbon fiber body",
+        "LED headlights",
+        "Center-lock forged wheels",
+        "Massive rear wing",
+        "Swedish engineering"
+      ]
+    }
+  },
+  "porsche-taycan": {
+    "id": "porsche-taycan",
+    "make": "Porsche",
+    "model": "Taycan",
+    "year": 2023,
+    "km": 10000,
+    "fuel": "Electric",
+    "power": "408 HP",
+    "price": "€89,900",
+    "image": "assets/img/home.png",
+    "images": [
+      "assets/img/home.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Porsche",
+        "Model": "Taycan",
+        "VIN": "WP0AB2A19PS000001",
+        "Production year": "2023",
+        "First registration": "15.06.2023",
+        "Engine capacity": "Electric"
+      },
+      "technical": {
+        "Power": "408 HP",
+        "Gearbox": "Automatic 2-speed",
+        "Fuel": "Electric",
+        "Color": "Ice Grey Metallic",
+        "Warranty": "48-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "Dual electric motors",
+        "0-100 km/h in 5.0 seconds",
+        "Top speed: 230 km/h",
+        "79.2 kWh battery",
+        "800-volt architecture",
+        "800V charging capability"
+      ],
+      "comfort": [
+        "Heated and ventilated seats",
+        "Three-zone climate control",
+        "Fixed glass roof",
+        "Premium leather interior",
+        "Burmester audio system",
+        "Adaptive air suspension"
+      ],
+      "safety": [
+        "Porsche InnoDrive",
+        "Adaptive cruise control",
+        "Lane keep assist",
+        "Park assist with cameras",
+        "Night vision assist",
+        "Emergency braking"
+      ],
+      "technology": [
+        "Porsche Communication Management",
+        "16.8-inch curved display",
+        "Apple CarPlay & Android Auto",
+        "Burmester 3D sound",
+        "Porsche Connect services",
+        "Voice control"
+      ],
+      "design": [
+        "Electric sports car design",
+        "Matrix LED headlights",
+        "20-inch Taycan wheels",
+        "LED taillight strip",
+        "Aerodynamic efficiency",
+        "Futuristic interior"
+      ]
+    }
+  },
+  "porsche-turbo-s-cross": {
+    "id": "porsche-turbo-s-cross",
+    "make": "Porsche",
+    "model": "911 Turbo S Cross Turismo",
+    "year": 2023,
+    "km": 8000,
+    "fuel": "Petrol",
+    "power": "650 HP",
+    "price": "€205,900",
+    "image": "assets/img/popular3.png",
+    "images": [
+      "assets/img/popular3.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Porsche",
+        "Model": "911 Turbo S Cross Turismo",
+        "VIN": "WP0AB2A92PS000001",
+        "Production year": "2023",
+        "First registration": "10.03.2023",
+        "Engine capacity": "3.7 cm³"
+      },
+      "technical": {
+        "Power": "650 HP",
+        "Gearbox": "Automatic PDK",
+        "Fuel": "Petrol",
+        "Color": "Ghost Purple",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "AWD"
+      },
+      "performance": [
+        "3.7L Twin-Turbo Boxer engine",
+        "8-speed PDK transmission",
+        "Porsche Active Suspension Management",
+        "Porsche Dynamic Chassis Control",
+        "Sport Chrono package",
+        "Porsche Sport Exhaust"
+      ],
+      "comfort": [
+        "Adaptive sport seats",
+        "Premium leather interior",
+        "Burmester audio system",
+        "Navigation module",
+        "Wireless smartphone charger",
+        "Climate control"
+      ],
+      "safety": [
+        "Porsche InnoDrive",
+        "Adaptive cruise control",
+        "Lane change assist",
+        "Park assist with surround cameras",
+        "Night vision assist",
+        "Collision avoidance system"
+      ],
+      "technology": [
+        "Porsche Communication Management",
+        "Burmester 3D sound system",
+        "Apple CarPlay & Android Auto",
+        "Real-time navigation",
+        "Porsche Connect services",
+        "Voice control"
+      ],
+      "design": [
+        "Sport Turismo design",
+        "Lightweight package",
+        "20-inch/21-inch wheels",
+        "Matrix LED headlights",
+        "LED taillight strip",
+        "Elegant wagon profile"
+      ]
+    }
+  },
+  "porsche-boxster-718": {
+    "id": "porsche-boxster-718",
+    "make": "Porsche",
+    "model": "Boxster 718",
+    "year": 2023,
+    "km": 15000,
+    "fuel": "Petrol",
+    "power": "300 HP",
+    "price": "€62,900",
+    "image": "assets/img/popular4.png",
+    "images": [
+      "assets/img/popular4.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Porsche",
+        "Model": "Boxster 718",
+        "VIN": "WP0AB2A15PS000001",
+        "Production year": "2023",
+        "First registration": "20.04.2023",
+        "Engine capacity": "2.0 cm³"
+      },
+      "technical": {
+        "Power": "300 HP",
+        "Gearbox": "Automatic PDK",
+        "Fuel": "Petrol",
+        "Color": "GT Silver",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "2.0L Turbocharged Boxer engine",
+        "7-speed PDK transmission",
+        "Porsche Active Suspension Management",
+        "Sport Chrono package",
+        "Sports exhaust",
+        "Responsive handling"
+      ],
+      "comfort": [
+        "Sport seats",
+        "Automatic climate control",
+        "Soft top roof",
+        "Leather interior",
+        "Burmester audio system",
+        "Keyless entry"
+      ],
+      "safety": [
+        "Porsche Active Safe",
+        "Adaptive cruise control",
+        "Lane change assist",
+        "Park assist with cameras",
+        "Rear parking sensors",
+        "Emergency braking"
+      ],
+      "technology": [
+        "Porsche Communication Management",
+        "Burmester audio system",
+        "Apple CarPlay & Android Auto",
+        "Navigation module",
+        "Porsche Connect services",
+        "Voice control"
+      ],
+      "design": [
+        "Roadster design",
+        "Soft top roof",
+        "19-inch wheels",
+        "LED headlights",
+        "LED taillights",
+        "Classic Porsche styling"
+      ]
+    }
+  },
+  "porsche-cayman": {
+    "id": "porsche-cayman",
+    "make": "Porsche",
+    "model": "Cayman",
+    "year": 2023,
+    "km": 12000,
+    "fuel": "Petrol",
+    "power": "350 HP",
+    "price": "€67,900",
+    "image": "assets/img/popular5.png",
+    "images": [
+      "assets/img/popular5.png"
+    ],
+    "video": "",
+    "sketchfab": "",
+    "specs": {
+      "basic": {
+        "Make": "Porsche",
+        "Model": "Cayman",
+        "VIN": "WP0AB2A27PS000001",
+        "Production year": "2023",
+        "First registration": "15.05.2023",
+        "Engine capacity": "2.5 cm³"
+      },
+      "technical": {
+        "Power": "350 HP",
+        "Gearbox": "Automatic PDK",
+        "Fuel": "Petrol",
+        "Color": "Carrara White",
+        "Warranty": "24-month warranty",
+        "Drivetrain": "RWD"
+      },
+      "performance": [
+        "2.5L Turbocharged Boxer engine",
+        "7-speed PDK transmission",
+        "Porsche Active Suspension Management",
+        "Sport Chrono package",
+        "Sports exhaust",
+        "Precision handling"
+      ],
+      "comfort": [
+        "Sport seats",
+        "Automatic climate control",
+        "Leather interior",
+        "Burmester audio system",
+        "Keyless entry",
+        "Sound insulation"
+      ],
+      "safety": [
+        "Porsche Active Safe",
+        "Adaptive cruise control",
+        "Lane change assist",
+        "Park assist with cameras",
+        "Rear parking sensors",
+        "Emergency braking"
+      ],
+      "technology": [
+        "Porsche Communication Management",
+        "Burmester audio system",
+        "Apple CarPlay & Android Auto",
+        "Navigation module",
+        "Porsche Connect services",
+        "Voice control"
+      ],
+      "design": [
+        "Coupe design",
+        "Fixed roof",
+        "20-inch wheels",
+        "LED headlights",
+        "LED taillights",
+        "Sporty appearance"
+      ]
+    }
+  }
+}

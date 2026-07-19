@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed car presentation in the CarZone automotive concept.">
+    <meta name="theme-color" content="#0a0a0b">
+    <link rel="canonical" href="https://car-zone-five.vercel.app/car-detail.html">
+    <meta property="og:title" content="Car Details — CarZone">
+    <meta property="og:description" content="Detailed car presentation in the CarZone automotive concept.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CarZone">
+    <meta property="og:url" content="https://car-zone-five.vercel.app/car-detail.html">
+    <meta property="og:image" content="">
+    <meta property="og:image:alt" content="Car presented in CarZone">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Car Details — CarZone">
+    <meta name="twitter:description" content="Detailed car presentation in the CarZone automotive concept.">
+    <meta name="twitter:image" content="">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/carzone.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css?v=3">
+    <link rel="stylesheet" href="assets/css/styles-stoc.css">
+
+    <title>Car Details - CarZone</title>
+
+    <style>
+        /* Brand-specific fonts */
+        :root {
+            --mercedes-font: "Times New Roman", Times, serif;
+            --bmw-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            --audi-font: "Audi Type", "Arial", sans-serif;
+            --porsche-font: "Porsche Design", "Arial", sans-serif;
+            --tesla-font: "Gotham", "Arial", sans-serif;
+            --lexus-font: "Lexus", "Arial", sans-serif;
+            --genesis-font: "Genesis", "Arial", sans-serif;
+            --alfa-romeo-font: "Arial", sans-serif;
+            --lotus-font: "Arial", sans-serif;
+            --corvette-font: "Corvette", "Arial", sans-serif;
+            --koenigsegg-font: "Arial", sans-serif;
+            --default-font: "Arial", sans-serif;
+        }
+
+        .car-detail {
+            padding: 7rem 0 2rem;
+            background: #000;
+        }
+
+        .car-detail__container {
+            row-gap: 2rem;
+        }
+
+        .car-detail__images {
+            position: relative;
+        }
+
+        /*=============== CAROUSEL STYLES ===============*/
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 1.5rem;
+            background: radial-gradient(80% 70% at 50% 55%, #16181d 0%, #0a0a0b 75%);
+        }
+
+        .carousel-slide video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .carousel-nav:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-nav.prev {
+            left: 20px;
+        }
+
+        .carousel-nav.next {
+            right: 20px;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .carousel-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-indicator.active {
+            background: #fff;
+            transform: scale(1.2);
+        }
+
+        .car-detail__thumbnails {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+        }
+
+        .car-detail__thumb {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .car-detail__thumb:hover {
+            transform: scale(1.05);
+        }
+
+        .car-detail__3d-model {
+            width: 100%;
+            height: 400px;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .car-detail__3d-model iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 1rem;
+        }
+
+        .car-detail__info {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+
+        .car-detail__title {
+            font-family: var(--mercedes-font);
+            font-size: var(--h1-font-size);
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+            letter-spacing: .01em;
+        }
+
+        .car-detail__subtitle {
+            font-family: var(--mercedes-font);
+            font-size: var(--h2-font-size);
+            color: #ccc;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            letter-spacing: .01em;
+        }
+
+        .car-detail__stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #1a1a1a;
+            border-radius: 0.75rem;
+        }
+
+        .car-detail__stat {
+            text-align: center;
+        }
+
+        .car-detail__stat-number {
+            font-size: var(--h2-font-size);
+            font-weight: var(--font-semi-bold);
+            color: #fff;
+            display: block;
+        }
+
+        .car-detail__stat-label {
+            font-size: var(--small-font-size);
+            color: #ccc;
+            text-transform: uppercase;
+        }
+
+        .car-detail__price {
+            font-size: 2rem;
+            font-weight: var(--font-semi-bold);
+            color: var(--first-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .car-detail__actions {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .car-detail__button {
+            flex: 1;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: var(--font-semi-bold);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .car-detail__button--primary {
+            background: var(--first-color);
+            color: var(--white-color);
+        }
+
+        .car-detail__button--secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .car-detail__button:hover {
+            transform: translateY(-2px);
+        }
+
+        .car-detail__specs {
+            margin-top: 3rem;
+            grid-column: 1 / -1;
+            width: 100%;
+        }
+
+        .specs-section {
+            margin-bottom: 3rem;
+        }
+
+        .specs-title {
+            font-size: var(--h2-font-size);
+            color: #fff;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--first-color);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem;
+            background: #1a1a1a;
+            border-radius: 0.5rem;
+        }
+
+        .spec-label {
+            color: #ccc;
+        }
+
+        .spec-value {
+            color: #fff;
+            font-weight: var(--font-medium);
+        }
+
+        .features-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        .features-list li {
+            padding: 0.5rem 0;
+            color: #ccc;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            color: var(--first-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /*=============== VIDEO BACKGROUND SECTION ===============*/
+        .video-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .video-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .video-title {
+            font-family: var(--mercedes-font);
+            font-size: 3rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            letter-spacing: .01em;
+        }
+
+        .video-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        @media screen and (max-width: 768px) {
+            .video-title {
+                font-size: 2.5rem;
+            }
+
+            .video-subtitle {
+                font-size: 1rem;
+            }
+
+            .car-detail__3d-model {
+                height: 300px;
+            }
+
+            .car-detail__stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-list {
+                grid-template-columns: 1fr;
+            }
+
+            .car-detail__actions {
+                flex-direction: column;
+            }
+
+            .carousel-wrapper {
+                height: 300px;
+            }
+
+            .carousel-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+
+            .carousel-nav.prev {
+                left: 10px;
+            }
+
+            .carousel-nav.next {
+                right: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .video-title {
+                font-size: 2rem;
+            }
+
+            .carousel-wrapper {
+                height: 250px;
+            }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 4rem;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .error {
+            text-align: center;
+            padding: 4rem;
+            color: #ff4444;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link" data-i18n="nav.home">Home</a></li>
+                    <li class="nav__item"><a href="stoc.html" class="nav__link" data-i18n="nav.stock">Inventory</a></li>
+                    <li class="nav__item"><a href="comanda.html" class="nav__link" data-i18n="nav.order">Custom order</a></li>
+                    <li class="nav__item"><a href="vinde.html" class="nav__link" data-i18n="nav.sell">Sell your car</a></li>
+                    <li class="nav__item"><a href="finantare.html" class="nav__link" data-i18n="nav.financing">Financing</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__lang" role="group" aria-label="Language selection" data-i18n-aria="nav.langLabel">
+                      <button type="button" class="nav__lang-btn active-lang" data-lang="en" aria-pressed="true">EN</button>
+                      <span aria-hidden="true">/</span>
+                      <button type="button" class="nav__lang-btn" data-lang="ro" aria-pressed="false">RO</button>
+                  </div>
+                  <button type="button" class="nav__close" id="nav-close" aria-label="Close menu" data-i18n-aria="aria.closeMenu"><i class="ri-close-line" aria-hidden="true"></i></button>
+            </div>
+            <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu" data-i18n-aria="aria.openMenu" aria-expanded="false" aria-controls="nav-menu"><i class="ri-menu-line" aria-hidden="true"></i></button>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <div id="loading" class="loading">Loading car details...</div>
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="car-content" style="display: none;"></div>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+                </a>
+                <p class="footer__description" data-i18n="footer.descriptionBr">
+                    We offer the finest cars from <br>
+                    the world's most renowned <br>
+                    brands.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title" data-i18n="footer.company">
+                    Company
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="nav.home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="nav.stock">Inventory</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="nav.order">Custom order</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="nav.sell">Sell your car</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="nav.financing">Financing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title" data-i18n="footer.info">
+                    Information
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="footer.requestOffer">Request a quote</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="footer.findDealer">Find a dealer</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="footer.contactUs">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="footer.services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="footer.terms">Terms & conditions</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link" data-i18n="footer.warranty">Warranty</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title" data-i18n="footer.follow">
+                    Follow us
+                </h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+        </span>
+    </footer>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navClose = document.getElementById('nav-close');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu');
+            });
+        }
+
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        }
+
+        // Close menu when clicking on nav links
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        });
+
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Get car ID from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const carId = urlParams.get('id');
+
+        if (!carId) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('error').style.display = 'block';
+            document.getElementById('error').textContent = 'No car specified. Please select a car from the inventory.';
+        } else {
+            // Load car data
+            fetch('assets/data/cars.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to load car data');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const car = data[carId];
+                    if (!car) {
+                        throw new Error('Car not found');
+                    }
+                    renderCarDetail(car);
+                })
+                .catch(error => {
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('error').style.display = 'block';
+                    document.getElementById('error').textContent = 'Error loading car details: ' + error.message;
+                });
+        }
+
+        function renderCarDetail(car) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('car-content').style.display = 'block';
+
+            // Update page title
+            document.title = `${car.make} ${car.model} - CarZone`;
+
+            // Set brand-specific font
+            const brandFontMap = {
+                'Mercedes-Benz': 'var(--mercedes-font)',
+                'Mercedes': 'var(--mercedes-font)',
+                'BMW': 'var(--bmw-font)',
+                'Audi': 'var(--audi-font)',
+                'Porsche': 'var(--porsche-font)',
+                'Tesla': 'var(--tesla-font)',
+                'Lexus': 'var(--lexus-font)',
+                'Genesis': 'var(--genesis-font)',
+                'Gennesis': 'var(--genesis-font)',
+                'Alfa Romeo': 'var(--alfa-romeo-font)',
+                'Lotus': 'var(--lotus-font)',
+                'Corvette': 'var(--corvette-font)',
+                'Koenigsegg': 'var(--koenigsegg-font)'
+            };
+
+            const brandFont = brandFontMap[car.make] || 'var(--default-font)';
+
+            // Build car detail HTML
+            let carHTML = `
+                <!--==================== VIDEO BACKGROUND SECTION ====================-->
+                <section class="video-section">
+                    <div class="video-container">
+                        ${car.video ? `
+                        <video autoplay loop muted playsinline preload="metadata" class="video-bg">
+                            <source src="${car.video}" type="video/mp4">
+                            Your browser does not support this video.
+                        </video>
+                        <div class="video-overlay"></div>
+                        <div class="video-content">
+                            <h1 class="video-title">${car.make} ${car.model}</h1>
+                        </div>
+                        ` : `
+                        ${car.image ? `<div class="video-bg" style="background: radial-gradient(70% 60% at 50% 60%, #191c22 0%, #0a0a0b 80%); display: flex; align-items: center; justify-content: center;"><img src="${car.image}" alt="${car.make} ${car.model}" style="max-width: min(72%, 900px); max-height: 78%; object-fit: contain; filter: drop-shadow(0 30px 40px rgba(0,0,0,.55));"></div>` : ''}
+                        <div class="video-overlay" style="background: linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.15) 45%, rgba(0,0,0,.65) 100%);"></div>
+                        <div class="video-content">
+                            <h1 class="video-title">${car.make} ${car.model}</h1>
+                        </div>
+                        `}
+                    </div>
+                </section>
+            `;
+
+            // Add carousel whenever the car has photos (nav only when several)
+            if (car.images && car.images.length >= 1) {
+                const multi = car.images.length > 1;
+                carHTML += `
+                    <section class="carousel-section" style="background: #000; padding: 2rem 0;">
+                        <div class="container">
+                            <div class="carousel-container" style="display: block;">
+                                <div class="carousel-wrapper">
+                                    <div class="carousel-track" id="carouselTrack">
+                                        ${car.images.map((img, index) => `
+                                        <div class="carousel-slide">
+                                            <img src="${img}" alt="${car.make} ${car.model} Image ${index + 1}">
+                                        </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                                ${multi ? `
+                                <button class="carousel-nav prev" id="prevBtn">
+                                    <i class="ri-arrow-left-line"></i>
+                                </button>
+                                <button class="carousel-nav next" id="nextBtn">
+                                    <i class="ri-arrow-right-line"></i>
+                                </button>
+                                <div class="carousel-indicators" id="carouselIndicators"></div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </section>
+                `;
+            }
+
+            carHTML += `
+                <section class="car-detail section">
+                    <div class="car-detail__container container grid">
+                        <div class="car-detail__images">
+                            ${car.sketchfab ? `
+                            <div class="car-detail__3d-model" style="display: block;">
+                                <iframe title="${car.make} ${car.model} 3D Model"
+                                        frameborder="0"
+                                        allowfullscreen
+                                        mozallowfullscreen="true"
+                                        webkitallowfullscreen="true"
+                                        allow="autoplay; fullscreen; xr-spatial-tracking"
+                                        xr-spatial-tracking
+                                        execution-while-out-of-viewport
+                                        execution-while-not-rendered
+                                        web-share
+                                        src="${car.sketchfab}">
+                                </iframe>
+                            </div>
+                            ` : ''}
+                        </div>
+                        <div class="car-detail__info">
+                            <h1 class="car-detail__title" style="font-family: ${brandFont}">${car.make}</h1>
+                            <h2 class="car-detail__subtitle" style="font-family: ${brandFont}">${car.model}</h2>
+
+                            <div class="car-detail__stats">
+                                <div class="car-detail__stat">
+                                    <span class="car-detail__stat-number">${car.year}</span>
+                                    <span class="car-detail__stat-label">Year</span>
+                                </div>
+                                <div class="car-detail__stat">
+                                    <span class="car-detail__stat-number">${car.km.toLocaleString()}</span>
+                                    <span class="car-detail__stat-label">KM</span>
+                                </div>
+                                <div class="car-detail__stat">
+                                    <span class="car-detail__stat-number">${car.fuel}</span>
+                                    <span class="car-detail__stat-label">Fuel</span>
+                                </div>
+                                <div class="car-detail__stat">
+                                    <span class="car-detail__stat-number">${car.power}</span>
+                                    <span class="car-detail__stat-label">Power</span>
+                                </div>
+                            </div>
+
+                            <div class="car-detail__price">${car.price}</div>
+
+                            <div class="car-detail__actions">
+                                <button class="car-detail__button car-detail__button--primary">
+                                    <i class="ri-phone-line"></i> Contact
+                                </button>
+                                <button class="car-detail__button car-detail__button--secondary">
+                                    <i class="ri-chat-3-line"></i> Chat Online
+                                </button>
+                                <button class="car-detail__button car-detail__button--secondary">
+                                    <i class="ri-file-text-line"></i> Vehicle report
+                                </button>
+                                <button class="car-detail__button car-detail__button--secondary">
+                                    <i class="ri-history-line"></i> Service history
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="car-detail__specs">
+            `;
+
+            // Render specifications
+            if (car.specs) {
+                // Basic information
+                if (car.specs.basic) {
+                    carHTML += renderSpecSection('Basic information', car.specs.basic, false);
+                }
+
+                // Technical specifications
+                if (car.specs.technical) {
+                    carHTML += renderSpecSection('Technical specifications', car.specs.technical, false);
+                }
+
+                // Performance & dynamics
+                if (car.specs.performance) {
+                    carHTML += renderSpecSection('Performance & dynamics', null, car.specs.performance);
+                }
+
+                // Comfort & convenience
+                if (car.specs.comfort) {
+                    carHTML += renderSpecSection('Comfort & convenience', null, car.specs.comfort);
+                }
+
+                // Safety & driver assistance
+                if (car.specs.safety) {
+                    carHTML += renderSpecSection('Safety & driver assistance', null, car.specs.safety);
+                }
+
+                // Technology & infotainment
+                if (car.specs.technology) {
+                    carHTML += renderSpecSection('Technology & infotainment', null, car.specs.technology);
+                }
+
+                // Design & exterior
+                if (car.specs.design) {
+                    carHTML += renderSpecSection('Design & exterior', null, car.specs.design);
+                }
+            }
+
+            carHTML += `
+                        </div>
+                    </div>
+                </section>
+            `;
+
+            document.getElementById('car-content').innerHTML = carHTML;
+
+            // Initialize carousel if present
+            if (car.images && car.images.length > 1) {
+                initializeCarousel();
+            }
+
+            // Initialize ScrollReveal animations
+            initializeScrollReveal();
+
+            // Initialize interactive elements
+            initializeInteractiveElements();
+        }
+
+        function initializeScrollReveal() {
+            const sr = ScrollReveal({
+                origin: 'top',
+                distance: '60px',
+                duration: 2500,
+                delay: 400,
+            });
+
+            // Video section animations
+            sr.reveal('.video-title', {
+                origin: 'bottom',
+                distance: '100px',
+                duration: 3000,
+                delay: 600
+            });
+
+            sr.reveal('.video-subtitle', {
+                origin: 'bottom',
+                distance: '80px',
+                duration: 2800,
+                delay: 800
+            });
+
+            // Car detail animations
+            sr.reveal('.car-detail__images', {origin: 'left'});
+            sr.reveal('.car-detail__info', {origin: 'right'});
+            sr.reveal('.car-detail__title', {delay: 600});
+            sr.reveal('.car-detail__subtitle', {delay: 700});
+            sr.reveal('.car-detail__stats', {delay: 800});
+            sr.reveal('.car-detail__price', {delay: 900});
+            sr.reveal('.car-detail__actions', {delay: 1000});
+
+            // Specs sections animations
+            sr.reveal('.specs-section', {
+                origin: 'bottom',
+                distance: '100px',
+                interval: 200
+            });
+
+            sr.reveal('.specs-title', {
+                origin: 'left',
+                distance: '80px',
+                delay: 300
+            });
+
+            sr.reveal('.specs-grid .spec-item', {
+                origin: 'bottom',
+                distance: '60px',
+                interval: 100
+            });
+
+            sr.reveal('.features-list li', {
+                origin: 'left',
+                distance: '50px',
+                interval: 50
+            });
+
+            // Footer animations
+            sr.reveal('.footer__content', {
+                origin: 'bottom',
+                distance: '100px',
+                interval: 100
+            });
+        }
+
+        function initializeInteractiveElements() {
+            // Add fade-in animation for the 3D model iframe when it loads
+            const iframe = document.querySelector('.car-detail__3d-model iframe');
+            if (iframe) {
+                iframe.addEventListener('load', function() {
+                    this.style.opacity = '0';
+                    this.style.transition = 'opacity 1s ease-in-out';
+                    setTimeout(() => {
+                        this.style.opacity = '1';
+                    }, 100);
+                });
+            }
+
+            // Add staggered animation for action buttons
+            const actionButtons = document.querySelectorAll('.car-detail__button');
+            actionButtons.forEach((button, index) => {
+                button.style.animationDelay = `${index * 0.1}s`;
+            });
+
+            // Add hover animations for stats
+            const stats = document.querySelectorAll('.car-detail__stat');
+            stats.forEach(stat => {
+                stat.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.05)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+
+                stat.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Progressive reveal for feature lists
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const listItems = entry.target.querySelectorAll('li');
+                        listItems.forEach((item, index) => {
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateX(0)';
+                            }, index * 50);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all feature lists
+            document.querySelectorAll('.features-list').forEach(list => {
+                // Initially hide all list items
+                list.querySelectorAll('li').forEach(item => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateX(-20px)';
+                    item.style.transition = 'all 0.5s ease';
+                });
+
+                observer.observe(list);
+            });
+        }
+
+        function renderSpecSection(title, specs, features) {
+            let html = `
+                <div class="specs-section">
+                    <h3 class="specs-title">${title}</h3>
+            `;
+
+            if (specs) {
+                html += '<div class="specs-grid">';
+                for (const [label, value] of Object.entries(specs)) {
+                    html += `
+                        <div class="spec-item">
+                            <span class="spec-label">${label}</span>
+                            <span class="spec-value">${value}</span>
+                        </div>
+                    `;
+                }
+                html += '</div>';
+            }
+
+            if (features && features.length > 0) {
+                html += '<ul class="features-list">';
+                features.forEach(feature => {
+                    html += `<li>${feature}</li>`;
+                });
+                html += '</ul>';
+            }
+
+            html += '</div>';
+            return html;
+        }
+
+        function initializeCarousel() {
+            const carouselTrack = document.getElementById('carouselTrack');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const indicatorsContainer = document.getElementById('carouselIndicators');
+
+            if (!carouselTrack || !prevBtn || !nextBtn || !indicatorsContainer) {
+                return;
+            }
+
+            const slides = carouselTrack.querySelectorAll('.carousel-slide');
+            const totalSlides = slides.length;
+            let currentSlide = 0;
+
+            // Create indicators
+            function createIndicators() {
+                indicatorsContainer.innerHTML = '';
+                for (let i = 0; i < totalSlides; i++) {
+                    const indicator = document.createElement('div');
+                    indicator.classList.add('carousel-indicator');
+                    if (i === 0) indicator.classList.add('active');
+                    indicator.addEventListener('click', () => goToSlide(i));
+                    indicatorsContainer.appendChild(indicator);
+                }
+            }
+
+            // Update indicators
+            function updateIndicators() {
+                const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentSlide);
+                });
+            }
+
+            // Go to specific slide
+            function goToSlide(slideIndex) {
+                currentSlide = slideIndex;
+                const translateX = -currentSlide * 100;
+                carouselTrack.style.transform = `translateX(${translateX}%)`;
+                updateIndicators();
+                handleVideoPlayback();
+            }
+
+            // Next slide
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                goToSlide(currentSlide);
+            }
+
+            // Previous slide
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                goToSlide(currentSlide);
+            }
+
+            // Event listeners
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+
+            // Auto-play functionality
+            let autoplayInterval;
+
+            function startAutoplay() {
+                autoplayInterval = setInterval(nextSlide, 5000);
+            }
+
+            function stopAutoplay() {
+                clearInterval(autoplayInterval);
+            }
+
+            // Pause autoplay on hover
+            const carouselContainer = document.querySelector('.carousel-container');
+            if (carouselContainer) {
+                carouselContainer.addEventListener('mouseenter', stopAutoplay);
+                carouselContainer.addEventListener('mouseleave', startAutoplay);
+            }
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                } else if (e.key === 'ArrowRight') {
+                    nextSlide();
+                }
+            });
+
+            // Touch/swipe support for mobile
+            let startX = 0;
+            let currentX = 0;
+            let isDragging = false;
+
+            carouselTrack.addEventListener('touchstart', function(e) {
+                startX = e.touches[0].clientX;
+                isDragging = true;
+                stopAutoplay();
+            });
+
+            carouselTrack.addEventListener('touchmove', function(e) {
+                if (!isDragging) return;
+                currentX = e.touches[0].clientX;
+                e.preventDefault();
+            });
+
+            carouselTrack.addEventListener('touchend', function(e) {
+                if (!isDragging) return;
+                isDragging = false;
+
+                const diffX = startX - currentX;
+                const threshold = 50;
+
+                if (Math.abs(diffX) > threshold) {
+                    if (diffX > 0) {
+                        nextSlide();
+                    } else {
+                        prevSlide();
+                    }
+                }
+
+                startAutoplay();
+            });
+
+            // Mouse drag support for desktop
+            let mouseStartX = 0;
+            let mouseCurrentX = 0;
+            let isMouseDragging = false;
+
+            carouselTrack.addEventListener('mousedown', function(e) {
+                mouseStartX = e.clientX;
+                isMouseDragging = true;
+                carouselTrack.style.cursor = 'grabbing';
+                stopAutoplay();
+                e.preventDefault();
+            });
+
+            carouselTrack.addEventListener('mousemove', function(e) {
+                if (!isMouseDragging) return;
+                mouseCurrentX = e.clientX;
+                e.preventDefault();
+            });
+
+            carouselTrack.addEventListener('mouseup', function(e) {
+                if (!isMouseDragging) return;
+                isMouseDragging = false;
+                carouselTrack.style.cursor = 'grab';
+
+                const diffX = mouseStartX - mouseCurrentX;
+                const threshold = 50;
+
+                if (Math.abs(diffX) > threshold) {
+                    if (diffX > 0) {
+                        nextSlide();
+                    } else {
+                        prevSlide();
+                    }
+                }
+
+                startAutoplay();
+            });
+
+            carouselTrack.addEventListener('mouseleave', function() {
+                if (isMouseDragging) {
+                    isMouseDragging = false;
+                    carouselTrack.style.cursor = 'grab';
+                    startAutoplay();
+                }
+            });
+
+            // Handle video elements in carousel
+            slides.forEach((slide, index) => {
+                const video = slide.querySelector('video');
+                if (video) {
+                    if (index !== currentSlide) {
+                        video.pause();
+                    }
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                video.play().catch(e => console.log('Video autoplay failed:', e));
+                            } else {
+                                video.pause();
+                            }
+                        });
+                    }, { threshold: 0.5 });
+
+                    observer.observe(slide);
+                }
+            });
+
+            // Update video play/pause when slide changes
+            function handleVideoPlayback() {
+                slides.forEach((slide, index) => {
+                    const video = slide.querySelector('video');
+                    if (video) {
+                        if (index === currentSlide) {
+                            video.play().catch(e => console.log('Video autoplay failed:', e));
+                        } else {
+                            video.pause();
+                        }
+                    }
+                });
+            }
+
+            // Initialize carousel
+            createIndicators();
+            startAutoplay();
+        }
+    </script>
+    <script src="assets/js/i18n.js?v=6"></script>
+    <script src="assets/js/site-nav.js"></script>
+</body>
+</html>
