@@ -10,7 +10,8 @@
     "price": "€108,990",
     "image": "assets/img/featured1.png",
     "images": [
-      "assets/img/featured1.png"
+      "assets/img/featured1.png",
+      "assets/img/interiors/tesla-model-x.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -158,7 +159,8 @@
     "price": "€198,500",
     "image": "assets/img/audir8.png",
     "images": [
-      "assets/img/audir8.png"
+      "assets/img/audir8.png",
+      "assets/img/interiors/audi-r8.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -304,7 +306,8 @@
     "price": "€56,990",
     "image": "assets/img/tesla-model-y.png",
     "images": [
-      "assets/img/tesla-model-y.png"
+      "assets/img/tesla-model-y.png",
+      "assets/img/interiors/tesla-model-y.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -378,7 +381,8 @@
     "price": "€94,990",
     "image": "assets/img/tesla-model-s.png",
     "images": [
-      "assets/img/tesla-model-s.png"
+      "assets/img/tesla-model-s.png",
+      "assets/img/interiors/tesla-model-s.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -452,7 +456,8 @@
     "price": "€89,500",
     "image": "assets/img/lotusemira.png",
     "images": [
-      "assets/img/lotusemira.png"
+      "assets/img/lotusemira.png",
+      "assets/img/interiors/lotus-emira.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -600,7 +605,8 @@
     "price": "€65,800",
     "image": "assets/img/lotuselise.png",
     "images": [
-      "assets/img/lotuselise.png"
+      "assets/img/lotuselise.png",
+      "assets/img/interiors/lotus-elise.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -674,7 +680,8 @@
     "price": "€38,750",
     "image": "assets/img/audiq3.png",
     "images": [
-      "assets/img/audiq3.png"
+      "assets/img/audiq3.png",
+      "assets/img/interiors/audi-q3.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -748,7 +755,8 @@
     "price": "€73,200",
     "image": "assets/img/audiq7.png",
     "images": [
-      "assets/img/audiq7.png"
+      "assets/img/audiq7.png",
+      "assets/img/interiors/audi-q7.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -822,7 +830,8 @@
     "price": "€29,300",
     "image": "assets/img/audirs4b8.png",
     "images": [
-      "assets/img/audirs4b8.png"
+      "assets/img/audirs4b8.png",
+      "assets/img/interiors/audi-rs4.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -1266,7 +1275,8 @@
     "price": "€450,000",
     "image": "assets/img/lexuslfa.png",
     "images": [
-      "assets/img/lexuslfa.png"
+      "assets/img/lexuslfa.png",
+      "assets/img/interiors/lexus-lfa.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -1636,7 +1646,8 @@
     "price": "€2,000,000",
     "image": "assets/img/33stradale.png",
     "images": [
-      "assets/img/33stradale.png"
+      "assets/img/33stradale.png",
+      "assets/img/interiors/alfa-romeo-33-stradale.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -1710,7 +1721,8 @@
     "price": "€39,900",
     "image": "assets/img/giulia.png",
     "images": [
-      "assets/img/giulia.png"
+      "assets/img/giulia.png",
+      "assets/img/interiors/alfa-romeo-giulia.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -1784,7 +1796,8 @@
     "price": "€42,400",
     "image": "assets/img/tonale.png",
     "images": [
-      "assets/img/tonale.png"
+      "assets/img/tonale.png",
+      "assets/img/interiors/alfa-romeo-tonale.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -1858,7 +1871,8 @@
     "price": "€44,900",
     "image": "assets/img/stelvio.png",
     "images": [
-      "assets/img/stelvio.png"
+      "assets/img/stelvio.png",
+      "assets/img/interiors/alfa-romeo-stelvio.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -1932,7 +1946,8 @@
     "price": "€48,500",
     "image": "assets/img/gennesisg70shootingbrake.png",
     "images": [
-      "assets/img/gennesisg70shootingbrake.png"
+      "assets/img/gennesisg70shootingbrake.png",
+      "assets/img/interiors/genesis-g70-shooting-brake.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -2006,7 +2021,8 @@
     "price": "€52,900",
     "image": "assets/img/gennesisg80.png",
     "images": [
-      "assets/img/gennesisg80.png"
+      "assets/img/gennesisg80.png",
+      "assets/img/interiors/genesis-g80.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -2154,7 +2170,8 @@
     "price": "€75,800",
     "image": "assets/img/gennesisg90longwheelbase.png",
     "images": [
-      "assets/img/gennesisg90longwheelbase.png"
+      "assets/img/gennesisg90longwheelbase.png",
+      "assets/img/interiors/genesis-g90-long-wheelbase.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -2228,7 +2245,8 @@
     "price": "€59,900",
     "image": "assets/img/gennesisgv60.png",
     "images": [
-      "assets/img/gennesisgv60.png"
+      "assets/img/gennesisgv60.png",
+      "assets/img/interiors/genesis-gv60.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -2302,7 +2320,8 @@
     "price": "€49,900",
     "image": "assets/img/gennesisgv70.png",
     "images": [
-      "assets/img/gennesisgv70.png"
+      "assets/img/gennesisgv70.png",
+      "assets/img/interiors/genesis-gv70.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -2744,7 +2763,8 @@
     "price": "€41,500",
     "image": "assets/img/cls63-amg.png",
     "images": [
-      "assets/img/cls63-amg.png"
+      "assets/img/cls63-amg.png",
+      "assets/img/interiors/mercedes-cls63-amg.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -2818,7 +2838,8 @@
     "price": "€28,900",
     "image": "assets/img/s63-amg-w221.png",
     "images": [
-      "assets/img/s63-amg-w221.png"
+      "assets/img/s63-amg-w221.png",
+      "assets/img/interiors/mercedes-s63-smg.webp"
     ],
     "video": "assets/img/s63amg.mp4",
     "sketchfab": "",
@@ -3854,7 +3875,8 @@
     "price": "€205,900",
     "image": "assets/img/popular3.png",
     "images": [
-      "assets/img/popular3.png"
+      "assets/img/popular3.png",
+      "assets/img/interiors/porsche-turbo-s-cross.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -3928,7 +3950,8 @@
     "price": "€62,900",
     "image": "assets/img/popular4.png",
     "images": [
-      "assets/img/popular4.png"
+      "assets/img/popular4.png",
+      "assets/img/interiors/porsche-boxster-718.webp"
     ],
     "video": "",
     "sketchfab": "",
@@ -4002,7 +4025,8 @@
     "price": "€67,900",
     "image": "assets/img/popular5.png",
     "images": [
-      "assets/img/popular5.png"
+      "assets/img/popular5.png",
+      "assets/img/interiors/porsche-cayman.webp"
     ],
     "video": "",
     "sketchfab": "",
