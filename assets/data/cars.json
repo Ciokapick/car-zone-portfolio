@@ -12,7 +12,7 @@
     "images": [
       "assets/img/interiors/tesla-model-x.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/tesla-model-x.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -158,7 +158,7 @@
     "images": [
       "assets/img/interiors/audi-r8.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/audi-r8.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -304,7 +304,7 @@
     "images": [
       "assets/img/interiors/tesla-model-y.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/tesla-model-y.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -378,7 +378,7 @@
     "images": [
       "assets/img/interiors/tesla-model-s.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/tesla-model-s.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -598,7 +598,7 @@
     "images": [
       "assets/img/interiors/lotus-elise.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/lotus-elise.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -672,7 +672,7 @@
     "images": [
       "assets/img/interiors/audi-q3.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/audi-q3.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -746,7 +746,7 @@
     "images": [
       "assets/img/interiors/audi-q7.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/audi-q7.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -820,7 +820,7 @@
     "images": [
       "assets/img/interiors/audi-rs4.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/audi-rs4.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -1254,7 +1254,7 @@
     "images": [
       "assets/img/interiors/lexus-lfa.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/lexus-lfa.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -1912,7 +1912,7 @@
     "images": [
       "assets/img/interiors/genesis-g70-shooting-brake.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/genesis-g70-shooting-brake.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -1986,7 +1986,7 @@
     "images": [
       "assets/img/interiors/genesis-g80.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/genesis-g80.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -2132,7 +2132,7 @@
     "images": [
       "assets/img/interiors/genesis-g90-long-wheelbase.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/genesis-g90-long-wheelbase.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -2206,7 +2206,7 @@
     "images": [
       "assets/img/interiors/genesis-gv60.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/genesis-gv60.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -2280,7 +2280,7 @@
     "images": [
       "assets/img/interiors/genesis-gv70.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/genesis-gv70.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -2714,7 +2714,7 @@
     "images": [
       "assets/img/interiors/mercedes-cls63-amg.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/mercedes-cls63-amg.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -3798,7 +3798,7 @@
     "images": [
       "assets/img/interiors/porsche-turbo-s-cross.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/porsche-turbo-s-cross.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -3872,7 +3872,7 @@
     "images": [
       "assets/img/interiors/porsche-boxster-718.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/porsche-boxster-718.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
@@ -3946,7 +3946,7 @@
     "images": [
       "assets/img/interiors/porsche-cayman.webp"
     ],
-    "video": "",
+    "video": "assets/img/videos/porsche-cayman.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
