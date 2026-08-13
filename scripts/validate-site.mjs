@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { runInNewContext } from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
 const siteUrl = 'https://car-zone-five.vercel.app';
@@ -19,6 +20,39 @@ const referencedTranslationKeys = new Map();
 
 const fail = (file, message) => errors.push(`${file}: ${message}`);
 const attribute = (tag, name) => tag.match(new RegExp(`\\b${name}=["']([^"']+)["']`, 'i'))?.[1];
+
+const inventoryFile = 'assets/data/curated-inventory.js';
+const inventorySandbox = { window: {} };
+try {
+  runInNewContext(readFileSync(resolve(root, inventoryFile), 'utf8'), inventorySandbox);
+  const { curatedInventory, inventoryBrands } = inventorySandbox.window.carzoneInventory ?? {};
+  if (!Array.isArray(curatedInventory) || curatedInventory.length !== 11) fail(inventoryFile, 'curated inventory must contain 11 vehicles');
+  if (!Array.isArray(inventoryBrands)) fail(inventoryFile, 'brand filter data is missing');
+
+  if (Array.isArray(curatedInventory)) {
+    const ids = new Set();
+    const tiers = { flagship: 0, featured: 0, inventory: 0 };
+    const brands = new Set();
+    for (const vehicle of curatedInventory) {
+      if (ids.has(vehicle.id)) fail(inventoryFile, `duplicate vehicle id ${vehicle.id}`);
+      ids.add(vehicle.id);
+      brands.add(vehicle.brand);
+      if (!(vehicle.tier in tiers)) fail(inventoryFile, `unknown tier ${vehicle.tier}`);
+      else tiers[vehicle.tier] += 1;
+      if (!existsSync(resolve(root, vehicle.image))) fail(inventoryFile, `missing vehicle image ${vehicle.image}`);
+      if (vehicle.detailUrl && !existsSync(resolve(root, vehicle.detailUrl))) fail(inventoryFile, `missing detail page ${vehicle.detailUrl}`);
+    }
+    if (tiers.flagship !== 1 || tiers.featured !== 3 || tiers.inventory !== 7) {
+      fail(inventoryFile, `expected tier split 1/3/7, received ${tiers.flagship}/${tiers.featured}/${tiers.inventory}`);
+    }
+    if (Array.isArray(inventoryBrands)) {
+      const filterBrands = new Set(inventoryBrands.map((brand) => brand.id));
+      for (const brand of brands) if (!filterBrands.has(brand)) fail(inventoryFile, `missing filter for represented brand ${brand}`);
+    }
+  }
+} catch (error) {
+  fail(inventoryFile, `could not evaluate curated inventory (${error.message})`);
+}
 
 for (const [file, canonical] of pages) {
   const html = readFileSync(resolve(root, file), 'utf8');
