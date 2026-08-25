@@ -515,6 +515,8 @@ img {
   font-size: var(--normal-font-size);
   color: var(--text-color);
   font-weight: 400;
+  /* Doua randuri rezervate, ca numele lungi sa nu decaleze cardurile din carusel. */
+  min-height: calc(var(--normal-font-size) * 2 * 1.5);
 }
 
 .popular__img {
