@@ -228,7 +228,7 @@
   "porsche-911-turbo-s": {
     "id": "porsche-911-turbo-s",
     "make": "Porsche",
-    "model": "Turbo S",
+    "model": "911 Turbo S",
     "year": 2023,
     "km": 8000,
     "fuel": "Petrol",
@@ -1460,7 +1460,7 @@
   "lexus-uxh": {
     "id": "lexus-uxh",
     "make": "Lexus",
-    "model": "UX h",
+    "model": "UX 250h",
     "year": 2023,
     "km": 15000,
     "fuel": "Hybrid",
