@@ -683,8 +683,9 @@
             .car-detail__images + .car-detail__info { grid-column: 1; }
         }
     </style>
+    <link rel="stylesheet" href="assets/css/styles-car-detail.css">
 </head>
-<body>
+<body class="detail-page">
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -905,62 +906,74 @@
             const brandFont = brandFontMap[car.make] || 'var(--default-font)';
             document.documentElement.style.setProperty('--cz-brand-font', brandFont);
 
+            const heroImage = (car.images && car.images[0]) || car.image || '';
+            const reference = `CZ-${String(car.year).slice(-2)}-${car.id.toUpperCase().replace(/[^A-Z0-9]+/g, '-').slice(0, 14)}`;
+
             // Build car detail HTML
             let carHTML = `
                 <!--==================== VIDEO BACKGROUND SECTION ====================-->
                 <section class="video-section">
                     <div class="video-container">
-                        ${(car.images && car.images[0]) ? `<img class="video-bg" src="${car.images[0]}" alt="${car.make} ${car.model}">` : ''}
+                        ${heroImage ? `<img class="video-bg" src="${heroImage}" alt="${car.make} ${car.model}">` : ''}
                         <div class="video-overlay"></div>
                         <div class="video-content">
                             <p class="video-kicker">Curated inventory · ${car.year}</p>
                             <h1 class="video-title">${car.make} ${car.model}</h1>
-                            <p class="video-price">${car.price} · ${car.power}</p>
+                            <div class="video-meta">
+                                <p class="video-price">${car.price} · ${car.power}</p>
+                                <a href="#vehicle-overview">Discover the car <i class="ri-arrow-down-line" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="vehicle-summary" id="vehicle-overview" aria-labelledby="vehicle-overview-title">
+                    <div class="vehicle-summary__container container">
+                        <div class="vehicle-summary__identity">
+                            <p class="detail-kicker">Available now · ${reference}</p>
+                            <h2 id="vehicle-overview-title" style="font-family: ${brandFont}">${car.make} <span>${car.model}</span></h2>
+                            <p>A clear, photographic presentation of this ${car.year} ${car.make} ${car.model}, followed by the complete equipment and technical record.</p>
+                        </div>
+                        <dl class="vehicle-summary__facts">
+                            <div><dt>Year</dt><dd>${car.year}</dd></div>
+                            <div><dt>Mileage</dt><dd>${car.km.toLocaleString()} km</dd></div>
+                            <div><dt>Fuel</dt><dd>${car.fuel}</dd></div>
+                            <div><dt>Power</dt><dd>${car.power}</dd></div>
+                        </dl>
+                        <div class="vehicle-summary__offer">
+                            <p>Asking price</p>
+                            <strong>${car.price}</strong>
+                            <div>
+                                <a class="detail-button detail-button--primary" href="contact.html">Request details <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                                <a class="detail-button detail-button--secondary" href="finantare.html">Financing options</a>
+                            </div>
                         </div>
                     </div>
                 </section>
             `;
 
-            // Add carousel whenever the car has photos (nav only when several)
+            // Add an editorial four-frame story whenever the car has photos.
             if (car.images && car.images.length >= 1) {
-                const multi = car.images.length > 1;
                 carHTML += `
                     <section class="carousel-section">
                         <div class="container">
                             <div class="gallery-heading">
                                 <div>
                                     <p class="gallery-kicker">Four-frame story</p>
-                                    <h2>Exterior. Interior. Detail.</h2>
+                                    <h2>Presence. Cabin. Detail.</h2>
                                 </div>
                                 ${car.id === 'mercedes-s580' ? '' : `<a class="gallery-credit" href="media-credits.html#${car.id}">Photo sources &amp; credits <i class="ri-arrow-right-up-line"></i></a>`}
                             </div>
-                            <div class="carousel-container" style="display: block;">
-                                <div class="carousel-wrapper">
-                                    <div class="carousel-track" id="carouselTrack">
-                                        ${car.images.map((img, index) => `
-                                        <div class="carousel-slide">
-                                            <img src="${img}" alt="${car.make} ${car.model} Image ${index + 1}">
-                                            <span class="carousel-slide__index">${String(index + 1).padStart(2, '0')} / ${String(car.images.length).padStart(2, '0')}</span>
-                                        </div>
-                                        `).join('')}
-                                    </div>
-                                </div>
-                                ${multi ? `
-                                <button class="carousel-nav prev" id="prevBtn">
-                                    <i class="ri-arrow-left-line"></i>
-                                </button>
-                                <button class="carousel-nav next" id="nextBtn">
-                                    <i class="ri-arrow-right-line"></i>
-                                </button>
-                                <div class="carousel-indicators" id="carouselIndicators"></div>
-                                ` : ''}
-                                <div class="carousel-thumbnails" aria-label="Gallery thumbnails">
-                                    ${car.images.map((img, index) => `
-                                    <button class="carousel-thumbnail${index === 0 ? ' active' : ''}" type="button" data-slide="${index}" aria-label="Show image ${index + 1}">
-                                        <img src="${img}" alt="" loading="lazy">
-                                    </button>
-                                    `).join('')}
-                                </div>
+                            <div class="story-grid">
+                                ${car.images.map((img, index) => `
+                                <figure class="story-frame story-frame--${index + 1}">
+                                    <img src="${img}" alt="${car.make} ${car.model} — ${['road presence', 'rear profile', 'cabin', 'signature detail'][index] || `view ${index + 1}`}" ${index > 0 ? 'loading="lazy"' : ''}>
+                                    <figcaption>
+                                        <span>${String(index + 1).padStart(2, '0')}</span>
+                                        ${['Road presence', 'Rear profile', 'The cabin', 'Signature detail'][index] || 'Curated view'}
+                                    </figcaption>
+                                </figure>
+                                `).join('')}
                             </div>
                         </div>
                     </section>
@@ -968,67 +981,22 @@
             }
 
             carHTML += `
-                <section class="car-detail section">
-                    <div class="car-detail__container container grid">
-                        <div class="car-detail__images">
-                            ${car.sketchfab ? `
-                            <div class="car-detail__3d-model" style="display: block;">
-                                <iframe title="${car.make} ${car.model} 3D Model"
-                                        frameborder="0"
-                                        allowfullscreen
-                                        mozallowfullscreen="true"
-                                        webkitallowfullscreen="true"
-                                        allow="autoplay; fullscreen; xr-spatial-tracking"
-                                        xr-spatial-tracking
-                                        execution-while-out-of-viewport
-                                        execution-while-not-rendered
-                                        web-share
-                                        src="${car.sketchfab}">
-                                </iframe>
+                <section class="car-detail section" aria-labelledby="specification-title">
+                    <div class="car-detail__container container">
+                        <div class="car-detail__lead">
+                            <div>
+                                <p class="detail-kicker">Provenance &amp; specification</p>
+                                <h2 id="specification-title">Everything worth knowing.</h2>
+                                <p>The listing data is grouped for fast comparison, from identity and drivetrain to comfort, safety and design equipment.</p>
                             </div>
-                            ` : ''}
+                            <aside class="provenance-card" aria-label="Listing provenance">
+                                <span>Listing reference</span>
+                                <strong>${reference}</strong>
+                                <span>Vehicle identity</span>
+                                <strong>${car.specs && car.specs.basic && car.specs.basic.VIN ? car.specs.basic.VIN : `${car.make} ${car.model}`}</strong>
+                                ${car.id === 'mercedes-s580' ? '' : `<a href="media-credits.html#${car.id}">Image provenance <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>`}
+                            </aside>
                         </div>
-                        <div class="car-detail__info">
-                            <h1 class="car-detail__title" style="font-family: ${brandFont}">${car.make}</h1>
-                            <h2 class="car-detail__subtitle" style="font-family: ${brandFont}">${car.model}</h2>
-
-                            <div class="car-detail__stats">
-                                <div class="car-detail__stat">
-                                    <span class="car-detail__stat-number">${car.year}</span>
-                                    <span class="car-detail__stat-label">Year</span>
-                                </div>
-                                <div class="car-detail__stat">
-                                    <span class="car-detail__stat-number">${car.km.toLocaleString()}</span>
-                                    <span class="car-detail__stat-label">KM</span>
-                                </div>
-                                <div class="car-detail__stat">
-                                    <span class="car-detail__stat-number">${car.fuel}</span>
-                                    <span class="car-detail__stat-label">Fuel</span>
-                                </div>
-                                <div class="car-detail__stat">
-                                    <span class="car-detail__stat-number">${car.power}</span>
-                                    <span class="car-detail__stat-label">Power</span>
-                                </div>
-                            </div>
-
-                            <div class="car-detail__price">${car.price}</div>
-
-                            <div class="car-detail__actions">
-                                <button class="car-detail__button car-detail__button--primary">
-                                    <i class="ri-phone-line"></i> Contact
-                                </button>
-                                <button class="car-detail__button car-detail__button--secondary">
-                                    <i class="ri-chat-3-line"></i> Chat Online
-                                </button>
-                                <button class="car-detail__button car-detail__button--secondary">
-                                    <i class="ri-file-text-line"></i> Vehicle report
-                                </button>
-                                <button class="car-detail__button car-detail__button--secondary">
-                                    <i class="ri-history-line"></i> Service history
-                                </button>
-                            </div>
-                        </div>
-
                         <div class="car-detail__specs">
             `;
 
@@ -1074,20 +1042,28 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="detail-cta" aria-labelledby="detail-cta-title">
+                    <div class="detail-cta__container container">
+                        <div>
+                            <p class="detail-kicker">Your next move</p>
+                            <h2 id="detail-cta-title">See it beyond the screen.</h2>
+                            <p>Ask for availability, arrange a viewing or explore financing for the ${car.make} ${car.model}.</p>
+                        </div>
+                        <div class="detail-cta__actions">
+                            <a class="detail-button detail-button--primary" href="contact.html">Talk to CarZone <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                            <a class="detail-button detail-button--secondary" href="stoc.html">Back to inventory</a>
+                        </div>
+                    </div>
+                </section>
             `;
 
             document.getElementById('car-content').innerHTML = carHTML;
 
-            // Initialize carousel if present
-            if (car.images && car.images.length > 1) {
-                initializeCarousel();
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                initializeScrollReveal();
+                initializeInteractiveElements();
             }
-
-            // Initialize ScrollReveal animations
-            initializeScrollReveal();
-
-            // Initialize interactive elements
-            initializeInteractiveElements();
         }
 
         function initializeScrollReveal() {
@@ -1098,14 +1074,11 @@
                 delay: 400,
             });
 
-            // Car detail animations
-            sr.reveal('.car-detail__images', {origin: 'left'});
-            sr.reveal('.car-detail__info', {origin: 'right'});
-            sr.reveal('.car-detail__title', {delay: 600});
-            sr.reveal('.car-detail__subtitle', {delay: 700});
-            sr.reveal('.car-detail__stats', {delay: 800});
-            sr.reveal('.car-detail__price', {delay: 900});
-            sr.reveal('.car-detail__actions', {delay: 1000});
+            sr.reveal('.vehicle-summary__identity', {origin: 'left'});
+            sr.reveal('.vehicle-summary__facts', {origin: 'bottom'});
+            sr.reveal('.vehicle-summary__offer', {origin: 'right'});
+            sr.reveal('.gallery-heading, .car-detail__lead', {origin: 'bottom'});
+            sr.reveal('.story-frame', {origin: 'bottom', interval: 120});
 
             // Specs sections animations
             sr.reveal('.specs-section', {
@@ -1141,37 +1114,6 @@
         }
 
         function initializeInteractiveElements() {
-            // Add fade-in animation for the 3D model iframe when it loads
-            const iframe = document.querySelector('.car-detail__3d-model iframe');
-            if (iframe) {
-                iframe.addEventListener('load', function() {
-                    this.style.opacity = '0';
-                    this.style.transition = 'opacity 1s ease-in-out';
-                    setTimeout(() => {
-                        this.style.opacity = '1';
-                    }, 100);
-                });
-            }
-
-            // Add staggered animation for action buttons
-            const actionButtons = document.querySelectorAll('.car-detail__button');
-            actionButtons.forEach((button, index) => {
-                button.style.animationDelay = `${index * 0.1}s`;
-            });
-
-            // Add hover animations for stats
-            const stats = document.querySelectorAll('.car-detail__stat');
-            stats.forEach(stat => {
-                stat.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px) scale(1.05)';
-                    this.style.transition = 'all 0.3s ease';
-                });
-
-                stat.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
-
             // Progressive reveal for feature lists
             const observerOptions = {
                 threshold: 0.1,
@@ -1236,221 +1178,6 @@
             return html;
         }
 
-        function initializeCarousel() {
-            const carouselTrack = document.getElementById('carouselTrack');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            const indicatorsContainer = document.getElementById('carouselIndicators');
-            const thumbnails = document.querySelectorAll('.carousel-thumbnail');
-
-            if (!carouselTrack || !prevBtn || !nextBtn || !indicatorsContainer) {
-                return;
-            }
-
-            const slides = carouselTrack.querySelectorAll('.carousel-slide');
-            const totalSlides = slides.length;
-            let currentSlide = 0;
-
-            // Create indicators
-            function createIndicators() {
-                indicatorsContainer.innerHTML = '';
-                for (let i = 0; i < totalSlides; i++) {
-                    const indicator = document.createElement('div');
-                    indicator.classList.add('carousel-indicator');
-                    if (i === 0) indicator.classList.add('active');
-                    indicator.addEventListener('click', () => goToSlide(i));
-                    indicatorsContainer.appendChild(indicator);
-                }
-            }
-
-            // Update indicators
-            function updateIndicators() {
-                const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
-                indicators.forEach((indicator, index) => {
-                    indicator.classList.toggle('active', index === currentSlide);
-                });
-                thumbnails.forEach((thumbnail, index) => {
-                    thumbnail.classList.toggle('active', index === currentSlide);
-                    thumbnail.setAttribute('aria-current', index === currentSlide ? 'true' : 'false');
-                });
-            }
-
-            // Go to specific slide
-            function goToSlide(slideIndex) {
-                currentSlide = slideIndex;
-                const translateX = -currentSlide * 100;
-                carouselTrack.style.transform = `translateX(${translateX}%)`;
-                updateIndicators();
-                handleVideoPlayback();
-            }
-
-            // Next slide
-            function nextSlide() {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                goToSlide(currentSlide);
-            }
-
-            // Previous slide
-            function prevSlide() {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                goToSlide(currentSlide);
-            }
-
-            // Event listeners
-            nextBtn.addEventListener('click', nextSlide);
-            prevBtn.addEventListener('click', prevSlide);
-            thumbnails.forEach((thumbnail) => {
-                thumbnail.addEventListener('click', () => goToSlide(Number(thumbnail.dataset.slide)));
-            });
-
-            // Auto-play functionality
-            let autoplayInterval;
-
-            function startAutoplay() {
-                autoplayInterval = setInterval(nextSlide, 5000);
-            }
-
-            function stopAutoplay() {
-                clearInterval(autoplayInterval);
-            }
-
-            // Pause autoplay on hover
-            const carouselContainer = document.querySelector('.carousel-container');
-            if (carouselContainer) {
-                carouselContainer.addEventListener('mouseenter', stopAutoplay);
-                carouselContainer.addEventListener('mouseleave', startAutoplay);
-            }
-
-            // Keyboard navigation
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'ArrowLeft') {
-                    prevSlide();
-                } else if (e.key === 'ArrowRight') {
-                    nextSlide();
-                }
-            });
-
-            // Touch/swipe support for mobile
-            let startX = 0;
-            let currentX = 0;
-            let isDragging = false;
-
-            carouselTrack.addEventListener('touchstart', function(e) {
-                startX = e.touches[0].clientX;
-                isDragging = true;
-                stopAutoplay();
-            });
-
-            carouselTrack.addEventListener('touchmove', function(e) {
-                if (!isDragging) return;
-                currentX = e.touches[0].clientX;
-                e.preventDefault();
-            });
-
-            carouselTrack.addEventListener('touchend', function(e) {
-                if (!isDragging) return;
-                isDragging = false;
-
-                const diffX = startX - currentX;
-                const threshold = 50;
-
-                if (Math.abs(diffX) > threshold) {
-                    if (diffX > 0) {
-                        nextSlide();
-                    } else {
-                        prevSlide();
-                    }
-                }
-
-                startAutoplay();
-            });
-
-            // Mouse drag support for desktop
-            let mouseStartX = 0;
-            let mouseCurrentX = 0;
-            let isMouseDragging = false;
-
-            carouselTrack.addEventListener('mousedown', function(e) {
-                mouseStartX = e.clientX;
-                isMouseDragging = true;
-                carouselTrack.style.cursor = 'grabbing';
-                stopAutoplay();
-                e.preventDefault();
-            });
-
-            carouselTrack.addEventListener('mousemove', function(e) {
-                if (!isMouseDragging) return;
-                mouseCurrentX = e.clientX;
-                e.preventDefault();
-            });
-
-            carouselTrack.addEventListener('mouseup', function(e) {
-                if (!isMouseDragging) return;
-                isMouseDragging = false;
-                carouselTrack.style.cursor = 'grab';
-
-                const diffX = mouseStartX - mouseCurrentX;
-                const threshold = 50;
-
-                if (Math.abs(diffX) > threshold) {
-                    if (diffX > 0) {
-                        nextSlide();
-                    } else {
-                        prevSlide();
-                    }
-                }
-
-                startAutoplay();
-            });
-
-            carouselTrack.addEventListener('mouseleave', function() {
-                if (isMouseDragging) {
-                    isMouseDragging = false;
-                    carouselTrack.style.cursor = 'grab';
-                    startAutoplay();
-                }
-            });
-
-            // Handle video elements in carousel
-            slides.forEach((slide, index) => {
-                const video = slide.querySelector('video');
-                if (video) {
-                    if (index !== currentSlide) {
-                        video.pause();
-                    }
-
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                video.play().catch(e => console.log('Video autoplay failed:', e));
-                            } else {
-                                video.pause();
-                            }
-                        });
-                    }, { threshold: 0.5 });
-
-                    observer.observe(slide);
-                }
-            });
-
-            // Update video play/pause when slide changes
-            function handleVideoPlayback() {
-                slides.forEach((slide, index) => {
-                    const video = slide.querySelector('video');
-                    if (video) {
-                        if (index === currentSlide) {
-                            video.play().catch(e => console.log('Video autoplay failed:', e));
-                        } else {
-                            video.pause();
-                        }
-                    }
-                });
-            }
-
-            // Initialize carousel
-            createIndicators();
-            startAutoplay();
-        }
     </script>
     <script src="assets/js/i18n.js?v=6"></script>
     <script src="assets/js/site-nav.js"></script>

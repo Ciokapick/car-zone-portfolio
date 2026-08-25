@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     /*=============== SCROLL REVEAL ANIMATION ===============*/
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
     const sr = ScrollReveal({
         origin: "top",
         distance: "60px",
