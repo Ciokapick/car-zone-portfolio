@@ -23,8 +23,31 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     );
 
+    /*=============== MOTION-SAFE HERO VIDEO ===============*/
+    const heroVideo = document.querySelector('.video-section .video-bg');
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    const syncHeroVideo = () => {
+        if (!heroVideo) return;
+
+        if (motionPreference.matches) {
+            heroVideo.pause();
+            heroVideo.loop = false;
+            heroVideo.removeAttribute('autoplay');
+            return;
+        }
+
+        heroVideo.loop = true;
+        heroVideo.play().catch(() => {
+            // Browsers may block autoplay; the first frame remains the fallback.
+        });
+    };
+
+    syncHeroVideo();
+    motionPreference.addEventListener('change', syncHeroVideo);
+
     /*=============== SCROLL REVEAL ANIMATION ===============*/
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (motionPreference.matches) return;
 
     const sr = ScrollReveal({
         origin: "top",
