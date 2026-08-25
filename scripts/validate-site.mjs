@@ -1,6 +1,5 @@
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
-import { runInNewContext } from 'node:vm';
 
 const root = resolve(import.meta.dirname, '..');
 const siteUrl = 'https://car-zone-five.vercel.app';
@@ -20,39 +19,6 @@ const referencedTranslationKeys = new Map();
 
 const fail = (file, message) => errors.push(`${file}: ${message}`);
 const attribute = (tag, name) => tag.match(new RegExp(`\\b${name}=["']([^"']+)["']`, 'i'))?.[1];
-
-const inventoryFile = 'assets/data/curated-inventory.js';
-const inventorySandbox = { window: {} };
-try {
-  runInNewContext(readFileSync(resolve(root, inventoryFile), 'utf8'), inventorySandbox);
-  const { curatedInventory, inventoryBrands } = inventorySandbox.window.carzoneInventory ?? {};
-  if (!Array.isArray(curatedInventory) || curatedInventory.length !== 11) fail(inventoryFile, 'curated inventory must contain 11 vehicles');
-  if (!Array.isArray(inventoryBrands)) fail(inventoryFile, 'brand filter data is missing');
-
-  if (Array.isArray(curatedInventory)) {
-    const ids = new Set();
-    const tiers = { flagship: 0, featured: 0, inventory: 0 };
-    const brands = new Set();
-    for (const vehicle of curatedInventory) {
-      if (ids.has(vehicle.id)) fail(inventoryFile, `duplicate vehicle id ${vehicle.id}`);
-      ids.add(vehicle.id);
-      brands.add(vehicle.brand);
-      if (!(vehicle.tier in tiers)) fail(inventoryFile, `unknown tier ${vehicle.tier}`);
-      else tiers[vehicle.tier] += 1;
-      if (!existsSync(resolve(root, vehicle.image))) fail(inventoryFile, `missing vehicle image ${vehicle.image}`);
-      if (vehicle.detailUrl && !existsSync(resolve(root, vehicle.detailUrl))) fail(inventoryFile, `missing detail page ${vehicle.detailUrl}`);
-    }
-    if (tiers.flagship !== 1 || tiers.featured !== 3 || tiers.inventory !== 7) {
-      fail(inventoryFile, `expected tier split 1/3/7, received ${tiers.flagship}/${tiers.featured}/${tiers.inventory}`);
-    }
-    if (Array.isArray(inventoryBrands)) {
-      const filterBrands = new Set(inventoryBrands.map((brand) => brand.id));
-      for (const brand of brands) if (!filterBrands.has(brand)) fail(inventoryFile, `missing filter for represented brand ${brand}`);
-    }
-  }
-} catch (error) {
-  fail(inventoryFile, `could not evaluate curated inventory (${error.message})`);
-}
 
 for (const [file, canonical] of pages) {
   const html = readFileSync(resolve(root, file), 'utf8');
@@ -108,6 +74,39 @@ try {
   JSON.parse(schemaText);
 } catch (error) {
   fail('index.html', `invalid JSON-LD (${error.message})`);
+}
+
+const stock = readFileSync(resolve(root, 'stoc.html'), 'utf8');
+const cars = JSON.parse(readFileSync(resolve(root, 'assets/data/cars.json'), 'utf8'));
+const carIds = Object.keys(cars);
+const stockCardCount = (stock.match(/<article class="featured__card/g) ?? []).length;
+const stockMediaLinkCount = (stock.match(/class="featured__media-link"/g) ?? []).length;
+const stockActionLinkCount = (stock.match(/class="button featured__button"/g) ?? []).length;
+const stockFilterCount = (stock.match(/class="featured__item[^>]*data-filter=/g) ?? []).length;
+const labelledStockFilterCount = (stock.match(/class="featured__item[^>]*data-filter=[^>]*aria-label=/g) ?? []).length;
+const linkedGenericIds = new Set([...stock.matchAll(/href="car-detail\.html\?id=([^"]+)"/g)].map((match) => match[1]));
+
+if (stockCardCount !== carIds.length) {
+  fail('stoc.html', `expected ${carIds.length} inventory cards, found ${stockCardCount}`);
+}
+if (/<button\b[^>]*class="button featured__button"/i.test(stock)) {
+  fail('stoc.html', 'contains an inventory action button that does not navigate to a vehicle page');
+}
+if (/<a\b[^>]*class="featured__media-link"[^>]*>\s*<a\b/i.test(stock)) {
+  fail('stoc.html', 'contains nested inventory links');
+}
+if (stockMediaLinkCount !== carIds.length || stockActionLinkCount !== carIds.length) {
+  fail('stoc.html', `expected one media link and one action link for each of the ${carIds.length} vehicles`);
+}
+if (stockFilterCount !== labelledStockFilterCount) {
+  fail('stoc.html', 'every inventory filter must have an accessible label');
+}
+for (const id of carIds) {
+  const expectedHref = id === 'mercedes-s580' ? 'href="s580.html"' : `href="car-detail.html?id=${id}"`;
+  if (!stock.includes(expectedHref)) fail('stoc.html', `vehicle ${id} is not linked from inventory`);
+}
+for (const id of linkedGenericIds) {
+  if (!(id in cars)) fail('stoc.html', `links to unknown vehicle id ${id}`);
 }
 
 const sitemap = readFileSync(resolve(root, 'sitemap.xml'), 'utf8');
