@@ -10,3 +10,8 @@ assets/ss/
 
 # Local-only admin prototype
 admin.html
+
+# Local Vercel project metadata and environment overrides
+.vercel
+.env.local
+.env.*.local
