@@ -2,176 +2,782 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" data-i18n-content="meta.stock.desc" content="Browse a curated selection of eleven vehicles in the CarZone portfolio concept.">
-    <meta name="theme-color" content="#08090b">
-    <link rel="canonical" href="https://car-zone-five.vercel.app/stoc.html">
-    <meta property="og:title" content="Curated inventory — CarZone">
-    <meta property="og:description" content="Browse a curated selection of eleven vehicles in the CarZone portfolio concept.">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="CarZone">
-    <meta property="og:url" content="https://car-zone-five.vercel.app/stoc.html">
-    <meta property="og:image" content="https://car-zone-five.vercel.app/assets/img/s580.png">
-    <meta property="og:image:alt" content="Mercedes-Benz S580 signature vehicle in the CarZone collection">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Curated inventory — CarZone">
-    <meta name="twitter:description" content="Browse a curated selection of eleven vehicles in the CarZone portfolio concept.">
-    <meta name="twitter:image" content="https://car-zone-five.vercel.app/assets/img/s580.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" data-i18n-content="meta.stock.desc" content="Browse the CarZone demo inventory and filter models by brand.">
+        <meta name="theme-color" content="#0a0a0b">
+        <link rel="canonical" href="https://car-zone-five.vercel.app/stoc.html">
+        <meta property="og:title" content="Cars in stock — CarZone">
+        <meta property="og:description" content="Browse the CarZone demo inventory and filter models by brand.">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="CarZone">
+        <meta property="og:url" content="https://car-zone-five.vercel.app/stoc.html">
+        <meta property="og:image" content="https://car-zone-five.vercel.app/assets/img/s580.png">
+        <meta property="og:image:alt" content="Vehicle selection in the CarZone demo inventory">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Cars in stock — CarZone">
+        <meta name="twitter:description" content="Browse the CarZone demo inventory and filter models by brand.">
+        <meta name="twitter:image" content="https://car-zone-five.vercel.app/assets/img/s580.png">
 
+    <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="assets/img/carzone.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== STYLESHEET ===============-->
     <link rel="stylesheet" href="assets/css/styles.css?v=3">
-    <link rel="stylesheet" href="assets/css/styles-stoc.css?v=2">
+    <link rel="stylesheet" href="assets/css/styles-stoc.css">
 
-    <title data-i18n="meta.stock.title">Curated inventory - CarZone</title>
+    <title data-i18n="meta.stock.title">Cars in stock - CarZone</title>
+
 </head>
-<body class="inventory-page">
-    <a class="skip-link" href="#main-content" data-i18n="common.skip">Skip to content</a>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+      <nav class="nav container">
+          <a href="index.html" class="nav__logo">
+              <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+          </a>
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="index.html" class="nav__link" data-i18n="nav.home">Home</a></li>
+                  <li class="nav__item"><a href="stoc.html" class="nav__link active-link" data-i18n="nav.stock">Inventory</a></li>
+                  <li class="nav__item"><a href="comanda.html" class="nav__link" data-i18n="nav.order">Custom order</a></li>
+                  <li class="nav__item"><a href="vinde.html" class="nav__link" data-i18n="nav.sell">Sell your car</a></li>
+                  <li class="nav__item"><a href="finantare.html" class="nav__link" data-i18n="nav.financing">Financing</a></li>
+                  <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+              </ul>
+              <div class="nav__lang" role="group" aria-label="Language selection" data-i18n-aria="nav.langLabel">
+                      <button type="button" class="nav__lang-btn active-lang" data-lang="en" aria-pressed="true">EN</button>
+                      <span aria-hidden="true">/</span>
+                      <button type="button" class="nav__lang-btn" data-lang="ro" aria-pressed="false">RO</button>
+                  </div>
+                  <button type="button" class="nav__close" id="nav-close" aria-label="Close menu" data-i18n-aria="aria.closeMenu"><i class="ri-close-line" aria-hidden="true"></i></button>
+          </div>
+          <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu" data-i18n-aria="aria.openMenu" aria-expanded="false" aria-controls="nav-menu"><i class="ri-menu-line" aria-hidden="true"></i></button>
+      </nav>
+  </header>
+    <!--==================== VIDEO BACKGROUND SECTION ====================-->
+<section class="video-section">
+    <div class="video-container">
+        <!-- Videoclipul ca fundal -->
+        <video autoplay loop muted playsinline preload="metadata" class="video-bg">
+            <source src="assets/img/s63amg.mp4" type="video/mp4">
+            Your browser does not support this video.
+        </video>
 
-    <header class="header" id="header">
-        <nav class="nav container" aria-label="Primary navigation">
-            <a href="index.html" class="nav__logo">
-                <img src="assets/img/logo.png" alt="CarZone" class="nav__logo-img">
-            </a>
+        <!-- Suprapunerea semi-transparentă pentru text lizibil -->
+        <div class="video-overlay"></div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link" data-i18n="nav.home">Home</a></li>
-                    <li class="nav__item"><a href="stoc.html" class="nav__link active-link" data-i18n="nav.stock">Inventory</a></li>
-                    <li class="nav__item"><a href="comanda.html" class="nav__link" data-i18n="nav.order">Custom order</a></li>
-                    <li class="nav__item"><a href="vinde.html" class="nav__link" data-i18n="nav.sell">Sell your car</a></li>
-                    <li class="nav__item"><a href="finantare.html" class="nav__link" data-i18n="nav.financing">Financing</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                </ul>
-
-                <div class="nav__lang" role="group" aria-label="Language selection" data-i18n-aria="nav.langLabel">
-                    <button type="button" class="nav__lang-btn active-lang" data-lang="en" aria-pressed="true">EN</button>
-                    <span aria-hidden="true">/</span>
-                    <button type="button" class="nav__lang-btn" data-lang="ro" aria-pressed="false">RO</button>
-                </div>
-
-                <button type="button" class="nav__close" id="nav-close" aria-label="Close menu" data-i18n-aria="aria.closeMenu">
-                    <i class="ri-close-line" aria-hidden="true"></i>
-                </button>
-            </div>
-
-            <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open menu" data-i18n-aria="aria.openMenu" aria-expanded="false" aria-controls="nav-menu">
-                <i class="ri-menu-line" aria-hidden="true"></i>
-            </button>
-        </nav>
-    </header>
-
-    <main id="main-content">
-        <section class="inventory-hero" aria-labelledby="inventory-title">
-            <video autoplay loop muted playsinline preload="metadata" class="inventory-hero__video">
-                <source src="assets/img/s63amg.mp4" type="video/mp4">
-                <span data-i18n="video.unsupported">Your browser does not support this video.</span>
-            </video>
-            <div class="inventory-hero__scrim" aria-hidden="true"></div>
-            <div class="inventory-hero__content container">
-                <p class="inventory-eyebrow">Curated collection · 11 vehicles</p>
-                <h1 id="inventory-title">Fewer cars.<br>Better stories.</h1>
-                <p class="inventory-hero__copy">A deliberately edited collection built around one signature presentation and a smaller set of honest vehicle summaries.</p>
-                <a class="inventory-text-link" href="#collection">Explore the collection <i class="ri-arrow-down-line" aria-hidden="true"></i></a>
-            </div>
-        </section>
-
-        <section class="inventory-collection" id="collection" aria-labelledby="collection-title">
-            <div class="container inventory-collection__inner">
-                <header class="inventory-section-heading">
-                    <div>
-                        <p class="inventory-eyebrow">The collection</p>
-                        <h2 id="collection-title">Selected, not generated by the dozen.</h2>
-                    </div>
-                    <p id="inventory-count" class="inventory-count" aria-live="polite">11 vehicles</p>
-                </header>
-
-                <div id="inventory-filters" class="inventory-filters" role="group" aria-label="Filter inventory by brand"></div>
-                <div id="inventory-catalog" class="inventory-catalog"></div>
-            </div>
-        </section>
-
-        <section class="inventory-services" aria-label="CarZone services">
-            <div class="container inventory-services__grid">
-                <article class="service-card service-card--source">
-                    <p class="inventory-eyebrow">Vehicle sourcing</p>
-                    <h2>Looking for a specific configuration?</h2>
-                    <p>Tell us the model, year and budget. The demo request flow lets you describe exactly what should be sourced.</p>
-                    <a href="comanda.html" class="inventory-cta">Build a sourcing request <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-                </article>
-
-                <article class="service-card service-card--finance">
-                    <p class="inventory-eyebrow">Financing</p>
-                    <h2>Plan the purchase before the conversation.</h2>
-                    <p>Explore the financing flow and prepare a local demo request without submitting or storing personal data.</p>
-                    <a href="finantare.html" class="inventory-cta">Explore financing <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <dialog class="vehicle-dialog" id="vehicle-dialog" aria-labelledby="vehicle-dialog-title">
-        <div class="vehicle-dialog__shell">
-            <button type="button" class="vehicle-dialog__close" data-dialog-close aria-label="Close vehicle summary">
-                <i class="ri-close-line" aria-hidden="true"></i>
-            </button>
-            <div class="vehicle-dialog__media">
-                <img id="vehicle-dialog-image" src="assets/img/s580.png" alt="">
-            </div>
-            <div class="vehicle-dialog__content">
-                <p class="inventory-eyebrow">Vehicle summary</p>
-                <p id="vehicle-dialog-make" class="vehicle-dialog__make"></p>
-                <h2 id="vehicle-dialog-title"></h2>
-                <p id="vehicle-dialog-description" class="vehicle-dialog__description"></p>
-                <dl id="vehicle-dialog-specs" class="vehicle-dialog__specs"></dl>
-                <div class="vehicle-dialog__footer">
-                    <strong id="vehicle-dialog-price"></strong>
-                    <a id="vehicle-dialog-contact" href="contact.html" class="inventory-cta">Ask about this vehicle <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-                </div>
-                <p class="vehicle-dialog__note">Summary presentation only. Additional media and availability are confirmed during the enquiry.</p>
-            </div>
+        <!-- Text deasupra videoclipului -->
+        <div class="video-content">
+            <h1 class="video-title" data-i18n="nav.stock">Inventory</h1>
+            <p class="video-subtitle"></p>
         </div>
-    </dialog>
+    </div>
+</section>
 
+
+<!--==================== FEATURED ====================-->
+<div class="featured__container container">
+
+       </div>
+
+       <!-- Filtre -->
+       <ul class="featured__filters">
+           <li>
+               <button class="featured__item active-featured" data-filter="all" aria-label="Show all makes">
+                   <img src="assets/img/all.png" alt="">
+               </button>
+           </li>
+           <li>
+               <button class="featured__item" data-filter=".tesla" aria-label="Show Tesla vehicles">
+                   <img src="assets/img/brands/tesla.png" alt="">
+               </button>
+           </li>
+           <li>
+               <button class="featured__item" data-filter=".audi" aria-label="Show Audi vehicles">
+                   <img src="assets/img/brands/audi.png" alt="">
+               </button>
+           </li>
+           <li>
+               <button class="featured__item" data-filter=".porsche" aria-label="Show Porsche vehicles">
+                   <img src="assets/img/brands/porsche.png" alt="">
+               </button>
+           </li>
+
+           <li>
+               <button class="featured__item" data-filter=".corvette" aria-label="Show Corvette vehicles">
+                   <img src="assets/img/brands/corvette.png" alt="">
+               </button>
+           </li>
+
+           <li>
+               <button class="featured__item" data-filter=".alfa-romeo" aria-label="Show Alfa Romeo vehicles">
+                   <img src="assets/img/brands/alfa-romeo.png" alt="">
+               </button>
+           </li>
+
+           <li>
+               <button class="featured__item" data-filter=".gennesis" aria-label="Show Genesis vehicles">
+                   <img src="assets/img/brands/genesis.png" alt="">
+               </button>
+           </li>
+
+
+           <li>
+               <button class="featured__item" data-filter=".lexus" aria-label="Show Lexus vehicles">
+                   <img src="assets/img/brands/lexus.png" alt="">
+               </button>
+           </li>
+
+
+           <li>
+               <button class="featured__item" data-filter=".lotus" aria-label="Show Lotus vehicles">
+                   <img src="assets/img/brands/lotus.png" alt="">
+               </button>
+           </li>
+
+
+           <li>
+               <button class="featured__item" data-filter=".koenigsegg" aria-label="Show Koenigsegg vehicles">
+                   <img src="assets/img/brands/koenigsegg.png" alt="">
+               </button>
+           </li>
+
+
+
+           <li>
+               <button class="featured__item" data-filter=".mercedes" aria-label="Show Mercedes-Benz vehicles">
+                   <img src="assets/img/brands/mercedes.png" alt="">
+               </button>
+           </li>
+
+
+           <li>
+               <button class="featured__item" data-filter=".bmw" aria-label="Show BMW vehicles">
+                   <img src="assets/img/brands/bmw.png" alt="">
+               </button>
+           </li>
+       </ul>
+
+       <!-- Conținutul filtrat -->
+        <div class="featured__content grid">
+            <article class="featured__card mix tesla">
+                <h1 class="featured__title">Tesla</h1>
+                <h3 class="featured__subtitle">Model X</h3>
+                <a href="car-detail.html?id=tesla-model-x" class="featured__media-link" aria-label="Tesla Model X — details" tabindex="-1"><img src="assets/img/featured1.png" alt="Tesla Model X" class="featured__img"></a>
+                <h3 class="featured__price">€108,990</h3>
+                <a href="car-detail.html?id=tesla-model-x" class="button featured__button" aria-label="Tesla Model X — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix tesla">
+                <h1 class="featured__title">Tesla</h1>
+                <h3 class="featured__subtitle">Model Y</h3>
+                <a href="car-detail.html?id=tesla-model-y" class="featured__media-link" aria-label="Tesla Model Y — details" tabindex="-1"><img src="assets/img/tesla-model-y.png" alt="Tesla Model Y" class="featured__img"></a>
+                <h3 class="featured__price">€56,990</h3>
+                <a href="car-detail.html?id=tesla-model-y" class="button featured__button" aria-label="Tesla Model Y — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix tesla">
+                <h1 class="featured__title">Tesla</h1>
+                <h3 class="featured__subtitle">Model S</h3>
+                <a href="car-detail.html?id=tesla-model-s" class="featured__media-link" aria-label="Tesla Model S — details" tabindex="-1"><img src="assets/img/tesla-model-s.png" alt="Tesla Model S" class="featured__img"></a>
+                <h3 class="featured__price">€94,990</h3>
+                <a href="car-detail.html?id=tesla-model-s" class="button featured__button" aria-label="Tesla Model S — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix lotus">
+                <h1 class="featured__title">Lotus</h1>
+                <h3 class="featured__subtitle">Emira</h3>
+                <a href="car-detail.html?id=lotus-emira" class="featured__media-link" aria-label="Lotus Emira — details" tabindex="-1"><img src="assets/img/lotusemira.png" alt="Lotus Emira" class="featured__img"></a>
+                <h3 class="featured__price">€89,500</h3>
+                <a href="car-detail.html?id=lotus-emira" class="button featured__button" aria-label="Lotus Emira — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix lotus">
+                <h1 class="featured__title">Lotus</h1>
+                <h3 class="featured__subtitle">Eletre</h3> <br>
+                <a href="car-detail.html?id=lotus-seletre" class="featured__media-link" aria-label="Lotus Eletre — details" tabindex="-1"><img src="assets/img/lotuseletre.png" alt="Lotus Eletre" class="featured__img"></a>
+                <h3 class="featured__price">€112,900</h3>
+                <a href="car-detail.html?id=lotus-seletre" class="button featured__button" aria-label="Lotus Eletre — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix lotus">
+                <h1 class="featured__title">Lotus</h1>
+                <h3 class="featured__subtitle">Elise</h3>
+                <a href="car-detail.html?id=lotus-elise" class="featured__media-link" aria-label="Lotus Elise — details" tabindex="-1"><img src="assets/img/lotuselise.png" alt="Lotus Elise" class="featured__img"></a>
+                <h3 class="featured__price">€65,800</h3>
+                <a href="car-detail.html?id=lotus-elise" class="button featured__button" aria-label="Lotus Elise — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">Q3</h3>
+                <a href="car-detail.html?id=audi-q3" class="featured__media-link" aria-label="Audi Q3 — details" tabindex="-1"><img src="assets/img/audiq3.png" alt="Audi Q3" class="featured__img"></a>
+                <h3 class="featured__price">€38,750</h3>
+                <a href="car-detail.html?id=audi-q3" class="button featured__button" aria-label="Audi Q3 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">Q7</h3>
+                <a href="car-detail.html?id=audi-q7" class="featured__media-link" aria-label="Audi Q7 — details" tabindex="-1"><img src="assets/img/audiq7.png" alt="Audi Q7" class="featured__img"></a>
+                <h3 class="featured__price">€73,200</h3>
+                <a href="car-detail.html?id=audi-q7" class="button featured__button" aria-label="Audi Q7 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">R8</h3>
+                <a href="car-detail.html?id=audi-r8" class="featured__media-link" aria-label="Audi R8 — details" tabindex="-1"><img src="assets/img/audir8.png" alt="Audi R8" class="featured__img"></a>
+                <h3 class="featured__price">€198,500</h3>
+                <a href="car-detail.html?id=audi-r8" class="button featured__button" aria-label="Audi R8 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">RS4</h3>
+                <a href="car-detail.html?id=audi-rs4" class="featured__media-link" aria-label="Audi RS4 — details" tabindex="-1"><img src="assets/img/audirs4b8.png" alt="Audi RS4" class="featured__img"></a>
+                <h3 class="featured__price">€29,300</h3>
+                <a href="car-detail.html?id=audi-rs4" class="button featured__button" aria-label="Audi RS4 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">RS5</h3> <br>
+                <a href="car-detail.html?id=audi-rs5" class="featured__media-link" aria-label="Audi RS5 — details" tabindex="-1"><img src="assets/img/audirs5.png" alt="Audi RS5" class="featured__img"></a>
+                <h3 class="featured__price">€26,400</h3>
+                <a href="car-detail.html?id=audi-rs5" class="button featured__button" aria-label="Audi RS5 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix audi">
+                <h1 class="featured__title">Audi</h1>
+                <h3 class="featured__subtitle">RS Q8</h3> <br>
+                <a href="car-detail.html?id=audi-rsq8" class="featured__media-link" aria-label="Audi RS Q8 — details" tabindex="-1"><img src="assets/img/audirsq8.png" alt="Audi RS Q8" class="featured__img"></a>
+                <h3 class="featured__price">€135,700</h3>
+                <a href="car-detail.html?id=audi-rsq8" class="button featured__button" aria-label="Audi RS Q8 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">ES</h3> <br>
+                <a href="car-detail.html?id=lexus-es" class="featured__media-link" aria-label="Lexus ES — details" tabindex="-1"><img src="assets/img/lexuses.png" alt="Lexus ES" class="featured__img"></a>
+                <h3 class="featured__price">€45,900</h3>
+                <a href="car-detail.html?id=lexus-es" class="button featured__button" aria-label="Lexus ES — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">IS</h3> <br>
+                <a href="car-detail.html?id=lexus-is" class="featured__media-link" aria-label="Lexus IS — details" tabindex="-1"><img src="assets/img/lexusis.png" alt="Lexus IS" class="featured__img"></a>
+                <h3 class="featured__price">€42,800</h3>
+                <a href="car-detail.html?id=lexus-is" class="button featured__button" aria-label="Lexus IS — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">LC</h3> <br>
+                <a href="car-detail.html?id=lexus-lc" class="featured__media-link" aria-label="Lexus LC — details" tabindex="-1"><img src="assets/img/lexuslc.png" alt="Lexus LC" class="featured__img"></a>
+                <h3 class="featured__price">€98,750</h3>
+                <a href="car-detail.html?id=lexus-lc" class="button featured__button" aria-label="Lexus LC — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">LFA</h3>
+                <a href="car-detail.html?id=lexus-lfa" class="featured__media-link" aria-label="Lexus LFA — details" tabindex="-1"><img src="assets/img/lexuslfa.png" alt="Lexus LFA" class="featured__img"></a>
+                <h3 class="featured__price">€450,000</h3>
+                <a href="car-detail.html?id=lexus-lfa" class="button featured__button" aria-label="Lexus LFA — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">LX</h3> <br>
+                <a href="car-detail.html?id=lexus-lx" class="featured__media-link" aria-label="Lexus LX — details" tabindex="-1"><img src="assets/img/lexuslx.png" alt="Lexus LX" class="featured__img"></a>
+                <h3 class="featured__price">€98,900</h3>
+                <a href="car-detail.html?id=lexus-lx" class="button featured__button" aria-label="Lexus LX — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix lexus">
+                <h1 class="featured__title">Lexus</h1>
+                <h3 class="featured__subtitle">UX h</h3> <br>
+                <a href="car-detail.html?id=lexus-uxh" class="featured__media-link" aria-label="Lexus UX h — details" tabindex="-1"><img src="assets/img/lexusuxh.png" alt="Lexus UX h" class="featured__img"></a>
+                <h3 class="featured__price">€38,500</h3>
+                <a href="car-detail.html?id=lexus-uxh" class="button featured__button" aria-label="Lexus UX h — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">918 Spyder</h3> <br> <br><br>
+                <a href="car-detail.html?id=porsche-918-spyder" class="featured__media-link" aria-label="Porsche 918 Spyder — details" tabindex="-1"><img src="assets/img/porsche918.png" alt="Porsche 918 Spyder" class="featured__img"></a>
+                <h3 class="featured__price">€1,200,000</h3>
+                <a href="car-detail.html?id=porsche-918-spyder" class="button featured__button" aria-label="Porsche 918 Spyder — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">4C</h3> <br>
+                <a href="car-detail.html?id=alfa-romeo-4c" class="featured__media-link" aria-label="Alfa Romeo 4C — details" tabindex="-1"><img src="assets/img/4c.png" alt="Alfa Romeo 4C" class="featured__img"></a>
+                <h3 class="featured__price">€68,500</h3>
+                <a href="car-detail.html?id=alfa-romeo-4c" class="button featured__button" aria-label="Alfa Romeo 4C — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">33 Stradale</h3>
+                <a href="car-detail.html?id=alfa-romeo-33-stradale" class="featured__media-link" aria-label="Alfa Romeo 33 Stradale — details" tabindex="-1"><img src="assets/img/33stradale.png" alt="Alfa Romeo 33 Stradale" class="featured__img"></a>
+                <h3 class="featured__price">€2,000,000</h3>
+                <a href="car-detail.html?id=alfa-romeo-33-stradale" class="button featured__button" aria-label="Alfa Romeo 33 Stradale — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">Giulia</h3>
+                <a href="car-detail.html?id=alfa-romeo-giulia" class="featured__media-link" aria-label="Alfa Romeo Giulia — details" tabindex="-1"><img src="assets/img/giulia.png" alt="Alfa Romeo Giulia" class="featured__img"></a>
+                <h3 class="featured__price">€39,900</h3>
+                <a href="car-detail.html?id=alfa-romeo-giulia" class="button featured__button" aria-label="Alfa Romeo Giulia — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">Tonale</h3>
+                <a href="car-detail.html?id=alfa-romeo-tonale" class="featured__media-link" aria-label="Alfa Romeo Tonale — details" tabindex="-1"><img src="assets/img/tonale.png" alt="Alfa Romeo Tonale" class="featured__img"></a>
+                <h3 class="featured__price">€42,400</h3>
+                <a href="car-detail.html?id=alfa-romeo-tonale" class="button featured__button" aria-label="Alfa Romeo Tonale — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix alfa-romeo">
+                <h1 class="featured__title">Alfa Romeo</h1>
+                <h3 class="featured__subtitle">Stelvio</h3>
+                <a href="car-detail.html?id=alfa-romeo-stelvio" class="featured__media-link" aria-label="Alfa Romeo Stelvio — details" tabindex="-1"><img src="assets/img/stelvio.png" alt="Alfa Romeo Stelvio" class="featured__img"></a>
+                <h3 class="featured__price">€44,900</h3>
+                <a href="car-detail.html?id=alfa-romeo-stelvio" class="button featured__button" aria-label="Alfa Romeo Stelvio — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Genesis</h1>
+                <h3 class="featured__subtitle">G70 Shooting Brake</h3>
+                <a href="car-detail.html?id=genesis-g70-shooting-brake" class="featured__media-link" aria-label="Genesis G70 Shooting Brake — details" tabindex="-1"><img src="assets/img/gennesisg70shootingbrake.png" alt="Genesis G70 Shooting Brake" class="featured__img"></a>
+                <h3 class="featured__price">€48,500</h3>
+                <a href="car-detail.html?id=genesis-g70-shooting-brake" class="button featured__button" aria-label="Genesis G70 Shooting Brake — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Genesis</h1>
+                <h3 class="featured__subtitle">G80</h3>
+                <a href="car-detail.html?id=genesis-g80" class="featured__media-link" aria-label="Genesis G80 — details" tabindex="-1"><img src="assets/img/gennesisg80.png" alt="Genesis G80" class="featured__img"></a>
+                <h3 class="featured__price">€52,900</h3>
+                <a href="car-detail.html?id=genesis-g80" class="button featured__button" aria-label="Genesis G80 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Genesis</h1>
+                <h3 class="featured__subtitle">G90</h3> <br>
+                <a href="car-detail.html?id=genesis-g90" class="featured__media-link" aria-label="Genesis G90 — details" tabindex="-1"><img src="assets/img/gennesisg90.png" alt="Genesis G90" class="featured__img"></a>
+                <h3 class="featured__price">€68,700</h3>
+                <a href="car-detail.html?id=genesis-g90" class="button featured__button" aria-label="Genesis G90 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Genesis</h1>
+                <h3 class="featured__subtitle">G90 Long Wheelbase</h3>
+                <a href="car-detail.html?id=genesis-g90-long-wheelbase" class="featured__media-link" aria-label="Genesis G90 Long Wheelbase — details" tabindex="-1"><img src="assets/img/gennesisg90longwheelbase.png" alt="Genesis G90 Long Wheelbase" class="featured__img"></a>
+                <h3 class="featured__price">€75,800</h3>
+                <a href="car-detail.html?id=genesis-g90-long-wheelbase" class="button featured__button" aria-label="Genesis G90 Long Wheelbase — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Genesis</h1>
+                <h3 class="featured__subtitle">GV60</h3>
+                <a href="car-detail.html?id=genesis-gv60" class="featured__media-link" aria-label="Genesis GV60 — details" tabindex="-1"><img src="assets/img/gennesisgv60.png" alt="Genesis GV60" class="featured__img"></a>
+                <h3 class="featured__price">€59,900</h3>
+                <a href="car-detail.html?id=genesis-gv60" class="button featured__button" aria-label="Genesis GV60 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix gennesis">
+                <h1 class="featured__title">Genesis</h1>
+                <h3 class="featured__subtitle">GV70</h3>
+                <a href="car-detail.html?id=genesis-gv70" class="featured__media-link" aria-label="Genesis GV70 — details" tabindex="-1"><img src="assets/img/gennesisgv70.png" alt="Genesis GV70" class="featured__img"></a>
+                <h3 class="featured__price">€49,900</h3>
+                <a href="car-detail.html?id=genesis-gv70" class="button featured__button" aria-label="Genesis GV70 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes-Benz</h1>
+                <h3 class="featured__subtitle">S400d</h3> <br> <br>
+                <a href="car-detail.html?id=mercedes-s400d" class="featured__media-link" aria-label="Mercedes-Benz S400d — details" tabindex="-1"><img src="assets/img/s400d.png" alt="Mercedes-Benz S400d" class="featured__img"></a>
+                <h3 class="featured__price">€104,600</h3>
+                <a href="car-detail.html?id=mercedes-s400d" class="button featured__button" aria-label="Mercedes-Benz S400d — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes-Benz</h1>
+                <h3 class="featured__subtitle">E55 AMG</h3> <br>
+                <a href="car-detail.html?id=mercedes-e55-amg" class="featured__media-link" aria-label="Mercedes-Benz E55 AMG — details" tabindex="-1"><img src="assets/img/e55-amg.png" alt="Mercedes-Benz E55 AMG" class="featured__img"></a>
+                <h3 class="featured__price">€25,900</h3>
+                <a href="car-detail.html?id=mercedes-e55-amg" class="button featured__button" aria-label="Mercedes-Benz E55 AMG — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes-Benz</h1>
+                <h3 class="featured__subtitle">S580</h3> <br> <br><br>
+                <a href="s580.html" class="featured__media-link" aria-label="Mercedes-Benz S580 — details" tabindex="-1"><img src="assets/img/s580.png" alt="Mercedes-Benz S580" class="featured__img"></a>
+                <h3 class="featured__price">€120,900</h3>
+                <a href="s580.html" class="button featured__button" aria-label="Mercedes-Benz S580 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes-Benz</h1>
+                <h3 class="featured__subtitle">G65 AMG</h3> <br> <br> <br>
+                <a href="car-detail.html?id=mercedes-g65-amg" class="featured__media-link" aria-label="Mercedes-Benz G65 AMG — details" tabindex="-1"><img src="assets/img/g65-amg.png" alt="Mercedes-Benz G65 AMG" class="featured__img"></a>
+                <h3 class="featured__price">€245,000</h3>
+                <a href="car-detail.html?id=mercedes-g65-amg" class="button featured__button" aria-label="Mercedes-Benz G65 AMG — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes-Benz</h1>
+                <h3 class="featured__subtitle">C63 AMG</h3> <br>  <br>
+                <a href="car-detail.html?id=mercedes-c63-amg" class="featured__media-link" aria-label="Mercedes-Benz C63 AMG — details" tabindex="-1"><img src="assets/img/mercedes-c63-w204.png" alt="Mercedes-Benz C63 AMG" class="featured__img"></a>
+                <h3 class="featured__price">€28,500</h3>
+                <a href="car-detail.html?id=mercedes-c63-amg" class="button featured__button" aria-label="Mercedes-Benz C63 AMG — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes-Benz</h1>
+                <h3 class="featured__subtitle">C43 AMG</h3>  <br>
+                <a href="car-detail.html?id=mercedes-c43-amg" class="featured__media-link" aria-label="Mercedes-Benz C43 AMG — details" tabindex="-1"><img src="assets/img/mercedes-c63-w206.png" alt="Mercedes-Benz C43 AMG" class="featured__img"></a>
+                <h3 class="featured__price">€68,900</h3>
+                <a href="car-detail.html?id=mercedes-c43-amg" class="button featured__button" aria-label="Mercedes-Benz C43 AMG — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes-Benz</h1>
+                <h3 class="featured__subtitle">CLS63 AMG</h3>
+                <a href="car-detail.html?id=mercedes-cls63-amg" class="featured__media-link" aria-label="Mercedes-Benz CLS63 AMG — details" tabindex="-1"><img src="assets/img/cls63-amg.png" alt="Mercedes-Benz CLS63 AMG" class="featured__img"></a>
+                <h3 class="featured__price">€41,500</h3>
+                <a href="car-detail.html?id=mercedes-cls63-amg" class="button featured__button" aria-label="Mercedes-Benz CLS63 AMG — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix mercedes">
+                <h1 class="featured__title">Mercedes-Benz</h1>
+                <h3 class="featured__subtitle">S63 AMG</h3>
+                <a href="car-detail.html?id=mercedes-s63-smg" class="featured__media-link" aria-label="Mercedes-Benz S63 AMG — details" tabindex="-1"><img src="assets/img/s63-amg-w221.png" alt="Mercedes-Benz S63 AMG" class="featured__img"></a>
+                <h3 class="featured__price">€28,900</h3>
+                <a href="car-detail.html?id=mercedes-s63-smg" class="button featured__button" aria-label="Mercedes-Benz S63 AMG — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">X5</h3> <br> <br>
+                <a href="car-detail.html?id=bmw-x5" class="featured__media-link" aria-label="BMW X5 — details" tabindex="-1"><img src="assets/img/x5.png" alt="BMW X5" class="featured__img"></a>
+                <h3 class="featured__price">€72,500</h3>
+                <a href="car-detail.html?id=bmw-x5" class="button featured__button" aria-label="BMW X5 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">M6</h3> <br> <br>
+                <a href="car-detail.html?id=bmw-m6" class="featured__media-link" aria-label="BMW M6 — details" tabindex="-1"><img src="assets/img/bmw-m6.png" alt="BMW M6" class="featured__img"></a>
+                <h3 class="featured__price">€45,800</h3>
+                <a href="car-detail.html?id=bmw-m6" class="button featured__button" aria-label="BMW M6 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">X6</h3> <br> <br>
+                <a href="car-detail.html?id=bmw-x6" class="featured__media-link" aria-label="BMW X6 — details" tabindex="-1"><img src="assets/img/bmw-x6.png" alt="BMW X6" class="featured__img"></a>
+                <h3 class="featured__price">€78,900</h3>
+                <a href="car-detail.html?id=bmw-x6" class="button featured__button" aria-label="BMW X6 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">M5</h3> <br> <br>
+                <a href="car-detail.html?id=bmw-m5" class="featured__media-link" aria-label="BMW M5 — details" tabindex="-1"><img src="assets/img/bmw-m5-e60.png" alt="BMW M5" class="featured__img"></a>
+                <h3 class="featured__price">€28,500</h3>
+                <a href="car-detail.html?id=bmw-m5" class="button featured__button" aria-label="BMW M5 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">M8</h3> <br> <br> <br>
+                <a href="car-detail.html?id=bmw-m8" class="featured__media-link" aria-label="BMW M8 — details" tabindex="-1"><img src="assets/img/bmw-m8.png" alt="BMW M8" class="featured__img"></a>
+                <h3 class="featured__price">€105,900</h3>
+                <a href="car-detail.html?id=bmw-m8" class="button featured__button" aria-label="BMW M8 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix bmw">
+                <h1 class="featured__title">BMW</h1>
+                <h3 class="featured__subtitle">M3</h3> <br>
+                <a href="car-detail.html?id=bmw-m3" class="featured__media-link" aria-label="BMW M3 — details" tabindex="-1"><img src="assets/img/bmw-m3-e92.png" alt="BMW M3" class="featured__img"></a>
+                <h3 class="featured__price">€29,900</h3>
+                <a href="car-detail.html?id=bmw-m3" class="button featured__button" aria-label="BMW M3 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix corvette">
+                <h1 class="featured__title">Corvette</h1>
+                <h3 class="featured__subtitle">Z51</h3> <br> <br> <br>
+                <a href="car-detail.html?id=corvette-z51" class="featured__media-link" aria-label="Chevrolet Corvette Z51 — details" tabindex="-1"><img src="assets/img/corvettez51.png" alt="Chevrolet Corvette Z51" class="featured__img"></a>
+                <h3 class="featured__price">€89,500</h3>
+                <a href="car-detail.html?id=corvette-z51" class="button featured__button" aria-label="Chevrolet Corvette Z51 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix corvette">
+                <h1 class="featured__title">Corvette</h1>
+                <h3 class="featured__subtitle">C8</h3> <br> <br> <br>
+                <a href="car-detail.html?id=corvette-c8" class="featured__media-link" aria-label="Chevrolet Corvette C8 — details" tabindex="-1"><img src="assets/img/corvettezc8.png" alt="Chevrolet Corvette C8" class="featured__img"></a>
+                <h3 class="featured__price">€84,900</h3>
+                <a href="car-detail.html?id=corvette-c8" class="button featured__button" aria-label="Chevrolet Corvette C8 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix corvette">
+                <h1 class="featured__title">Corvette</h1>
+                <h3 class="featured__subtitle">Stingray C7</h3> <br><br>
+                <a href="car-detail.html?id=corvette-stingray-c7" class="featured__media-link" aria-label="Chevrolet Corvette Stingray C7 — details" tabindex="-1"><img src="assets/img/corvettestingrayc7.png" alt="Chevrolet Corvette Stingray C7" class="featured__img"></a>
+                <h3 class="featured__price">€69,900</h3>
+                <a href="car-detail.html?id=corvette-stingray-c7" class="button featured__button" aria-label="Chevrolet Corvette Stingray C7 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix koenigsegg">
+                <h1 class="featured__title">Koenigsegg</h1>
+                <h3 class="featured__subtitle">CC850</h3> <br><br> <br>  <br> <br>
+                <a href="car-detail.html?id=koenigsegg-cc850" class="featured__media-link" aria-label="Koenigsegg CC850 — details" tabindex="-1"><img src="assets/img/koenigsegg-cc850.png" alt="Koenigsegg CC850" class="featured__img"></a>
+                <h3 class="featured__price">€3,200,000</h3>
+                <a href="car-detail.html?id=koenigsegg-cc850" class="button featured__button" aria-label="Koenigsegg CC850 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix koenigsegg">
+                <h1 class="featured__title">Koenigsegg</h1>
+                <h3 class="featured__subtitle">Gemera</h3> <br><br>
+                <a href="car-detail.html?id=koenigsegg-gemera" class="featured__media-link" aria-label="Koenigsegg Gemera — details" tabindex="-1"><img src="assets/img/koenigsegg-gemera.png" alt="Koenigsegg Gemera" class="featured__img"></a>
+                <h3 class="featured__price">€1,700,000</h3>
+                <a href="car-detail.html?id=koenigsegg-gemera" class="button featured__button" aria-label="Koenigsegg Gemera — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix koenigsegg">
+                <h1 class="featured__title">Koenigsegg</h1>
+                <h3 class="featured__subtitle">Jesko Attack</h3> <br><br> <br>
+                <a href="car-detail.html?id=koenigsegg-jesko-attack" class="featured__media-link" aria-label="Koenigsegg Jesko Attack — details" tabindex="-1"><img src="assets/img/koenigsegg-jesko-attack.png" alt="Koenigsegg Jesko Attack" class="featured__img"></a>
+                <h3 class="featured__price">€2,800,000</h3>
+                <a href="car-detail.html?id=koenigsegg-jesko-attack" class="button featured__button" aria-label="Koenigsegg Jesko Attack — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Turbo S</h3> <br><br><br> <br><br>
+                <a href="car-detail.html?id=porsche-911-turbo-s" class="featured__media-link" aria-label="Porsche Turbo S — details" tabindex="-1"><img src="assets/img/popular1.png" alt="Porsche Turbo S" class="featured__img"></a>
+                <h3 class="featured__price">€225,900</h3>
+                <a href="car-detail.html?id=porsche-911-turbo-s" class="button featured__button" aria-label="Porsche Turbo S — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Taycan</h3> <br> <br> <br> <br> <br>
+                <a href="car-detail.html?id=porsche-taycan" class="featured__media-link" aria-label="Porsche Taycan — details" tabindex="-1"><img src="assets/img/popular2.png" alt="Porsche Taycan" class="featured__img"></a>
+                <h3 class="featured__price">€89,900</h3>
+                <a href="car-detail.html?id=porsche-taycan" class="button featured__button" aria-label="Porsche Taycan — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Turbo S Cross</h3>
+                <a href="car-detail.html?id=porsche-turbo-s-cross" class="featured__media-link" aria-label="Porsche 911 Turbo S Cross Turismo — details" tabindex="-1"><img src="assets/img/popular3.png" alt="Porsche 911 Turbo S Cross Turismo" class="featured__img"></a>
+                <h3 class="featured__price">€205,900</h3>
+                <a href="car-detail.html?id=porsche-turbo-s-cross" class="button featured__button" aria-label="Porsche 911 Turbo S Cross Turismo — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Boxster 718</h3>
+                <a href="car-detail.html?id=porsche-boxster-718" class="featured__media-link" aria-label="Porsche Boxster 718 — details" tabindex="-1"><img src="assets/img/popular4.png" alt="Porsche Boxster 718" class="featured__img"></a>
+                <h3 class="featured__price">€62,900</h3>
+                <a href="car-detail.html?id=porsche-boxster-718" class="button featured__button" aria-label="Porsche Boxster 718 — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+            <article class="featured__card mix porsche">
+                <h1 class="featured__title">Porsche</h1>
+                <h3 class="featured__subtitle">Cayman</h3>
+                <a href="car-detail.html?id=porsche-cayman" class="featured__media-link" aria-label="Porsche Cayman — details" tabindex="-1"><img src="assets/img/popular5.png" alt="Porsche Cayman" class="featured__img"></a>
+                <h3 class="featured__price">€67,900</h3>
+                <a href="car-detail.html?id=porsche-cayman" class="button featured__button" aria-label="Porsche Cayman — view details">
+                    <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+                </a>
+            </article>
+
+
+
+
+
+
+
+       </div>
+   </div>
+</section>
+    <!--==================== FOOTER ====================-->
     <footer class="footer section">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
         <div class="footer__container container grid">
             <div class="footer__content">
-                <img src="assets/img/logo.png" alt="CarZone" class="nav__logo-img">
+              <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
                 <p class="footer__description" data-i18n="footer.description">We offer the finest cars from the world's most renowned brands.</p>
             </div>
             <div class="footer__content">
                 <h3 class="footer__title" data-i18n="footer.company">Company</h3>
                 <ul class="footer__links">
-                    <li><a href="index.html" class="footer__link" data-i18n="nav.home">Home</a></li>
-                    <li><a href="stoc.html" class="footer__link" data-i18n="nav.stock">Inventory</a></li>
-                    <li><a href="vinde.html" class="footer__link" data-i18n="nav.sell">Sell your car</a></li>
+                    <li><a href="#" class="footer__link" data-i18n="footer.about">About</a></li>
+                    <li><a href="#" class="footer__link" data-i18n="footer.cars">Cars</a></li>
+                    <li><a href="#" class="footer__link" data-i18n="footer.history">History</a></li>
+                    <li><a href="#" class="footer__link" data-i18n="footer.store">Store</a></li>
                 </ul>
             </div>
             <div class="footer__content">
                 <h3 class="footer__title" data-i18n="footer.info">Information</h3>
                 <ul class="footer__links">
-                    <li><a href="comanda.html" class="footer__link" data-i18n="footer.requestOffer">Request a quote</a></li>
-                    <li><a href="finantare.html" class="footer__link" data-i18n="nav.financing">Financing</a></li>
-                    <li><a href="contact.html" class="footer__link" data-i18n="footer.contactUs">Contact us</a></li>
+                    <li><a href="#" class="footer__link" data-i18n="footer.requestOffer">Request a quote</a></li>
+                    <li><a href="#" class="footer__link" data-i18n="footer.findDealer">Find a dealer</a></li>
+                    <li><a href="#" class="footer__link" data-i18n="footer.contactUs">Contact us</a></li>
+                    <li><a href="#" class="footer__link" data-i18n="footer.services">Services</a></li>
                 </ul>
             </div>
             <div class="footer__content">
                 <h3 class="footer__title" data-i18n="footer.follow">Follow us</h3>
                 <ul class="footer__social">
-                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="CarZone on Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="CarZone on Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a></li>
-                    <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="CarZone on Twitter"><i class="ri-twitter-line" aria-hidden="true"></i></a></li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i class="ri-twitter-line"></i></a>
                 </ul>
             </div>
         </div>
         <span class="footer__copy"></span>
     </footer>
 
-    <a href="#" class="scrollup" id="scroll-up" aria-label="Back to top"><i class="ri-arrow-up-line" aria-hidden="true"></i></a>
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
 
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/inventory-filter.js"></script>
+
+    <!--=============== MAIN JS ===============-->
     <script src="assets/js/i18n.js?v=6"></script>
     <script src="assets/js/site-nav.js"></script>
-    <script src="assets/data/curated-inventory.js"></script>
-    <script src="assets/js/inventory-filter.js"></script>
-</body>
-</html>
+    <script src="assets/js/main-stoc.js"></script>
+  </body>
+  </html>
