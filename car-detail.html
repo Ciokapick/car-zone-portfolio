@@ -484,6 +484,204 @@
             color: #ff4444;
             font-size: 1.5rem;
         }
+
+        /* Cinematic inventory presentation */
+        .video-section {
+            min-height: 720px;
+            height: 92vh;
+            background: #050608;
+        }
+
+        .video-overlay {
+            background: linear-gradient(180deg, rgba(2, 4, 7, .45) 0%, rgba(2, 4, 7, .04) 42%, rgba(2, 4, 7, .82) 100%);
+        }
+
+        .video-content {
+            position: absolute;
+            inset: auto 0 0;
+            top: auto;
+            transform: none;
+            width: min(1320px, calc(100% - 3rem));
+            margin: 0 auto;
+            padding: 0 0 clamp(3rem, 8vh, 6.5rem);
+            text-align: left;
+        }
+
+        .video-kicker,
+        .gallery-kicker {
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, .7);
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .24em;
+            text-transform: uppercase;
+        }
+
+        .video-title {
+            max-width: 1000px;
+            margin-bottom: .75rem;
+            font-size: clamp(3rem, 7vw, 7.2rem);
+            line-height: .92;
+            letter-spacing: -.045em;
+            text-shadow: 0 12px 38px rgba(0, 0, 0, .45);
+        }
+
+        .video-price {
+            color: rgba(255, 255, 255, .82);
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            letter-spacing: .04em;
+        }
+
+        .carousel-section {
+            background: #050608 !important;
+            padding: clamp(4rem, 8vw, 7rem) 0 !important;
+        }
+
+        .gallery-heading {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 2rem;
+            margin: 0 auto 1.5rem;
+            max-width: 1320px;
+        }
+
+        .gallery-heading h2 {
+            color: #fff;
+            font-size: clamp(2rem, 4vw, 4rem);
+            line-height: 1;
+            letter-spacing: -.035em;
+        }
+
+        .gallery-credit {
+            color: rgba(255, 255, 255, .62);
+            font-size: .76rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .gallery-credit:hover { color: #fff; }
+
+        .carousel-container {
+            max-width: 1320px;
+            margin-bottom: 0;
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 1.35rem;
+            background: #0a0d12;
+            box-shadow: 0 30px 90px rgba(0, 0, 0, .48);
+        }
+
+        .carousel-wrapper {
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+
+        .carousel-slide { overflow: hidden; }
+
+        .carousel-slide::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, .45));
+            pointer-events: none;
+        }
+
+        .carousel-slide img {
+            padding: 0;
+            object-fit: cover;
+            background: #0a0d12;
+        }
+
+        .carousel-slide__index {
+            position: absolute;
+            right: 1.5rem;
+            bottom: 1.25rem;
+            z-index: 2;
+            color: rgba(255, 255, 255, .84);
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .18em;
+        }
+
+        .carousel-nav {
+            width: 56px;
+            height: 56px;
+            border: 1px solid rgba(255, 255, 255, .35);
+            background: rgba(7, 10, 15, .56);
+            backdrop-filter: blur(12px);
+        }
+
+        .carousel-indicators { display: none; }
+
+        .carousel-thumbnails {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: .65rem;
+            padding: .65rem;
+            background: #080a0e;
+        }
+
+        .carousel-thumbnail {
+            position: relative;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid transparent;
+            border-radius: .75rem;
+            background: #11151c;
+            cursor: pointer;
+            opacity: .52;
+            transition: opacity .25s ease, border-color .25s ease;
+        }
+
+        .carousel-thumbnail img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+        }
+
+        .carousel-thumbnail.active,
+        .carousel-thumbnail:hover {
+            border-color: rgba(76, 135, 255, .9);
+            opacity: 1;
+        }
+
+        .car-detail {
+            padding: clamp(4rem, 8vw, 7rem) 0;
+            background: linear-gradient(180deg, #080a0e 0%, #000 100%);
+        }
+
+        .car-detail__container {
+            grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+            gap: 2rem;
+        }
+
+        .car-detail__images:empty { display: none; }
+        .car-detail__images:empty + .car-detail__info { grid-column: 1 / -1; }
+
+        .car-detail__info {
+            padding: clamp(1.5rem, 4vw, 3.5rem);
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 1.25rem;
+            background: linear-gradient(145deg, #15191f 0%, #0d1015 100%);
+        }
+
+        .car-detail__stats {
+            background: rgba(255, 255, 255, .035);
+            border: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        @media screen and (max-width: 768px) {
+            .video-section { min-height: 560px; height: 82vh; }
+            .video-content { width: min(100% - 2rem, 1320px); }
+            .gallery-heading { align-items: start; flex-direction: column; gap: .5rem; }
+            .carousel-container { border-radius: .9rem; }
+            .carousel-nav { width: 42px; height: 42px; }
+            .carousel-thumbnails { gap: .35rem; padding: .4rem; }
+            .carousel-thumbnail { border-radius: .45rem; }
+            .car-detail__container { grid-template-columns: 1fr; }
+            .car-detail__images + .car-detail__info { grid-column: 1; }
+        }
     </style>
 </head>
 <body>
@@ -659,7 +857,7 @@
             document.getElementById('error').textContent = 'No car specified. Please select a car from the inventory.';
         } else {
             // Load car data
-            fetch('assets/data/cars.json')
+            fetch('assets/data/cars.json?v=20260825')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to load car data');
@@ -712,22 +910,13 @@
                 <!--==================== VIDEO BACKGROUND SECTION ====================-->
                 <section class="video-section">
                     <div class="video-container">
-                        ${car.video ? `
-                        <video autoplay loop muted playsinline preload="metadata" class="video-bg">
-                            <source src="${car.video}" type="video/mp4">
-                            Your browser does not support this video.
-                        </video>
+                        ${(car.images && car.images[0]) ? `<img class="video-bg" src="${car.images[0]}" alt="${car.make} ${car.model}">` : ''}
                         <div class="video-overlay"></div>
                         <div class="video-content">
+                            <p class="video-kicker">Curated inventory · ${car.year}</p>
                             <h1 class="video-title">${car.make} ${car.model}</h1>
+                            <p class="video-price">${car.price} · ${car.power}</p>
                         </div>
-                        ` : `
-                        ${(car.images && car.images[0]) ? `<img class="video-bg" src="${car.images[0]}" alt="${car.make} ${car.model} interior">` : ''}
-                        <div class="video-overlay" style="background: linear-gradient(180deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,.2) 45%, rgba(0,0,0,.7) 100%);"></div>
-                        <div class="video-content">
-                            <h1 class="video-title">${car.make} ${car.model}</h1>
-                        </div>
-                        `}
                     </div>
                 </section>
             `;
@@ -736,14 +925,22 @@
             if (car.images && car.images.length >= 1) {
                 const multi = car.images.length > 1;
                 carHTML += `
-                    <section class="carousel-section" style="background: #000; padding: 2rem 0;">
+                    <section class="carousel-section">
                         <div class="container">
+                            <div class="gallery-heading">
+                                <div>
+                                    <p class="gallery-kicker">Four-frame story</p>
+                                    <h2>Exterior. Interior. Detail.</h2>
+                                </div>
+                                ${car.id === 'mercedes-s580' ? '' : `<a class="gallery-credit" href="media-credits.html#${car.id}">Photo sources &amp; credits <i class="ri-arrow-right-up-line"></i></a>`}
+                            </div>
                             <div class="carousel-container" style="display: block;">
                                 <div class="carousel-wrapper">
                                     <div class="carousel-track" id="carouselTrack">
                                         ${car.images.map((img, index) => `
                                         <div class="carousel-slide">
                                             <img src="${img}" alt="${car.make} ${car.model} Image ${index + 1}">
+                                            <span class="carousel-slide__index">${String(index + 1).padStart(2, '0')} / ${String(car.images.length).padStart(2, '0')}</span>
                                         </div>
                                         `).join('')}
                                     </div>
@@ -757,6 +954,13 @@
                                 </button>
                                 <div class="carousel-indicators" id="carouselIndicators"></div>
                                 ` : ''}
+                                <div class="carousel-thumbnails" aria-label="Gallery thumbnails">
+                                    ${car.images.map((img, index) => `
+                                    <button class="carousel-thumbnail${index === 0 ? ' active' : ''}" type="button" data-slide="${index}" aria-label="Show image ${index + 1}">
+                                        <img src="${img}" alt="" loading="lazy">
+                                    </button>
+                                    `).join('')}
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -892,21 +1096,6 @@
                 distance: '60px',
                 duration: 2500,
                 delay: 400,
-            });
-
-            // Video section animations
-            sr.reveal('.video-title', {
-                origin: 'bottom',
-                distance: '100px',
-                duration: 3000,
-                delay: 600
-            });
-
-            sr.reveal('.video-subtitle', {
-                origin: 'bottom',
-                distance: '80px',
-                duration: 2800,
-                delay: 800
             });
 
             // Car detail animations
@@ -1052,6 +1241,7 @@
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
             const indicatorsContainer = document.getElementById('carouselIndicators');
+            const thumbnails = document.querySelectorAll('.carousel-thumbnail');
 
             if (!carouselTrack || !prevBtn || !nextBtn || !indicatorsContainer) {
                 return;
@@ -1079,6 +1269,10 @@
                 indicators.forEach((indicator, index) => {
                     indicator.classList.toggle('active', index === currentSlide);
                 });
+                thumbnails.forEach((thumbnail, index) => {
+                    thumbnail.classList.toggle('active', index === currentSlide);
+                    thumbnail.setAttribute('aria-current', index === currentSlide ? 'true' : 'false');
+                });
             }
 
             // Go to specific slide
@@ -1105,6 +1299,9 @@
             // Event listeners
             nextBtn.addEventListener('click', nextSlide);
             prevBtn.addEventListener('click', prevSlide);
+            thumbnails.forEach((thumbnail) => {
+                thumbnail.addEventListener('click', () => goToSlide(Number(thumbnail.dataset.slide)));
+            });
 
             // Auto-play functionality
             let autoplayInterval;

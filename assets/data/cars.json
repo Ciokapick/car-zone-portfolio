@@ -10,7 +10,10 @@
     "price": "€108,990",
     "image": "assets/img/featured1.png",
     "images": [
-      "assets/img/interiors/tesla-model-x.webp"
+      "assets/img/galleries/tesla-model-x/hero.webp",
+      "assets/img/galleries/tesla-model-x/rear.webp",
+      "assets/img/galleries/tesla-model-x/interior.webp",
+      "assets/img/galleries/tesla-model-x/detail.webp"
     ],
     "video": "assets/img/videos/tesla-model-x.mp4",
     "sketchfab": "",
@@ -156,7 +159,10 @@
     "price": "€198,500",
     "image": "assets/img/audir8.png",
     "images": [
-      "assets/img/interiors/audi-r8.webp"
+      "assets/img/galleries/audi-r8/hero.webp",
+      "assets/img/galleries/audi-r8/rear.webp",
+      "assets/img/galleries/audi-r8/interior.webp",
+      "assets/img/galleries/audi-r8/detail.webp"
     ],
     "video": "assets/img/videos/audi-r8.mp4",
     "sketchfab": "",
@@ -229,7 +235,12 @@
     "power": "650 HP",
     "price": "€225,900",
     "image": "",
-    "images": [],
+    "images": [
+      "assets/img/galleries/porsche-911-turbo-s/hero.webp",
+      "assets/img/galleries/porsche-911-turbo-s/rear.webp",
+      "assets/img/galleries/porsche-911-turbo-s/interior.webp",
+      "assets/img/galleries/porsche-911-turbo-s/detail.webp"
+    ],
     "video": "assets/img/porsche992gt3.mp4",
     "sketchfab": "",
     "specs": {
@@ -302,7 +313,10 @@
     "price": "€56,990",
     "image": "assets/img/tesla-model-y.png",
     "images": [
-      "assets/img/interiors/tesla-model-y.webp"
+      "assets/img/galleries/tesla-model-y/hero.webp",
+      "assets/img/galleries/tesla-model-y/rear.webp",
+      "assets/img/galleries/tesla-model-y/interior.webp",
+      "assets/img/galleries/tesla-model-y/detail.webp"
     ],
     "video": "assets/img/videos/tesla-model-y.mp4",
     "sketchfab": "",
@@ -376,7 +390,10 @@
     "price": "€94,990",
     "image": "assets/img/tesla-model-s.png",
     "images": [
-      "assets/img/interiors/tesla-model-s.webp"
+      "assets/img/galleries/tesla-model-s/hero.webp",
+      "assets/img/galleries/tesla-model-s/rear.webp",
+      "assets/img/galleries/tesla-model-s/interior.webp",
+      "assets/img/galleries/tesla-model-s/detail.webp"
     ],
     "video": "assets/img/videos/tesla-model-s.mp4",
     "sketchfab": "",
@@ -450,7 +467,10 @@
     "price": "€89,500",
     "image": "assets/img/lotusemira.png",
     "images": [
-      "assets/img/interiors/lotus-emira.webp"
+      "assets/img/galleries/lotus-emira/hero.webp",
+      "assets/img/galleries/lotus-emira/rear.webp",
+      "assets/img/galleries/lotus-emira/interior.webp",
+      "assets/img/galleries/lotus-emira/detail.webp"
     ],
     "video": "assets/img/videos/lotus-emira.mp4",
     "sketchfab": "",
@@ -523,7 +543,12 @@
     "power": "600 HP",
     "price": "€112,900",
     "image": "assets/img/lotuseletre.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/lotus-seletre/hero.webp",
+      "assets/img/galleries/lotus-seletre/rear.webp",
+      "assets/img/galleries/lotus-seletre/interior.webp",
+      "assets/img/galleries/lotus-seletre/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -596,7 +621,10 @@
     "price": "€65,800",
     "image": "assets/img/lotuselise.png",
     "images": [
-      "assets/img/interiors/lotus-elise.webp"
+      "assets/img/galleries/lotus-elise/hero.webp",
+      "assets/img/galleries/lotus-elise/rear.webp",
+      "assets/img/galleries/lotus-elise/interior.webp",
+      "assets/img/galleries/lotus-elise/detail.webp"
     ],
     "video": "assets/img/videos/lotus-elise.mp4",
     "sketchfab": "",
@@ -670,7 +698,10 @@
     "price": "€38,750",
     "image": "assets/img/audiq3.png",
     "images": [
-      "assets/img/interiors/audi-q3.webp"
+      "assets/img/galleries/audi-q3/hero.webp",
+      "assets/img/galleries/audi-q3/rear.webp",
+      "assets/img/galleries/audi-q3/interior.webp",
+      "assets/img/galleries/audi-q3/detail.webp"
     ],
     "video": "assets/img/videos/audi-q3.mp4",
     "sketchfab": "",
@@ -744,7 +775,10 @@
     "price": "€73,200",
     "image": "assets/img/audiq7.png",
     "images": [
-      "assets/img/interiors/audi-q7.webp"
+      "assets/img/galleries/audi-q7/hero.webp",
+      "assets/img/galleries/audi-q7/rear.webp",
+      "assets/img/galleries/audi-q7/interior.webp",
+      "assets/img/galleries/audi-q7/detail.webp"
     ],
     "video": "assets/img/videos/audi-q7.mp4",
     "sketchfab": "",
@@ -818,7 +852,10 @@
     "price": "€29,300",
     "image": "assets/img/audirs4b8.png",
     "images": [
-      "assets/img/interiors/audi-rs4.webp"
+      "assets/img/galleries/audi-rs4/hero.webp",
+      "assets/img/galleries/audi-rs4/rear.webp",
+      "assets/img/galleries/audi-rs4/interior.webp",
+      "assets/img/galleries/audi-rs4/detail.webp"
     ],
     "video": "assets/img/videos/audi-rs4.mp4",
     "sketchfab": "",
@@ -891,7 +928,12 @@
     "power": "450 HP",
     "price": "€26,400",
     "image": "assets/img/audirs5.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/audi-rs5/hero.webp",
+      "assets/img/galleries/audi-rs5/rear.webp",
+      "assets/img/galleries/audi-rs5/interior.webp",
+      "assets/img/galleries/audi-rs5/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -963,7 +1005,12 @@
     "power": "600 HP",
     "price": "€135,700",
     "image": "assets/img/audirsq8.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/audi-rsq8/hero.webp",
+      "assets/img/galleries/audi-rsq8/rear.webp",
+      "assets/img/galleries/audi-rsq8/interior.webp",
+      "assets/img/galleries/audi-rsq8/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1035,7 +1082,12 @@
     "power": "218 HP",
     "price": "€45,900",
     "image": "assets/img/lexuses.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/lexus-es/hero.webp",
+      "assets/img/galleries/lexus-es/rear.webp",
+      "assets/img/galleries/lexus-es/interior.webp",
+      "assets/img/galleries/lexus-es/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1107,7 +1159,12 @@
     "power": "241 HP",
     "price": "€42,800",
     "image": "assets/img/lexusis.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/lexus-is/hero.webp",
+      "assets/img/galleries/lexus-is/rear.webp",
+      "assets/img/galleries/lexus-is/interior.webp",
+      "assets/img/galleries/lexus-is/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1179,7 +1236,12 @@
     "power": "471 HP",
     "price": "€98,750",
     "image": "assets/img/lexuslc.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/lexus-lc/hero.webp",
+      "assets/img/galleries/lexus-lc/rear.webp",
+      "assets/img/galleries/lexus-lc/interior.webp",
+      "assets/img/galleries/lexus-lc/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1252,7 +1314,10 @@
     "price": "€450,000",
     "image": "assets/img/lexuslfa.png",
     "images": [
-      "assets/img/interiors/lexus-lfa.webp"
+      "assets/img/galleries/lexus-lfa/hero.webp",
+      "assets/img/galleries/lexus-lfa/rear.webp",
+      "assets/img/galleries/lexus-lfa/interior.webp",
+      "assets/img/galleries/lexus-lfa/detail.webp"
     ],
     "video": "assets/img/videos/lexus-lfa.mp4",
     "sketchfab": "",
@@ -1325,7 +1390,12 @@
     "power": "409 HP",
     "price": "€98,900",
     "image": "assets/img/lexuslx.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/lexus-lx/hero.webp",
+      "assets/img/galleries/lexus-lx/rear.webp",
+      "assets/img/galleries/lexus-lx/interior.webp",
+      "assets/img/galleries/lexus-lx/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1397,7 +1467,12 @@
     "power": "181 HP",
     "price": "€38,500",
     "image": "assets/img/lexusuxh.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/lexus-uxh/hero.webp",
+      "assets/img/galleries/lexus-uxh/rear.webp",
+      "assets/img/galleries/lexus-uxh/interior.webp",
+      "assets/img/galleries/lexus-uxh/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1469,7 +1544,12 @@
     "power": "887 HP",
     "price": "€1,200,000",
     "image": "assets/img/porsche918.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/porsche-918-spyder/hero.webp",
+      "assets/img/galleries/porsche-918-spyder/rear.webp",
+      "assets/img/galleries/porsche-918-spyder/interior.webp",
+      "assets/img/galleries/porsche-918-spyder/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1541,7 +1621,12 @@
     "power": "240 HP",
     "price": "€68,500",
     "image": "assets/img/4c.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/alfa-romeo-4c/hero.webp",
+      "assets/img/galleries/alfa-romeo-4c/rear.webp",
+      "assets/img/galleries/alfa-romeo-4c/interior.webp",
+      "assets/img/galleries/alfa-romeo-4c/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -1614,7 +1699,10 @@
     "price": "€2,000,000",
     "image": "assets/img/33stradale.png",
     "images": [
-      "assets/img/interiors/alfa-romeo-33-stradale.webp"
+      "assets/img/galleries/alfa-romeo-33-stradale/hero.webp",
+      "assets/img/galleries/alfa-romeo-33-stradale/rear.webp",
+      "assets/img/galleries/alfa-romeo-33-stradale/interior.webp",
+      "assets/img/galleries/alfa-romeo-33-stradale/detail.webp"
     ],
     "video": "assets/img/videos/alfa-romeo-33-stradale.mp4",
     "sketchfab": "",
@@ -1688,7 +1776,10 @@
     "price": "€39,900",
     "image": "assets/img/giulia.png",
     "images": [
-      "assets/img/interiors/alfa-romeo-giulia.webp"
+      "assets/img/galleries/alfa-romeo-giulia/hero.webp",
+      "assets/img/galleries/alfa-romeo-giulia/rear.webp",
+      "assets/img/galleries/alfa-romeo-giulia/interior.webp",
+      "assets/img/galleries/alfa-romeo-giulia/detail.webp"
     ],
     "video": "assets/img/videos/alfa-romeo-giulia.mp4",
     "sketchfab": "",
@@ -1762,7 +1853,10 @@
     "price": "€42,400",
     "image": "assets/img/tonale.png",
     "images": [
-      "assets/img/interiors/alfa-romeo-tonale.webp"
+      "assets/img/galleries/alfa-romeo-tonale/hero.webp",
+      "assets/img/galleries/alfa-romeo-tonale/rear.webp",
+      "assets/img/galleries/alfa-romeo-tonale/interior.webp",
+      "assets/img/galleries/alfa-romeo-tonale/detail.webp"
     ],
     "video": "assets/img/videos/alfa-romeo-tonale.mp4",
     "sketchfab": "",
@@ -1836,7 +1930,10 @@
     "price": "€44,900",
     "image": "assets/img/stelvio.png",
     "images": [
-      "assets/img/interiors/alfa-romeo-stelvio.webp"
+      "assets/img/galleries/alfa-romeo-stelvio/hero.webp",
+      "assets/img/galleries/alfa-romeo-stelvio/rear.webp",
+      "assets/img/galleries/alfa-romeo-stelvio/interior.webp",
+      "assets/img/galleries/alfa-romeo-stelvio/detail.webp"
     ],
     "video": "assets/img/videos/alfa-romeo-stelvio.mp4",
     "sketchfab": "",
@@ -1910,7 +2007,10 @@
     "price": "€48,500",
     "image": "assets/img/gennesisg70shootingbrake.png",
     "images": [
-      "assets/img/interiors/genesis-g70-shooting-brake.webp"
+      "assets/img/galleries/genesis-g70-shooting-brake/hero.webp",
+      "assets/img/galleries/genesis-g70-shooting-brake/rear.webp",
+      "assets/img/galleries/genesis-g70-shooting-brake/interior.webp",
+      "assets/img/galleries/genesis-g70-shooting-brake/detail.webp"
     ],
     "video": "assets/img/videos/genesis-g70-shooting-brake.mp4",
     "sketchfab": "",
@@ -1984,7 +2084,10 @@
     "price": "€52,900",
     "image": "assets/img/gennesisg80.png",
     "images": [
-      "assets/img/interiors/genesis-g80.webp"
+      "assets/img/galleries/genesis-g80/hero.webp",
+      "assets/img/galleries/genesis-g80/rear.webp",
+      "assets/img/galleries/genesis-g80/interior.webp",
+      "assets/img/galleries/genesis-g80/detail.webp"
     ],
     "video": "assets/img/videos/genesis-g80.mp4",
     "sketchfab": "",
@@ -2057,7 +2160,12 @@
     "power": "380 HP",
     "price": "€68,700",
     "image": "assets/img/gennesisg90.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/genesis-g90/hero.webp",
+      "assets/img/galleries/genesis-g90/rear.webp",
+      "assets/img/galleries/genesis-g90/interior.webp",
+      "assets/img/galleries/genesis-g90/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2130,7 +2238,10 @@
     "price": "€75,800",
     "image": "assets/img/gennesisg90longwheelbase.png",
     "images": [
-      "assets/img/interiors/genesis-g90-long-wheelbase.webp"
+      "assets/img/galleries/genesis-g90-long-wheelbase/hero.webp",
+      "assets/img/galleries/genesis-g90-long-wheelbase/rear.webp",
+      "assets/img/galleries/genesis-g90-long-wheelbase/interior.webp",
+      "assets/img/galleries/genesis-g90-long-wheelbase/detail.webp"
     ],
     "video": "assets/img/videos/genesis-g90-long-wheelbase.mp4",
     "sketchfab": "",
@@ -2204,7 +2315,10 @@
     "price": "€59,900",
     "image": "assets/img/gennesisgv60.png",
     "images": [
-      "assets/img/interiors/genesis-gv60.webp"
+      "assets/img/galleries/genesis-gv60/hero.webp",
+      "assets/img/galleries/genesis-gv60/rear.webp",
+      "assets/img/galleries/genesis-gv60/interior.webp",
+      "assets/img/galleries/genesis-gv60/detail.webp"
     ],
     "video": "assets/img/videos/genesis-gv60.mp4",
     "sketchfab": "",
@@ -2278,7 +2392,10 @@
     "price": "€49,900",
     "image": "assets/img/gennesisgv70.png",
     "images": [
-      "assets/img/interiors/genesis-gv70.webp"
+      "assets/img/galleries/genesis-gv70/hero.webp",
+      "assets/img/galleries/genesis-gv70/rear.webp",
+      "assets/img/galleries/genesis-gv70/interior.webp",
+      "assets/img/galleries/genesis-gv70/detail.webp"
     ],
     "video": "assets/img/videos/genesis-gv70.mp4",
     "sketchfab": "",
@@ -2351,7 +2468,12 @@
     "power": "330 HP",
     "price": "€104,600",
     "image": "assets/img/s400d.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/mercedes-s400d/hero.webp",
+      "assets/img/galleries/mercedes-s400d/rear.webp",
+      "assets/img/galleries/mercedes-s400d/interior.webp",
+      "assets/img/galleries/mercedes-s400d/detail.webp"
+    ],
     "video": "assets/img/w223.mp4",
     "sketchfab": "",
     "specs": {
@@ -2423,7 +2545,12 @@
     "power": "476 HP",
     "price": "€25,900",
     "image": "assets/img/e55-amg.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/mercedes-e55-amg/hero.webp",
+      "assets/img/galleries/mercedes-e55-amg/rear.webp",
+      "assets/img/galleries/mercedes-e55-amg/interior.webp",
+      "assets/img/galleries/mercedes-e55-amg/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2495,7 +2622,12 @@
     "power": "630 HP",
     "price": "€245,000",
     "image": "assets/img/g65-amg.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/mercedes-g65-amg/hero.webp",
+      "assets/img/galleries/mercedes-g65-amg/rear.webp",
+      "assets/img/galleries/mercedes-g65-amg/interior.webp",
+      "assets/img/galleries/mercedes-g65-amg/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2567,7 +2699,12 @@
     "power": "457 HP",
     "price": "€28,500",
     "image": "assets/img/c63.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/mercedes-c63-amg/hero.webp",
+      "assets/img/galleries/mercedes-c63-amg/rear.webp",
+      "assets/img/galleries/mercedes-c63-amg/interior.webp",
+      "assets/img/galleries/mercedes-c63-amg/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2639,7 +2776,12 @@
     "power": "405 HP",
     "price": "€68,900",
     "image": "",
-    "images": [],
+    "images": [
+      "assets/img/galleries/mercedes-c43-amg/hero.webp",
+      "assets/img/galleries/mercedes-c43-amg/rear.webp",
+      "assets/img/galleries/mercedes-c43-amg/interior.webp",
+      "assets/img/galleries/mercedes-c43-amg/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2712,7 +2854,10 @@
     "price": "€41,500",
     "image": "assets/img/cls63-amg.png",
     "images": [
-      "assets/img/interiors/mercedes-cls63-amg.webp"
+      "assets/img/galleries/mercedes-cls63-amg/hero.webp",
+      "assets/img/galleries/mercedes-cls63-amg/rear.webp",
+      "assets/img/galleries/mercedes-cls63-amg/interior.webp",
+      "assets/img/galleries/mercedes-cls63-amg/detail.webp"
     ],
     "video": "assets/img/videos/mercedes-cls63-amg.mp4",
     "sketchfab": "",
@@ -2786,7 +2931,10 @@
     "price": "€28,900",
     "image": "assets/img/s63-amg-w221.png",
     "images": [
-      "assets/img/interiors/mercedes-s63-smg.webp"
+      "assets/img/galleries/mercedes-s63-smg/hero.webp",
+      "assets/img/galleries/mercedes-s63-smg/rear.webp",
+      "assets/img/galleries/mercedes-s63-smg/interior.webp",
+      "assets/img/galleries/mercedes-s63-smg/detail.webp"
     ],
     "video": "assets/img/s63amg.mp4",
     "sketchfab": "",
@@ -2859,7 +3007,12 @@
     "power": "286 HP",
     "price": "€72,500",
     "image": "assets/img/x5.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/bmw-x5/hero.webp",
+      "assets/img/galleries/bmw-x5/rear.webp",
+      "assets/img/galleries/bmw-x5/interior.webp",
+      "assets/img/galleries/bmw-x5/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -2931,7 +3084,12 @@
     "power": "560 HP",
     "price": "€45,800",
     "image": "assets/img/bmw-m6.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/bmw-m6/hero.webp",
+      "assets/img/galleries/bmw-m6/rear.webp",
+      "assets/img/galleries/bmw-m6/interior.webp",
+      "assets/img/galleries/bmw-m6/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3003,7 +3161,12 @@
     "power": "340 HP",
     "price": "€78,900",
     "image": "assets/img/bmw-x6.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/bmw-x6/hero.webp",
+      "assets/img/galleries/bmw-x6/rear.webp",
+      "assets/img/galleries/bmw-x6/interior.webp",
+      "assets/img/galleries/bmw-x6/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3075,7 +3238,12 @@
     "power": "507 HP",
     "price": "€28,500",
     "image": "assets/img/bmw-m5-e60.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/bmw-m5/hero.webp",
+      "assets/img/galleries/bmw-m5/rear.webp",
+      "assets/img/galleries/bmw-m5/interior.webp",
+      "assets/img/galleries/bmw-m5/detail.webp"
+    ],
     "video": "assets/img/bmwm5f90.mp4",
     "sketchfab": "",
     "specs": {
@@ -3147,7 +3315,12 @@
     "power": "600 HP",
     "price": "€105,900",
     "image": "assets/img/bmw-m8.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/bmw-m8/hero.webp",
+      "assets/img/galleries/bmw-m8/rear.webp",
+      "assets/img/galleries/bmw-m8/interior.webp",
+      "assets/img/galleries/bmw-m8/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3219,7 +3392,12 @@
     "power": "420 HP",
     "price": "€29,900",
     "image": "assets/img/bmw-m3-e92.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/bmw-m3/hero.webp",
+      "assets/img/galleries/bmw-m3/rear.webp",
+      "assets/img/galleries/bmw-m3/interior.webp",
+      "assets/img/galleries/bmw-m3/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3291,7 +3469,12 @@
     "power": "495 HP",
     "price": "€89,500",
     "image": "assets/img/corvettez51.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/corvette-z51/hero.webp",
+      "assets/img/galleries/corvette-z51/rear.webp",
+      "assets/img/galleries/corvette-z51/interior.webp",
+      "assets/img/galleries/corvette-z51/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3363,7 +3546,12 @@
     "power": "495 HP",
     "price": "€84,900",
     "image": "assets/img/corvettezc8.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/corvette-c8/hero.webp",
+      "assets/img/galleries/corvette-c8/rear.webp",
+      "assets/img/galleries/corvette-c8/interior.webp",
+      "assets/img/galleries/corvette-c8/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3435,7 +3623,12 @@
     "power": "460 HP",
     "price": "€69,900",
     "image": "assets/img/corvettestingrayc7.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/corvette-stingray-c7/hero.webp",
+      "assets/img/galleries/corvette-stingray-c7/rear.webp",
+      "assets/img/galleries/corvette-stingray-c7/interior.webp",
+      "assets/img/galleries/corvette-stingray-c7/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3507,7 +3700,12 @@
     "power": "1,385 HP",
     "price": "€3,200,000",
     "image": "assets/img/koenigsegg-cc850.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/koenigsegg-cc850/hero.webp",
+      "assets/img/galleries/koenigsegg-cc850/rear.webp",
+      "assets/img/galleries/koenigsegg-cc850/interior.webp",
+      "assets/img/galleries/koenigsegg-cc850/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3579,7 +3777,12 @@
     "power": "1,700 HP",
     "price": "€1,700,000",
     "image": "assets/img/koenigsegg-gemera.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/koenigsegg-gemera/hero.webp",
+      "assets/img/galleries/koenigsegg-gemera/rear.webp",
+      "assets/img/galleries/koenigsegg-gemera/interior.webp",
+      "assets/img/galleries/koenigsegg-gemera/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3651,7 +3854,12 @@
     "power": "1,600 HP",
     "price": "€2,800,000",
     "image": "assets/img/koenigsegg-jesko-attack.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/koenigsegg-jesko-attack/hero.webp",
+      "assets/img/galleries/koenigsegg-jesko-attack/rear.webp",
+      "assets/img/galleries/koenigsegg-jesko-attack/interior.webp",
+      "assets/img/galleries/koenigsegg-jesko-attack/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3723,7 +3931,12 @@
     "power": "408 HP",
     "price": "€89,900",
     "image": "assets/img/home.png",
-    "images": [],
+    "images": [
+      "assets/img/galleries/porsche-taycan/hero.webp",
+      "assets/img/galleries/porsche-taycan/rear.webp",
+      "assets/img/galleries/porsche-taycan/interior.webp",
+      "assets/img/galleries/porsche-taycan/detail.webp"
+    ],
     "video": "",
     "sketchfab": "",
     "specs": {
@@ -3788,7 +4001,7 @@
   "porsche-turbo-s-cross": {
     "id": "porsche-turbo-s-cross",
     "make": "Porsche",
-    "model": "911 Turbo S Cross Turismo",
+    "model": "Taycan Turbo S Cross Turismo",
     "year": 2023,
     "km": 8000,
     "fuel": "Petrol",
@@ -3796,14 +4009,17 @@
     "price": "€205,900",
     "image": "assets/img/popular3.png",
     "images": [
-      "assets/img/interiors/porsche-turbo-s-cross.webp"
+      "assets/img/galleries/porsche-turbo-s-cross/hero.webp",
+      "assets/img/galleries/porsche-turbo-s-cross/rear.webp",
+      "assets/img/galleries/porsche-turbo-s-cross/interior.webp",
+      "assets/img/galleries/porsche-turbo-s-cross/detail.webp"
     ],
     "video": "assets/img/videos/porsche-turbo-s-cross.mp4",
     "sketchfab": "",
     "specs": {
       "basic": {
         "Make": "Porsche",
-        "Model": "911 Turbo S Cross Turismo",
+        "Model": "Taycan Turbo S Cross Turismo",
         "VIN": "WP0AB2A92PS000001",
         "Production year": "2023",
         "First registration": "10.03.2023",
@@ -3870,7 +4086,10 @@
     "price": "€62,900",
     "image": "assets/img/popular4.png",
     "images": [
-      "assets/img/interiors/porsche-boxster-718.webp"
+      "assets/img/galleries/porsche-boxster-718/hero.webp",
+      "assets/img/galleries/porsche-boxster-718/rear.webp",
+      "assets/img/galleries/porsche-boxster-718/interior.webp",
+      "assets/img/galleries/porsche-boxster-718/detail.webp"
     ],
     "video": "assets/img/videos/porsche-boxster-718.mp4",
     "sketchfab": "",
@@ -3944,7 +4163,10 @@
     "price": "€67,900",
     "image": "assets/img/popular5.png",
     "images": [
-      "assets/img/interiors/porsche-cayman.webp"
+      "assets/img/galleries/porsche-cayman/hero.webp",
+      "assets/img/galleries/porsche-cayman/rear.webp",
+      "assets/img/galleries/porsche-cayman/interior.webp",
+      "assets/img/galleries/porsche-cayman/detail.webp"
     ],
     "video": "assets/img/videos/porsche-cayman.mp4",
     "sketchfab": "",
