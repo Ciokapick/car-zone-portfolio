@@ -8,7 +8,7 @@
     "fuel": "Electric",
     "power": "750 HP",
     "price": "€108,990",
-    "image": "assets/img/featured1.png",
+    "image": "assets/img/featured1.webp",
     "images": [
       "assets/img/galleries/tesla-model-x/hero.webp",
       "assets/img/galleries/tesla-model-x/rear.webp",
@@ -85,7 +85,7 @@
     "fuel": "Petrol",
     "power": "496 HP",
     "price": "€120,900",
-    "image": "assets/img/s580.png",
+    "image": "assets/img/s580.webp",
     "images": [],
     "video": "assets/img/w223.mp4",
     "sketchfab": "https://sketchfab.com/models/7be62285accb409bb6f7e28bce32f973/embed?camera=0",
@@ -157,7 +157,7 @@
     "fuel": "Petrol",
     "power": "602 HP",
     "price": "€198,500",
-    "image": "assets/img/audir8.png",
+    "image": "assets/img/audir8.webp",
     "images": [
       "assets/img/galleries/audi-r8/hero.webp",
       "assets/img/galleries/audi-r8/rear.webp",
@@ -311,7 +311,7 @@
     "fuel": "Electric",
     "power": "450 HP",
     "price": "€56,990",
-    "image": "assets/img/tesla-model-y.png",
+    "image": "assets/img/tesla-model-y.webp",
     "images": [
       "assets/img/galleries/tesla-model-y/hero.webp",
       "assets/img/galleries/tesla-model-y/rear.webp",
@@ -388,7 +388,7 @@
     "fuel": "Electric",
     "power": "670 HP",
     "price": "€94,990",
-    "image": "assets/img/tesla-model-s.png",
+    "image": "assets/img/tesla-model-s.webp",
     "images": [
       "assets/img/galleries/tesla-model-s/hero.webp",
       "assets/img/galleries/tesla-model-s/rear.webp",
@@ -465,7 +465,7 @@
     "fuel": "Petrol",
     "power": "400 HP",
     "price": "€89,500",
-    "image": "assets/img/lotusemira.png",
+    "image": "assets/img/lotusemira.webp",
     "images": [
       "assets/img/galleries/lotus-emira/hero.webp",
       "assets/img/galleries/lotus-emira/rear.webp",
@@ -542,7 +542,7 @@
     "fuel": "Electric",
     "power": "600 HP",
     "price": "€112,900",
-    "image": "assets/img/lotuseletre.png",
+    "image": "assets/img/lotuseletre.webp",
     "images": [
       "assets/img/galleries/lotus-seletre/hero.webp",
       "assets/img/galleries/lotus-seletre/rear.webp",
@@ -619,7 +619,7 @@
     "fuel": "Petrol",
     "power": "217 HP",
     "price": "€65,800",
-    "image": "assets/img/lotuselise.png",
+    "image": "assets/img/lotuselise.webp",
     "images": [
       "assets/img/galleries/lotus-elise/hero.webp",
       "assets/img/galleries/lotus-elise/rear.webp",
@@ -696,7 +696,7 @@
     "fuel": "Diesel",
     "power": "150 HP",
     "price": "€38,750",
-    "image": "assets/img/audiq3.png",
+    "image": "assets/img/audiq3.webp",
     "images": [
       "assets/img/galleries/audi-q3/hero.webp",
       "assets/img/galleries/audi-q3/rear.webp",
@@ -773,7 +773,7 @@
     "fuel": "Diesel",
     "power": "286 HP",
     "price": "€73,200",
-    "image": "assets/img/audiq7.png",
+    "image": "assets/img/audiq7.webp",
     "images": [
       "assets/img/galleries/audi-q7/hero.webp",
       "assets/img/galleries/audi-q7/rear.webp",
@@ -850,7 +850,7 @@
     "fuel": "Petrol",
     "power": "450 HP",
     "price": "€29,300",
-    "image": "assets/img/audirs4b8.png",
+    "image": "assets/img/audirs4b8.webp",
     "images": [
       "assets/img/galleries/audi-rs4/hero.webp",
       "assets/img/galleries/audi-rs4/rear.webp",
@@ -927,7 +927,7 @@
     "fuel": "Petrol",
     "power": "450 HP",
     "price": "€26,400",
-    "image": "assets/img/audirs5.png",
+    "image": "assets/img/audirs5.webp",
     "images": [
       "assets/img/galleries/audi-rs5/hero.webp",
       "assets/img/galleries/audi-rs5/rear.webp",
@@ -1004,7 +1004,7 @@
     "fuel": "Petrol",
     "power": "600 HP",
     "price": "€135,700",
-    "image": "assets/img/audirsq8.png",
+    "image": "assets/img/audirsq8.webp",
     "images": [
       "assets/img/galleries/audi-rsq8/hero.webp",
       "assets/img/galleries/audi-rsq8/rear.webp",
@@ -1081,7 +1081,7 @@
     "fuel": "Hybrid",
     "power": "218 HP",
     "price": "€45,900",
-    "image": "assets/img/lexuses.png",
+    "image": "assets/img/lexuses.webp",
     "images": [
       "assets/img/galleries/lexus-es/hero.webp",
       "assets/img/galleries/lexus-es/rear.webp",
@@ -1158,7 +1158,7 @@
     "fuel": "Petrol",
     "power": "241 HP",
     "price": "€42,800",
-    "image": "assets/img/lexusis.png",
+    "image": "assets/img/lexusis.webp",
     "images": [
       "assets/img/galleries/lexus-is/hero.webp",
       "assets/img/galleries/lexus-is/rear.webp",
@@ -1235,7 +1235,7 @@
     "fuel": "Petrol",
     "power": "471 HP",
     "price": "€98,750",
-    "image": "assets/img/lexuslc.png",
+    "image": "assets/img/lexuslc.webp",
     "images": [
       "assets/img/galleries/lexus-lc/hero.webp",
       "assets/img/galleries/lexus-lc/rear.webp",
@@ -1312,7 +1312,7 @@
     "fuel": "Petrol",
     "power": "552 HP",
     "price": "€450,000",
-    "image": "assets/img/lexuslfa.png",
+    "image": "assets/img/lexuslfa.webp",
     "images": [
       "assets/img/galleries/lexus-lfa/hero.webp",
       "assets/img/galleries/lexus-lfa/rear.webp",
@@ -1389,7 +1389,7 @@
     "fuel": "Petrol",
     "power": "409 HP",
     "price": "€98,900",
-    "image": "assets/img/lexuslx.png",
+    "image": "assets/img/lexuslx.webp",
     "images": [
       "assets/img/galleries/lexus-lx/hero.webp",
       "assets/img/galleries/lexus-lx/rear.webp",
@@ -1466,7 +1466,7 @@
     "fuel": "Hybrid",
     "power": "181 HP",
     "price": "€38,500",
-    "image": "assets/img/lexusuxh.png",
+    "image": "assets/img/lexusuxh.webp",
     "images": [
       "assets/img/galleries/lexus-uxh/hero.webp",
       "assets/img/galleries/lexus-uxh/rear.webp",
@@ -1543,7 +1543,7 @@
     "fuel": "Hybrid",
     "power": "887 HP",
     "price": "€1,200,000",
-    "image": "assets/img/porsche918.png",
+    "image": "assets/img/porsche918.webp",
     "images": [
       "assets/img/galleries/porsche-918-spyder/hero.webp",
       "assets/img/galleries/porsche-918-spyder/rear.webp",
@@ -1620,7 +1620,7 @@
     "fuel": "Petrol",
     "power": "240 HP",
     "price": "€68,500",
-    "image": "assets/img/4c.png",
+    "image": "assets/img/4c.webp",
     "images": [
       "assets/img/galleries/alfa-romeo-4c/hero.webp",
       "assets/img/galleries/alfa-romeo-4c/rear.webp",
@@ -1697,7 +1697,7 @@
     "fuel": "Petrol",
     "power": "620 HP",
     "price": "€2,000,000",
-    "image": "assets/img/33stradale.png",
+    "image": "assets/img/33stradale.webp",
     "images": [
       "assets/img/galleries/alfa-romeo-33-stradale/hero.webp",
       "assets/img/galleries/alfa-romeo-33-stradale/rear.webp",
@@ -1774,7 +1774,7 @@
     "fuel": "Diesel",
     "power": "190 HP",
     "price": "€39,900",
-    "image": "assets/img/giulia.png",
+    "image": "assets/img/giulia.webp",
     "images": [
       "assets/img/galleries/alfa-romeo-giulia/hero.webp",
       "assets/img/galleries/alfa-romeo-giulia/rear.webp",
@@ -1851,7 +1851,7 @@
     "fuel": "Hybrid",
     "power": "160 HP",
     "price": "€42,400",
-    "image": "assets/img/tonale.png",
+    "image": "assets/img/tonale.webp",
     "images": [
       "assets/img/galleries/alfa-romeo-tonale/hero.webp",
       "assets/img/galleries/alfa-romeo-tonale/rear.webp",
@@ -1928,7 +1928,7 @@
     "fuel": "Diesel",
     "power": "210 HP",
     "price": "€44,900",
-    "image": "assets/img/stelvio.png",
+    "image": "assets/img/stelvio.webp",
     "images": [
       "assets/img/galleries/alfa-romeo-stelvio/hero.webp",
       "assets/img/galleries/alfa-romeo-stelvio/rear.webp",
@@ -2005,7 +2005,7 @@
     "fuel": "Diesel",
     "power": "200 HP",
     "price": "€48,500",
-    "image": "assets/img/gennesisg70shootingbrake.png",
+    "image": "assets/img/gennesisg70shootingbrake.webp",
     "images": [
       "assets/img/galleries/genesis-g70-shooting-brake/hero.webp",
       "assets/img/galleries/genesis-g70-shooting-brake/rear.webp",
@@ -2082,7 +2082,7 @@
     "fuel": "Diesel",
     "power": "210 HP",
     "price": "€52,900",
-    "image": "assets/img/gennesisg80.png",
+    "image": "assets/img/gennesisg80.webp",
     "images": [
       "assets/img/galleries/genesis-g80/hero.webp",
       "assets/img/galleries/genesis-g80/rear.webp",
@@ -2159,7 +2159,7 @@
     "fuel": "Petrol",
     "power": "380 HP",
     "price": "€68,700",
-    "image": "assets/img/gennesisg90.png",
+    "image": "assets/img/gennesisg90.webp",
     "images": [
       "assets/img/galleries/genesis-g90/hero.webp",
       "assets/img/galleries/genesis-g90/rear.webp",
@@ -2236,7 +2236,7 @@
     "fuel": "Petrol",
     "power": "409 HP",
     "price": "€75,800",
-    "image": "assets/img/gennesisg90longwheelbase.png",
+    "image": "assets/img/gennesisg90longwheelbase.webp",
     "images": [
       "assets/img/galleries/genesis-g90-long-wheelbase/hero.webp",
       "assets/img/galleries/genesis-g90-long-wheelbase/rear.webp",
@@ -2313,7 +2313,7 @@
     "fuel": "Electric",
     "power": "329 HP",
     "price": "€59,900",
-    "image": "assets/img/gennesisgv60.png",
+    "image": "assets/img/gennesisgv60.webp",
     "images": [
       "assets/img/galleries/genesis-gv60/hero.webp",
       "assets/img/galleries/genesis-gv60/rear.webp",
@@ -2390,7 +2390,7 @@
     "fuel": "Diesel",
     "power": "210 HP",
     "price": "€49,900",
-    "image": "assets/img/gennesisgv70.png",
+    "image": "assets/img/gennesisgv70.webp",
     "images": [
       "assets/img/galleries/genesis-gv70/hero.webp",
       "assets/img/galleries/genesis-gv70/rear.webp",
@@ -2467,7 +2467,7 @@
     "fuel": "Diesel",
     "power": "330 HP",
     "price": "€104,600",
-    "image": "assets/img/s400d.png",
+    "image": "assets/img/s400d.webp",
     "images": [
       "assets/img/galleries/mercedes-s400d/hero.webp",
       "assets/img/galleries/mercedes-s400d/rear.webp",
@@ -2544,7 +2544,7 @@
     "fuel": "Petrol",
     "power": "476 HP",
     "price": "€25,900",
-    "image": "assets/img/e55-amg.png",
+    "image": "assets/img/e55-amg.webp",
     "images": [
       "assets/img/galleries/mercedes-e55-amg/hero.webp",
       "assets/img/galleries/mercedes-e55-amg/rear.webp",
@@ -2621,7 +2621,7 @@
     "fuel": "Petrol",
     "power": "630 HP",
     "price": "€245,000",
-    "image": "assets/img/g65-amg.png",
+    "image": "assets/img/g65-amg.webp",
     "images": [
       "assets/img/galleries/mercedes-g65-amg/hero.webp",
       "assets/img/galleries/mercedes-g65-amg/rear.webp",
@@ -2698,7 +2698,7 @@
     "fuel": "Petrol",
     "power": "457 HP",
     "price": "€28,500",
-    "image": "assets/img/c63.png",
+    "image": "assets/img/c63.webp",
     "images": [
       "assets/img/galleries/mercedes-c63-amg/hero.webp",
       "assets/img/galleries/mercedes-c63-amg/rear.webp",
@@ -2852,7 +2852,7 @@
     "fuel": "Petrol",
     "power": "525 HP",
     "price": "€41,500",
-    "image": "assets/img/cls63-amg.png",
+    "image": "assets/img/cls63-amg.webp",
     "images": [
       "assets/img/galleries/mercedes-cls63-amg/hero.webp",
       "assets/img/galleries/mercedes-cls63-amg/rear.webp",
@@ -2929,7 +2929,7 @@
     "fuel": "Petrol",
     "power": "525 HP",
     "price": "€28,900",
-    "image": "assets/img/s63-amg-w221.png",
+    "image": "assets/img/s63-amg-w221.webp",
     "images": [
       "assets/img/galleries/mercedes-s63-smg/hero.webp",
       "assets/img/galleries/mercedes-s63-smg/rear.webp",
@@ -3006,7 +3006,7 @@
     "fuel": "Diesel",
     "power": "286 HP",
     "price": "€72,500",
-    "image": "assets/img/x5.png",
+    "image": "assets/img/x5.webp",
     "images": [
       "assets/img/galleries/bmw-x5/hero.webp",
       "assets/img/galleries/bmw-x5/rear.webp",
@@ -3083,7 +3083,7 @@
     "fuel": "Petrol",
     "power": "560 HP",
     "price": "€45,800",
-    "image": "assets/img/bmw-m6.png",
+    "image": "assets/img/bmw-m6.webp",
     "images": [
       "assets/img/galleries/bmw-m6/hero.webp",
       "assets/img/galleries/bmw-m6/rear.webp",
@@ -3160,7 +3160,7 @@
     "fuel": "Diesel",
     "power": "340 HP",
     "price": "€78,900",
-    "image": "assets/img/bmw-x6.png",
+    "image": "assets/img/bmw-x6.webp",
     "images": [
       "assets/img/galleries/bmw-x6/hero.webp",
       "assets/img/galleries/bmw-x6/rear.webp",
@@ -3237,7 +3237,7 @@
     "fuel": "Petrol",
     "power": "507 HP",
     "price": "€28,500",
-    "image": "assets/img/bmw-m5-e60.png",
+    "image": "assets/img/bmw-m5-e60.webp",
     "images": [
       "assets/img/galleries/bmw-m5/hero.webp",
       "assets/img/galleries/bmw-m5/rear.webp",
@@ -3314,7 +3314,7 @@
     "fuel": "Petrol",
     "power": "600 HP",
     "price": "€105,900",
-    "image": "assets/img/bmw-m8.png",
+    "image": "assets/img/bmw-m8.webp",
     "images": [
       "assets/img/galleries/bmw-m8/hero.webp",
       "assets/img/galleries/bmw-m8/rear.webp",
@@ -3391,7 +3391,7 @@
     "fuel": "Petrol",
     "power": "420 HP",
     "price": "€29,900",
-    "image": "assets/img/bmw-m3-e92.png",
+    "image": "assets/img/bmw-m3-e92.webp",
     "images": [
       "assets/img/galleries/bmw-m3/hero.webp",
       "assets/img/galleries/bmw-m3/rear.webp",
@@ -3468,7 +3468,7 @@
     "fuel": "Petrol",
     "power": "495 HP",
     "price": "€89,500",
-    "image": "assets/img/corvettez51.png",
+    "image": "assets/img/corvettez51.webp",
     "images": [
       "assets/img/galleries/corvette-z51/hero.webp",
       "assets/img/galleries/corvette-z51/rear.webp",
@@ -3545,7 +3545,7 @@
     "fuel": "Petrol",
     "power": "495 HP",
     "price": "€84,900",
-    "image": "assets/img/corvettezc8.png",
+    "image": "assets/img/corvettezc8.webp",
     "images": [
       "assets/img/galleries/corvette-c8/hero.webp",
       "assets/img/galleries/corvette-c8/rear.webp",
@@ -3622,7 +3622,7 @@
     "fuel": "Petrol",
     "power": "460 HP",
     "price": "€69,900",
-    "image": "assets/img/corvettestingrayc7.png",
+    "image": "assets/img/corvettestingrayc7.webp",
     "images": [
       "assets/img/galleries/corvette-stingray-c7/hero.webp",
       "assets/img/galleries/corvette-stingray-c7/rear.webp",
@@ -3699,7 +3699,7 @@
     "fuel": "Petrol",
     "power": "1,385 HP",
     "price": "€3,200,000",
-    "image": "assets/img/koenigsegg-cc850.png",
+    "image": "assets/img/koenigsegg-cc850.webp",
     "images": [
       "assets/img/galleries/koenigsegg-cc850/hero.webp",
       "assets/img/galleries/koenigsegg-cc850/rear.webp",
@@ -3776,7 +3776,7 @@
     "fuel": "Hybrid",
     "power": "1,700 HP",
     "price": "€1,700,000",
-    "image": "assets/img/koenigsegg-gemera.png",
+    "image": "assets/img/koenigsegg-gemera.webp",
     "images": [
       "assets/img/galleries/koenigsegg-gemera/hero.webp",
       "assets/img/galleries/koenigsegg-gemera/rear.webp",
@@ -3853,7 +3853,7 @@
     "fuel": "Petrol",
     "power": "1,600 HP",
     "price": "€2,800,000",
-    "image": "assets/img/koenigsegg-jesko-attack.png",
+    "image": "assets/img/koenigsegg-jesko-attack.webp",
     "images": [
       "assets/img/galleries/koenigsegg-jesko-attack/hero.webp",
       "assets/img/galleries/koenigsegg-jesko-attack/rear.webp",
@@ -3930,7 +3930,7 @@
     "fuel": "Electric",
     "power": "408 HP",
     "price": "€89,900",
-    "image": "assets/img/home.png",
+    "image": "assets/img/home.webp",
     "images": [
       "assets/img/galleries/porsche-taycan/hero.webp",
       "assets/img/galleries/porsche-taycan/rear.webp",
@@ -4007,7 +4007,7 @@
     "fuel": "Petrol",
     "power": "650 HP",
     "price": "€205,900",
-    "image": "assets/img/popular3.png",
+    "image": "assets/img/popular3.webp",
     "images": [
       "assets/img/galleries/porsche-turbo-s-cross/hero.webp",
       "assets/img/galleries/porsche-turbo-s-cross/rear.webp",
@@ -4084,7 +4084,7 @@
     "fuel": "Petrol",
     "power": "300 HP",
     "price": "€62,900",
-    "image": "assets/img/popular4.png",
+    "image": "assets/img/popular4.webp",
     "images": [
       "assets/img/galleries/porsche-boxster-718/hero.webp",
       "assets/img/galleries/porsche-boxster-718/rear.webp",
@@ -4161,7 +4161,7 @@
     "fuel": "Petrol",
     "power": "350 HP",
     "price": "€67,900",
-    "image": "assets/img/popular5.png",
+    "image": "assets/img/popular5.webp",
     "images": [
       "assets/img/galleries/porsche-cayman/hero.webp",
       "assets/img/galleries/porsche-cayman/rear.webp",
