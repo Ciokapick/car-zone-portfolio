@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (count) count.textContent = String(visibleCount);
+
+        // Filtrarea poate scurta pagina cu cateva mii de pixeli, iar ScrollReveal
+        // ramane cu pozitiile calculate inainte: footerul urca in ecran, dar el
+        // il crede tot jos si nu-l mai afiseaza niciodata. Un resize il face sa
+        // recalculeze. Fara asta, footerul ramane la opacity 0 chiar si dupa ce
+        // derulezi pana la capat.
+        window.dispatchEvent(new Event('resize'));
     };
 
     filters.forEach((button) => {
