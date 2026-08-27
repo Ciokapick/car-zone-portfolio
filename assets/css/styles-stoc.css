@@ -17,8 +17,9 @@
 .stock-page .video-section {
     position: relative;
     width: 100%;
-    min-height: 540px;
-    height: min(72vh, 720px);
+    /* Ecran plin, ca pe contact, finantare, vinde, comanda si s580.
+       Inventarul era singura pagina cu heroul taiat. */
+    height: 100vh;
     overflow: hidden;
     background: #05070b;
 }
@@ -314,7 +315,6 @@
 }
 
 @media (max-width: 760px) {
-    .stock-page .video-section { min-height: 500px; height: 68vh; }
     .stock-page .video-bg { object-position: 58% center; }
     .stock-catalog__intro { grid-template-columns: 1fr; gap: 1.25rem; }
     .stock-catalog__intro > p { justify-self: start; }
