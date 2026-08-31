@@ -346,11 +346,14 @@ function render() {
     updateStaticCopy();
     $('#hero-image').src = state.images[0] || state.car.image;
     $('#hero-image').alt = fullName;
-    // Videoul apare oriunde exista, nu doar pe masina signature: 28 din 55 au
-    // clip in cars.json, iar poarta veche il arata unei singure masini.
+    // Clipurile din assets/img/videos au provenienta necunoscuta si nu sunt
+    // creditate in media-credits.html, care sustine ca toata media e atribuita.
+    // Pana se lamureste licenta, videoul ramane doar pe masina signature, ca
+    // inainte. Odata clarificat, se sterge conditia isSignature de aici si
+    // clipul apare oriunde exista.
     const heroVideo = $('#hero-video');
-    heroVideo.hidden = !state.car.video;
-    if (state.car.video) {
+    heroVideo.hidden = !(isSignature && state.car.video);
+    if (isSignature && state.car.video) {
         if (heroVideo.getAttribute('src') !== state.car.video) heroVideo.src = state.car.video;
         heroVideo.poster = state.images[0] || state.car.image;
         heroVideo.play().catch(() => { /* the poster remains a complete fallback */ });
