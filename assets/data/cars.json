@@ -4019,7 +4019,7 @@
     "model": "Taycan Turbo S Cross Turismo",
     "year": 2023,
     "km": 8000,
-    "fuel": "Petrol",
+    "fuel": "Electric",
     "power": "650 HP",
     "price": "€205,900",
     "image": "assets/img/popular3.png",
@@ -4042,19 +4042,19 @@
       },
       "technical": {
         "Power": "650 HP",
-        "Gearbox": "Automatic PDK",
-        "Fuel": "Petrol",
+        "Gearbox": "Automatic 2-speed",
+        "Fuel": "Electric",
         "Color": "Ghost Purple",
         "Warranty": "24-month warranty",
         "Drivetrain": "AWD"
       },
       "performance": [
-        "3.7L Twin-Turbo Boxer engine",
-        "8-speed PDK transmission",
+        "Dual permanent-magnet electric motors",
+        "2-speed transmission on the rear axle",
         "Porsche Active Suspension Management",
-        "Porsche Dynamic Chassis Control",
-        "Sport Chrono package",
-        "Porsche Sport Exhaust"
+        "Adaptive air suspension",
+        "Porsche Traction Management",
+        "Regenerative braking"
       ],
       "comfort": [
         "Adaptive sport seats",
