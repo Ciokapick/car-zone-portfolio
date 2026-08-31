@@ -343,3 +343,64 @@
     .stock-page .featured__img,
     .stock-page .featured__item { transition: none; }
 }
+/* Signature inventory: the S580 is intentionally not presented as one more
+   catalogue card. Its larger footprint announces the richer vehicle page. */
+.stock-page .featured__card--signature {
+    grid-column: span 2;
+    grid-template-columns: minmax(190px, .72fr) minmax(250px, 1.28fr);
+    grid-template-rows: auto auto auto 1fr auto;
+    min-height: 350px;
+    border-color: rgba(214, 226, 246, .32);
+    background:
+        radial-gradient(circle at 72% 45%, rgba(189, 211, 244, .22), transparent 38%),
+        linear-gradient(145deg, #151b24 0%, #080b10 72%);
+}
+.stock-page .featured__card--signature::before {
+    content: "S";
+    position: absolute;
+    right: 1.5rem;
+    top: -3.8rem;
+    color: rgba(255,255,255,.035);
+    font-family: Georgia, serif;
+    font-size: 15rem;
+    line-height: 1;
+    pointer-events: none;
+}
+.featured__signature-label {
+    grid-column: 1 / -1;
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    width: max-content;
+    margin-bottom: 1.15rem;
+    color: #d5e1f4;
+    font-size: .62rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+.stock-page .featured__card--signature .featured__title,
+.stock-page .featured__card--signature .featured__subtitle,
+.stock-page .featured__card--signature .featured__price { grid-column: 1; }
+.stock-page .featured__card--signature .featured__title { font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 400; }
+.stock-page .featured__card--signature .featured__subtitle { color: #d5e1f4; font-family: Georgia, "Times New Roman", serif; font-size: 2.7rem; font-weight: 400; }
+.stock-page .featured__card--signature .featured__media-link { grid-column: 2; grid-row: 2 / 6; }
+.stock-page .featured__card--signature .featured__img { width: min(100%, 440px); max-height: 245px; margin: auto; }
+.stock-page .featured__card--signature .featured__button { border-color: rgba(222,233,250,.7); background: #e2eaf6; color: #080b10; }
+.stock-page .featured__card--signature:hover { border-color: rgba(222,233,250,.62); box-shadow: 0 24px 65px rgba(0,0,0,.48); }
+
+    .stock-page .featured__card--signature { grid-column: span 2; }
+    .stock-page .featured__card--signature {
+        grid-column: span 1;
+        grid-template-columns: 1fr 43%;
+        grid-template-rows: auto auto auto 1fr;
+        min-height: 250px;
+    }
+    .featured__signature-label { grid-column: 1 / -1; margin-bottom: .8rem; }
+    .stock-page .featured__card--signature .featured__title,
+    .stock-page .featured__card--signature .featured__subtitle,
+    .stock-page .featured__card--signature .featured__price { grid-column: 1; }
+    .stock-page .featured__card--signature .featured__title { font-size: 1.25rem; }
+    .stock-page .featured__card--signature .featured__subtitle { font-size: 2rem; }
+    .stock-page .featured__card--signature .featured__media-link { grid-column: 2; grid-row: 2 / 5; }
+    .stock-page .featured__card--signature .featured__img { max-height: 145px; }

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A curated vehicle dossier by CarZone.">
+    <meta name="theme-color" content="#05070b">
+    <link rel="shortcut icon" href="assets/img/carzone.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css?v=3">
+    <link rel="stylesheet" href="assets/css/styles-dossier.css">
+    <title>Car Dossier — CarZone</title>
+</head>
+<body class="dossier-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="header dossier-header" id="header">
+        <nav class="nav container dossier-nav" aria-label="Primary navigation">
+            <a href="index.html" class="nav__logo" aria-label="CarZone home">
+                <img src="assets/img/logo.png" alt="CarZone">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link" data-copy="home">Home</a></li>
+                    <li><a href="stoc.html" class="nav__link active-link" data-copy="inventory">Inventory</a></li>
+                    <li><a href="comanda.html" class="nav__link" data-copy="customOrder">Custom order</a></li>
+                    <li><a href="vinde.html" class="nav__link" data-copy="sellCar">Sell your car</a></li>
+                    <li><a href="finantare.html" class="nav__link" data-copy="navFinancing">Financing</a></li>
+                    <li><a href="contact.html" class="nav__link" data-copy="contact">Contact</a></li>
+                </ul>
+
+                <div class="nav__lang" role="group" aria-label="Language selection">
+                    <button type="button" class="nav__lang-btn active-lang" data-dossier-lang="en" aria-pressed="true">EN</button>
+                    <span aria-hidden="true">/</span>
+                    <button type="button" class="nav__lang-btn" data-dossier-lang="ro" aria-pressed="false">RO</button>
+                </div>
+
+                <button type="button" class="nav__close" id="nav-close" aria-label="Close navigation">
+                    <i class="ri-close-line" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Open navigation">
+                <i class="ri-menu-3-line" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div class="dossier-loading" id="dossier-loading" role="status">
+            <span class="dossier-loading__line"></span>
+            <p>Preparing the dossier</p>
+        </div>
+
+        <section class="dossier-error container" id="dossier-error" hidden>
+            <p class="eyebrow">Inventory archive</p>
+            <h1>This vehicle could not be found.</h1>
+            <a href="stoc.html" class="dossier-button dossier-button--primary">Return to inventory</a>
+        </section>
+
+        <div id="dossier-content" hidden>
+            <section class="dossier-hero" id="dossier-hero">
+                <img class="dossier-hero__image" id="hero-image" src="" alt="">
+                <video class="dossier-hero__video" id="hero-video" muted loop playsinline preload="metadata" hidden></video>
+                <div class="dossier-hero__veil"></div>
+                <div class="dossier-hero__grain" aria-hidden="true"></div>
+
+                <div class="dossier-hero__top container">
+                    <p class="dossier-reference" id="hero-reference"></p>
+                    <p class="dossier-availability"><span></span><b id="hero-tier" data-copy="available">Available now</b></p>
+                </div>
+
+                <div class="dossier-hero__content container">
+                    <p class="eyebrow" id="hero-kicker"></p>
+                    <h1 id="hero-title"></h1>
+                    <p class="dossier-hero__statement" id="hero-statement"></p>
+
+                    <div class="dossier-hero__footer">
+                        <div class="dossier-hero__price">
+                            <span data-copy="askingPrice">Asking price</span>
+                            <strong id="hero-price"></strong>
+                        </div>
+                        <div class="dossier-hero__metric">
+                            <span data-copy="power">Power</span>
+                            <strong id="hero-power"></strong>
+                        </div>
+                        <button class="dossier-scroll" type="button" data-scroll="#dossier-intro">
+                            <span data-copy="discover">Discover the car</span>
+                            <i class="ri-arrow-down-line" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="signature-room" id="signature-room" hidden aria-labelledby="signature-heading">
+                <div class="signature-room__backdrop" aria-hidden="true"></div>
+                <div class="container signature-room__grid">
+                    <div class="signature-room__copy reveal-block">
+                        <p class="eyebrow" data-copy="signatureSeries">CarZone Signature · 01</p>
+                        <h2 id="signature-heading" data-copy="signatureHeading">The flagship deserves its own room.</h2>
+                        <p data-copy="signatureCopy">A separate visual chapter for the rare car that defines the top of the collection.</p>
+                        <div class="signature-room__facts">
+                            <span id="signature-film-fact" hidden><b>01</b><em data-copy="cinematicFilm">Cinematic film</em></span>
+                            <span><b id="signature-frame-count">0</b><em data-copy="originalFrames">Original frames</em></span>
+                            <span id="signature-model-fact" hidden><b>360°</b><em data-copy="interactiveModel">Interactive model</em></span>
+                        </div>
+                        <a class="dossier-button dossier-button--light" id="signature-3d-link" href="#" target="_blank" rel="noopener noreferrer">
+                            <span data-copy="enterPrivateRoom">Enter the interactive room</span>
+                            <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="signature-room__frames reveal-block">
+                        <figure class="signature-room__frame signature-room__frame--main"><img id="signature-main-image" alt=""></figure>
+                        <figure class="signature-room__frame signature-room__frame--detail"><img id="signature-detail-image" alt=""></figure>
+                        <span class="signature-room__monogram" aria-hidden="true">S</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dossier-intro container" id="dossier-intro">
+                <div class="dossier-intro__copy reveal-block">
+                    <p class="eyebrow" data-copy="selectionNote">The selection note</p>
+                    <h2 id="intro-heading"></h2>
+                    <p id="intro-copy"></p>
+                </div>
+
+                <aside class="dossier-purchase reveal-block" aria-label="Vehicle summary">
+                    <div class="dossier-purchase__price">
+                        <span data-copy="price">Price</span>
+                        <strong id="summary-price"></strong>
+                    </div>
+                    <p data-copy="priceNote">VAT status and financing are confirmed during the consultation.</p>
+                    <div class="dossier-purchase__actions">
+                        <a href="contact.html" class="dossier-button dossier-button--primary">
+                            <span data-copy="bookViewing">Book a private viewing</span>
+                            <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                        </a>
+                        <a href="finantare.html" class="dossier-button dossier-button--ghost" data-copy="exploreFinance">Explore financing</a>
+                    </div>
+                </aside>
+
+                <div class="dossier-facts reveal-block" id="key-facts"></div>
+            </section>
+
+            <section class="dossier-reasons container">
+                <header class="dossier-section-heading reveal-block">
+                    <p class="eyebrow" data-copy="editorialReasons">Editorial reasons</p>
+                    <h2 data-copy="whyThisOne">Why this one.</h2>
+                    <p data-copy="whySub">Three details that define the character of this particular car.</p>
+                </header>
+                <div class="dossier-reasons__grid" id="reason-cards"></div>
+            </section>
+
+            <section class="dossier-gallery container" aria-labelledby="gallery-heading">
+                <header class="dossier-section-heading dossier-section-heading--split reveal-block">
+                    <div>
+                        <p class="eyebrow" data-copy="visualRecord">Visual record</p>
+                        <h2 id="gallery-heading" data-copy="closerLook">A closer look.</h2>
+                    </div>
+                    <p data-copy="gallerySub">Select a frame to bring the details forward.</p>
+                </header>
+
+                <div class="dossier-gallery__stage reveal-block">
+                    <img id="gallery-main" src="" alt="">
+                    <div class="dossier-gallery__index"><span id="gallery-current">01</span><span id="gallery-total">/ 01</span></div>
+                    <button class="dossier-gallery__next" id="gallery-next" type="button" aria-label="Next image">
+                        <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="dossier-gallery__rail" id="gallery-rail" aria-label="Vehicle image thumbnails"></div>
+            </section>
+
+            <section class="dossier-trust">
+                <div class="container dossier-trust__grid">
+                    <header class="dossier-section-heading reveal-block">
+                        <p class="eyebrow" data-copy="provenance">Provenance</p>
+                        <h2 data-copy="knownBeforeLoved">Known before it is loved.</h2>
+                        <p data-copy="trustCopy">The presentation is editorial. The decision remains practical: identity, history and terms are made clear before a viewing.</p>
+                    </header>
+                    <dl class="dossier-trust__list reveal-block" id="trust-list"></dl>
+                </div>
+            </section>
+
+            <section class="dossier-specifications container">
+                <header class="dossier-section-heading dossier-section-heading--split reveal-block">
+                    <div>
+                        <p class="eyebrow" data-copy="technicalArchive">Technical archive</p>
+                        <h2 data-copy="everythingWorth">Everything worth knowing.</h2>
+                    </div>
+                    <p data-copy="specsSub">Organised by use, not by noise.</p>
+                </header>
+                <div class="dossier-accordions reveal-block" id="spec-accordions"></div>
+            </section>
+
+            <section class="dossier-related container">
+                <header class="dossier-section-heading dossier-section-heading--split reveal-block">
+                    <div>
+                        <p class="eyebrow" data-copy="sameEdit">From the same edit</p>
+                        <h2 data-copy="continueLooking">Continue looking.</h2>
+                    </div>
+                    <a href="stoc.html" class="dossier-text-link"><span data-copy="allInventory">All inventory</span><i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+                </header>
+                <div class="dossier-related__grid" id="related-cars"></div>
+            </section>
+
+            <section class="dossier-final">
+                <div class="container dossier-final__inner reveal-block">
+                    <p class="eyebrow" data-copy="privateConsultation">Private consultation</p>
+                    <h2 id="final-heading"></h2>
+                    <p data-copy="finalCopy">We will confirm the car, answer the difficult questions and arrange a focused viewing.</p>
+                    <a href="contact.html" class="dossier-button dossier-button--light">
+                        <span data-copy="startConversation">Start the conversation</span>
+                        <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="dossier-mobile-cta" id="mobile-cta" hidden>
+        <div><span data-copy="price">Price</span><strong id="mobile-price"></strong></div>
+        <a href="contact.html"><span data-copy="bookViewingShort">Book viewing</span><i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+    </div>
+
+    <script src="assets/js/site-nav.js"></script>
+    <script src="assets/js/car-dossier.js" type="module"></script>
+</body>
+</html>
