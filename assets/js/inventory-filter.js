@@ -6,6 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!filters.length || !cards.length) return;
 
+    // Un singur sistem de pagini pentru toata colectia: cardurile trimit spre
+    // dossier.html, iar treapta de prezentare o decide dosarul dupa media
+    // disponibila, nu link-ul de aici.
+    cards.forEach((card) => {
+        card.querySelectorAll('a[href^="car-detail.html?id="]').forEach((link) => {
+            link.href = link.getAttribute('href').replace('car-detail.html', 'dossier.html');
+        });
+    });
+
     let activeSelector = 'all';
 
     const normalize = (value) => value

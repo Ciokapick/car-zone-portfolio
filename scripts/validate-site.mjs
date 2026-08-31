@@ -84,7 +84,7 @@ const stockMediaLinkCount = (stock.match(/class="featured__media-link"/g) ?? [])
 const stockActionLinkCount = (stock.match(/class="button featured__button"/g) ?? []).length;
 const stockFilterCount = (stock.match(/class="featured__item[^>]*data-filter=/g) ?? []).length;
 const labelledStockFilterCount = (stock.match(/class="featured__item[^>]*data-filter=[^>]*aria-label=/g) ?? []).length;
-const linkedGenericIds = new Set([...stock.matchAll(/href="car-detail\.html\?id=([^"]+)"/g)].map((match) => match[1]));
+const linkedDossierIds = new Set([...stock.matchAll(/href="dossier\.html\?id=([^"]+)"/g)].map((match) => match[1]));
 
 if (stockCardCount !== carIds.length) {
   fail('stoc.html', `expected ${carIds.length} inventory cards, found ${stockCardCount}`);
@@ -102,10 +102,11 @@ if (stockFilterCount !== labelledStockFilterCount) {
   fail('stoc.html', 'every inventory filter must have an accessible label');
 }
 for (const id of carIds) {
-  const expectedHref = id === 'mercedes-s580' ? 'href="s580.html"' : `href="car-detail.html?id=${id}"`;
-  if (!stock.includes(expectedHref)) fail('stoc.html', `vehicle ${id} is not linked from inventory`);
+  const legacyHref = id === 'mercedes-s580' ? 'href="s580.html"' : `href="car-detail.html?id=${id}"`;
+  const dossierHref = `href="dossier.html?id=${id}"`;
+  if (!stock.includes(legacyHref) && !stock.includes(dossierHref)) fail('stoc.html', `vehicle ${id} is not linked from inventory`);
 }
-for (const id of linkedGenericIds) {
+for (const id of linkedDossierIds) {
   if (!(id in cars)) fail('stoc.html', `links to unknown vehicle id ${id}`);
 }
 

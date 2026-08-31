@@ -86,7 +86,22 @@
     "power": "496 HP",
     "price": "€120,900",
     "image": "assets/img/s580.png",
-    "images": [],
+    "images": [
+      "assets/img/s/1.jpg",
+      "assets/img/s/2.jpg",
+      "assets/img/s/3.jpg",
+      "assets/img/s/4.jpg",
+      "assets/img/s/5.jpg",
+      "assets/img/s/6.jpg",
+      "assets/img/s/7.jpg",
+      "assets/img/s/8.jpg",
+      "assets/img/s/9.jpg",
+      "assets/img/s/10.jpg",
+      "assets/img/s/11.jpg",
+      "assets/img/s/12.jpg",
+      "assets/img/s/13.jpg",
+      "assets/img/s/14.jpg"
+    ],
     "video": "assets/img/w223.mp4",
     "sketchfab": "https://sketchfab.com/models/7be62285accb409bb6f7e28bce32f973/embed?camera=0",
     "specs": {
