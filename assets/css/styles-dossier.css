@@ -1,14 +1,25 @@
+/* Dossier-ul nu mai are paleta proprie. Fiecare token de aici deriva din
+   variabilele sitului (assets/scss/config/_variables.scss), unde regula e ca
+   TOT sistemul sta pe nuanta 219 — inclusiv griurile si negrul. styles.css se
+   incarca inaintea acestui fisier, deci var(--body-color) etc. sunt definite.
+   Unde pastrez o luminozitate anume, o scriu explicit in hsl(219 ...), ca sa
+   raman in familie fara sa pierd valoarea calibrata. */
 :root {
-    --d-bg: #05070b;
-    --d-panel: #0b0e14;
-    --d-panel-soft: #10141b;
-    --d-line: rgba(255, 255, 255, 0.13);
-    --d-line-soft: rgba(255, 255, 255, 0.08);
-    --d-text: #f5f3ee;
-    --d-muted: #9ba2ae;
-    --d-blue: #75a8ff;
-    --d-blue-strong: #3568c4; /* alb pe #4c87ff da 3.37; pe asta da 5.35 */
-    --d-sans: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+    --d-bg: var(--body-color);
+    --d-bg-deep: hsl(219, 6%, 2%);
+    --d-panel: var(--container-color);
+    --d-panel-soft: hsl(219, 6%, 11%);
+    --d-line: hsla(219, 30%, 92%, .13);
+    --d-line-soft: hsla(219, 30%, 92%, .08);
+    --d-text: var(--title-color);
+    --d-muted: hsl(219, 8%, 64%);
+    --d-muted-soft: var(--text-color-light);
+    --d-blue: var(--first-color);
+    --d-blue-strong: var(--first-color-alt);
+    --d-sans: var(--body-font);
+    /* 1rem e radius-ul de baza al sitului (.popular__card, .featured__card) */
+    --d-radius: 1rem;
+    --d-radius-sm: .5rem;
 }
 
 html { scroll-behavior: smooth; }
@@ -24,9 +35,12 @@ body.dossier-page {
 
 .dossier-page *, .dossier-page *::before, .dossier-page *::after { box-sizing: border-box; }
 .dossier-page img { display: block; max-width: 100%; }
+/* .dossier-page img (0,1,1) bate .nav__logo-img (0,1,0) din styles.css, deci
+   logo-ul scapa la latimea lui naturala. Reafirmam limita sitului, nu alta. */
+.dossier-page .nav__logo-img { max-width: 150px; height: auto; }
 .dossier-page .container { width: min(1320px, calc(100% - 64px)); margin-inline: auto; }
 .dossier-page .header { background: transparent; }
-.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 9999; padding: .8rem 1rem; background: white; color: #05070b; }
+.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 9999; padding: .8rem 1rem; background: white; color: var(--d-bg); }
 .skip-link:focus { top: 1rem; }
 
 .dossier-header {
@@ -41,10 +55,10 @@ body.dossier-page {
     border-color: var(--d-line-soft);
     backdrop-filter: blur(18px);
 }
-.dossier-nav { height: 84px; }
-.dossier-nav .nav__logo img { width: 124px; filter: brightness(0) invert(1); }
-.dossier-nav .nav__link { color: rgba(255,255,255,.72); font: 600 .67rem/1 var(--d-sans); letter-spacing: .14em; text-transform: uppercase; }
-.dossier-nav .nav__link:hover, .dossier-nav .nav__link.active-link { color: white; }
+/* Meniul e acelasi obiect pe tot situl: nu-l redefinim aici. Dossier-ul isi
+   pastreaza doar pozitionarea fixa si fundalul la scroll, care sunt
+   comportament, nu identitate vizuala. */
+.dossier-nav .nav__link:hover, .dossier-nav .nav__link.active-link { color: var(--first-color); }
 .dossier-nav .nav__lang { color: rgba(255,255,255,.35); }
 .dossier-nav .nav__lang-btn { color: rgba(255,255,255,.5); }
 .dossier-nav .nav__lang-btn.active-lang { color: var(--d-blue); }
@@ -53,9 +67,10 @@ body.dossier-page {
 .eyebrow {
     margin: 0 0 1.1rem;
     color: var(--d-blue);
-    font-size: .67rem;
-    font-weight: 700;
-    letter-spacing: .24em;
+    /* aceeasi reteta ca .home-page .home__tech-kicker */
+    font-size: clamp(.62rem, .85vw, .82rem);
+    font-weight: var(--font-medium);
+    letter-spacing: .18em;
     text-transform: uppercase;
 }
 .dossier-page h1, .dossier-page h2, .dossier-page h3, .dossier-page p { margin-top: 0; }
@@ -63,11 +78,21 @@ body.dossier-page {
     margin-bottom: 1.1rem;
     max-width: 760px;
     color: var(--d-text);
-    font-size: clamp(2.2rem, 5vw, 5rem);
-    font-weight: 430;
-    line-height: .98;
+    /* Aceeasi reteta de display ca .home-page .home__title din styles.css */
+    font-size: clamp(2rem, 4vw, 4.6rem);
+    font-weight: var(--font-medium);
+    line-height: .95;
     letter-spacing: -.055em;
 }
+/* Pe sit, serifa (--mercedes-font) e semnal de brand: aceeasi familie e
+   folosita la titlurile Mercedes din pagina de stoc. Aici aparea o singura
+   data, la h1-ul din hero si la .signature-room h2, apoi disparea brusc —
+   parea o scapare, nu o alegere. O extindem la titlurile de sectiune de pe
+   toata pagina signature, ca serifa sa citeasca drept consecventa, nu doua
+   aparitii izolate. Tinta e #dossier-content h2 (titluri de sectiune):
+   eyebrow-urile, dt/dd, butoanele si nav-ul nu sunt h2, deci raman neatinse;
+   pe is-standard selectorul nu se aplica deloc. */
+.is-signature #dossier-content h2 { font-family: var(--mercedes-font); }
 
 .dossier-loading, .dossier-error {
     min-height: 100svh;
@@ -80,22 +105,37 @@ body.dossier-page {
 .dossier-loading__line::after { content: ""; display: block; width: 45%; height: 100%; background: var(--d-blue); animation: dossier-load 1.2s ease-in-out infinite; }
 @keyframes dossier-load { from { transform: translateX(-110%); } to { transform: translateX(330%); } }
 .dossier-error { gap: 1rem; }
-.dossier-error h1 { font-size: clamp(2rem, 6vw, 5rem); font-weight: 450; }
+.dossier-error h1 { font-size: clamp(2rem, 4vw, 4.6rem); font-weight: var(--font-medium); }
 
-.dossier-hero { position: relative; min-height: 94svh; display: flex; align-items: flex-end; overflow: hidden; background: #080b10; }
+.dossier-hero { position: relative; min-height: 94svh; display: flex; align-items: flex-end; overflow: hidden; background: var(--d-bg); }
 .dossier-hero__image, .dossier-hero__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .dossier-hero__image { transform: scale(1.035); animation: hero-arrive 1.4s cubic-bezier(.2,.7,.2,1) forwards; }
 .dossier-hero__video { z-index: 0; }
 @keyframes hero-arrive { to { transform: scale(1); } }
 .dossier-hero__veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3,5,8,.9) 0%, rgba(3,5,8,.58) 39%, rgba(3,5,8,.08) 68%), linear-gradient(0deg, rgba(3,5,8,.88) 0%, rgba(3,5,8,.04) 55%); }
 .dossier-hero__grain { position: absolute; inset: 0; opacity: .14; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E"); mix-blend-mode: soft-light; }
+/* heroul se opreste brusc unde incepe sectiunea urmatoare; topim ultimii
+   ~100-140px in --d-bg, ca sa dispara cusatura, fara markup nou (pseudo-element).
+   z-index 1: peste imagine/video/veil/grain (auto sau 0), sub top/content (2) —
+   asa nu acopera textul din hero si nu strica stratul de grain de dedesubt. */
+.dossier-hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: clamp(100px, 10vw, 140px);
+    background: linear-gradient(0deg, var(--d-bg) 0%, transparent 100%);
+    pointer-events: none;
+}
 .dossier-hero__top { position: absolute; top: 112px; left: 50%; transform: translateX(-50%); display: flex; justify-content: space-between; align-items: center; z-index: 2; }
 .dossier-reference, .dossier-availability { margin: 0; color: rgba(255,255,255,.68); font-size: .65rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .dossier-availability { display: flex; align-items: center; gap: .65rem; }
 .dossier-availability span { width: 7px; height: 7px; border-radius: 50%; background: #8ff0b0; box-shadow: 0 0 0 5px rgba(143,240,176,.1); }
 .dossier-hero__content { position: relative; z-index: 2; padding-bottom: 56px; }
 .dossier-hero__content .eyebrow { color: rgba(255,255,255,.8); }
-.dossier-hero h1 { margin: 0; max-width: 1020px; font-size: clamp(4.2rem, 8.2vw, 8.5rem); font-weight: 420; line-height: .8; letter-spacing: -.068em; }
+.dossier-hero h1 { margin: 0; max-width: 1020px; font-size: clamp(2.6rem, 4.35vw, 5.35rem); font-weight: var(--font-medium); line-height: .88; letter-spacing: -.055em; }
 .dossier-hero h1 span { display: block; }
 .dossier-hero__statement { max-width: 610px; margin: 2.2rem 0 3.25rem; color: rgba(255,255,255,.75); font-size: clamp(1rem, 1.4vw, 1.25rem); line-height: 1.65; }
 .dossier-hero__footer { display: grid; grid-template-columns: 180px 150px 1fr; gap: 2rem; align-items: end; padding-top: 1.3rem; border-top: 1px solid rgba(255,255,255,.18); }
@@ -103,11 +143,11 @@ body.dossier-page {
 .dossier-hero__price strong, .dossier-hero__metric strong { font-size: 1rem; font-weight: 600; }
 .dossier-scroll { justify-self: end; display: flex; align-items: center; gap: 1rem; padding: 0; color: white; background: transparent; border: 0; font: 700 .66rem/1 var(--d-sans); letter-spacing: .16em; text-transform: uppercase; cursor: pointer; }
 .dossier-scroll i { display: grid; place-content: center; width: 42px; height: 42px; border: 1px solid rgba(255,255,255,.28); border-radius: 50%; transition: background .25s ease, color .25s ease; }
-.dossier-scroll:hover i { background: white; color: #05070b; }
+.dossier-scroll:hover i { background: white; color: var(--d-bg); }
 
 /* The S580 is the collection's signature car. It keeps the cinematic language
    of the original page, while sharing the same information architecture. */
-.is-signature { --d-blue: #d4e1f6; --d-blue-strong: #e5edf9; }
+.is-signature { --d-blue: hsl(219, 40%, 90%); --d-blue-strong: hsl(219, 40%, 94%); }
 .is-signature .dossier-hero { min-height: 100svh; }
 .is-signature .dossier-hero__veil {
     background:
@@ -116,19 +156,59 @@ body.dossier-page {
 }
 .is-signature .dossier-hero__grain { opacity: .21; }
 .is-signature .dossier-hero__content { text-align: center; }
-.is-signature .dossier-hero__content .eyebrow { color: #dce5f2; }
+.is-signature .dossier-hero__content .eyebrow { color: hsl(219, 40%, 91%); }
 .is-signature .dossier-hero h1 {
     max-width: 1100px;
     margin-inline: auto;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--mercedes-font);
     font-size: clamp(4rem, 8vw, 8.4rem);
     font-weight: 400;
     line-height: .84;
     letter-spacing: -.06em;
 }
+/* Heroul paginii S580 originale avea un singur element peste video: titlul.
+   Fara supratitlu, fara fraza de sub el (vezi <section class="video-section">
+   din s580.html). Il readucem la asta — doar pe treapta signature. Randul de
+   jos, cu pretul si "discover the car", ramane: e navigatie, nu titlu. */
+/* Heroul pastreaza un singur lucru: numele masinii. Referinta, insigna,
+   supratitlul, fraza si randul cu pret/putere pleaca de pe TOATE masinile, nu
+   doar de pe signature — pretul ramane in cardul de achizitie de sub galerie,
+   iar fraza inchide pagina. Ce deosebeste treapta signature ramane serif-ul si
+   centrarea pe orizontala, nu cantitatea de informatie. */
+.dossier-hero__content .eyebrow,
+.dossier-hero__statement,
+.dossier-hero__footer,
+.dossier-hero__top { display: none; }
+.dossier-hero { align-items: center; }
+.dossier-hero__content { padding-bottom: 0; }
+.dossier-hero h1 { margin-bottom: 0; }
+/* numele pe un singur rand, ca in pagina S580 originala */
+.dossier-hero h1 span { display: inline; }
+
 .is-signature .dossier-hero__statement { max-width: 660px; margin-inline: auto; }
 .is-signature .dossier-hero__footer { text-align: left; }
-.is-signature .dossier-button--primary { background: #e5edf9; color: #070a0f; }
+.is-signature .dossier-button--primary { background: hsl(219, 40%, 94%); color: var(--d-bg); }
+
+/* Banda-punte dintre hero (plin ecran, centrat) si corpul boxat de mai jos
+   (.container, aliniat stanga). Fara ea patru lucruri se schimbau deodata:
+   latime, aliniere, densitate, font. Aici ramane doar centrarea si latimea
+   plina inca un pas, cu un singur rand de text, inainte de trecerea la grid.
+   Randul e populat din JS (#bridge-line); daca ramane gol, banda nu trebuie
+   sa lase o gaura goala — :empty ii taie padding-ul, care e singurul lucru
+   care ii dadea inaltime (sectiunea insasi n-are padding propriu). */
+.dossier-bridge { background: var(--d-bg); text-align: center; }
+.dossier-bridge__line {
+    max-width: 28ch;
+    margin-inline: auto;
+    margin-block: 0;
+    padding-block: clamp(72px, 14vw, 160px);
+    color: var(--d-muted);
+    font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+    line-height: 1.7;
+}
+/* pe signature, serifa din hero mai apare o data inainte sa treaca la sans */
+.is-signature .dossier-bridge__line { font-family: var(--mercedes-font); }
+.dossier-bridge__line:empty { padding-block: 0; }
 
 .signature-room {
     position: relative;
@@ -136,9 +216,9 @@ body.dossier-page {
     display: grid;
     align-items: center;
     overflow: hidden;
-    border-top: 1px solid rgba(220,229,242,.14);
-    border-bottom: 1px solid rgba(220,229,242,.14);
-    background: #020407;
+    border-top: 1px solid hsla(219, 40%, 91%, .14);
+    border-bottom: 1px solid hsla(219, 40%, 91%, .14);
+    background: var(--d-bg-deep);
 }
 .signature-room__backdrop {
     position: absolute;
@@ -149,38 +229,135 @@ body.dossier-page {
         repeating-linear-gradient(90deg, transparent 0, transparent calc(12.5% - 1px), rgba(255,255,255,.035) 12.5%);
 }
 .signature-room__grid { position: relative; z-index: 1; display: grid; grid-template-columns: .78fr 1.22fr; gap: 90px; align-items: center; padding-block: 120px; }
-.signature-room__copy h2 { max-width: 550px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.2rem, 5.7vw, 6.3rem); font-weight: 400; }
-.signature-room__copy > p:not(.eyebrow) { max-width: 510px; color: #9da6b3; font-size: 1rem; line-height: 1.75; }
+.signature-room__copy h2 { max-width: 550px; font-family: var(--mercedes-font); font-size: clamp(3.2rem, 5.7vw, 6.3rem); font-weight: 400; }
+.signature-room__copy > p:not(.eyebrow) { max-width: 510px; color: var(--d-muted); font-size: 1rem; line-height: 1.75; }
 .signature-room__facts { display: grid; grid-template-columns: repeat(3, 1fr); margin: 3rem 0; border-top: 1px solid var(--d-line); border-bottom: 1px solid var(--d-line); }
 .signature-room__facts span { padding: 22px 15px 22px 0; }
 .signature-room__facts span + span { padding-left: 15px; border-left: 1px solid var(--d-line); }
-.signature-room__facts b { display: block; margin-bottom: .55rem; color: #edf3fb; font-size: 1.15rem; font-weight: 500; }
-.signature-room__facts em { color: #7e8898; font-size: .58rem; font-style: normal; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.signature-room__facts b { display: block; margin-bottom: .55rem; color: var(--d-text); font-size: 1.15rem; font-weight: 500; }
+.signature-room__facts em { color: var(--d-muted-soft); font-size: .58rem; font-style: normal; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .signature-room__copy .dossier-button { width: max-content; }
 .signature-room__frames { position: relative; min-height: 620px; }
-.signature-room__frame { position: absolute; margin: 0; overflow: hidden; border: 1px solid rgba(220,229,242,.22); background: #070a0e; }
+.signature-room__frame { position: absolute; margin: 0; overflow: hidden; border: 1px solid hsla(219, 40%, 91%, .22); background: var(--d-panel); }
 .signature-room__frame img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.72) contrast(1.06); transition: transform .9s cubic-bezier(.2,.8,.2,1), filter .5s ease; }
 .signature-room__frame--main { inset: 0 13% 8% 0; }
 .signature-room__frame--detail { width: 42%; height: 42%; right: 0; bottom: 0; box-shadow: -24px -24px 80px rgba(0,0,0,.58); }
 .signature-room__frames:hover .signature-room__frame--main img { transform: scale(1.025); filter: saturate(.94) contrast(1.04); }
 .signature-room__frames:hover .signature-room__frame--detail img { transform: scale(1.04); filter: saturate(.94) contrast(1.04); }
-.signature-room__monogram { position: absolute; top: -80px; right: -18px; color: rgba(255,255,255,.045); font-family: Georgia, serif; font-size: 22rem; line-height: 1; pointer-events: none; }
+/* Sectiunea 3D sta sub carusel si are aceeasi rama ca scena galeriei, ca sa se
+   citeasca drept continuarea ei, nu ca un widget lipit. Butonul e un poster cu
+   masina: pana la click nu exista niciun iframe si nicio cerere catre Sketchfab. */
+.dossier-room { padding-bottom: 150px; }
+.dossier-room__stage {
+    position: relative;
+    aspect-ratio: 16 / 8.4;
+    overflow: hidden;
+    border: 1px solid var(--d-line-soft);
+    border-radius: 1.25rem;
+    background: var(--d-panel);
+}
+.dossier-room__viewer { position: absolute; inset: 0; z-index: 2; }
+.dossier-room__viewer iframe { width: 100%; height: 100%; border: 0; display: block; }
+.dossier-room__viewer[hidden] { display: none; }
+
+.dossier-room__open {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: var(--d-text);
+}
+.dossier-room__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(.55); transition: filter .4s ease, transform .8s cubic-bezier(.2,.8,.2,1); }
+.dossier-room__open:hover .dossier-room__poster { filter: brightness(.42); transform: scale(1.02); }
+.dossier-room__cue {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    padding: 1rem 2rem;
+    border: 1px solid hsla(219, 30%, 92%, .3);
+    border-radius: .25rem;
+    background: hsla(219, 6%, 3%, .5);
+    backdrop-filter: blur(12px);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    transition: background .25s ease, border-color .25s ease;
+}
+.dossier-room__open:hover .dossier-room__cue { background: var(--first-color); border-color: var(--first-color); color: var(--white-color); }
+.dossier-room__cue i { font-size: 1.25rem; }
+/* Cand modelul e deschis, butonul se retrage intr-un colt ca sa nu stea peste el. */
+.dossier-room__open.is-open { inset: auto 16px 16px auto; display: block; }
+.dossier-room__open.is-open .dossier-room__poster { display: none; }
+
+.signature-room__monogram { position: absolute; top: -80px; right: -18px; color: rgba(255,255,255,.045); font-family: var(--mercedes-font); font-size: 22rem; line-height: 1; pointer-events: none; }
+
+/* Bila de lumina e semnatura vizuala a sitului: .shape din styles.css o pune
+   in home, in cardurile popular/featured si in footer. Dossier-ul o pierduse
+   complet, si odata cu ea si legatura vizuala cu restul paginilor. Acelasi
+   albastru, acelasi blur, acelasi cerc — doar ca pe pseudo-element, ca sa nu
+   trebuiasca markup nou in dossier.html. */
+.dossier-intro,
+.dossier-specifications { position: relative; }
+.dossier-intro::before,
+.dossier-specifications::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgba(55, 74, 109, .5);
+    filter: blur(112px);
+    pointer-events: none;
+}
+.dossier-intro::before { top: -60px; left: -180px; }
+.dossier-specifications::before { top: 120px; right: -200px; width: 300px; height: 300px; }
+.dossier-intro > *,
+.dossier-specifications > * { position: relative; z-index: 1; }
 
 .dossier-intro { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(300px, .7fr); gap: 80px; padding-block: 140px 100px; }
-.dossier-intro__copy > p:last-child { max-width: 740px; margin: 1.8rem 0 0; color: #aeb4be; font-size: clamp(1.06rem, 1.6vw, 1.35rem); line-height: 1.7; }
-.dossier-purchase { align-self: end; padding: 32px; border: 1px solid var(--d-line); border-radius: 1.1rem; background: linear-gradient(150deg, rgba(117,168,255,.09), rgba(255,255,255,.02)); }
+.dossier-intro__copy > p:last-child { max-width: 740px; margin: 1.8rem 0 0; color: var(--text-color); font-size: clamp(1.06rem, 1.6vw, 1.35rem); line-height: 1.7; }
+/* Faptele cheie stau langa cardul de pret, unde se ia decizia de vizionare.
+   Fara bulina implicita: un mic dash in albastrul sistemului, ca la listele de
+   echipare din acordeon. */
+.dossier-keyfacts { align-self: end; margin-bottom: 1.25rem; }
+.dossier-keyfacts ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .7rem; }
+.dossier-keyfacts li {
+    position: relative;
+    padding-left: 1.15rem;
+    color: var(--d-text);
+    font-size: .88rem;
+    line-height: 1.5;
+}
+.dossier-keyfacts li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: .62em;
+    width: 8px; height: 1px;
+    background: var(--d-blue);
+}
+
+.dossier-purchase { align-self: end; padding: 32px; border: 1px solid var(--d-line); border-radius: var(--d-radius); background: linear-gradient(150deg, hsla(219, 69%, 56%, .09), rgba(255,255,255,.02)); }
 .dossier-purchase__price { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 1.35rem; border-bottom: 1px solid var(--d-line); }
 .dossier-purchase__price span { color: var(--d-muted); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; }
 .dossier-purchase__price strong { font-size: 1.35rem; font-weight: 600; }
 .dossier-purchase > p { margin: 1.3rem 0 1.8rem; color: var(--d-muted); font-size: .78rem; line-height: 1.6; }
 .dossier-purchase__actions { display: grid; gap: .7rem; }
-.dossier-button { min-height: 52px; display: inline-flex; justify-content: center; align-items: center; gap: .8rem; padding: 0 1.2rem; border: 1px solid transparent; font-size: .67rem; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; transition: transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease; }
+/* .button din styles.css: padding 1rem 2rem, radius .25rem, corp normal.
+   Dossier-ul avea micro-capitale de 10.7px cu colturi drepte — alt buton. */
+.dossier-button { display: inline-flex; justify-content: center; align-items: center; gap: .8rem; padding: 1rem 2rem; border: 1px solid transparent; border-radius: .25rem; font-size: var(--normal-font-size); font-weight: var(--font-medium); transition: transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease; }
 .dossier-button:hover { transform: translateY(-2px); }
-.dossier-button--primary { background: var(--d-blue-strong); color: white; }
-.dossier-button--primary:hover { background: #2f5bb0; }
+.dossier-button--primary { background: var(--first-color); color: var(--white-color); }
+.dossier-button--primary:hover { background: var(--first-color-alt); }
 .dossier-button--ghost { border-color: var(--d-line); color: white; }
 .dossier-button--ghost:hover { border-color: rgba(255,255,255,.4); }
-.dossier-button--light { background: white; color: #080b10; }
+.dossier-button--light { background: var(--first-color); color: var(--white-color); }
+.dossier-button--light:hover { background: var(--first-color-alt); }
 .dossier-facts { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 30px; border-top: 1px solid var(--d-line); border-bottom: 1px solid var(--d-line); }
 .dossier-fact { min-height: 120px; padding: 28px 28px 24px 0; }
 .dossier-fact + .dossier-fact { padding-left: 28px; border-left: 1px solid var(--d-line); }
@@ -199,34 +376,124 @@ body.dossier-page {
 .dossier-reason:hover { background: rgba(117,168,255,.045); }
 .dossier-reason:hover::after { transform: translate(-40px,-40px) scale(1.2); }
 .dossier-reason__number { color: var(--d-blue); font-size: .7rem; letter-spacing: .16em; }
-.dossier-reason h3 { margin: 4.6rem 0 1rem; max-width: 320px; font-size: clamp(1.55rem, 2.4vw, 2.2rem); font-weight: 450; letter-spacing: -.035em; }
+.dossier-reason h3 { margin: 4.6rem 0 1rem; max-width: 320px; font-size: clamp(1.55rem, 2.4vw, 2.2rem); font-weight: var(--font-medium); letter-spacing: -.035em; }
 .dossier-reason p { max-width: 340px; margin: 0; color: var(--d-muted); line-height: 1.65; }
 
+/* ─────────── S580: tratamentul de etalon ───────────
+   Cele trei "motive" erau un tabel: linie sus, linie jos, linie intre celule,
+   trei coloane egale de 340px si un margin-top fix de 4.6rem pe titluri. Situl
+   nu separa niciodata prin linii de celula — o face prin panou, prin bila si
+   prin sticla (.features__card: rgba alb .1 + blur 16px + radius 1.25rem).
+   Aici trecem pe sticla si decalam cardurile pe verticala: decalajul singur
+   desface senzatia de grila. Doar pe signature; restul raman cum sunt. */
+.is-signature .dossier-reasons__grid {
+    border-top: 0;
+    gap: 20px;
+    align-items: start;
+}
+.is-signature .dossier-reason {
+    min-height: 0;
+    padding: 30px 28px 34px;
+    border: 0;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, .06);
+    backdrop-filter: blur(16px);
+}
+.is-signature .dossier-reason + .dossier-reason { border-left: 0; }
+/* Decalajul pe verticala rupea prea tare randul: cardurile pareau aruncate,
+   nu asezate. Raman pe aceeasi linie, iar diferenta fata de tabelul de dinainte
+   o face sticla si spatiul dintre ele, nu pozitia. */
+.is-signature .dossier-reasons__grid { align-items: stretch; }
+.is-signature .dossier-reason h3 { margin: 1.5rem 0 .9rem; }
+.is-signature .dossier-reason:hover { background: rgba(255, 255, 255, .09); }
+/* inelul de 1px devine bila sitului: umplutura difuza, nu contur */
+.is-signature .dossier-reason::after {
+    width: 180px; height: 180px;
+    right: -90px; bottom: -90px;
+    border: 0;
+    background-color: rgba(55, 74, 109, .5);
+    filter: blur(64px);
+}
+
+/* .signature-room__facts era al doilea tabel: border-top + border-bottom, plus
+   border-left intre spans. Acelasi tratament de sticla, fara linii. */
+.is-signature .signature-room__facts {
+    gap: 12px;
+    border-top: 0;
+    border-bottom: 0;
+}
+.is-signature .signature-room__facts span {
+    padding: 18px 20px;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, .06);
+    backdrop-filter: blur(16px);
+}
+.is-signature .signature-room__facts span + span {
+    padding-left: 20px;
+    border-left: 0;
+}
+
+/* al treilea tabel: randurile de provenienta. Raman lista, dar linia devine
+   discreta si nu mai taie toata latimea. */
+.is-signature .dossier-trust__list { border-top: 0; }
+.is-signature .dossier-trust__row { border-bottom: 1px solid var(--d-line-soft); }
+.is-signature .dossier-trust__row:last-child { border-bottom: 0; }
+
+/* Carusela reluata din s580.html (.carousel-track / .carousel-nav): pista care
+   gliseaza, slide-uri care pot fi si video, sageti in ambele sensuri. Acolo era
+   scrisa direct in pagina; aici traieste in foaia de stil si e legata la date. */
+.dossier-carousel { position: absolute; inset: 0; display: flex; height: 100%; transition: transform .55s cubic-bezier(.2,.8,.2,1); }
+.dossier-carousel__slide { position: relative; flex: 0 0 100%; min-width: 100%; height: 100%; }
+.dossier-carousel__slide img,
+.dossier-carousel__slide video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.dossier-carousel__nav {
+    position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
+    display: grid; place-content: center; width: 54px; height: 54px;
+    border: 1px solid rgba(255,255,255,.35); border-radius: 50%;
+    background: rgba(5,7,11,.6); color: white; font-size: 1.2rem; cursor: pointer;
+    transition: background .25s ease, color .25s ease;
+}
+.dossier-carousel__nav:hover { background: white; color: var(--d-bg); }
+.dossier-carousel__nav--prev { left: 24px; }
+/* sageata "next" existenta se muta din colt in axa verticala, ca sa faca pereche */
+.is-signature .dossier-gallery__next { top: 50%; bottom: auto; transform: translateY(-50%); }
+/* miniatura clipului se anunta ca atare */
+.dossier-thumb--video::after {
+    content: "B6";
+    position: absolute; inset: 0;
+    display: grid; place-content: center;
+    color: white; font-size: .8rem;
+    background: rgba(5,7,11,.35);
+}
+
 .dossier-gallery { padding-bottom: 150px; }
-.dossier-gallery__stage { position: relative; aspect-ratio: 16 / 8.4; overflow: hidden; border: 1px solid var(--d-line-soft); border-radius: 1.25rem; background: #0a0c11; }
+.dossier-gallery__stage { position: relative; aspect-ratio: 16 / 8.4; overflow: hidden; border: 1px solid var(--d-line-soft); border-radius: 1.25rem; background: var(--d-panel); }
 .dossier-gallery__stage img { width: 100%; height: 100%; object-fit: cover; transition: opacity .3s ease, transform .55s cubic-bezier(.2,.8,.2,1); }
 .dossier-gallery__stage.is-changing img { opacity: 0; transform: scale(1.02); }
 .dossier-gallery__index { position: absolute; left: 24px; bottom: 24px; display: flex; gap: .45rem; align-items: baseline; padding: 12px 16px; background: rgba(5,7,11,.68); backdrop-filter: blur(12px); }
 .dossier-gallery__index span:first-child { font-size: 1.25rem; }
 .dossier-gallery__index span:last-child { color: var(--d-muted); font-size: .72rem; }
 .dossier-gallery__next { position: absolute; right: 24px; bottom: 24px; display: grid; place-content: center; width: 54px; height: 54px; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; background: rgba(5,7,11,.6); color: white; font-size: 1.2rem; cursor: pointer; transition: background .25s ease, color .25s ease; }
-.dossier-gallery__next:hover { background: white; color: #05070b; }
+.dossier-gallery__next:hover { background: white; color: var(--d-bg); }
 .dossier-gallery__rail { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 1fr); gap: 8px; overflow-x: auto; padding-top: 8px; scrollbar-width: none; }
 .dossier-gallery__rail::-webkit-scrollbar { display: none; }
-.dossier-thumb { position: relative; aspect-ratio: 1.55; padding: 0; overflow: hidden; border: 1px solid transparent; border-radius: .7rem; background: #0a0c11; cursor: pointer; opacity: .5; transition: opacity .25s ease, border-color .25s ease; }
+.dossier-thumb { position: relative; aspect-ratio: 1.55; padding: 0; overflow: hidden; border: 1px solid transparent; border-radius: var(--d-radius-sm); background: var(--d-panel); cursor: pointer; opacity: .5; transition: opacity .25s ease, border-color .25s ease; }
 .dossier-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
 .dossier-thumb:hover, .dossier-thumb.is-active { opacity: 1; border-color: var(--d-blue); }
 .dossier-thumb:hover img { transform: scale(1.04); }
 
-.dossier-trust { padding-block: 120px; background: #eef1f4; color: #111722; }
-.dossier-trust .eyebrow { color: #356dcc; }
-.dossier-trust h2 { color: #111722; }
+/* Era o banda deschisa la culoare, iar situl nu are nicio sectiune deschisa,
+   nicaieri. Devine un panou intunecat, ca restul sistemului: separarea de
+   ritm o face panoul, nu inversarea de luminozitate. */
+.dossier-trust { padding-block: 120px; background: var(--d-panel); color: var(--d-text); }
+.dossier-trust .eyebrow { color: var(--d-blue); }
+.dossier-trust h2 { color: var(--d-text); }
 .dossier-trust__grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 120px; }
 .dossier-trust .dossier-section-heading { margin: 0; }
-.dossier-trust .dossier-section-heading > p:last-child { color: #667080; }
-.dossier-trust__list { margin: 0; border-top: 1px solid rgba(17,23,34,.18); }
-.dossier-trust__row { display: grid; grid-template-columns: 1fr 1.3fr; gap: 2rem; padding: 22px 0; border-bottom: 1px solid rgba(17,23,34,.14); }
-.dossier-trust__row dt { color: #707989; font-size: .64rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.dossier-trust .dossier-section-heading > p:last-child { color: var(--d-muted); }
+.dossier-trust__list { margin: 0; border-top: 1px solid var(--d-line); }
+.dossier-trust__row { display: grid; grid-template-columns: 1fr 1.3fr; gap: 2rem; padding: 22px 0; border-bottom: 1px solid var(--d-line-soft); }
+.dossier-trust__row dt { color: var(--d-muted); font-size: .64rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .dossier-trust__row dd { margin: 0; font-size: .92rem; font-weight: 600; }
 
 .dossier-specifications { padding-block: 140px; }
@@ -235,7 +502,7 @@ body.dossier-page {
 .dossier-accordion summary { min-height: 92px; display: grid; grid-template-columns: 55px 1fr auto; align-items: center; gap: 1rem; list-style: none; cursor: pointer; }
 .dossier-accordion summary::-webkit-details-marker { display: none; }
 .dossier-accordion__number { color: var(--d-blue); font-size: .65rem; letter-spacing: .15em; }
-.dossier-accordion summary h3 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.65rem); font-weight: 480; letter-spacing: -.03em; }
+.dossier-accordion summary h3 { margin: 0; font-size: clamp(1.25rem, 2vw, 1.65rem); font-weight: var(--font-semi-bold); letter-spacing: -.03em; }
 .dossier-accordion summary i { font-size: 1.25rem; transition: transform .3s ease; }
 .dossier-accordion[open] summary i { transform: rotate(45deg); }
 .dossier-accordion__content { padding: 0 0 38px 55px; }
@@ -244,29 +511,108 @@ body.dossier-page {
 .dossier-spec-row span:first-child { color: var(--d-muted); }
 .dossier-spec-row span:last-child { text-align: right; }
 .dossier-feature-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; margin: 0; padding: 0; list-style: none; }
-.dossier-feature-list li { position: relative; padding: 14px 0 14px 24px; border-bottom: 1px solid var(--d-line-soft); color: #d7dbe1; }
+.dossier-feature-list li { position: relative; padding: 14px 0 14px 24px; border-bottom: 1px solid var(--d-line-soft); color: var(--text-color); }
 .dossier-feature-list li::before { content: ""; position: absolute; left: 0; top: 1.3rem; width: 6px; height: 6px; border-radius: 50%; background: var(--d-blue); }
 
 .dossier-related { padding-bottom: 150px; }
 .dossier-text-link { display: inline-flex; align-items: center; gap: .75rem; color: white; font-size: .7rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .dossier-related__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .dossier-related-card { display: block; color: white; }
-.dossier-related-card__media { aspect-ratio: 1.35; overflow: hidden; background: #0b0e14; }
+.dossier-related-card__media { aspect-ratio: 1.35; overflow: hidden; background: var(--d-panel); }
 .dossier-related-card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .65s cubic-bezier(.2,.8,.2,1); }
 .dossier-related-card:hover img { transform: scale(1.045); }
 .dossier-related-card__body { display: grid; grid-template-columns: 1fr auto; gap: .65rem 1rem; padding: 22px 2px 0; }
 .dossier-related-card__body p { margin: 0; color: var(--d-muted); font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; }
-.dossier-related-card__body h3 { grid-column: 1; margin: 0; font-size: 1.25rem; font-weight: 480; }
+.dossier-related-card__body h3 { grid-column: 1; margin: 0; font-size: 1.25rem; font-weight: var(--font-semi-bold); }
 .dossier-related-card__body strong { grid-row: 2; grid-column: 2; font-size: .86rem; font-weight: 600; }
 
-.dossier-final { position: relative; min-height: 600px; display: grid; place-content: center; overflow: hidden; background: var(--d-blue-strong); }
-.dossier-final::before, .dossier-final::after { content: ""; position: absolute; width: 560px; height: 560px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; }
-.dossier-final::before { left: -260px; top: -260px; }
-.dossier-final::after { right: -280px; bottom: -330px; }
-.dossier-final__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; }
-.dossier-final .eyebrow { color: rgba(255,255,255,.76); }
-.dossier-final h2 { max-width: 980px; font-size: clamp(3rem, 7vw, 7rem); }
-.dossier-final p:not(.eyebrow) { max-width: 550px; color: rgba(255,255,255,.75); line-height: 1.65; }
+/* Incheierea urmeaza sectiunea .offer din index.html, nu inventeaza alta forma:
+   fundal inchis, text la stanga, masina decupata la dreapta. Reteta desktop de
+   acolo e grid 2 coloane, column-gap 5rem, align-items center, imagine 450px. */
+.dossier-final { position: relative; overflow: hidden; background: var(--d-bg); }
+.dossier-final__container { display: grid; align-items: center; padding-block: 90px; }
+.dossier-final__data { position: relative; z-index: 1; }
+.dossier-final__car { justify-self: center; width: min(100%, 460px); height: auto; }
+@media (min-width: 1023px) {
+    /* Masina iese din cadru spre dreapta, ca .offer__img din index.html
+       (position absolute, max-width initial, right negativ). Depasirea marginii
+       e ce o face sa para mare; incadrata cuminte in coloana, arata mica.
+       Se pozitioneaza fata de .dossier-final, NU fata de container: containerul
+       e grid, iar un copil absolut dintr-un grid se raporteaza la celula lui,
+       ceea ce o trimitea sub text si o taia sus. */
+    .dossier-final__container { padding-block: 84px; min-height: 720px; }
+    .dossier-final__data { max-width: 540px; }
+    .dossier-final__data > p:not(.eyebrow) { padding-right: 2rem; }
+    .dossier-final__car {
+        position: absolute;
+        z-index: 0;
+        right: -4vw;
+        bottom: 0;
+        /* Dimensionata pe INALTIME, nu pe latime: pozele de card merg de la
+           raport 0.98 (BMW M3) la 1.71 (Taycan), asa ca o latime fixa le taie
+           pe unele si le lasa pitice pe altele. Pe inaltime, toate ocupa
+           aceeasi banda verticala si latimea se aseaza singura. */
+        width: auto;
+        /* --car-cap vine din JS: inaltimea sursei x 1.45. Pozele de card au fost
+           facute pentru carduri de 180px (unele au 369x188), deci fara plafon
+           unele s-ar intinde de 2.7 ori si ar iesi moi. Cine are sursa mare
+           creste pana la 520px, cine are sursa mica se opreste mai devreme.
+           max-width tine masina la dreapta titlului, indiferent de raport. */
+        height: min(clamp(320px, 46vw, 640px), var(--car-cap, 640px));
+        max-width: 52vw;
+        object-fit: contain;
+        object-position: right bottom;
+        justify-self: initial;
+    }
+    /* plasa de siguranta: daca masina se apropie de text pe latimi intermediare,
+       textul ramane lizibil fara sa fie nevoie de alt breakpoint */
+    .dossier-final::after {
+        content: "";
+        position: absolute;
+        inset: 0 40% 0 0;
+        z-index: 0;
+        background: linear-gradient(90deg, var(--d-bg) 30%, transparent 100%);
+        pointer-events: none;
+    }
+}
+/* Titlul de incheiere nu are nevoie de corpul de erou: la 4.6rem intr-o coloana
+   se rupea in patru randuri. Ramane display, dar incape in doua-trei. */
+.dossier-final h2 { font-size: clamp(2.1rem, 3.2vw, 3.9rem); }
+/* Oglindirea asezarii pentru masinile fotografiate cu botul spre dreapta:
+   textul trece la dreapta, masina la stanga, ca privirea sa intre in pagina.
+   Se oglindesc TOATE cele trei straturi, nu doar masina: voalul care protejeaza
+   textul si bila de lumina sunt pseudo-elemente ale sectiunii, iar daca raman
+   pe stanga ajung sa acopere exact masina pe care trebuia sa o scoata in fata. */
+@media (min-width: 1023px) {
+    .dossier-final.is-mirrored .dossier-final__container { justify-items: end; text-align: right; }
+    .dossier-final.is-mirrored .dossier-final__data > p:not(.eyebrow) { padding-right: 0; padding-left: 2rem; margin-left: auto; }
+    .dossier-final.is-mirrored .dossier-final__car { right: auto; left: -4vw; object-position: left bottom; }
+    .dossier-final.is-mirrored::after { inset: 0 0 0 40%; background: linear-gradient(270deg, var(--d-bg) 30%, transparent 100%); }
+}
+.dossier-final.is-mirrored::before { right: auto; left: 2vw; }
+
+/* Fara decupaj, incheierea ramane doar text: centrat, fara coloana goala unde
+   ar fi trebuit sa stea masina. Arata intentionat, nu ca o poza care lipseste. */
+.dossier-final.is-textonly .dossier-final__container { justify-items: center; text-align: center; }
+.dossier-final.is-textonly .dossier-final__data { max-width: 620px; }
+.dossier-final.is-textonly .dossier-final__data > p:not(.eyebrow) { padding: 0; margin-inline: auto; }
+.dossier-final.is-textonly::after { display: none; }
+.dossier-final.is-textonly::before { right: 50%; transform: translate(50%, -50%); }
+
+/* bila din sit, in spatele masinii, ca sa nu pluteasca pe gol */
+.dossier-final::before {
+    content: "";
+    position: absolute;
+    right: 2vw; top: 54%; transform: translateY(-50%);
+    width: 560px; height: 560px; border-radius: 50%;
+    background-color: rgba(55, 74, 109, .5);
+    filter: blur(112px);
+    pointer-events: none;
+}
+
+.dossier-final .eyebrow { color: var(--d-blue); }
+.dossier-final h2 { max-width: 620px; }
+.dossier-final p:not(.eyebrow) { max-width: 480px; color: var(--text-color); line-height: 1.65; }
 .dossier-final .dossier-button { margin-top: 1.6rem; }
 .dossier-mobile-cta { display: none; }
 
@@ -284,10 +630,7 @@ body.dossier-page {
 
 @media (max-width: 767px) {
     .dossier-page .container { width: calc(100% - 32px); }
-    .dossier-nav { height: 70px; }
-    .dossier-nav .nav__logo img { width: 104px; }
-    .dossier-nav .nav__menu { background: #080b10; }
-    .dossier-nav .nav__link { font-size: .8rem; }
+    .dossier-nav .nav__menu { background: var(--d-bg); }
     .dossier-hero { min-height: 820px; }
     .dossier-hero__image { object-position: 62% center; }
     .dossier-hero__veil { background: linear-gradient(0deg, rgba(3,5,8,.96) 0%, rgba(3,5,8,.65) 48%, rgba(3,5,8,.1) 75%); }
