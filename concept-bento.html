@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept C — Bento · Car Zone</title>
+
+<!-- Foile de stil reale ale sitului. Grila si heroul nu sunt imitate aici,
+     sunt exact componentele de pe stoc.html, cu acelasi CSS. -->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="stylesheet" href="assets/css/styles-stoc.css">
+
+<style>
+/* Singura interventie asupra grilei vechi, si e doar pe container, nu pe card:
+   containerul original are 1024px, deci 3 coloane — cu 55 de masini ies 19 randuri.
+   Celula ramane 248px si distantele raman 4rem/2rem, exact ca in regula originala. */
+#stoc .container{max-width:1560px;margin-inline:auto;padding-inline:1.5rem}
+#stoc .featured__content{grid-template-columns:repeat(auto-fill,248px);gap:4rem 2rem;justify-content:center}
+/* Doua lucruri decaleaza pretul intre carduri vecine, si niciunul nu se vede pe
+   index, unde sunt 5 masini cu nume scurte: subtitlul trece pe doua randuri la
+   "G90 Long Wheelbase", iar imaginea n-are inaltime fixa, deci fiecare decupaj
+   ocupa cat vrea. Rezervam doua randuri si o caseta de imagine constanta. */
+#stoc .featured__subtitle{display:block;min-height:calc(var(--normal-font-size) * 2 * 1.4)}
+#stoc .featured__img{height:130px;object-fit:contain;margin:1.5rem auto;display:block}
+
+/* Restul e doar pentru bento si pentru bara de concept. */
+.concept-flag{position:sticky;top:0;z-index:200;display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+  padding:9px 24px;background:hsl(219,69%,56%);color:#fff;
+  font-family:"Avenir Next","Segoe UI",system-ui,sans-serif;
+  font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600}
+.concept-flag span{opacity:.82;text-transform:none;letter-spacing:.02em;font-weight:400}
+.concept-flag .right{margin-left:auto;display:flex;gap:18px}
+.concept-flag .right a{color:#fff;border-bottom:1px solid rgba(255,255,255,.5)}
+
+#bento{--b-blue:hsl(219,69%,56%);--b-title:hsl(219,8%,95%);--b-text:hsl(219,8%,75%);
+  --b-dim:hsl(219,4%,52%);--b-tile:hsl(219,14%,9%);--b-line:hsl(219,16%,17%);
+  padding:78px 0 96px;border-top:1px solid var(--b-line)}
+#bento .head{margin-bottom:34px}
+#bento .kicker{color:var(--b-blue);font-size:.66rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+#bento h2{margin-top:14px;color:var(--b-title);font-size:clamp(1.9rem,3.6vw,3rem);
+  font-weight:600;letter-spacing:-.035em;line-height:1.05}
+#bento .head p{margin-top:14px;max-width:580px;color:var(--b-dim);font-size:.95rem;line-height:1.7}
+
+#bento .bento{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+#bento .t{position:relative;overflow:hidden;padding:24px;border:1px solid var(--b-line);
+  border-radius:1.15rem;background:var(--b-tile);display:flex;flex-direction:column;
+  justify-content:flex-end;min-height:168px}
+#bento .t .lbl{color:var(--b-dim);font-size:.64rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+#bento .t .big{color:var(--b-title);font-size:clamp(2rem,3.4vw,3.1rem);font-weight:600;
+  letter-spacing:-.045em;line-height:1;font-variant-numeric:tabular-nums}
+#bento .t .note{margin-top:9px;color:var(--b-text);font-size:.84rem;line-height:1.5}
+#bento .t .lbl+.big{margin-top:10px}
+
+#bento .t.wide{grid-column:span 3}
+#bento .t.half{grid-column:span 2}
+#bento .t.tall{grid-column:span 2;grid-row:span 2;min-height:352px}
+
+#bento .t.photo img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+#bento .t.photo::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(4,6,9,.12) 0%,rgba(4,6,9,.82) 62%,rgba(4,6,9,.96) 100%)}
+#bento .t.photo > :not(.bg){position:relative;z-index:2}
+
+/* 20 de miniaturi, 5x4, umplu placa exact */
+#bento .mosaic{position:absolute;inset:0;z-index:0;display:grid;
+  grid-template-columns:repeat(5,1fr);grid-template-rows:repeat(4,1fr);opacity:.5}
+#bento .mosaic img{width:100%;height:100%;object-fit:cover;display:block}
+#bento .t.count::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(4,6,9,.6) 0%,rgba(4,6,9,.9) 58%,rgba(4,6,9,.98) 100%)}
+/* fara :not(.mosaic) regula asta suprascrie position:absolute si mozaicul nu mai umple placa */
+#bento .t.count > :not(.mosaic){position:relative;z-index:2}
+
+#bento .span{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+#bento .span .to{flex:1;min-width:26px;height:1px;align-self:center;
+  background:linear-gradient(90deg,var(--b-blue),hsl(219,16%,22%))}
+
+#bento .marques{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+#bento .marques img{width:26px;height:26px;object-fit:contain;opacity:.7;filter:grayscale(1) brightness(1.7)}
+
+#bento .fuelbar{display:flex;height:7px;border-radius:5px;overflow:hidden;
+  margin-bottom:14px;background:hsl(219,16%,18%)}
+#bento .fuelbar i{display:block;height:100%}
+#bento a.more{margin-top:12px;color:var(--b-blue);font-size:.78rem;text-decoration:none}
+
+@media(max-width:900px){
+  #bento .bento{grid-template-columns:repeat(2,1fr)}
+  #bento .t.wide,#bento .t.half,#bento .t.tall{grid-column:span 2}
+  #bento .t.tall{grid-row:auto;min-height:260px}
+}
+</style>
+</head>
+<body>
+
+<div class="concept-flag">Concept C — Bento
+  <span>hero si grila sunt componentele reale, cu CSS-ul real; bento-ul e nou</span>
+  <span class="right">
+    <a href="#bento">Sari la bento ↓</a>
+    <a href="concept-inventar.html">Concept A</a>
+    <a href="concept-showroom.html">Concept B</a>
+  </span>
+</div>
+
+<!--==================== HERO ====================-->
+<!-- Stilurile heroului traiesc sub .stock-page in styles-stoc.css, deci il
+     impachetam. Grila ramane in afara, ca sa primeasca stilul vechi de card. -->
+<div class="stock-page">
+<section class="video-section">
+    <div class="video-container">
+        <video autoplay loop muted playsinline preload="metadata" class="video-bg" aria-hidden="true">
+            <source src="assets/img/s63amg.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-content container">
+            <p class="video-eyebrow">CarZone curated selection</p>
+            <h1 class="video-title">Inventory</h1>
+            <p class="video-subtitle">Fifty-five distinct cars. One clear way to find yours.</p>
+            <a class="video-scroll" href="#inventory-grid">Explore the collection <i class="ri-arrow-down-line" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</section>
+</div>
+
+<!--==================== GRILA ====================-->
+<section class="section" id="stoc" aria-labelledby="stock-heading">
+<div class="featured__container container">
+    <h2 class="section__title" id="stock-heading">The complete collection</h2>
+    <div class="featured__content grid" id="inventory-grid"></div>
+</div>
+</section>
+
+<!--==================== BENTO ====================-->
+<section id="bento">
+  <div class="container">
+    <div class="head">
+      <p class="kicker">Ce inseamna Car Zone</p>
+      <h2>Recapitulare, nu inca o grila.</h2>
+      <p>Fiecare placa raspunde la o singura intrebare despre stoc, iar cifrele se citesc din
+         <code>cars.json</code> — deci nu pot ramane in urma fata de inventar.</p>
+    </div>
+    <div class="bento" id="bento-grid"></div>
+  </div>
+</section>
+
+<script>
+const n = s => Number(String(s ?? '').replace(/[^0-9.]/g,'')) || 0;
+const eur = v => '€' + v.toLocaleString('en-US');
+
+// Clasele de filtrare de pe stoc.html, ca sa fie acelasi markup, inclusiv typo-ul "gennesis".
+const MIX = { 'Mercedes-Benz':'mercedes', 'Alfa Romeo':'alfa-romeo', 'Genesis':'gennesis',
+              'Chevrolet':'corvette' };
+const mix = m => MIX[m] || m.toLowerCase().replace(/\s+/g,'-');
+const logo = m => 'assets/img/brands/' +
+  ({'Mercedes-Benz':'mercedes','Alfa Romeo':'alfa-romeo'}[m] || m.toLowerCase().replace(/\s+/g,'-')) + '.png';
+
+fetch('assets/data/cars.json').then(r => r.json()).then(data => {
+  // Cardul vrea decupajul PNG din `image`, nu fotografia dreptunghiulara din galerie:
+  // decupajul pluteste pe cartonul albastru, fotografia aduce cu ea o parcare.
+  // Doua masini au image:"" in date (porsche-911-turbo-s, mercedes-c43-amg), desi
+  // stoc.html le deseneaza cu popular1.png si mercedes-c63-w206.png. Pana se umple
+  // campul, cad pe galerie si se vede diferenta.
+  const thumb = c => c.image || (c.images && c.images[0]) || '';
+  // Placile bento vor invers: fotografie dreptunghiulara care umple cadrul,
+  // nu un decupaj pe fundal transparent.
+  const photo = c => (c.images && c.images[0]) || c.image || '';
+  const cars = Object.entries(data).map(([id,c]) => ({ id, ...c, hp:n(c.power), pr:n(c.price) }));
+
+  /* ── grila, exact markup-ul de pe stoc.html ── */
+  document.getElementById('inventory-grid').innerHTML = cars.map(c => {
+    const name = `${c.make} ${c.model}`;
+    const url  = c.id === 'mercedes-s580' ? 's580.html' : `car-detail.html?id=${c.id}`;
+    return `
+    <article class="featured__card mix ${mix(c.make)}">
+        <div class="shape shape__smaller" aria-hidden="true"></div>
+        <h3 class="featured__title">${c.make}</h3>
+        <h3 class="featured__subtitle">${c.model}</h3>
+        <a href="${url}" tabindex="-1" aria-hidden="true"><img src="${thumb(c)}" alt="${name}" class="featured__img" loading="lazy" decoding="async"></a>
+        <h3 class="featured__price">${eur(c.pr)}</h3>
+        <a href="${url}" class="button featured__button" aria-label="${name} — view details">
+            <i class="ri-shopping-bag-2-line" aria-hidden="true"></i>
+        </a>
+    </article>`;
+  }).join('');
+
+  /* ── cifrele placilor, toate calculate ── */
+  const top   = cars.slice().sort((a,b) => b.hp - a.hp)[0];
+  const cheap = cars.slice().sort((a,b) => a.pr - b.pr)[0];
+  const dear  = cars.slice().sort((a,b) => b.pr - a.pr)[0];
+  const makes = [...new Set(cars.map(c => c.make))];
+  const years = cars.map(c => c.year);
+  const shots = cars.reduce((s,c) => s + (c.images?.length || 0), 0);
+  const clips = cars.filter(c => c.video).length;
+  const fuel  = {}; cars.forEach(c => fuel[c.fuel] = (fuel[c.fuel]||0) + 1);
+
+  const mosaic = cars.slice(0, 20)
+    .map(c => `<img src="${photo(c)}" alt="" loading="lazy" decoding="async">`).join('');
+
+  const fuelSeg = [['Petrol','hsl(219,10%,42%)'],['Diesel','hsl(219,10%,28%)'],
+                   ['Hybrid','hsl(160,50%,42%)'],['Electric','hsl(219,69%,56%)']]
+    .map(([k,col]) => `<i style="width:${(fuel[k]||0)/cars.length*100}%;background:${col}"></i>`).join('');
+
+  document.getElementById('bento-grid').innerHTML = `
+    <article class="t tall count">
+      <div class="mosaic">${mosaic}</div>
+      <p class="lbl">In stoc acum</p>
+      <p class="big">${cars.length}</p>
+      <p class="note">masini distincte, fiecare cu pagina si galeria ei</p>
+    </article>
+
+    <article class="t tall photo">
+      <img class="bg" src="${photo(top)}" alt="${top.make} ${top.model}" loading="lazy" decoding="async">
+      <p class="lbl">Cea mai puternica</p>
+      <p class="big">${top.hp} CP</p>
+      <p class="note">${top.make} ${top.model}</p>
+    </article>
+
+    <article class="t tall photo">
+      <img class="bg" src="assets/img/s/1.jpg" alt="Mercedes-Benz S580" loading="lazy" decoding="async">
+      <p class="lbl">O singura prezentare dedicata</p>
+      <p class="big">S580</p>
+      <p class="note">singura masina cu fotografie de studio, nu de arhiva</p>
+    </article>
+
+    <article class="t wide">
+      <p class="lbl">De la accesibil la exceptie</p>
+      <div class="span" style="margin-top:10px">
+        <span class="big">${eur(cheap.pr)}</span><span class="to"></span><span class="big">${eur(dear.pr)}</span>
+      </div>
+      <p class="note">${cheap.make} ${cheap.model} · ${dear.make} ${dear.model}</p>
+    </article>
+
+    <article class="t wide">
+      <div class="marques">${makes.map(m => `<img src="${logo(m)}" alt="${m}" loading="lazy">`).join('')}</div>
+      <p class="lbl">Marci reprezentate</p>
+      <p class="big">${makes.length}</p>
+    </article>
+
+    <article class="t half">
+      <div class="fuelbar">${fuelSeg}</div>
+      <p class="lbl">Electrificare</p>
+      <p class="big">${fuel.Electric||0} + ${fuel.Hybrid||0}</p>
+      <p class="note">electrice si hibride din ${cars.length}</p>
+    </article>
+
+    <article class="t half">
+      <p class="lbl">Ani de fabricatie</p>
+      <div class="span" style="margin-top:10px">
+        <span class="big">${Math.min(...years)}</span><span class="to"></span><span class="big">${Math.max(...years)}</span>
+      </div>
+    </article>
+
+    <article class="t half">
+      <p class="lbl">Fotografii, toate creditate</p>
+      <p class="big">${shots}</p>
+      <p class="note">${clips} masini au si clip de rulare</p>
+      <a class="more" href="media-credits.html">Vezi sursele →</a>
+    </article>`;
+});
+</script>
+</body>
+</html>
