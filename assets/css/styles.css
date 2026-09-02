@@ -1272,14 +1272,14 @@ html.is-loading body {
   display: flex;
   justify-content: space-between;
   margin-top: .75rem;
-  color: #77727e;
+  color: #72767e;
   font-size: .58rem;
   letter-spacing: .16em;
   text-transform: uppercase;
 }
 
 .hero-loader__count {
-  color: #aaa5b2;
+  color: #a5aab2;
   font-variant-numeric: tabular-nums;
 }
 
@@ -1301,8 +1301,8 @@ html.is-loading body {
   isolation: isolate;
   overflow: hidden;
   background:
-    radial-gradient(circle at 82% 52%, rgba(105, 70, 142, .2), transparent 42%),
-    linear-gradient(118deg, #0c1017 0%, #0c0c12 43%, #171021 100%);
+    radial-gradient(circle at 82% 52%, rgba(55, 74, 109, .28), transparent 42%),
+    linear-gradient(118deg, #0c1017 0%, #0b0e14 43%, #101a26 100%);
 }
 
 .home-page .home::after {
@@ -1310,7 +1310,7 @@ html.is-loading body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(90deg, transparent 42%, rgba(85, 45, 112, .08));
+  background: linear-gradient(90deg, transparent 42%, rgba(55, 74, 109, .12));
   z-index: 0;
 }
 
@@ -1352,7 +1352,7 @@ html.is-loading body {
 
 .home-page .home__eyebrow {
   margin-bottom: .55rem;
-  color: #a9a0b8;
+  color: #a0a8b8;
   font-size: clamp(.65rem, 1.25vw, 1.15rem);
   font-weight: var(--font-medium);
   letter-spacing: .08em;
@@ -1361,14 +1361,14 @@ html.is-loading body {
 
 .home-page .home__title {
   margin-bottom: .85rem;
-  color: #d7d0df;
+  color: #d0d5df;
   font-size: clamp(2rem, 4vw, 4.6rem);
   line-height: .95;
   white-space: nowrap;
 }
 
 .home-page .home__elec {
-  color: #928a9f;
+  color: #8a919f;
   font-size: clamp(.75rem, 1.25vw, 1.2rem);
 }
 
@@ -1400,7 +1400,7 @@ html.is-loading body {
   border-radius: 50%;
   pointer-events: none;
   transform-origin: center;
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, .86) 0 7%, rgba(116, 236, 255, .36) 19%, rgba(72, 156, 255, .12) 42%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, .86) 0 7%, rgba(90, 142, 230, .36) 19%, rgba(72, 156, 255, .12) 42%, transparent 70%);
   filter: blur(7px);
   mix-blend-mode: screen;
 }
@@ -1421,7 +1421,7 @@ html.is-loading body {
   pointer-events: none;
   opacity: 0;
   transform: skewX(-10deg);
-  background: linear-gradient(90deg, transparent, rgba(153, 238, 255, .27), rgba(255, 255, 255, .54), transparent);
+  background: linear-gradient(90deg, transparent, rgba(90, 142, 230, .27), rgba(255, 255, 255, .54), transparent);
   filter: blur(12px);
 }
 
@@ -1444,18 +1444,18 @@ html.is-loading body {
   align-self: center;
   margin: 0;
   padding: .6rem;
-  color: #b5acc2;
+  color: #acb4c2;
   background: rgba(255, 255, 255, .035);
 }
 
 .home-page .home__car-number {
   margin: 0;
-  color: #cfc7d8;
+  color: #c7cdd8;
   font-size: clamp(.65rem, 1.15vw, 1.1rem);
 }
 
 .home-page .home__car-name {
-  color: #645d70;
+  color: #5d6470;
   font-size: clamp(.42rem, .58vw, .58rem);
 }
 
@@ -1485,7 +1485,7 @@ html.is-loading body {
 }
 
 .home-page .home__tech-title {
-  color: #f2eff7;
+  color: #eff2f7;
   /* "Uncompromised." e un singur cuvant de ~425px la marimea veche si nu se
      poate rupe, asa ca intra peste masina dupa ce se termina animatia de
      intrare. In romana, "Fara compromis." e mai scurt si nu ajungea acolo.
@@ -1500,7 +1500,7 @@ html.is-loading body {
   align-items: center;
   gap: .75rem;
   margin-top: 1.55rem;
-  color: #8b8397;
+  color: #838a97;
   font-size: clamp(.58rem, .75vw, .74rem);
   letter-spacing: .12em;
 }
@@ -1521,7 +1521,7 @@ html.is-loading body {
   grid-template-columns: auto minmax(5rem, 1fr) auto;
   align-items: center;
   gap: 1rem;
-  color: #696273;
+  color: #626873;
   font-size: .56rem;
   font-weight: var(--font-medium);
   letter-spacing: .16em;

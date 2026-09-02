@@ -424,6 +424,18 @@
     .stock-sort select { flex: 1; }
 }
 
+/* Culoarea sta in interiorul subtitlului, nu ca element separat: cardul are un
+   sablon de grila cu numar fix de randuri, iar un copil in plus l-ar decala,
+   exact problema care facea imaginea S580 mai mica decat vecinele. */
+.stock-page .featured__colour {
+    display: block;
+    margin-top: .3rem;
+    color: var(--text-color-light);
+    font-size: .72rem;
+    font-weight: 400;
+    letter-spacing: .02em;
+}
+
 @media (max-width: 1020px) {
     .stock-page .featured__content { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
