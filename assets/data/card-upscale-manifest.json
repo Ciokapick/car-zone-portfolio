@@ -1,11 +1,11 @@
 {
-  "completedAt": "2026-09-02T13:53:09.551730+00:00",
+  "completedAt": "2026-09-02T17:35:11.404931+00:00",
   "engine": "realesrgan-x4plus",
   "deliveryFactor": 2,
   "webpQuality": 82,
   "imageCount": 53,
-  "assetsImgBytesBefore": 138507040,
-  "assetsImgBytesAfter": 138507040,
+  "assetsImgBytesBefore": 138613890,
+  "assetsImgBytesAfter": 138613890,
   "images": {
     "assets/img/featured1.webp": {
       "inputSize": [
@@ -321,15 +321,15 @@
     },
     "assets/img/gennesisg80.webp": {
       "inputSize": [
-        613,
-        407
+        768,
+        512
       ],
       "outputSize": [
-        1226,
-        814
+        1536,
+        1024
       ],
-      "outputBytes": 75216,
-      "outputSha256": "d139fee83b7986c1d240cb7c827c52e8d6ed353b3f15da04d0ed54cdda3f47c5"
+      "outputBytes": 182066,
+      "outputSha256": "6a3c82fffe80334f6e1fafa403430d617d6b87fcf8aa47f80cee5cde4e209a4b"
     },
     "assets/img/gennesisg90.webp": {
       "inputSize": [

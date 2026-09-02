@@ -335,16 +335,16 @@
     },
     "assets/img/gennesisg80.webp": {
       "sourceSize": [
-        1226,
-        814
+        1536,
+        1024
       ],
       "bounds": [
-        0.0840131,
-        0.3058968,
-        0.9029364,
-        0.8452088
+        0.0260417,
+        0.1708984,
+        0.968099,
+        0.8007812
       ],
-      "visibleAspect": 2.287
+      "visibleAspect": 2.2434
     },
     "assets/img/gennesisg90.webp": {
       "sourceSize": [
