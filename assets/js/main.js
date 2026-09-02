@@ -112,7 +112,10 @@ const sr = ScrollReveal({
     delay: 300,
 });
 
-sr.reveal(`.popular__container, .features__img, .featured__filters`);
+// .features__img si .features__map nu mai trec pe aici: intrarea lor o face
+// acum o animatie legata de scroll, in CSS. Daca ar ramane si sub
+// ScrollReveal, cele doua ar scrie amandoua in transform si s-ar bate.
+sr.reveal(`.popular__container, .featured__filters`);
 
 /* The homepage hero has its own GSAP sequence. Keep the legacy entrance as a
    graceful fallback if GSAP cannot load. */
@@ -126,9 +129,36 @@ if (!document.body.classList.contains('home-page') || !window.gsap) {
 }
 sr.reveal(`.about__group, .offer__data`, { origin: 'left' });
 sr.reveal(`.about__data, .offer__img`, { origin: 'right' });
-sr.reveal(`.features__map`, { delay: 600, origin: 'bottom' });
+
 sr.reveal(`.features__card`, { interval: 300 });
 sr.reveal(`.featured__card, .logos__content, .footer__content`, { interval: 100 });
 /* Specific pentru logo-uri și footer */
 sr.reveal(`.logos__container`, { delay: 300, duration: 2000, origin: 'bottom' });
 sr.reveal(`.footer__content`, { interval: 100, duration: 2000, origin: 'bottom' });
+
+/*=============== FEATURES — DECLANSATOR PENTRU ZOOM ===============*/
+// .anim-ready arma animatia, .is-inview o porneste. Ordinea conteaza: fara
+// .anim-ready nu exista stare de start, deci daca scriptul nu ruleaza sau
+// IntersectionObserver lipseste, sectiunea se vede normal in loc sa ramana goala.
+(() => {
+    const section = document.querySelector('.features');
+    if (!section || !('IntersectionObserver' in window)) return;
+
+    section.classList.add('anim-ready');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            section.classList.add('is-inview');
+            observer.disconnect();
+        });
+    // Un sfert din sectiune vizibil: destul cat miscarea sa se vada in cadru,
+    // nu dupa ce utilizatorul a trecut deja de ea.
+    }, { threshold: 0.25 });
+
+    observer.observe(section);
+
+    // Plasa de siguranta: daca sectiunea e deja pe ecran la incarcare, sau
+    // observatorul nu apuca sa raporteze, o aratam oricum.
+    window.setTimeout(() => section.classList.add('is-inview'), 2500);
+})();
