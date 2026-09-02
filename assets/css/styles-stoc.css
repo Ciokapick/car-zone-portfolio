@@ -284,30 +284,27 @@
     align-items: start;
 }
 
-/* Pozele sursa (decupaje pe fundal intunecat/transparent) vin la rezolutii
-   (~324px pana la ~1262px latime) si proportii (~0.98 patrat pana la ~2.3
-   panoramic) foarte diferite, iar masina ocupa un procent diferit din fiecare
-   cadru. Cu doar max-height (varianta veche), latimea era fixa dar inaltimea
-   urma raportul propriu al fiecarei imagini -- deci fiecare masina iesea la o
-   inaltime randata diferita si nu impartea aceeasi banda verticala.
-   height fix (nu max-height) + object-fit:contain = aceeasi cutie pentru toate
-   cardurile, fara taiere si fara distorsiune, oricare ar fi sursa. object-position
-   tine masina lipita de aceeasi "linie de sol" in cutie, in loc sa pluteasca la
-   inaltimi diferite intre carduri. width ramane limitata (min(100%,230px)) ca o
-   masina panoramica (ex. Taycan, ~1.71) sa nu depaseasca latimea cardului, iar
-   inaltimea fixa face ca una aproape patrata (ex. BMW M3, ~0.98) sa nu para mica. */
+/* Cutia ramane identica, iar inventory-filter.js compenseaza spatiul transparent
+   diferit din fiecare sursa folosind bounding-box-ul alpha pre-calculat. Astfel
+   normalizam masa vizuala si linia rotilor, nu doar dimensiunea tagului img. */
 .stock-page .featured__img {
+    --vehicle-x: 0px;
+    --vehicle-y: 0px;
+    --vehicle-scale: 1;
+    --vehicle-scale-hover: 1.025;
     width: min(100%, 230px);
     height: 150px;
     margin: 1rem auto 0;
     object-fit: contain;
     object-position: center bottom;
+    transform: translate3d(var(--vehicle-x), var(--vehicle-y), 0) scale(var(--vehicle-scale));
+    transform-origin: 0 0;
     filter: drop-shadow(0 17px 12px rgba(0, 0, 0, .48));
     transition: transform .3s ease, filter .3s ease;
 }
 
 .stock-page .featured__card:hover .featured__img {
-    transform: translateY(-4px) scale(1.025);
+    transform: translate3d(var(--vehicle-x), calc(var(--vehicle-y) - 4px), 0) scale(var(--vehicle-scale-hover));
     filter: drop-shadow(0 23px 17px rgba(0, 0, 0, .6));
 }
 

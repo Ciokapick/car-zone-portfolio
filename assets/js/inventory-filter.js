@@ -30,6 +30,80 @@ document.addEventListener('DOMContentLoaded', () => {
         return link ? new URL(link.getAttribute('href'), location.href).searchParams.get('id') : null;
     };
 
+    // Imaginile au canvase si spatii transparente foarte diferite. Aceeasi
+    // cutie CSS de 230x150 nu inseamna aceeasi marime perceputa a masinii.
+    // Metadatele sunt calculate offline din alpha; aici normalizam aria
+    // vizibila, centrul si linia rotilor fara crop sau deformare.
+    let framing = null;
+    let framingFrame = 0;
+
+    const applyVehicleFraming = (image) => {
+        if (!framing || !image.complete || !image.naturalWidth) return;
+        const source = image.getAttribute('src');
+        const frame = framing.images[source];
+        if (!frame) return;
+
+        const boxWidth = image.clientWidth;
+        const boxHeight = image.clientHeight;
+        if (!boxWidth || !boxHeight) return;
+
+        const [sourceWidth, sourceHeight] = frame.sourceSize;
+        const drawScale = Math.min(boxWidth / sourceWidth, boxHeight / sourceHeight);
+        const drawWidth = sourceWidth * drawScale;
+        const drawHeight = sourceHeight * drawScale;
+        const offsetX = (boxWidth - drawWidth) / 2;
+        const offsetY = boxHeight - drawHeight;
+        const [left, top, right, bottom] = frame.bounds;
+        const x1 = offsetX + left * drawWidth;
+        const y1 = offsetY + top * drawHeight;
+        const x2 = offsetX + right * drawWidth;
+        const y2 = offsetY + bottom * drawHeight;
+        const visibleWidth = Math.max(1, x2 - x1);
+        const visibleHeight = Math.max(1, y2 - y1);
+        const rules = framing.normalization;
+        const targetArea = boxWidth * boxHeight * rules.targetAreaRatio;
+        const areaScale = Math.sqrt(targetArea / (visibleWidth * visibleHeight));
+        const scale = Math.min(
+            areaScale,
+            (boxWidth * rules.maxWidthRatio) / visibleWidth,
+            (boxHeight * rules.maxHeightRatio) / visibleHeight
+        );
+        const translateX = boxWidth / 2 - scale * ((x1 + x2) / 2);
+        const translateY = boxHeight * rules.baselineRatio - scale * y2;
+
+        image.style.setProperty('--vehicle-x', `${translateX.toFixed(2)}px`);
+        image.style.setProperty('--vehicle-y', `${translateY.toFixed(2)}px`);
+        image.style.setProperty('--vehicle-scale', scale.toFixed(4));
+        image.style.setProperty('--vehicle-scale-hover', (scale * 1.025).toFixed(4));
+    };
+
+    const updateVehicleFraming = () => {
+        cancelAnimationFrame(framingFrame);
+        framingFrame = requestAnimationFrame(() => {
+            cards.forEach((card) => {
+                const image = card.querySelector('.featured__img');
+                if (image) applyVehicleFraming(image);
+            });
+        });
+    };
+
+    fetch('assets/data/inventory-framing.json')
+        .then((response) => {
+            if (!response.ok) throw new Error(`Framing metadata returned ${response.status}`);
+            return response.json();
+        })
+        .then((payload) => {
+            framing = payload;
+            cards.forEach((card) => {
+                const image = card.querySelector('.featured__img');
+                if (image && !image.complete) image.addEventListener('load', updateVehicleFraming, { once: true });
+            });
+            updateVehicleFraming();
+        })
+        .catch((error) => console.warn('Vehicle framing fallback is active.', error));
+
+    window.addEventListener('resize', updateVehicleFraming);
+
     fetch('assets/data/cars.json')
         .then((response) => response.json())
         .then((cars) => {

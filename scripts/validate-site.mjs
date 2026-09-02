@@ -78,6 +78,7 @@ try {
 
 const stock = readFileSync(resolve(root, 'stoc.html'), 'utf8');
 const cars = JSON.parse(readFileSync(resolve(root, 'assets/data/cars.json'), 'utf8'));
+const inventoryFraming = JSON.parse(readFileSync(resolve(root, 'assets/data/inventory-framing.json'), 'utf8'));
 const carIds = Object.keys(cars);
 const stockCardCount = (stock.match(/<article class="featured__card/g) ?? []).length;
 const stockMediaLinkCount = (stock.match(/class="featured__media-link"/g) ?? []).length;
@@ -85,6 +86,7 @@ const stockActionLinkCount = (stock.match(/class="button featured__button"/g) ??
 const stockFilterCount = (stock.match(/class="featured__item[^>]*data-filter=/g) ?? []).length;
 const labelledStockFilterCount = (stock.match(/class="featured__item[^>]*data-filter=[^>]*aria-label=/g) ?? []).length;
 const linkedDossierIds = new Set([...stock.matchAll(/href="dossier\.html\?id=([^"]+)"/g)].map((match) => match[1]));
+const stockImagePaths = [...stock.matchAll(/<img\s+src="([^"]+)"[^>]*class="featured__img"/g)].map((match) => match[1]);
 
 if (stockCardCount !== carIds.length) {
   fail('stoc.html', `expected ${carIds.length} inventory cards, found ${stockCardCount}`);
@@ -108,6 +110,25 @@ for (const id of carIds) {
 }
 for (const id of linkedDossierIds) {
   if (!(id in cars)) fail('stoc.html', `links to unknown vehicle id ${id}`);
+}
+if (stockImagePaths.length !== carIds.length) {
+  fail('stoc.html', `expected ${carIds.length} framed vehicle images, found ${stockImagePaths.length}`);
+}
+if (Object.keys(inventoryFraming.images ?? {}).length !== new Set(stockImagePaths).size) {
+  fail('assets/data/inventory-framing.json', 'framing entries must match the unique inventory image set');
+}
+for (const imagePath of stockImagePaths) {
+  const frame = inventoryFraming.images?.[imagePath];
+  if (!frame) {
+    fail('assets/data/inventory-framing.json', `missing frame for ${imagePath}`);
+    continue;
+  }
+  const validBounds = Array.isArray(frame.bounds)
+    && frame.bounds.length === 4
+    && frame.bounds.every((value) => Number.isFinite(value) && value >= 0 && value <= 1)
+    && frame.bounds[0] < frame.bounds[2]
+    && frame.bounds[1] < frame.bounds[3];
+  if (!validBounds) fail('assets/data/inventory-framing.json', `invalid normalized bounds for ${imagePath}`);
 }
 
 const sitemap = readFileSync(resolve(root, 'sitemap.xml'), 'utf8');
