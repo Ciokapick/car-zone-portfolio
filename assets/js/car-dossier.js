@@ -465,6 +465,240 @@ const reasonsByCar = {
     }
 };
 
+
+// Fraza de sub titlul de incheiere. Inainte, 53 din 55 primeau acelasi rand
+// generat din date ("Un automobil ales pentru proportii, specificatie si felul
+// in care se simte dincolo de fisa tehnica"), adica exact senzatia de text
+// turnat pe banda. Fiecare masina are acum o invitatie proprie: ce merita
+// verificat sau simtit anume la ea, nu o formula.
+const finalNotes = {
+    'tesla-model-x': [
+        "Come and open the falcon doors in a normal parking space, then decide about the third row for yourself.",
+        "Vino să deschizi ușile falcon într-un loc normal de parcare, apoi hotărăște singur în privința rândului trei."
+    ],
+    'tesla-model-y': [
+        "Bring the child seats and the weekly shopping. This one answers questions no spec sheet gets asked.",
+        "Adu scaunele de copil și cumpărăturile de o săptămână. Aici se răspunde la întrebări pe care fișa tehnică nu le primește."
+    ],
+    'tesla-model-s': [
+        "Worth feeling how the acceleration arrives without sound, and how little of it reaches the cabin.",
+        "Merită simțit cum vine accelerația fără sunet și cât de puțin din ea ajunge în habitaclu."
+    ],
+    'mercedes-s580': [
+        "We will confirm the specification, answer the difficult questions and arrange a focused viewing.",
+        "Confirmăm specificația, răspundem la întrebările incomode și programăm o vizionare fără grabă."
+    ],
+    'mercedes-s400d': [
+        "Ask for the long test drive. This is a car that shows its argument after the first hundred kilometres.",
+        "Cere proba lungă. E o mașină care își arată argumentul abia după prima sută de kilometri."
+    ],
+    'mercedes-e55-amg': [
+        "Come and hear the supercharger under load, and check the history of a car this age deserves.",
+        "Vino să auzi compresorul în sarcină și să verifici istoricul pe care o mașină de vârsta asta îl merită."
+    ],
+    'mercedes-g65-amg': [
+        "Sit inside before you judge the numbers. Everything about this car is a deliberate excess.",
+        "Urcă înăuntru înainte să judeci cifrele. Totul la mașina asta e un exces asumat."
+    ],
+    'mercedes-c63-amg': [
+        "Start it cold, in a quiet street. That is the part no photograph carries.",
+        "Pornește-o la rece, pe o stradă liniștită. Aia e partea pe care nicio fotografie nu o duce mai departe."
+    ],
+    'mercedes-c43-amg': [
+        "Drive it in traffic first. The point of this one is how little effort it asks day to day.",
+        "Condu-o întâi prin trafic. Rostul ei e cât de puțin efort cere zi de zi."
+    ],
+    'mercedes-cls63-amg': [
+        "Check the rear headroom yourself, then decide whether the shape was worth the compromise.",
+        "Verifică singur spațiul deasupra capului în spate, apoi hotărăște dacă forma a meritat compromisul."
+    ],
+    'mercedes-s63-smg': [
+        "The mileage is high and the price reflects it. Come and see what that actually bought.",
+        "Kilometrajul e mare și prețul o arată. Vino să vezi ce a însemnat asta de fapt."
+    ],
+    'audi-r8': [
+        "Ask us to start it in the enclosed space. The V10 makes its case before the road does.",
+        "Cere-ne să o pornim în spațiu închis. V10-ul își pledează cauza înainte să o facă drumul."
+    ],
+    'audi-q3': [
+        "Bring what you carry weekly. The question here is whether the size actually fits your life.",
+        "Adu ce cari săptămânal. Întrebarea aici e dacă dimensiunea chiar se potrivește vieții tale."
+    ],
+    'audi-q7': [
+        "Come with the whole family. The third row is either enough for you or it is not.",
+        "Vino cu toată familia. Rândul trei ori îți ajunge, ori nu."
+    ],
+    'audi-rs4': [
+        "Load the boot, then drive it. That contradiction is the entire reason this car exists.",
+        "Umple portbagajul, apoi condu-o. Contradicția asta e tot motivul pentru care mașina există."
+    ],
+    'audi-rs5': [
+        "Take it on a longer road than a test drive usually allows. Ask us and we will arrange it.",
+        "Ia-o pe un drum mai lung decât permite de obicei o probă. Spune-ne și organizăm."
+    ],
+    'audi-rsq8': [
+        "Worth driving back to back with something lower. The comparison is what makes the point.",
+        "Merită condusă imediat după ceva mai jos. Comparația e cea care lămurește."
+    ],
+    'porsche-911-turbo-s': [
+        "Drive it slowly first. How ordinary it feels at low speed is the surprising part.",
+        "Condu-o întâi încet. Cât de obișnuită pare la viteză mică e partea surprinzătoare."
+    ],
+    'porsche-918-spyder': [
+        "Viewings are arranged privately, with the full history available before you travel.",
+        "Vizionările se fac privat, cu tot istoricul disponibil înainte să te deplasezi."
+    ],
+    'porsche-taycan': [
+        "Come and check the charging routine against your week, not against a brochure figure.",
+        "Vino să verifici rutina de încărcare față de săptămâna ta, nu față de o cifră din broșură."
+    ],
+    'porsche-turbo-s-cross': [
+        "Bring the dog, the skis, whatever normally rules a car out. That is the test here.",
+        "Adu câinele, schiurile, orice exclude de obicei o mașină. Ăsta e testul aici."
+    ],
+    'porsche-boxster-718': [
+        "Ask for a day with the roof down. A roadster is not decided in twenty minutes.",
+        "Cere o zi cu plafonul jos. Un roadster nu se hotărăște în douăzeci de minute."
+    ],
+    'porsche-cayman': [
+        "Drive it on a road with corners. On a straight line it tells you almost nothing.",
+        "Condu-o pe un drum cu viraje. În linie dreaptă nu-ți spune aproape nimic."
+    ],
+    'lotus-emira': [
+        "Cars like this stop being made. Come and understand why before the decision gets easier.",
+        "Mașinile ca asta nu se mai fac. Vino să înțelegi de ce, înainte ca decizia să devină ușoară."
+    ],
+    'lotus-seletre': [
+        "Come and see how much Lotus survived the move to electric. That is the real question.",
+        "Vino să vezi cât din Lotus a supraviețuit trecerii la electric. Aia e întrebarea adevărată."
+    ],
+    'lotus-elise': [
+        "Get in and out a few times before you commit. That, honestly, is the hardest part.",
+        "Urcă și coboară de câteva ori înainte să te decizi. Aia e, sincer, partea cea mai grea."
+    ],
+    'lexus-es': [
+        "Drive it over bad tarmac. Refinement is easiest to judge where other cars get noisy.",
+        "Condu-o pe asfalt prost. Rafinamentul se judecă cel mai ușor acolo unde alte mașini devin zgomotoase."
+    ],
+    'lexus-is': [
+        "Worth driving before you compare it on paper. This one reads better through the wheel.",
+        "Merită condusă înainte să o compari pe hârtie. Asta se citește mai bine prin volan."
+    ],
+    'lexus-lc': [
+        "Come and look at it in daylight. Photographs consistently fail this particular shape.",
+        "Vino să o vezi la lumină naturală. Fotografiile ratează constant exact forma asta."
+    ],
+    'lexus-lfa': [
+        "Viewings are by appointment, with full documentation prepared before you arrive.",
+        "Vizionările se fac pe bază de programare, cu documentația completă pregătită înainte să ajungi."
+    ],
+    'lexus-lx': [
+        "Ask what it has actually done. On this model that history matters more than the mileage.",
+        "Întreabă ce a făcut efectiv. La modelul ăsta istoricul contează mai mult decât kilometrajul."
+    ],
+    'lexus-uxh': [
+        "Try it on your own commute. A city car is only ever judged on a real route.",
+        "Încearc-o pe drumul tău zilnic. O mașină de oraș se judecă doar pe un traseu real."
+    ],
+    'alfa-romeo-4c': [
+        "Sit in it before anything else. The carbon tub decides this purchase, one way or the other.",
+        "Așază-te în ea înainte de orice. Cuva de carbon decide achiziția asta, într-un fel sau altul."
+    ],
+    'alfa-romeo-33-stradale': [
+        "Enquiries are handled privately, with provenance confirmed before any viewing is arranged.",
+        "Solicitările se tratează privat, cu proveniența confirmată înainte de orice vizionare."
+    ],
+    'alfa-romeo-giulia': [
+        "Drive it and a German saloon on the same road, same day. That is the honest comparison.",
+        "Condu-o pe același drum, în aceeași zi, cu o berlină germană. Aia e comparația onestă."
+    ],
+    'alfa-romeo-tonale': [
+        "Come and check whether the character survived the practicality. It usually does not.",
+        "Vino să verifici dacă a supraviețuit caracterul sub practicitate. De obicei nu supraviețuiește."
+    ],
+    'alfa-romeo-stelvio': [
+        "Take it somewhere with corners, not just a car park. That is where it separates itself.",
+        "Du-o undeva cu viraje, nu doar într-o parcare. Acolo se desparte de restul."
+    ],
+    'genesis-g70-shooting-brake': [
+        "Come and see it in person. This body style is far rarer here than the numbers suggest.",
+        "Vino să o vezi pe viu. Caroseria asta e mult mai rară pe la noi decât sugerează cifrele."
+    ],
+    'genesis-g80': [
+        "Compare it against the badge you were going to buy. That comparison is the whole argument.",
+        "Compar-o cu emblema pe care urma să o cumperi. Comparația aia e tot argumentul."
+    ],
+    'genesis-g90': [
+        "Sit in the back before you sit in the front. This car was designed in that order.",
+        "Așază-te în spate înainte să te așezi în față. Mașina asta a fost gândită în ordinea aia."
+    ],
+    'genesis-g90-long-wheelbase': [
+        "Bring whoever normally sits behind you. Their verdict matters more than yours here.",
+        "Adu-l pe cine stă de obicei în spatele tău. Verdictul lui contează mai mult decât al tău aici."
+    ],
+    'genesis-gv60': [
+        "Come and check the charging and the cabin together. On an EV they are one decision.",
+        "Vino să verifici încărcarea și habitaclul împreună. La un electric sunt o singură decizie."
+    ],
+    'genesis-gv70': [
+        "Bring the family and the luggage you actually travel with, not the amount you hope for.",
+        "Adu familia și bagajul cu care chiar călătorești, nu cât speri că îți trebuie."
+    ],
+    'bmw-x5': [
+        "Drive it before the newer rivals. It explains why the whole category exists.",
+        "Condu-o înaintea rivalelor mai noi. Explică de ce există toată categoria."
+    ],
+    'bmw-m6': [
+        "Ask for a long road rather than a short lap. This one is a grand tourer first.",
+        "Cere un drum lung, nu o tură scurtă. Asta e în primul rând un grand tourer."
+    ],
+    'bmw-x6': [
+        "Look at it in person before you decide. Very few people are neutral about this shape.",
+        "Vezi-o pe viu înainte să te decizi. Foarte puțini rămân neutri în fața formei ăsteia."
+    ],
+    'bmw-m5': [
+        "Take it past four thousand revs, once. That is the entire reason to choose this generation.",
+        "Du-o o dată peste patru mii de turații. Ăsta e tot motivul pentru care alegi generația asta."
+    ],
+    'bmw-m8': [
+        "Worth driving in both modes, back to back. It is really two cars sharing one body.",
+        "Merită condusă în ambele moduri, una după alta. Sunt de fapt două mașini într-o singură caroserie."
+    ],
+    'bmw-m3': [
+        "Come and hear it before the market decides what this generation is worth.",
+        "Vino să o auzi înainte ca piața să hotărască cât valorează generația asta."
+    ],
+    'corvette-z51': [
+        "Ask about the setup before you drive it. On this trim the details change the car.",
+        "Întreabă de reglaje înainte să o conduci. La versiunea asta detaliile schimbă mașina."
+    ],
+    'corvette-c8': [
+        "Sit in it first. The driving position is the part that surprises people who know the older ones.",
+        "Așază-te întâi în ea. Poziția la volan e ce îi surprinde pe cei care le știu pe cele vechi."
+    ],
+    'corvette-stingray-c7': [
+        "Drive it while cars like this are still ordinary to find. That window is closing.",
+        "Condu-o cât mașinile ca ea se mai găsesc ușor. Fereastra aia se închide."
+    ],
+    'koenigsegg-cc850': [
+        "Enquiries are private. The gearbox alone justifies making the trip to see it.",
+        "Solicitările sunt private. Doar cutia de viteze justifică drumul până la ea."
+    ],
+    'koenigsegg-gemera': [
+        "Bring three passengers. That sentence is not usually possible with a car like this.",
+        "Adu trei pasageri. Propoziția asta nu e de obicei posibilă cu o mașină ca asta."
+    ],
+    'koenigsegg-jesko-attack': [
+        "Viewings are arranged privately, with specification and delivery confirmed in advance.",
+        "Vizionările se fac privat, cu specificația și livrarea confirmate din timp."
+    ]
+};
+
+function finalNoteFor(car, lang) {
+    const line = finalNotes[car.id];
+    return line ? line[lang === 'ro' ? 1 : 0] : null;
+}
+
 const state = { cars: {}, car: null, images: [], imageIndex: 0, lang: 'en' };
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
@@ -945,7 +1179,7 @@ function render() {
     // hero rupea ritmul, la final aduna. Inlocuieste randul generic despre
     // programarea vizionarii, care era acelasi pentru toate cele 55.
     const finalNote = $('#final-note');
-    if (finalNote) finalNote.textContent = edit.statement;
+    if (finalNote) finalNote.textContent = finalNoteFor(state.car, state.lang) || edit.statement;
     $('#hero-price').textContent = state.car.price;
     $('#hero-power').textContent = state.car.power;
     $('#intro-heading').textContent = edit.heading;
