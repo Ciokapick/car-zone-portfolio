@@ -136,29 +136,39 @@ sr.reveal(`.featured__card, .logos__content, .footer__content`, { interval: 100 
 sr.reveal(`.logos__container`, { delay: 300, duration: 2000, origin: 'bottom' });
 sr.reveal(`.footer__content`, { interval: 100, duration: 2000, origin: 'bottom' });
 
-/*=============== FEATURES — DECLANSATOR PENTRU ZOOM ===============*/
-// .anim-ready arma animatia, .is-inview o porneste. Ordinea conteaza: fara
-// .anim-ready nu exista stare de start, deci daca scriptul nu ruleaza sau
-// IntersectionObserver lipseste, sectiunea se vede normal in loc sa ramana goala.
+/*=============== FEATURES — PROGRESUL DE SCROLL PENTRU ZOOM ===============*/
+// Scrie --features-p (0 la 1) pe sectiune, pe masura ce ea traverseaza ecranul.
+// Restul e in CSS. Fara acest script, variabila lipseste, CSS-ul foloseste
+// valoarea implicita 1 si sectiunea arata exact ca starea finala.
 (() => {
     const section = document.querySelector('.features');
-    if (!section || !('IntersectionObserver' in window)) return;
+    if (!section) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-    section.classList.add('anim-ready');
+    let ticking = false;
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            section.classList.add('is-inview');
-            observer.disconnect();
-        });
-    // Un sfert din sectiune vizibil: destul cat miscarea sa se vada in cadru,
-    // nu dupa ce utilizatorul a trecut deja de ea.
-    }, { threshold: 0.25 });
+    const update = () => {
+        ticking = false;
+        const rect = section.getBoundingClientRect();
+        const viewport = window.innerHeight;
+        // 0 cand marginea de sus a sectiunii atinge baza ecranului, 1 cand a
+        // urcat pana la un sfert de ecran de sus. Asa miscarea se termina exact
+        // cand sectiunea e in fata ochilor, nu dupa ce ai derulat peste ea.
+        const travelled = viewport - rect.top;
+        const distance = viewport * 0.75;
+        const progress = Math.min(Math.max(travelled / distance, 0), 1);
+        section.style.setProperty('--features-p', progress.toFixed(4));
+    };
 
-    observer.observe(section);
+    const onScroll = () => {
+        if (ticking) return;
+        ticking = true;
+        // un singur calcul pe cadru: scroll poate emite de zeci de ori intre doua
+        // randari, iar fiecare apel scrie in layout
+        window.requestAnimationFrame(update);
+    };
 
-    // Plasa de siguranta: daca sectiunea e deja pe ecran la incarcare, sau
-    // observatorul nu apuca sa raporteze, o aratam oricum.
-    window.setTimeout(() => section.classList.add('is-inview'), 2500);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    update();
 })();

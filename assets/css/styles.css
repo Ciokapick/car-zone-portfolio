@@ -640,41 +640,28 @@ img {
   transform: rotate(-22deg);
 }
 
-/*=============== FEATURES — ZOOM LA INTRAREA IN ECRAN ===============*/
-/* Masina se apropie (de la 1.26 la 1) in timp ce harta din spate creste usor.
-   Miscarea in sensuri opuse e ce da adancime; daca ambele ar creste, ar arata
-   doar ca o poza care se umfla.
+/*=============== FEATURES — ZOOM LEGAT DE SCROLL ===============*/
+/* --features-p merge de la 0 la 1 pe masura ce sectiunea traverseaza ecranul,
+   scris din JS la fiecare cadru. Masina se micsoreaza de la 1.5 la 1, harta din
+   spate creste de la 0.82 la 1.12: sensuri opuse, ca sa se citeasca adancime.
 
-   Starea de start se aplica DOAR sub .anim-ready, clasa pusa din JavaScript.
-   Fara JS, sau daca observatorul nu porneste, nu exista opacity 0 nicaieri si
-   continutul ramane vizibil. Altfel o eroare de script ar lasa masina invizibila.
+   Prima incercare a fost un declansator la intrare, cu tranzitie. Se termina
+   inainte ca sectiunea sa ajunga in centrul ecranului, deci nu se vedea nimic.
+   Legat de scroll, miscarea raspunde la ce face utilizatorul si de aceea se
+   simte, chiar la aceeasi amplitudine.
 
-   Blocul sta dupa regula de baza .features__map dinadins: aceeasi specificitate,
-   deci ultima castiga, si altfel rotatia de -22deg ar suprascrie starile de aici.
-
-   Am incercat intai animation-timeline: view(), nativ si fara JS, dar .main,
-   .features si body au fiecare overflow hidden si devin containere de scroll
-   care nu deruleaza, iar timeline-ul ramane la progress null. */
+   Valoarea implicita e 1, adica starea finala: fara JS, totul arata normal.
+   Sta dupa regula de baza .features__map dinadins — aceeasi specificitate,
+   deci ultima castiga, altfel rotatia de -22deg ar suprascrie scalarea. */
 @media (prefers-reduced-motion: no-preference) {
-  .features.anim-ready .features__img {
-    opacity: 0;
-    transform: scale(1.26);
-    transition: opacity .9s ease, transform 1.5s cubic-bezier(.16, .84, .28, 1);
+  .features__img {
+    transform: scale(calc(1.5 - 0.5 * var(--features-p, 1)));
+    will-change: transform;
+  }
+  .features__map {
+    transform: rotate(-22deg) scale(calc(0.82 + 0.3 * var(--features-p, 1)));
+    opacity: calc(0.25 + 0.75 * var(--features-p, 1));
     will-change: transform, opacity;
-  }
-  .features.anim-ready .features__map {
-    opacity: 0;
-    transform: rotate(-22deg) scale(.9) translateY(2rem);
-    transition: opacity 1.1s ease .15s, transform 1.7s cubic-bezier(.16, .84, .28, 1) .15s;
-    will-change: transform, opacity;
-  }
-  .features.anim-ready.is-inview .features__img {
-    opacity: 1;
-    transform: scale(1);
-  }
-  .features.anim-ready.is-inview .features__map {
-    opacity: 1;
-    transform: rotate(-22deg) scale(1.05) translateY(-.5rem);
   }
 }
 
