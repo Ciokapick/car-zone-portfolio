@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = Array.from(document.querySelectorAll('.featured__card'));
     const search = document.getElementById('inventory-search');
     const count = document.getElementById('inventory-count');
+    const sort = document.getElementById('inventory-sort');
+    const grid = cards[0] && cards[0].parentElement;
 
     if (!filters.length || !cards.length) return;
 
@@ -16,6 +18,53 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     let activeSelector = 'all';
+
+    // Ordinea din markup e cea curatoriata: o pastram ca sa putem reveni la ea.
+    const originalOrder = cards.slice();
+    // Cheia de sortare vine din cars.json, nu din textul cardului: pretul e scris
+    // "€108,990", iar parsarea din DOM ar fi depins de formatare.
+    const data = new Map();
+
+    const idOf = (card) => {
+        const link = card.querySelector('a[href*="id="]');
+        return link ? new URL(link.getAttribute('href'), location.href).searchParams.get('id') : null;
+    };
+
+    fetch('assets/data/cars.json')
+        .then((response) => response.json())
+        .then((cars) => {
+            cards.forEach((card) => {
+                const car = cars[idOf(card)];
+                if (!car) return;
+                data.set(card, {
+                    price: Number(String(car.price).replace(/[^0-9]/g, '')) || 0,
+                    year: Number(car.year) || 0,
+                    km: Number(car.km) || 0
+                });
+            });
+            if (sort) sort.disabled = false;
+        })
+        .catch(() => {
+            // Fara date nu putem sorta corect, deci ascundem comanda in loc sa
+            // oferim o sortare care ar reordona gresit.
+            if (sort) sort.closest('.stock-sort').hidden = true;
+        });
+
+    const applySort = () => {
+        if (!grid || !sort) return;
+        const mode = sort.value;
+        if (mode === 'default') {
+            originalOrder.forEach((card) => grid.append(card));
+            return;
+        }
+        const [field, dir] = mode.split('-');
+        const ordered = originalOrder.slice().sort((a, b) => {
+            const va = data.get(a)?.[field] ?? 0;
+            const vb = data.get(b)?.[field] ?? 0;
+            return dir === 'asc' ? va - vb : vb - va;
+        });
+        ordered.forEach((card) => grid.append(card));
+    };
 
     const normalize = (value) => value
         .toLocaleLowerCase()
@@ -62,5 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (search) search.addEventListener('input', updateInventory);
+    if (sort) {
+        sort.disabled = true;
+        sort.addEventListener('change', () => {
+            applySort();
+            // Reordonarea schimba inaltimea randurilor, deci ScrollReveal are
+            // nevoie de acelasi impuls ca la filtrare.
+            window.dispatchEvent(new Event('resize'));
+        });
+    }
     updateInventory();
 });

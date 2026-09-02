@@ -1,0 +1,581 @@
+@import url("styles.css");
+
+.stock-concept-page {
+    background: var(--body-color);
+}
+
+.stock-concept-page .header {
+    background: linear-gradient(180deg, rgba(8, 9, 11, .92), transparent);
+}
+
+.concept-label {
+    padding: .4rem .7rem;
+    color: var(--text-color-light);
+    font-size: .62rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 1rem;
+}
+
+.concept-kicker {
+    color: var(--first-color);
+    font-size: .7rem;
+    font-weight: var(--font-medium);
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.concept-hero {
+    position: relative;
+    height: 100svh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.concept-hero__video,
+.concept-hero__overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.concept-hero__video {
+    z-index: -2;
+    object-fit: cover;
+}
+
+.concept-hero__overlay {
+    z-index: -1;
+    background: rgba(0, 0, 0, .5);
+}
+
+.concept-hero__content {
+    padding-top: var(--header-height);
+    text-align: center;
+}
+
+.concept-hero h1 {
+    color: var(--white-color);
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -.04em;
+}
+
+.concept-scroll-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    margin-top: 1.5rem;
+    padding: .8rem 1.1rem;
+    color: var(--white-color);
+    font-size: .78rem;
+    border-radius: .75rem;
+    background: var(--first-color);
+    transition: background .3s ease;
+}
+
+.concept-scroll-link:hover {
+    background: var(--first-color-alt);
+}
+
+.signature-section {
+    padding: 6rem 0 7rem;
+}
+
+.signature-section__header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.signature-section__header h2,
+.collection-heading h2 {
+    margin-top: .65rem;
+    color: var(--title-color);
+    font-size: clamp(2rem, 4.5vw, 3.8rem);
+    line-height: 1;
+}
+
+.signature-section__intro {
+    max-width: 430px;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.signature-stage {
+    display: grid;
+    grid-template-columns: 228px minmax(420px, 540px) 228px;
+    grid-template-rows: repeat(2, 320px);
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.orbit-card,
+.signature-car,
+.concept-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: var(--container-color);
+}
+
+.orbit-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem 1.5rem;
+    color: var(--white-color);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.orbit-card:hover,
+.orbit-card:focus-visible {
+    transform: translateY(-.25rem);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .28);
+}
+
+.orbit-card > span {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.orbit-card img {
+    width: 180px;
+    height: 150px;
+    margin: 1.1rem auto;
+    object-fit: contain;
+    filter: drop-shadow(0 16px 12px rgba(0, 0, 0, .45));
+    transition: transform .3s ease;
+}
+
+.orbit-card:hover img {
+    transform: translateX(-.25rem);
+}
+
+.orbit-card strong {
+    margin-top: auto;
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+}
+
+.orbit-card small {
+    margin-top: .75rem;
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.orbit-card > i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 3.2rem;
+    height: 3.2rem;
+    display: grid;
+    place-items: center;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    border-radius: 1rem 0 1rem 0;
+    background: var(--first-color);
+}
+
+.signature-car {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background:
+        radial-gradient(circle at 50% 42%, hsla(219, 69%, 56%, .2), transparent 38%),
+        var(--container-color);
+}
+
+.signature-car::before,
+.signature-car::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: .4;
+}
+
+.signature-car::before {
+    top: -8rem;
+    right: -8rem;
+    width: 22rem;
+    height: 22rem;
+    background: var(--first-color);
+}
+
+.signature-car::after {
+    bottom: -12rem;
+    left: -10rem;
+    width: 24rem;
+    height: 24rem;
+    background: hsl(219, 69%, 30%);
+}
+
+.signature-car__topline {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color-light);
+    font-size: .62rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.signature-car__monogram {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    color: hsla(219, 69%, 56%, .1);
+    font-family: var(--mercedes-font);
+    font-size: 22rem;
+    line-height: 1;
+    transform: translateX(-50%);
+}
+
+.signature-car__image {
+    position: relative;
+    z-index: 1;
+    width: 115%;
+    height: 300px;
+    margin: auto -7.5% 0;
+    object-fit: contain;
+    filter: drop-shadow(0 28px 22px rgba(0, 0, 0, .58));
+}
+
+.signature-car__content {
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.signature-car__content > div:first-child p {
+    color: var(--title-color);
+    font-family: var(--mercedes-font);
+    font-size: 1.45rem;
+}
+
+.signature-car__content h3 {
+    margin-top: .3rem;
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+}
+
+.signature-car__specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .75rem;
+    margin-top: 1.5rem;
+}
+
+.signature-car__specs div {
+    padding: .9rem;
+    border-radius: .75rem;
+    background: hsla(219, 4%, 4%, .52);
+}
+
+.signature-car__specs dt {
+    color: var(--text-color-light);
+    font-size: .58rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.signature-car__specs dd {
+    margin-top: .3rem;
+    color: var(--title-color);
+    font-size: .78rem;
+    font-weight: var(--font-medium);
+}
+
+.signature-car__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+    padding: .85rem 1rem;
+    color: var(--white-color);
+    font-size: .78rem;
+    border-radius: .75rem;
+    background: var(--first-color);
+}
+
+.full-collection {
+    padding: 6rem 0 8rem;
+    border-top: 1px solid rgba(255, 255, 255, .06);
+}
+
+.collection-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.collection-count {
+    color: var(--text-color-light);
+    font-size: .72rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.concept-filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.concept-filters::-webkit-scrollbar {
+    display: none;
+}
+
+.concept-filter {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    padding: .75rem;
+    border: 0;
+    border-radius: .75rem;
+    background: var(--container-color);
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.concept-filter img {
+    width: 1.5rem;
+    max-height: 1.5rem;
+    object-fit: contain;
+    opacity: .3;
+    transition: opacity .3s ease;
+}
+
+.concept-filter:hover,
+.concept-filter:focus-visible,
+.concept-filter.is-active {
+    background: var(--first-color);
+}
+
+.concept-filter:hover img,
+.concept-filter.is-active img {
+    opacity: 1;
+}
+
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 228px);
+    justify-content: center;
+    gap: 2.5rem 2rem;
+}
+
+.concept-card {
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem 1.5rem;
+}
+
+.concept-card__make {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.concept-card[data-brand="Mercedes-Benz"] .concept-card__make {
+    font-family: var(--mercedes-font);
+    font-weight: 400;
+}
+
+.concept-card h3 {
+    margin-top: .25rem;
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+}
+
+.concept-card__meta {
+    margin-top: .45rem;
+    color: var(--text-color-light);
+    font-size: .62rem;
+}
+
+.concept-card__media {
+    flex: 1;
+    display: grid;
+    place-items: center;
+}
+
+.concept-card__media img {
+    width: 180px;
+    height: 150px;
+    margin: 1.25rem 0;
+    object-fit: contain;
+    filter: drop-shadow(0 16px 12px rgba(0, 0, 0, .45));
+    transition: transform .3s ease;
+}
+
+.concept-card:hover .concept-card__media img {
+    transform: translateX(-.25rem);
+}
+
+.concept-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.concept-card__footer strong {
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+}
+
+.concept-card__action {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+    display: grid;
+    place-items: center;
+    color: var(--white-color);
+    border-radius: 1rem 0 1rem 0;
+    background: var(--first-color);
+}
+
+.concept-card[hidden] {
+    display: none;
+}
+
+.concept-footer {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(255, 255, 255, .06);
+}
+
+.concept-footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.concept-footer__inner p {
+    color: var(--text-color-light);
+    font-size: .75rem;
+}
+
+.concept-footer__inner a {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--first-color);
+    font-size: .78rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .signature-stage {
+        grid-template-columns: repeat(2, 228px);
+        grid-template-rows: auto;
+    }
+
+    .signature-car {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        min-height: 620px;
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .signature-section__header,
+    .collection-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .concept-filters {
+        justify-content: flex-start;
+        gap: 1rem;
+        padding-bottom: .5rem;
+    }
+
+    .concept-grid {
+        grid-template-columns: repeat(2, 228px);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .concept-label {
+        display: none;
+    }
+
+    .signature-section,
+    .full-collection {
+        padding-top: 4.5rem;
+    }
+
+    .signature-stage,
+    .concept-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .signature-car {
+        grid-column: auto;
+        min-height: 560px;
+    }
+
+    .signature-car__image {
+        height: 230px;
+    }
+
+    .signature-car__specs {
+        grid-template-columns: 1fr;
+    }
+
+    .orbit-card,
+    .concept-card {
+        width: min(100%, 280px);
+        min-height: 340px;
+        justify-self: center;
+    }
+
+    .concept-footer__inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .concept-hero__video {
+        display: none;
+    }
+
+    .concept-hero {
+        background: var(--body-color);
+    }
+
+    .orbit-card,
+    .orbit-card img,
+    .concept-card__media img {
+        transition: none;
+    }
+}

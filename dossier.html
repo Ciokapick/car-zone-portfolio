@@ -17,7 +17,7 @@
     <header class="header dossier-header" id="header">
         <nav class="nav container dossier-nav" aria-label="Primary navigation">
             <a href="index.html" class="nav__logo" aria-label="CarZone home">
-                <img src="assets/img/logo.webp" alt="CarZone">
+                <img src="assets/img/logo.webp" alt="CarZone" class="nav__logo-img">
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -101,30 +101,51 @@
                         <h2 id="signature-heading" data-copy="signatureHeading">The flagship deserves its own room.</h2>
                         <p data-copy="signatureCopy">A separate visual chapter for the rare car that defines the top of the collection.</p>
                         <div class="signature-room__facts">
-                            <span id="signature-film-fact" hidden><b>01</b><em data-copy="cinematicFilm">Cinematic film</em></span>
-                            <span><b id="signature-frame-count">0</b><em data-copy="originalFrames">Original frames</em></span>
-                            <span id="signature-model-fact" hidden><b>360°</b><em data-copy="interactiveModel">Interactive model</em></span>
+                            <span><b>01</b><em data-copy="cinematicFilm">Cinematic film</em></span>
+                            <span><b>14</b><em data-copy="originalFrames">Original frames</em></span>
+                            <span><b>360°</b><em data-copy="interactiveModel">Interactive model</em></span>
                         </div>
-                        <a class="dossier-button dossier-button--light" id="signature-3d-link" href="#" target="_blank" rel="noopener noreferrer">
-                            <span data-copy="enterPrivateRoom">Enter the interactive room</span>
-                            <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
-                        </a>
                     </div>
                     <div class="signature-room__frames reveal-block">
-                        <figure class="signature-room__frame signature-room__frame--main"><img id="signature-main-image" alt=""></figure>
-                        <figure class="signature-room__frame signature-room__frame--detail"><img id="signature-detail-image" alt=""></figure>
+                        <figure class="signature-room__frame signature-room__frame--main"><img id="signature-main-image" src="" alt=""></figure>
+                        <figure class="signature-room__frame signature-room__frame--detail"><img id="signature-detail-image" src="" alt=""></figure>
                         <span class="signature-room__monogram" aria-hidden="true">S</span>
                     </div>
                 </div>
             </section>
 
-            <section class="dossier-intro container" id="dossier-intro">
-                <div class="dossier-intro__copy reveal-block">
-                    <p class="eyebrow" data-copy="selectionNote">The selection note</p>
-                    <h2 id="intro-heading"></h2>
-                    <p id="intro-copy"></p>
-                </div>
+            <section class="dossier-gallery container" aria-labelledby="gallery-heading">
+                <header class="dossier-section-heading dossier-section-heading--split reveal-block">
+                    <div>
+                        <p class="eyebrow" data-copy="visualRecord">Visual record</p>
+                        <h2 id="gallery-heading" data-copy="closerLook">A closer look.</h2>
+                    </div>
+                    <p data-copy="gallerySub">Select a frame to bring the details forward.</p>
+                </header>
 
+                <div class="dossier-gallery__stage reveal-block">
+                    <!-- Pista de slide-uri e folosita doar pe treapta signature: acolo
+                         reluam carusela din s580.html, care accepta si clipuri, nu doar
+                         imagini. Pe restul treptelor ramane #gallery-main, ca pana acum. -->
+                    <div class="dossier-carousel" id="gallery-track" hidden></div>
+                    <button class="dossier-carousel__nav dossier-carousel__nav--prev" id="gallery-prev" type="button" aria-label="Previous image" hidden>
+                        <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                    </button>
+                    <img id="gallery-main" src="" alt="">
+                    <div class="dossier-gallery__index"><span id="gallery-current">01</span><span id="gallery-total">/ 01</span></div>
+                    <button class="dossier-gallery__next" id="gallery-next" type="button" aria-label="Next image">
+                        <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="dossier-gallery__rail" id="gallery-rail" aria-label="Vehicle image thumbnails"></div>
+
+                <!-- Informatii cheie: fapte despre ACEST exemplar, nu despre model. Toate
+                     derivate din cars.json, niciuna inventata. Dealerii reali pun blocul
+                     asta sus, pentru ca aici se decide vizionarea. -->
+                <div class="dossier-keyfacts reveal-block">
+                    <p class="eyebrow" data-copy="keyInformation">Key information</p>
+                    <ul id="key-information"></ul>
+                </div>
                 <aside class="dossier-purchase reveal-block" aria-label="Vehicle summary">
                     <div class="dossier-purchase__price">
                         <span data-copy="price">Price</span>
@@ -139,8 +160,28 @@
                         <a href="finantare.html" class="dossier-button dossier-button--ghost" data-copy="exploreFinance">Explore financing</a>
                     </div>
                 </aside>
+            </section>
 
-                <div class="dossier-facts reveal-block" id="key-facts"></div>
+            <!-- Modelul 3D nu e o bifa tehnica, e un capitol despre masina: intai
+                 spunem ce se vede umbland in jurul ei, abia apoi il deschidem.
+                 Iframe-ul se creeaza la click, deci pana atunci nu pleaca nicio
+                 cerere catre Sketchfab. Sectiunea dispare la masinile fara model. -->
+            <section class="dossier-room container" id="dossier-room" hidden aria-labelledby="room-heading">
+                <header class="dossier-section-heading reveal-block">
+                    <p class="eyebrow" data-copy="threeSixty">Three-sixty</p>
+                    <h2 id="room-heading" data-copy="walkAround">Walk around it.</h2>
+                    <p id="room-copy"></p>
+                </header>
+                <div class="dossier-room__stage reveal-block">
+                    <div class="dossier-room__viewer" id="signature-viewer" hidden></div>
+                    <button type="button" class="dossier-room__open" id="signature-3d-link" aria-expanded="false" aria-controls="signature-viewer">
+                        <img id="room-poster" class="dossier-room__poster" src="" alt="" loading="lazy" decoding="async">
+                        <span class="dossier-room__cue">
+                            <i class="ri-360-view-line" aria-hidden="true"></i>
+                            <span id="signature-3d-label" data-copy="enterPrivateRoom">Enter the interactive room</span>
+                        </span>
+                    </button>
+                </div>
             </section>
 
             <section class="dossier-reasons container">
@@ -152,23 +193,14 @@
                 <div class="dossier-reasons__grid" id="reason-cards"></div>
             </section>
 
-            <section class="dossier-gallery container" aria-labelledby="gallery-heading">
-                <header class="dossier-section-heading dossier-section-heading--split reveal-block">
-                    <div>
-                        <p class="eyebrow" data-copy="visualRecord">Visual record</p>
-                        <h2 id="gallery-heading" data-copy="closerLook">A closer look.</h2>
-                    </div>
-                    <p data-copy="gallerySub">Select a frame to bring the details forward.</p>
-                </header>
-
-                <div class="dossier-gallery__stage reveal-block">
-                    <img id="gallery-main" src="" alt="">
-                    <div class="dossier-gallery__index"><span id="gallery-current">01</span><span id="gallery-total">/ 01</span></div>
-                    <button class="dossier-gallery__next" id="gallery-next" type="button" aria-label="Next image">
-                        <i class="ri-arrow-right-line" aria-hidden="true"></i>
-                    </button>
+            <section class="dossier-intro container" id="dossier-intro">
+                <div class="dossier-intro__copy reveal-block">
+                    <p class="eyebrow" data-copy="selectionNote">The selection note</p>
+                    <h2 id="intro-heading"></h2>
+                    <p id="intro-copy"></p>
                 </div>
-                <div class="dossier-gallery__rail" id="gallery-rail" aria-label="Vehicle image thumbnails"></div>
+
+                <div class="dossier-facts reveal-block" id="key-facts"></div>
             </section>
 
             <section class="dossier-trust">
@@ -193,26 +225,21 @@
                 <div class="dossier-accordions reveal-block" id="spec-accordions"></div>
             </section>
 
-            <section class="dossier-related container">
-                <header class="dossier-section-heading dossier-section-heading--split reveal-block">
-                    <div>
-                        <p class="eyebrow" data-copy="sameEdit">From the same edit</p>
-                        <h2 data-copy="continueLooking">Continue looking.</h2>
-                    </div>
-                    <a href="stoc.html" class="dossier-text-link"><span data-copy="allInventory">All inventory</span><i class="ri-arrow-right-line" aria-hidden="true"></i></a>
-                </header>
-                <div class="dossier-related__grid" id="related-cars"></div>
-            </section>
-
+            <!-- Aceeasi asezare ca sectiunea .offer din index.html: fundal inchis,
+                 text la stanga, masina decupata la dreapta. Poza e cea de pe card
+                 (car.image), care e deja decupata pe fundal intunecat. -->
             <section class="dossier-final">
-                <div class="container dossier-final__inner reveal-block">
-                    <p class="eyebrow" data-copy="privateConsultation">Private consultation</p>
-                    <h2 id="final-heading"></h2>
-                    <p data-copy="finalCopy">We will confirm the car, answer the difficult questions and arrange a focused viewing.</p>
-                    <a href="contact.html" class="dossier-button dossier-button--light">
-                        <span data-copy="startConversation">Start the conversation</span>
-                        <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
-                    </a>
+                <div class="container dossier-final__container">
+                    <div class="dossier-final__data reveal-block">
+                        <p class="eyebrow" data-copy="privateConsultation">Private consultation</p>
+                        <h2 id="final-heading"></h2>
+                        <p id="final-note"></p>
+                        <a href="contact.html" class="dossier-button dossier-button--light">
+                            <span data-copy="startConversation">Start the conversation</span>
+                            <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <img id="final-car" class="dossier-final__car" alt="" loading="lazy" decoding="async">
                 </div>
             </section>
         </div>

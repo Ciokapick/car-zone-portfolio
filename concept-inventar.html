@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Concept A — Inventory · Car Zone</title>
+<style>
+:root{
+  --blue:hsl(219,69%,56%); --blue-dim:hsl(219,69%,46%);
+  --title:hsl(219,8%,95%); --text:hsl(219,8%,75%); --dim:hsl(219,4%,52%);
+  --body:hsl(219,4%,4%); --panel:hsl(219,4%,7%); --line:hsl(219,6%,14%);
+  --font:"Avenir Next","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--body);color:var(--text);font-family:var(--font);font-size:.875rem;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+
+/* ── bara de concept, ca sa nu confunzi prototipul cu situl ── */
+.flag{position:sticky;top:0;z-index:60;display:flex;gap:14px;align-items:center;
+  padding:9px 22px;background:var(--blue);color:#fff;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600}
+.flag span{opacity:.8;text-transform:none;letter-spacing:.02em;font-weight:400}
+.flag a{margin-left:auto;border-bottom:1px solid rgba(255,255,255,.5)}
+
+header{position:sticky;top:37px;z-index:50;display:flex;align-items:center;gap:34px;
+  padding:0 22px;height:62px;background:rgba(6,8,12,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;letter-spacing:.22em;font-size:.82rem;color:var(--title)}
+nav{display:flex;gap:22px;font-size:.8rem;color:var(--dim)}
+nav a.on{color:var(--title)}
+
+.shell{display:grid;grid-template-columns:264px minmax(0,1fr);gap:30px;
+  width:min(1600px,calc(100% - 44px));margin:26px auto 70px}
+
+/* ── filtre ── */
+aside{position:sticky;top:120px;align-self:start;max-height:calc(100vh - 150px);overflow-y:auto;padding-right:6px}
+aside::-webkit-scrollbar{width:5px}
+aside::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+.fgroup{padding:17px 0;border-bottom:1px solid var(--line)}
+.fgroup:first-child{padding-top:0}
+.fgroup h3{margin-bottom:11px;color:var(--dim);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.opt{display:flex;align-items:center;gap:9px;padding:4px 0;cursor:pointer;color:var(--text);font-size:.82rem}
+.opt input{accent-color:var(--blue);width:14px;height:14px;cursor:pointer}
+.opt .n{margin-left:auto;color:var(--dim);font-size:.72rem;font-variant-numeric:tabular-nums}
+.opt:hover{color:var(--title)}
+.rng{display:flex;flex-direction:column;gap:7px}
+.rng input[type=range]{width:100%;accent-color:var(--blue);cursor:pointer}
+.rng .val{display:flex;justify-content:space-between;color:var(--dim);font-size:.74rem;font-variant-numeric:tabular-nums}
+.rng .val b{color:var(--title);font-weight:600}
+
+/* ── rezultate ── */
+.bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.count{color:var(--title);font-size:1.05rem;font-weight:600;font-variant-numeric:tabular-nums}
+.count em{color:var(--dim);font-style:normal;font-weight:400;font-size:.85rem}
+.chips{display:flex;gap:7px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:7px;padding:4px 9px;border:1px solid var(--line);
+  border-radius:20px;background:var(--panel);color:var(--text);font-size:.73rem;cursor:pointer}
+.chip:hover{border-color:var(--blue);color:var(--title)}
+.chip::after{content:"×";color:var(--dim);font-size:.9rem;line-height:1}
+.clear{color:var(--blue);font-size:.75rem;cursor:pointer;background:none;border:0;font-family:inherit}
+select{margin-left:auto;padding:7px 11px;border:1px solid var(--line);border-radius:7px;
+  background:var(--panel);color:var(--text);font-family:inherit;font-size:.78rem;cursor:pointer}
+
+.rows{display:flex;flex-direction:column;gap:9px}
+.row{display:grid;grid-template-columns:186px minmax(0,1fr) auto;gap:20px;align-items:center;
+  padding:11px;border:1px solid var(--line);border-radius:12px;background:var(--panel);
+  transition:border-color .16s,transform .16s}
+.row:hover{border-color:hsl(219,20%,26%);transform:translateY(-1px)}
+.row img{width:186px;height:105px;object-fit:cover;border-radius:8px;display:block;background:#0b0d11}
+.row h2{color:var(--title);font-size:1rem;font-weight:600;letter-spacing:-.012em}
+.row .sub{margin-top:3px;color:var(--dim);font-size:.75rem}
+.specs{display:flex;gap:18px;margin-top:9px;flex-wrap:wrap}
+.specs div{font-size:.78rem;color:var(--text);font-variant-numeric:tabular-nums}
+.specs span{display:block;color:var(--dim);font-size:.63rem;letter-spacing:.11em;text-transform:uppercase;margin-bottom:2px}
+.price{text-align:right;padding-right:6px}
+.price b{display:block;color:var(--title);font-size:1.15rem;font-weight:600;font-variant-numeric:tabular-nums}
+.price small{color:var(--dim);font-size:.7rem}
+.empty{padding:60px 0;text-align:center;color:var(--dim)}
+
+@media(max-width:1080px){
+  .shell{grid-template-columns:1fr}
+  aside{position:static;max-height:none}
+  /* Cele sase linkuri nu incap sub 400px: le derulam, nu impingem pagina. */
+  header{gap:18px}
+  nav{overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+  nav::-webkit-scrollbar{display:none}
+  nav a{white-space:nowrap}
+  .row{grid-template-columns:130px minmax(0,1fr)}
+  .row img{width:130px;height:80px}
+  .price{grid-column:2;text-align:left;padding:0}
+}
+</style>
+</head>
+<body>
+
+<div class="flag">Concept A — Inventar
+  <span>directia Porsche Finder / Genesis: filtrare reala, densitate, vizual retinut</span>
+  <a href="concept-showroom.html">Vezi conceptul B →</a>
+</div>
+
+<header>
+  <div class="logo">CAR ZONE</div>
+  <nav><a>Home</a><a class="on">Inventory</a><a>Custom order</a><a>Sell your car</a><a>Financing</a><a>Contact</a></nav>
+</header>
+
+<div class="shell">
+  <aside id="filters"></aside>
+  <main>
+    <div class="bar">
+      <div class="count" id="count"></div>
+      <div class="chips" id="chips"></div>
+      <button class="clear" id="clear" hidden>Reseteaza tot</button>
+      <select id="sort">
+        <option value="price-asc">Pret crescator</option>
+        <option value="price-desc">Pret descrescator</option>
+        <option value="year-desc">An, cel mai nou</option>
+        <option value="km-asc">Kilometraj, cel mai mic</option>
+        <option value="power-desc">Putere, cea mai mare</option>
+      </select>
+    </div>
+    <div class="rows" id="rows"></div>
+  </main>
+</div>
+
+<script>
+const num = s => Number(String(s ?? '').replace(/[^0-9.]/g,'')) || 0;
+const eur = n => '€' + n.toLocaleString('en-US');
+
+// Tractiunea e scrisa in 9 feluri in date ("quattro AWD", "4x4 - 4MATIC"...).
+// Un filtru are nevoie de 4 cosuri, nu de 9 siruri.
+function drivetrain(raw){
+  const s = String(raw ?? '').toLowerCase();
+  if (s.includes('rwd')) return 'RWD';
+  if (s.includes('fwd')) return 'FWD';
+  if (s.includes('4x4') || s.includes('4wd') || s.includes('4matic')) return '4x4';
+  if (s.includes('awd') || s.includes('quattro') || s.includes('xdrive')) return 'AWD';
+  return null;
+}
+
+let CARS = [], F = { make:new Set(), fuel:new Set(), drive:new Set() }, R = {};
+
+fetch('assets/data/cars.json').then(r => r.json()).then(data => {
+  CARS = Object.entries(data).map(([id,c]) => ({
+    id, make:c.make, model:c.model, year:c.year,
+    km:num(c.km), fuel:c.fuel, power:num(c.power), price:num(c.price),
+    drive: drivetrain(c.specs?.technical?.Drivetrain),
+    gearbox: c.specs?.technical?.Gearbox || '',
+    img: (c.images && c.images[0]) || c.image
+  }));
+  R = {
+    price:[Math.min(...CARS.map(c=>c.price)), Math.max(...CARS.map(c=>c.price))],
+    year: [Math.min(...CARS.map(c=>c.year)),  Math.max(...CARS.map(c=>c.year))],
+    km:   [0, Math.max(...CARS.map(c=>c.km))],
+    power:[Math.min(...CARS.map(c=>c.power)), Math.max(...CARS.map(c=>c.power))]
+  };
+  F.priceMax = R.price[1]; F.yearMin = R.year[0]; F.kmMax = R.km[1]; F.powerMin = R.power[0];
+  buildFilters(); render();
+});
+
+// Numarul de langa fiecare optiune ignora propriul grup, ca in Porsche Finder:
+// altfel bifezi "Petrol" si toate celelalte combustibile arata 0.
+function tally(field){
+  const out = {};
+  CARS.filter(c => passes(c, field)).forEach(c => {
+    const k = c[field]; if (k) out[k] = (out[k]||0) + 1;
+  });
+  return out;
+}
+function passes(c, skip){
+  if (skip!=='make'  && F.make.size  && !F.make.has(c.make)) return false;
+  if (skip!=='fuel'  && F.fuel.size  && !F.fuel.has(c.fuel)) return false;
+  if (skip!=='drive' && F.drive.size && !F.drive.has(c.drive)) return false;
+  return c.price <= F.priceMax && c.year >= F.yearMin && c.km <= F.kmMax && c.power >= F.powerMin;
+}
+const results = () => CARS.filter(c => passes(c, null));
+
+function buildFilters(){
+  const el = document.getElementById('filters');
+  const group = (title, field, counts) => `
+    <div class="fgroup"><h3>${title}</h3>
+      ${Object.keys(counts).sort().map(k => `
+        <label class="opt"><input type="checkbox" data-f="${field}" value="${k}"
+          ${F[field].has(k)?'checked':''}> ${k} <i class="n">${counts[k]}</i></label>`).join('')}
+    </div>`;
+  // Eticheta din dreapta arata intervalul disponibil, nu repeta valoarea curenta.
+  const range = (title, key, min, max, step, cur, fmt, dir) => `
+    <div class="fgroup"><h3>${title}</h3><div class="rng">
+      <input type="range" data-r="${key}" min="${min}" max="${max}" step="${step}" value="${cur}">
+      <div class="val"><span>${dir==='max'?'pana la':'de la'} <b>${fmt(cur)}</b></span><span>${fmt(min)} – ${fmt(max)}</span></div>
+    </div></div>`;
+
+  el.innerHTML =
+    group('Marca','make',tally('make')) +
+    group('Combustibil','fuel',tally('fuel')) +
+    group('Tractiune','drive',tally('drive')) +
+    range('Pret','priceMax',R.price[0],R.price[1],1000,F.priceMax,eur,'max') +
+    range('An minim','yearMin',R.year[0],R.year[1],1,F.yearMin,String,'min') +
+    range('Kilometraj','kmMax',0,R.km[1],1000,F.kmMax,n=>n.toLocaleString('en-US')+' km','max') +
+    range('Putere minima','powerMin',R.power[0],R.power[1],10,F.powerMin,n=>n+' HP','min');
+
+  el.querySelectorAll('input[data-f]').forEach(i => i.onchange = e => {
+    const s = F[e.target.dataset.f];
+    e.target.checked ? s.add(e.target.value) : s.delete(e.target.value);
+    buildFilters(); render();
+  });
+  el.querySelectorAll('input[data-r]').forEach(i => i.oninput = e => {
+    F[e.target.dataset.r] = Number(e.target.value);
+    buildFilters(); render();
+  });
+}
+
+function render(){
+  const list = results();
+  const [k,dir] = document.getElementById('sort').value.split('-');
+  list.sort((a,b) => dir==='asc' ? a[k]-b[k] : b[k]-a[k]);
+
+  document.getElementById('count').innerHTML =
+    `${list.length} <em>din ${CARS.length} vehicule</em>`;
+
+  const chips = [];
+  ['make','fuel','drive'].forEach(f => F[f].forEach(v => chips.push(`<span class="chip" data-f="${f}" data-v="${v}">${v}</span>`)));
+  if (F.priceMax < R.price[1]) chips.push(`<span class="chip" data-r="priceMax">sub ${eur(F.priceMax)}</span>`);
+  if (F.yearMin > R.year[0])   chips.push(`<span class="chip" data-r="yearMin">din ${F.yearMin}</span>`);
+  if (F.kmMax   < R.km[1])     chips.push(`<span class="chip" data-r="kmMax">sub ${F.kmMax.toLocaleString('en-US')} km</span>`);
+  if (F.powerMin> R.power[0])  chips.push(`<span class="chip" data-r="powerMin">peste ${F.powerMin} HP</span>`);
+  document.getElementById('chips').innerHTML = chips.join('');
+  document.getElementById('clear').hidden = !chips.length;
+
+  document.querySelectorAll('.chip').forEach(c => c.onclick = () => {
+    if (c.dataset.f) F[c.dataset.f].delete(c.dataset.v);
+    else F[c.dataset.r] = ({priceMax:R.price[1],yearMin:R.year[0],kmMax:R.km[1],powerMin:R.power[0]})[c.dataset.r];
+    buildFilters(); render();
+  });
+
+  document.getElementById('rows').innerHTML = list.length ? list.map(c => `
+    <article class="row">
+      <img src="${c.img}" alt="${c.make} ${c.model}" loading="lazy" decoding="async">
+      <div>
+        <h2>${c.make} ${c.model}</h2>
+        <p class="sub">${c.year} · ${c.gearbox}</p>
+        <div class="specs">
+          <div><span>Putere</span>${c.power} HP</div>
+          <div><span>Rulaj</span>${c.km.toLocaleString('en-US')} km</div>
+          <div><span>Combustibil</span>${c.fuel}</div>
+          <div><span>Tractiune</span>${c.drive || '—'}</div>
+        </div>
+      </div>
+      <div class="price"><b>${eur(c.price)}</b><small>TVA inclus</small></div>
+    </article>`).join('')
+    : `<p class="empty">Niciun vehicul nu corespunde filtrelor. Scoate un criteriu.</p>`;
+}
+
+document.getElementById('sort').onchange = render;
+document.getElementById('clear').onclick = () => {
+  F = { make:new Set(), fuel:new Set(), drive:new Set(),
+        priceMax:R.price[1], yearMin:R.year[0], kmMax:R.km[1], powerMin:R.power[0] };
+  buildFilters(); render();
+};
+</script>
+</body>
+</html>
