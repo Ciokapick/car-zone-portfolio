@@ -88,6 +88,18 @@ const labelledStockFilterCount = (stock.match(/class="featured__item[^>]*data-fi
 const linkedDossierIds = new Set([...stock.matchAll(/href="dossier\.html\?id=([^"]+)"/g)].map((match) => match[1]));
 const stockImagePaths = [...stock.matchAll(/<img\s+src="([^"]+)"[^>]*class="featured__img"/g)].map((match) => match[1]);
 
+// Every dossier ends with the transparent inventory cutout. Missing values used
+// to silently switch the closing section to a legacy text-only fallback, which
+// made individual vehicle pages look as if they belonged to another template.
+for (const id of carIds) {
+  const imagePath = cars[id]?.image;
+  if (!imagePath) {
+    fail('assets/data/cars.json', `vehicle ${id} is missing its standard cutout image`);
+  } else if (!existsSync(resolve(root, imagePath))) {
+    fail('assets/data/cars.json', `vehicle ${id} references missing cutout ${imagePath}`);
+  }
+}
+
 if (stockCardCount !== carIds.length) {
   fail('stoc.html', `expected ${carIds.length} inventory cards, found ${stockCardCount}`);
 }

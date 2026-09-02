@@ -223,8 +223,10 @@ const facingRight = new Set([
     'lotus-emira',
     'lotus-seletre',
     'mercedes-s400d',
+    'mercedes-c43-amg',
     'mercedes-s63-smg',
     'porsche-918-spyder',
+    'porsche-911-turbo-s',
     'tesla-model-s',
     'tesla-model-x'
 ]);
@@ -1189,10 +1191,9 @@ function render() {
     $('#final-heading').textContent = closingFor(state.car, state.lang) || edit.final;
     // Poza decupata de pe card, ca la .offer din index.html. Cade pe galerie
     // doar daca masina nu are imagine de lista.
-    // Doar pozele de card sunt decupate pe fundal transparent. Doua masini nu au
-    // asa ceva (porsche-911-turbo-s, mercedes-c43-amg) si ar cadea pe un hero de
-    // galerie — fotografie de strada, cu fundal. Langa restul, care plutesc pe
-    // negru, ar arata ca o eroare. Acolo inchidem doar cu text, centrat.
+    // Doar pozele de card sunt decupate pe fundal transparent. Fallback-ul
+    // text-only ramane pentru date viitoare incomplete, dar inventarul curent
+    // este validat astfel incat fiecare masina sa aiba propriul cutout.
     const finalCar = $('#final-car');
     const hasCutout = Boolean(state.car.image);
     const finalSection = $('.dossier-final');
@@ -1235,7 +1236,10 @@ async function init() {
     state.lang = getLanguage();
     const id = new URLSearchParams(window.location.search).get('id') || 'mercedes-c63-amg';
     try {
-        const response = await fetch('assets/data/cars.json');
+        // Inventory data changes independently of this module. Avoid keeping an
+        // older JSON response after a deployment, otherwise newly completed
+        // dossiers can remain stuck in their legacy fallback until cache expiry.
+        const response = await fetch('assets/data/cars.json', { cache: 'no-store' });
         if (!response.ok) throw new Error(`Inventory returned ${response.status}`);
         state.cars = await response.json();
         state.car = state.cars[id];

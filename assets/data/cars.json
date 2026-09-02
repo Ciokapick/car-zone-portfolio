@@ -249,7 +249,7 @@
     "fuel": "Petrol",
     "power": "650 HP",
     "price": "€225,900",
-    "image": "",
+    "image": "assets/img/porsche-911-turbo-s.webp",
     "images": [
       "assets/img/galleries/porsche-911-turbo-s/hero.webp",
       "assets/img/galleries/porsche-911-turbo-s/rear.webp",
@@ -2790,7 +2790,7 @@
     "fuel": "Petrol",
     "power": "405 HP",
     "price": "€68,900",
-    "image": "",
+    "image": "assets/img/mercedes-c43-amg.webp",
     "images": [
       "assets/img/galleries/mercedes-c43-amg/hero.webp",
       "assets/img/galleries/mercedes-c43-amg/rear.webp",

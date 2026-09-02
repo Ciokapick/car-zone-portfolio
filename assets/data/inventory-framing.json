@@ -463,18 +463,18 @@
       ],
       "visibleAspect": 1.7376
     },
-    "assets/img/mercedes-c63-w206.webp": {
+    "assets/img/mercedes-c43-amg.webp": {
       "sourceSize": [
-        544,
-        353
+        1536,
+        1024
       ],
       "bounds": [
-        0.0165441,
-        0.1784703,
-        0.9742647,
-        0.9830028
+        0.03125,
+        0.1484375,
+        0.9654948,
+        0.8242188
       ],
-      "visibleAspect": 1.8345
+      "visibleAspect": 2.0737
     },
     "assets/img/cls63-amg.webp": {
       "sourceSize": [
@@ -658,18 +658,18 @@
       ],
       "visibleAspect": 2.8247
     },
-    "assets/img/popular1.webp": {
+    "assets/img/porsche-911-turbo-s.webp": {
       "sourceSize": [
-        500,
-        224
+        1536,
+        1024
       ],
       "bounds": [
-        0.02,
-        0.0178571,
-        0.978,
-        0.9776786
+        0.0345052,
+        0.1757812,
+        0.9661458,
+        0.828125
       ],
-      "visibleAspect": 2.2279
+      "visibleAspect": 2.1422
     },
     "assets/img/popular2.webp": {
       "sourceSize": [

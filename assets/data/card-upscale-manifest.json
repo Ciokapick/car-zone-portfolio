@@ -1,11 +1,11 @@
 {
-  "completedAt": "2026-09-02T17:35:11.404931+00:00",
+  "completedAt": "2026-09-02T18:28:32.612402+00:00",
   "engine": "realesrgan-x4plus",
   "deliveryFactor": 2,
   "webpQuality": 82,
-  "imageCount": 53,
-  "assetsImgBytesBefore": 138613890,
-  "assetsImgBytesAfter": 138613890,
+  "imageCount": 55,
+  "assetsImgBytesBefore": 138903480,
+  "assetsImgBytesAfter": 138903480,
   "images": {
     "assets/img/featured1.webp": {
       "inputSize": [
@@ -42,6 +42,18 @@
       ],
       "outputBytes": 61582,
       "outputSha256": "92eb2e45501f3bee32b66e5b0256f29ed53c8dd3fb0e5170a27740993ed32d04"
+    },
+    "assets/img/porsche-911-turbo-s.webp": {
+      "inputSize": [
+        768,
+        512
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ],
+      "outputBytes": 144454,
+      "outputSha256": "3e85e21e73e0847c3721c22f3ece859cdcd010df71e2052a268f4f5749f0610b"
     },
     "assets/img/tesla-model-y.webp": {
       "inputSize": [
@@ -426,6 +438,18 @@
       ],
       "outputBytes": 82990,
       "outputSha256": "ec354b554d0273d4d6e6b4e51ef718ca4a7e3a090e47c345f8d72919698813f9"
+    },
+    "assets/img/mercedes-c43-amg.webp": {
+      "inputSize": [
+        768,
+        512
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ],
+      "outputBytes": 145136,
+      "outputSha256": "78c09e31448bd2b915141fcfd9a2853a09c1f023b435eb816e5b7340ffd09131"
     },
     "assets/img/cls63-amg.webp": {
       "inputSize": [
