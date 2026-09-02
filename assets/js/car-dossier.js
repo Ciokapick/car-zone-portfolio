@@ -503,6 +503,14 @@ function getEditorial() {
 function refFor(car) { return `CZ / ${String(car.year).slice(-2)} / ${car.id.toUpperCase().replaceAll('-', ' ')}`; }
 function formatKm(km) { return new Intl.NumberFormat(state.lang === 'ro' ? 'ro-RO' : 'en-GB').format(Number(km) || 0) + ' km'; }
 
+// Pragul de la care o masina primeste tratamentul signature. Nu un id, ci
+// cantitatea de media pe care o are efectiv: o galerie proprie, sau un model 3D.
+const SIGNATURE_MIN_IMAGES = 8;
+
+function isSignatureCar(car, images) {
+    return images.length >= SIGNATURE_MIN_IMAGES || Boolean(car.sketchfab);
+}
+
 function resolveImages(car) {
     if (Array.isArray(car.images) && car.images.length) return [...new Set(car.images)];
     if (car.id === 'mercedes-s580') return Array.from({ length: 14 }, (_, index) => `assets/img/s/${index + 1}.jpg`);
@@ -908,7 +916,7 @@ function render() {
     if (!state.car) return;
     const edit = getEditorial();
     const fullName = `${state.car.make} ${state.car.model}`;
-    const isSignature = state.car.id === 'mercedes-s580';
+    const isSignature = isSignatureCar(state.car, state.images);
     document.body.classList.toggle('is-signature', isSignature);
     document.body.classList.toggle('is-standard', !isSignature);
     document.title = `${fullName} — CarZone Dossier`;
