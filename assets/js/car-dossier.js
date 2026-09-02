@@ -1201,13 +1201,13 @@ function render() {
     finalCar.hidden = !hasCutout;
     finalCar.src = hasCutout ? state.car.image : '';
     finalCar.alt = hasCutout ? fullName : '';
-    // Plafonul de marire: nu intindem o poza mai mult de 1.6x peste sursa ei,
-    // altfel masinile cu poza mica de card ies vizibil moi. Grupat intr-un if,
+    // Plafonul ramane legat de inaltimea naturala, acum la 1:1 deoarece toate
+    // imaginile de card au surse 2x. Grupat intr-un if,
     // NU cu return: suntem in mijlocul lui render(), iar un return ar sari peste
     // galerie, motive si specificatii pentru exact cele doua masini fara decupaj.
     const capFromSource = () => {
         if (!finalCar.naturalHeight) return;
-        const stretch = looseFraming.has(state.car.id) ? 2.1 : 1.6;
+        const stretch = looseFraming.has(state.car.id) ? 1.0 : 1.0;
         finalCar.style.setProperty('--car-cap', `${Math.round(finalCar.naturalHeight * stretch)}px`);
     };
     if (hasCutout && finalCar.complete) capFromSource();

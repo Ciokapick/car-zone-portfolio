@@ -1,0 +1,647 @@
+{
+  "completedAt": "2026-09-02T13:53:09.551730+00:00",
+  "engine": "realesrgan-x4plus",
+  "deliveryFactor": 2,
+  "webpQuality": 82,
+  "imageCount": 53,
+  "assetsImgBytesBefore": 138507040,
+  "assetsImgBytesAfter": 138507040,
+  "images": {
+    "assets/img/featured1.webp": {
+      "inputSize": [
+        430,
+        224
+      ],
+      "outputSize": [
+        860,
+        448
+      ],
+      "outputBytes": 35886,
+      "outputSha256": "64b6346266c19948990a250e392c95fd04e6e057191a4af0b03102ed1fe2f856"
+    },
+    "assets/img/s580.webp": {
+      "inputSize": [
+        577,
+        433
+      ],
+      "outputSize": [
+        1154,
+        866
+      ],
+      "outputBytes": 82594,
+      "outputSha256": "8bbdca94e03a3f0b75da8bcdeeca7581aa1fd4282f2d3dc0957ac66fc9c3aa71"
+    },
+    "assets/img/audir8.webp": {
+      "inputSize": [
+        462,
+        278
+      ],
+      "outputSize": [
+        924,
+        556
+      ],
+      "outputBytes": 61582,
+      "outputSha256": "92eb2e45501f3bee32b66e5b0256f29ed53c8dd3fb0e5170a27740993ed32d04"
+    },
+    "assets/img/tesla-model-y.webp": {
+      "inputSize": [
+        577,
+        273
+      ],
+      "outputSize": [
+        1154,
+        546
+      ],
+      "outputBytes": 57506,
+      "outputSha256": "fd7212adeb084a3e00bec7628a51268f19c92bfc88ffe9f13bb6321f61dc7936"
+    },
+    "assets/img/tesla-model-s.webp": {
+      "inputSize": [
+        685,
+        364
+      ],
+      "outputSize": [
+        1370,
+        728
+      ],
+      "outputBytes": 78196,
+      "outputSha256": "c76de2a17cd90c45d2290e2f99d34fe601d55d4f9e04b5defe97cc4105a28c86"
+    },
+    "assets/img/lotusemira.webp": {
+      "inputSize": [
+        495,
+        338
+      ],
+      "outputSize": [
+        990,
+        676
+      ],
+      "outputBytes": 43348,
+      "outputSha256": "38e3505136160a0f3f824126e0214e68602bce434326db4892b01b5eeefbbd91"
+    },
+    "assets/img/lotuseletre.webp": {
+      "inputSize": [
+        639,
+        328
+      ],
+      "outputSize": [
+        1278,
+        656
+      ],
+      "outputBytes": 70090,
+      "outputSha256": "6c8d77c229aa64892a8ce35fc7f09a75ee807fc1df72e9bd6883b05185146928"
+    },
+    "assets/img/lotuselise.webp": {
+      "inputSize": [
+        500,
+        333
+      ],
+      "outputSize": [
+        1000,
+        666
+      ],
+      "outputBytes": 47280,
+      "outputSha256": "a4336df9b71d36517889eb21ae21bcc1099ff44c89f7420dd145a9917137dfd2"
+    },
+    "assets/img/audiq3.webp": {
+      "inputSize": [
+        348,
+        224
+      ],
+      "outputSize": [
+        696,
+        448
+      ],
+      "outputBytes": 34410,
+      "outputSha256": "4bfae3e0fdb0f93d93d1e4154152868ca91be7d96162bdaf6b30fae77c71a877"
+    },
+    "assets/img/audiq7.webp": {
+      "inputSize": [
+        612,
+        386
+      ],
+      "outputSize": [
+        1224,
+        772
+      ],
+      "outputBytes": 69280,
+      "outputSha256": "8ad16d047d5d410541f99e5e2798158ecdffb1a0a6f53414b1f74b341f718bd0"
+    },
+    "assets/img/audirs4b8.webp": {
+      "inputSize": [
+        501,
+        298
+      ],
+      "outputSize": [
+        1002,
+        596
+      ],
+      "outputBytes": 58146,
+      "outputSha256": "958d1e3f93c9f6b638716bab36d9fdc7dff2d6ab52c99b68e409725eb36abe7e"
+    },
+    "assets/img/audirs5.webp": {
+      "inputSize": [
+        482,
+        233
+      ],
+      "outputSize": [
+        964,
+        466
+      ],
+      "outputBytes": 46654,
+      "outputSha256": "226c61c79547a751f00a56ac0a854278c5758c99dbac59a7f18fbb12f3b964d7"
+    },
+    "assets/img/audirsq8.webp": {
+      "inputSize": [
+        500,
+        258
+      ],
+      "outputSize": [
+        1000,
+        516
+      ],
+      "outputBytes": 60024,
+      "outputSha256": "840a3b6c8ec399313cbb2d40deaff32a948a7dc1482497c9dc3ab142cdc7949e"
+    },
+    "assets/img/lexuses.webp": {
+      "inputSize": [
+        401,
+        269
+      ],
+      "outputSize": [
+        802,
+        538
+      ],
+      "outputBytes": 35666,
+      "outputSha256": "ff08da196473a4a9bcfd329a2f174677fad75c7ee11cf0148d549874be0ba956"
+    },
+    "assets/img/lexusis.webp": {
+      "inputSize": [
+        577,
+        433
+      ],
+      "outputSize": [
+        1154,
+        866
+      ],
+      "outputBytes": 53736,
+      "outputSha256": "1576e951fc82b99e05f8e33c12e7f85ed026df698fb07720893dfcc89c5408c7"
+    },
+    "assets/img/lexuslc.webp": {
+      "inputSize": [
+        506,
+        375
+      ],
+      "outputSize": [
+        1012,
+        750
+      ],
+      "outputBytes": 75556,
+      "outputSha256": "11b0caa76f309bf39a2783a1667c2289023bf6ef5b5ae3b0dd39423918dca4ed"
+    },
+    "assets/img/lexuslfa.webp": {
+      "inputSize": [
+        409,
+        375
+      ],
+      "outputSize": [
+        818,
+        750
+      ],
+      "outputBytes": 47964,
+      "outputSha256": "3dd769c79ec6ad21b309eae1af92d598ecd8886e3e54a236b112270360752f5d"
+    },
+    "assets/img/lexuslx.webp": {
+      "inputSize": [
+        395,
+        299
+      ],
+      "outputSize": [
+        790,
+        598
+      ],
+      "outputBytes": 58156,
+      "outputSha256": "2b0eef46da742d4676f16309183b3c1118c968a27ed73a977c3be3b9085cf706"
+    },
+    "assets/img/lexusuxh.webp": {
+      "inputSize": [
+        362,
+        269
+      ],
+      "outputSize": [
+        724,
+        538
+      ],
+      "outputBytes": 37390,
+      "outputSha256": "5e9662fe7827912779cb33b17cbf5fbedf6a829084fa5e74449d9dc3e7a9b57c"
+    },
+    "assets/img/porsche918.webp": {
+      "inputSize": [
+        557,
+        341
+      ],
+      "outputSize": [
+        1114,
+        682
+      ],
+      "outputBytes": 54412,
+      "outputSha256": "1471598a390c16ea1d523ca1e0e8f7b0abfd4213d9c929b6b782070111416089"
+    },
+    "assets/img/4c.webp": {
+      "inputSize": [
+        515,
+        326
+      ],
+      "outputSize": [
+        1030,
+        652
+      ],
+      "outputBytes": 54876,
+      "outputSha256": "62a8c559fe34b81d986f1af6f01f69482581d10ca7116db134ceb216eaa677da"
+    },
+    "assets/img/33stradale.webp": {
+      "inputSize": [
+        448,
+        314
+      ],
+      "outputSize": [
+        896,
+        628
+      ],
+      "outputBytes": 56494,
+      "outputSha256": "0b089b095594d02a2daa933b5d9a9ff44dfdaded138e46dbb5816f6457874c14"
+    },
+    "assets/img/giulia.webp": {
+      "inputSize": [
+        462,
+        313
+      ],
+      "outputSize": [
+        924,
+        626
+      ],
+      "outputBytes": 49632,
+      "outputSha256": "3486d892e62948ee38ad442bb778a62d40f37a6528e7456153a6f03fab93f2d7"
+    },
+    "assets/img/tonale.webp": {
+      "inputSize": [
+        472,
+        323
+      ],
+      "outputSize": [
+        944,
+        646
+      ],
+      "outputBytes": 74706,
+      "outputSha256": "5e00987235575f0e384ba48c87a0284d1822e9a53c152bd8285db8ec6b98a970"
+    },
+    "assets/img/stelvio.webp": {
+      "inputSize": [
+        414,
+        275
+      ],
+      "outputSize": [
+        828,
+        550
+      ],
+      "outputBytes": 41834,
+      "outputSha256": "459a5071b5ab21c98436866bdea3e363357731aad3d5f3fd71edc91b04fc3a80"
+    },
+    "assets/img/gennesisg70shootingbrake.webp": {
+      "inputSize": [
+        536,
+        356
+      ],
+      "outputSize": [
+        1072,
+        712
+      ],
+      "outputBytes": 55036,
+      "outputSha256": "188bd45e741d81e0f9457201a48cb14ba87ed247c690e1a0e0274d20128318f8"
+    },
+    "assets/img/gennesisg80.webp": {
+      "inputSize": [
+        613,
+        407
+      ],
+      "outputSize": [
+        1226,
+        814
+      ],
+      "outputBytes": 75216,
+      "outputSha256": "d139fee83b7986c1d240cb7c827c52e8d6ed353b3f15da04d0ed54cdda3f47c5"
+    },
+    "assets/img/gennesisg90.webp": {
+      "inputSize": [
+        666,
+        375
+      ],
+      "outputSize": [
+        1332,
+        750
+      ],
+      "outputBytes": 63936,
+      "outputSha256": "2deab2ddeef24f33f8036355561b4d4ef4403b91c0291237bcad0ac78ad5b3fb"
+    },
+    "assets/img/gennesisg90longwheelbase.webp": {
+      "inputSize": [
+        730,
+        319
+      ],
+      "outputSize": [
+        1460,
+        638
+      ],
+      "outputBytes": 67690,
+      "outputSha256": "efb69e2d213dc006c7145eb0a08db1ec04ddae911b1e272fad01f5165208105c"
+    },
+    "assets/img/gennesisgv60.webp": {
+      "inputSize": [
+        748,
+        333
+      ],
+      "outputSize": [
+        1496,
+        666
+      ],
+      "outputBytes": 65306,
+      "outputSha256": "99c24d2ebf0b672e91af8c611f0abcc7d0c92e723b972ea2978260a2282ddb9d"
+    },
+    "assets/img/gennesisgv70.webp": {
+      "inputSize": [
+        696,
+        359
+      ],
+      "outputSize": [
+        1392,
+        718
+      ],
+      "outputBytes": 73464,
+      "outputSha256": "3e6e1c7bfefd22da2bafe1db4a09b835b953db53ae646c6fe10a0d5924d2e461"
+    },
+    "assets/img/s400d.webp": {
+      "inputSize": [
+        450,
+        375
+      ],
+      "outputSize": [
+        900,
+        750
+      ],
+      "outputBytes": 52108,
+      "outputSha256": "9a1bc5fa4c4678e13462dc1aba0cad71a8f42783c37da0abe79a18e684c5afa7"
+    },
+    "assets/img/e55-amg.webp": {
+      "inputSize": [
+        409,
+        413
+      ],
+      "outputSize": [
+        818,
+        826
+      ],
+      "outputBytes": 50448,
+      "outputSha256": "60cd6ed69b945633aff9f99791ba04061dfdf5177915dbdc7a102cea010e545c"
+    },
+    "assets/img/g65-amg.webp": {
+      "inputSize": [
+        572,
+        395
+      ],
+      "outputSize": [
+        1144,
+        790
+      ],
+      "outputBytes": 84382,
+      "outputSha256": "71dbf6376c49cc1b28541f4b27133b148edb06c63a32d7242ba37cac81fa620e"
+    },
+    "assets/img/c63.webp": {
+      "inputSize": [
+        666,
+        375
+      ],
+      "outputSize": [
+        1332,
+        750
+      ],
+      "outputBytes": 82990,
+      "outputSha256": "ec354b554d0273d4d6e6b4e51ef718ca4a7e3a090e47c345f8d72919698813f9"
+    },
+    "assets/img/cls63-amg.webp": {
+      "inputSize": [
+        500,
+        360
+      ],
+      "outputSize": [
+        1000,
+        720
+      ],
+      "outputBytes": 58246,
+      "outputSha256": "ad06bbf1cb5a70fa6eb673426e4710345477d861e82e48e07f6da68263199c97"
+    },
+    "assets/img/s63-amg-w221.webp": {
+      "inputSize": [
+        632,
+        395
+      ],
+      "outputSize": [
+        1264,
+        790
+      ],
+      "outputBytes": 82500,
+      "outputSha256": "84e5bf19c61437bae8b4371b5bea91e20a1f8863e4790ebd9777547d525fbc3c"
+    },
+    "assets/img/x5.webp": {
+      "inputSize": [
+        633,
+        382
+      ],
+      "outputSize": [
+        1266,
+        764
+      ],
+      "outputBytes": 89030,
+      "outputSha256": "3a693b42151cbe18610cb00df1d64cf45fec5af8b1c4a1e0fb9198dbb4afde97"
+    },
+    "assets/img/bmw-m6.webp": {
+      "inputSize": [
+        634,
+        374
+      ],
+      "outputSize": [
+        1268,
+        748
+      ],
+      "outputBytes": 81228,
+      "outputSha256": "a417995efe6c2f08bb87423892af2ec71b34ad83d4561caa98731fce5fc227c7"
+    },
+    "assets/img/bmw-x6.webp": {
+      "inputSize": [
+        581,
+        353
+      ],
+      "outputSize": [
+        1162,
+        706
+      ],
+      "outputBytes": 91072,
+      "outputSha256": "dd0dd9420082a4c8076ee7865a05ed2e4370fb5577745b62dea99007cf2ef462"
+    },
+    "assets/img/bmw-m5-e60.webp": {
+      "inputSize": [
+        547,
+        408
+      ],
+      "outputSize": [
+        1094,
+        816
+      ],
+      "outputBytes": 52330,
+      "outputSha256": "a72ed20bff253696e94d7fb664c2bec0703500aa862363f1860c30efc12bd0bd"
+    },
+    "assets/img/bmw-m8.webp": {
+      "inputSize": [
+        330,
+        239
+      ],
+      "outputSize": [
+        660,
+        478
+      ],
+      "outputBytes": 32810,
+      "outputSha256": "83ee39d88a8475708b3ae34b08e98cab8633a76d48ad84b92ac87716510a74a0"
+    },
+    "assets/img/bmw-m3-e92.webp": {
+      "inputSize": [
+        324,
+        330
+      ],
+      "outputSize": [
+        648,
+        660
+      ],
+      "outputBytes": 26656,
+      "outputSha256": "980788cdd598b5477ced3e3b232c92afbfc35332c5982d8ac35e87d9c3146d91"
+    },
+    "assets/img/corvettez51.webp": {
+      "inputSize": [
+        592,
+        296
+      ],
+      "outputSize": [
+        1184,
+        592
+      ],
+      "outputBytes": 53476,
+      "outputSha256": "22d61d3aab2cb1fd60ebefdf1d911e60e599ba5ea92e7404ade51ef4dd1f0c85"
+    },
+    "assets/img/corvettezc8.webp": {
+      "inputSize": [
+        501,
+        276
+      ],
+      "outputSize": [
+        1002,
+        552
+      ],
+      "outputBytes": 44744,
+      "outputSha256": "3a272aa80d4e1a5d9a8e4bbae553bbcf8f78a263b551047865e9508ff5615ae2"
+    },
+    "assets/img/corvettestingrayc7.webp": {
+      "inputSize": [
+        612,
+        408
+      ],
+      "outputSize": [
+        1224,
+        816
+      ],
+      "outputBytes": 56076,
+      "outputSha256": "c5c71d849235184494f4e886e30cec7eda48d1d6ba3127172a391d13929b1c1d"
+    },
+    "assets/img/koenigsegg-cc850.webp": {
+      "inputSize": [
+        369,
+        188
+      ],
+      "outputSize": [
+        738,
+        376
+      ],
+      "outputBytes": 27642,
+      "outputSha256": "529062bdddc9dde00079e8ddab103dc38d24b4a3f65cd2bfce6486759aeecc75"
+    },
+    "assets/img/koenigsegg-gemera.webp": {
+      "inputSize": [
+        376,
+        343
+      ],
+      "outputSize": [
+        752,
+        686
+      ],
+      "outputBytes": 26452,
+      "outputSha256": "2ac01d4a7c87a94f5484f7b7b1fa8924b10f1b780a594482ab4e0b9de4248f07"
+    },
+    "assets/img/koenigsegg-jesko-attack.webp": {
+      "inputSize": [
+        376,
+        311
+      ],
+      "outputSize": [
+        752,
+        622
+      ],
+      "outputBytes": 32200,
+      "outputSha256": "e6d25011369b7dd4f0019c5b93f08bdf06d8967ede9bf4321a61ec5d180f0987"
+    },
+    "assets/img/home.webp": {
+      "inputSize": [
+        1262,
+        738
+      ],
+      "outputSize": [
+        2524,
+        1476
+      ],
+      "outputBytes": 119044,
+      "outputSha256": "c0b4bdaebfcfcde2dfd29ea5f74b7fe7a1cedd6fbe5b973e3bc8439e207aaa53"
+    },
+    "assets/img/popular3.webp": {
+      "inputSize": [
+        500,
+        224
+      ],
+      "outputSize": [
+        1000,
+        448
+      ],
+      "outputBytes": 43998,
+      "outputSha256": "7d0f52cc3210cf94e964ac4ba6e759d2ed3db4ca325d658fdadc17f5d27dd496"
+    },
+    "assets/img/popular4.webp": {
+      "inputSize": [
+        500,
+        224
+      ],
+      "outputSize": [
+        1000,
+        448
+      ],
+      "outputBytes": 46672,
+      "outputSha256": "1b351f52acc2ca299b254784893aac897817fbec5725ec5f2d4cd664e6d2598b"
+    },
+    "assets/img/popular5.webp": {
+      "inputSize": [
+        500,
+        224
+      ],
+      "outputSize": [
+        1000,
+        448
+      ],
+      "outputBytes": 48670,
+      "outputSha256": "c5b99ae27ee44c0b72379efbc8bc412c96647195cf4c4d09ae6693726a673a5c"
+    }
+  }
+}

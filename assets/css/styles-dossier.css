@@ -553,10 +553,10 @@ body.dossier-page {
            pe unele si le lasa pitice pe altele. Pe inaltime, toate ocupa
            aceeasi banda verticala si latimea se aseaza singura. */
         width: auto;
-        /* --car-cap vine din JS: inaltimea sursei x 1.45. Pozele de card au fost
-           facute pentru carduri de 180px (unele au 369x188), deci fara plafon
-           unele s-ar intinde de 2.7 ori si ar iesi moi. Cine are sursa mare
-           creste pana la 520px, cine are sursa mica se opreste mai devreme.
+        /* --car-cap vine din JS la inaltimea naturala 1:1. Sursele de card sunt
+           acum livrate 2x, deci plafonul previne orice noua interpolare in sus.
+           Cine are sursa mare creste pana la 640px, iar celelalte se opresc la
+           dimensiunea lor reala.
            max-width tine masina la dreapta titlului, indiferent de raport. */
         height: min(clamp(320px, 46vw, 640px), var(--car-cap, 640px));
         max-width: 52vw;
