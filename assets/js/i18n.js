@@ -339,7 +339,7 @@
                 .replace(/^Back to top$/, 'Înapoi sus').replace(/^CarZone on /, 'CarZone pe ');
             el.setAttribute('aria-label', label);
         });
-        document.querySelectorAll('.featured__colour, .spec-value, .features-list li').forEach(function (el) {
+        document.querySelectorAll('.spec-value, .features-list li').forEach(function (el) {
             if (el.hasAttribute('data-i18n') || el.children.length) return;
             var source = el.dataset.vehicleValue || el.textContent.trim();
             if (window.carzoneVehicleI18n?.covered(source)) {

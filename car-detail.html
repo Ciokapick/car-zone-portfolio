@@ -766,6 +766,7 @@
             if (specs) {
                 html += '<div class="specs-grid">';
                 for (const [label, value] of Object.entries(specs)) {
+                    if (/^colou?r$/i.test(label)) continue;
                     html += `
                         <div class="spec-item">
                             <span class="spec-label">${label}</span>

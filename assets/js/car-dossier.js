@@ -420,8 +420,8 @@ const reasonsByCar = {
         ro: [["Cuplu turbo, maniere GT", "Cuplul de jos al V8-ului biturbo se potrivește condusului rapid și relaxat pe distanțe lungi, nu circuitului brut."], ["Grand tourer-ul BMW", "Construit ca un coupe mare și luxos pentru parcurs distanțe rapid, nu ca o mașină de circuit epurată."], ["Plafon carbon de serie", "Plafonul din fibră de carbon coboară centrul de greutate, o soluție de inginerie M specifică acestei generații."]]
     },
     'bmw-x6': {
-        en: [["More power than X5", "The same diesel platform tuned to 340 hp, enough to offset the coupe roofline's extra weight and drag."], ["The coupe-SUV pioneer", "BMW coined the 'Sports Activity Coupe' label in 2008, a shape every premium rival has since copied."], ["Understated color, low mileage", "A dark, understated color choice tempers the shape's boldness, on a car with light use for its age."]],
-        ro: [["Peste puterea X5-ului", "Aceeași platformă diesel calibrată la 340 CP, suficient cât să compenseze greutatea și rezistența aerodinamică suplimentară a caroseriei coupe."], ["Pionierul SUV-coupe", "BMW a inventat eticheta „Sports Activity Coupe” în 2008, o formă copiată de atunci de toți rivalii premium."], ["Culoare discretă, rulaj redus", "O culoare închisă și discretă temperează îndrăzneala caroseriei, pe o mașină cu uzură redusă pentru vârsta ei."]]
+        en: [["More power than X5", "The same diesel platform tuned to 340 hp, enough to offset the coupe roofline's extra weight and drag."], ["The coupe-SUV pioneer", "BMW coined the 'Sports Activity Coupe' label in 2008, a shape every premium rival has since copied."], ["Listed mileage", "30,000 km in the listing. Confirm the current odometer reading and supporting records at the viewing."]],
+        ro: [["Peste puterea X5-ului", "Aceeași platformă diesel calibrată la 340 CP, suficient cât să compenseze greutatea și rezistența aerodinamică suplimentară a caroseriei coupe."], ["Pionierul SUV-coupe", "BMW a inventat eticheta „Sports Activity Coupe” în 2008, o formă copiată de atunci de toți rivalii premium."], ["Rulaj declarat", "30.000 km în anunț. Confirmă valoarea actuală a odometrului și documentele justificative la vizionare."]]
     },
     'bmw-m5': {
         en: [["Race-bred throttle response", "Individual throttle bodies and a free-revving V10 give a throttle response no turbocharged M car since has matched."], ["The only V10 M5", "BMW has never repeated the V10 layout in an M5, before or since — this generation stands alone."], ["High miles, modest price", "175,000 km over nineteen years reflects genuine use, and puts V10 ownership within reach at a modest price."]],
@@ -858,7 +858,7 @@ function toggleSignatureRoom() {
 // Faptele cheie se COMPUN din cars.json, nu se scriu de mana si nu se inventeaza.
 // Un dealer real ar pune aici istoric de service si provenienta; noi nu avem asa
 // ceva in date, asa ca spunem doar ce putem sustine: rulaj raportat la varsta,
-// garantie, tractiune, culoare, prima inmatriculare.
+// garantie, tractiune, prima inmatriculare.
 function keyFactsFor(car, lang) {
     const ro = lang === 'ro';
     const facts = [];
@@ -899,9 +899,6 @@ function keyFactsFor(car, lang) {
             ? { RWD: 'Tracțiune spate', FWD: 'Tracțiune față', AWD: 'Tracțiune integrală', '4WD': 'Tracțiune integrală', '4x4': 'Tracțiune integrală' }
             : { RWD: 'Rear-wheel drive', FWD: 'Front-wheel drive', AWD: 'All-wheel drive', '4WD': 'Four-wheel drive', '4x4': 'Four-wheel drive' };
         facts.push(plain[drive] || vehicleText(drive, lang));
-    }
-    if (technical.Color) {
-        facts.push(ro ? `Culoare exterioară: ${vehicleText(technical.Color, lang)}` : `Finished in ${technical.Color}`);
     }
     if (basic['First registration']) {
         facts.push(ro
@@ -1083,8 +1080,7 @@ function renderTrust() {
         [t('reference'), refFor(state.car)],
         [t('vin'), basic.VIN || 'Available on request'],
         [t('firstRegistration'), basic['First registration'] || String(state.car.year)],
-        [t('warranty'), technical.Warranty || 'Confirmed on consultation'],
-        [t('colour'), technical.Color || '—']
+        [t('warranty'), technical.Warranty || 'Confirmed on consultation']
     ];
     $('#trust-list').replaceChildren(...rows.map(([label, value]) => {
         const row = element('div', 'dossier-trust__row');
@@ -1103,6 +1099,8 @@ function accordionContent(key, value) {
     }
     const grid = element('div', 'dossier-spec-grid');
     Object.entries(value || {}).forEach(([label, item]) => {
+        // Paint names in the demo do not reliably match the vehicle photography.
+        if (/^colou?r$/i.test(label)) return;
         const row = element('div', 'dossier-spec-row');
         row.append(element('span', '', vehicleText(label)), element('span', '', ['Make', 'Model', 'model', 'VIN'].includes(label) ? String(item) : vehicleText(item)));
         grid.append(row);

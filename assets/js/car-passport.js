@@ -155,7 +155,6 @@ function identityCard(car, copy) {
         declaredRow(copy.vin, basic.VIN, copy),
         declaredRow(copy.firstRegistration, basic['First registration'] || car.year, copy),
         declaredRow(copy.mileage, `${new Intl.NumberFormat(language() === 'ro' ? 'ro-RO' : 'en-GB').format(Number(car.km) || 0)} km`, copy),
-        declaredRow(copy.colour, window.carzoneVehicleI18n.text(technical.Color, language()), copy),
         declaredRow(copy.warranty, localizeWarranty(technical.Warranty), copy)
     );
     card.append(list);
