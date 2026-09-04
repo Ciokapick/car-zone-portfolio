@@ -159,6 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (count) count.textContent = String(visibleCount);
+        window.carzoneI18n?.updateInventoryCount();
+        const empty = document.getElementById('inventory-empty');
+        if (empty) empty.hidden = visibleCount !== 0;
 
         // Filtrarea poate scurta pagina cu cateva mii de pixeli, iar ScrollReveal
         // ramane cu pozitiile calculate inainte: footerul urca in ecran, dar el

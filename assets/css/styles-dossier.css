@@ -24,12 +24,32 @@
 
 html { scroll-behavior: smooth; }
 body.dossier-page {
+    --brand-display-font: var(--d-sans);
+    --brand-display-weight: 400;
+    --brand-display-tracking: -.045em;
+    --brand-mark-width: clamp(138px, 12vw, 210px);
+    --brand-mark-height: 52px;
     margin: 0;
     background: var(--d-bg);
     color: var(--d-text);
     font-family: var(--d-sans);
     overflow-x: hidden;
 }
+
+/* One live-text title per vehicle. Corporate faces are used when installed;
+   otherwise the explicitly loaded web family supplies the brand direction.
+   These fallbacks are not the manufacturers' proprietary fonts. */
+body.dossier-page.brand-mercedes-benz { --brand-display-font: "Corporate A", "Corpo A", var(--mercedes-font); --brand-display-weight: 400; --brand-display-tracking: -.055em; --brand-mark-width: clamp(172px, 15vw, 250px); }
+body.dossier-page.brand-alfa-romeo { --brand-display-font: Futura, "Century Gothic", Montserrat, sans-serif; --brand-display-weight: 400; --brand-display-tracking: -.035em; --brand-mark-width: clamp(62px, 6vw, 92px); --brand-mark-height: 92px; }
+body.dossier-page.brand-genesis { --brand-display-font: "Genesis Sans Head", "Avenir Next", Manrope, sans-serif; --brand-display-weight: 300; --brand-display-tracking: -.035em; --brand-mark-width: clamp(154px, 14vw, 230px); --brand-mark-height: 64px; }
+body.dossier-page.brand-audi { --brand-display-font: "Audi Type Extended", "Audi Type", Manrope, sans-serif; --brand-display-weight: 300; --brand-display-tracking: -.05em; --brand-mark-width: clamp(112px, 10vw, 170px); }
+body.dossier-page.brand-porsche { --brand-display-font: "Porsche Next", "Space Grotesk", "Avenir Next", sans-serif; --brand-display-weight: 400; --brand-display-tracking: -.045em; --brand-mark-width: clamp(185px, 17vw, 280px); }
+body.dossier-page.brand-bmw { --brand-display-font: "BMW Type Next", Montserrat, "Avenir Next", sans-serif; --brand-display-weight: 300; --brand-display-tracking: -.04em; --brand-mark-width: clamp(62px, 6vw, 88px); --brand-mark-height: 88px; }
+body.dossier-page.brand-tesla { --brand-display-font: "Universal Sans", Gotham, Montserrat, sans-serif; --brand-display-weight: 300; --brand-display-tracking: .005em; --brand-mark-width: clamp(146px, 13vw, 220px); }
+body.dossier-page.brand-lexus { --brand-display-font: Nobel, "Noto Sans Display", "Avenir Next", sans-serif; --brand-display-weight: 300; --brand-display-tracking: -.025em; --brand-mark-width: clamp(142px, 13vw, 220px); }
+body.dossier-page.brand-lotus { --brand-display-font: "Lotus Type", "Helvetica Neue", "Barlow Condensed", sans-serif; --brand-display-weight: 300; --brand-display-tracking: .005em; --brand-mark-width: clamp(142px, 13vw, 220px); --brand-mark-height: 52px; }
+body.dossier-page.brand-chevrolet { --brand-display-font: Louis, "Arial Narrow", "Barlow Condensed", sans-serif; --brand-display-weight: 400; --brand-display-tracking: -.01em; --brand-mark-width: clamp(168px, 15vw, 250px); }
+body.dossier-page.brand-koenigsegg { --brand-display-font: "Koenigsegg Sans", Michroma, "Avenir Next", sans-serif; --brand-display-weight: 400; --brand-display-tracking: -.035em; --brand-mark-width: clamp(178px, 16vw, 265px); }
 
 .dossier-page [hidden] { display: none !important; }
 
@@ -92,7 +112,11 @@ body.dossier-page {
    aparitii izolate. Tinta e #dossier-content h2 (titluri de sectiune):
    eyebrow-urile, dt/dd, butoanele si nav-ul nu sunt h2, deci raman neatinse;
    pe is-standard selectorul nu se aplica deloc. */
-.is-signature #dossier-content h2 { font-family: var(--mercedes-font); }
+.dossier-page #dossier-content h2 {
+    font-family: var(--brand-display-font);
+    font-weight: var(--brand-display-weight);
+    letter-spacing: var(--brand-display-tracking);
+}
 
 .dossier-loading, .dossier-error {
     min-height: 100svh;
@@ -135,8 +159,23 @@ body.dossier-page {
 .dossier-availability span { width: 7px; height: 7px; border-radius: 50%; background: #8ff0b0; box-shadow: 0 0 0 5px rgba(143,240,176,.1); }
 .dossier-hero__content { position: relative; z-index: 2; padding-bottom: 56px; }
 .dossier-hero__content .eyebrow { color: rgba(255,255,255,.8); }
-.dossier-hero h1 { margin: 0; max-width: 1020px; font-size: clamp(2.6rem, 4.35vw, 5.35rem); font-weight: var(--font-medium); line-height: .88; letter-spacing: -.055em; }
-.dossier-hero h1 span { display: block; }
+.dossier-hero h1 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    white-space: nowrap;
+    font-size: clamp(2.75rem, 5.4vw, 5.8rem);
+    font-weight: var(--font-medium);
+    line-height: 1.12;
+    letter-spacing: -.055em;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .32);
+}
+.dossier-page .dossier-hero h1 {
+    font-family: var(--brand-display-font);
+    font-weight: var(--brand-display-weight);
+    letter-spacing: max(var(--brand-display-tracking), -.025em);
+}
 .dossier-hero__statement { max-width: 610px; margin: 2.2rem 0 3.25rem; color: rgba(255,255,255,.75); font-size: clamp(1rem, 1.4vw, 1.25rem); line-height: 1.65; }
 .dossier-hero__footer { display: grid; grid-template-columns: 180px 150px 1fr; gap: 2rem; align-items: end; padding-top: 1.3rem; border-top: 1px solid rgba(255,255,255,.18); }
 .dossier-hero__price span, .dossier-hero__metric span { display: block; margin-bottom: .35rem; color: rgba(255,255,255,.52); font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; }
@@ -160,11 +199,11 @@ body.dossier-page {
 .is-signature .dossier-hero h1 {
     max-width: 1100px;
     margin-inline: auto;
-    font-family: var(--mercedes-font);
-    font-size: clamp(4rem, 8vw, 8.4rem);
+    font-family: var(--brand-display-font);
+    font-size: clamp(3rem, 6.6vw, 7rem);
     font-weight: 400;
-    line-height: .84;
-    letter-spacing: -.06em;
+    line-height: 1.12;
+    letter-spacing: -.025em;
 }
 /* Heroul paginii S580 originale avea un singur element peste video: titlul.
    Fara supratitlu, fara fraza de sub el (vezi <section class="video-section">
@@ -182,8 +221,6 @@ body.dossier-page {
 .dossier-hero { align-items: center; }
 .dossier-hero__content { padding-bottom: 0; }
 .dossier-hero h1 { margin-bottom: 0; }
-/* numele pe un singur rand, ca in pagina S580 originala */
-.dossier-hero h1 span { display: inline; }
 
 .is-signature .dossier-hero__statement { max-width: 660px; margin-inline: auto; }
 .is-signature .dossier-hero__footer { text-align: left; }
@@ -637,8 +674,10 @@ body.dossier-page {
     .dossier-hero__top { top: 92px; }
     .dossier-reference { max-width: 70%; }
     .dossier-hero__content { padding-bottom: 32px; }
-    .dossier-hero h1 { font-size: clamp(3.8rem, 20vw, 6.2rem); line-height: .84; }
-    .is-signature .dossier-hero h1 { font-size: clamp(3.7rem, 17vw, 5.6rem); }
+    .dossier-hero h1 {
+        font-size: clamp(2rem, 9vw, 3.1rem);
+    }
+    .is-signature .dossier-hero h1 { font-size: clamp(2rem, 10vw, 3.4rem); }
     .is-signature .dossier-hero__video { object-position: 58% center; }
     .dossier-hero__statement { margin: 1.6rem 0 2.2rem; font-size: .98rem; }
     .dossier-hero__footer { grid-template-columns: 1fr 1fr; gap: 1.4rem; }

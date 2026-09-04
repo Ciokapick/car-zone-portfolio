@@ -1,0 +1,270 @@
+/*
+ * Inventory vehicle microinteractions
+ *
+ * This layer deliberately reuses --vehicle-x / --vehicle-y / --vehicle-scale
+ * from inventory-filter.js. It never replaces the framing calculation, it only
+ * adds a few pixels of pointer-driven movement around that calibrated result.
+ */
+
+html.vehicle-micro-ready .stock-page .featured__card {
+    --micro-lift: 0px;
+    --micro-tilt-x: 0deg;
+    --micro-tilt-y: 0deg;
+    --micro-car-x: 0px;
+    --micro-car-y: 0px;
+    --micro-shine-x: 50%;
+    --micro-shine-y: 48%;
+    --micro-shine-opacity: 0;
+    position: relative;
+    isolation: isolate;
+    grid-template-rows: auto auto minmax(150px, 1fr) auto auto;
+    min-height: 405px;
+    transform: perspective(900px) translate3d(0, var(--micro-lift), 0)
+        rotateX(var(--micro-tilt-x)) rotateY(var(--micro-tilt-y));
+    transform-style: preserve-3d;
+    transition:
+        transform .42s cubic-bezier(.2, .75, .25, 1),
+        border-color .28s ease,
+        box-shadow .38s ease;
+    will-change: transform;
+}
+
+html.vehicle-micro-ready .stock-page .featured__card--signature {
+    grid-template-rows: auto auto auto minmax(150px, 1fr) auto auto;
+    min-height: 438px;
+}
+
+/* Pointer light belongs to the whole object, not to a rectangle around the
+   photograph. The card surface, typography and controls now move together. */
+html.vehicle-micro-ready .stock-page .featured__card::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    border-radius: inherit;
+    background:
+        radial-gradient(circle at var(--micro-shine-x) var(--micro-shine-y),
+            rgba(101, 155, 255, .2),
+            rgba(54, 103, 196, .065) 31%,
+            transparent 66%),
+        linear-gradient(118deg, transparent 18%, rgba(220, 234, 255, .035) 48%, transparent 72%);
+    opacity: calc(.16 + var(--micro-shine-opacity));
+    transition: opacity .35s ease;
+    pointer-events: none;
+}
+
+html.vehicle-micro-ready .stock-page .featured__card > * {
+    z-index: 1;
+}
+
+html.vehicle-micro-ready .stock-page .featured__card:hover,
+html.vehicle-micro-ready .stock-page .featured__card:focus-within,
+html.vehicle-micro-ready .stock-page .featured__card.is-micro-active {
+    --micro-lift: -5px;
+}
+
+html.vehicle-micro-ready .stock-page .featured__card:hover,
+html.vehicle-micro-ready .stock-page .featured__card:focus-within,
+html.vehicle-micro-ready .stock-page .featured__card.is-micro-active {
+    border-color: rgba(122, 166, 244, .5);
+    box-shadow: 0 25px 58px rgba(0, 0, 0, .4), 0 0 0 1px rgba(90, 142, 236, .07);
+}
+
+html.vehicle-micro-ready .stock-page .featured__media-link {
+    position: relative;
+    isolation: isolate;
+    overflow: visible;
+}
+
+/* A low, diffused light behind the silhouette. It suggests showroom lighting,
+   without pretending to locate the real headlights in every source image. */
+html.vehicle-micro-ready .stock-page .featured__media-link::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 25% 5% 2%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(67, 118, 216, .15), rgba(31, 68, 137, .045) 44%, transparent 72%);
+    filter: blur(12px);
+    opacity: .42;
+    transform: translateZ(0) scale(.94);
+    transition: opacity .35s ease, transform .45s cubic-bezier(.2, .75, .25, 1);
+    pointer-events: none;
+}
+
+html.vehicle-micro-ready .stock-page .featured__card:hover .featured__media-link::before,
+html.vehicle-micro-ready .stock-page .featured__card:focus-within .featured__media-link::before,
+html.vehicle-micro-ready .stock-page .featured__card.is-micro-active .featured__media-link::before {
+    opacity: .58;
+    transform: translateZ(0) scale(1.02);
+}
+
+html.vehicle-micro-ready .stock-page .featured__img {
+    position: relative;
+    z-index: 1;
+    transform:
+        translate3d(
+            calc(var(--vehicle-x) + var(--micro-car-x)),
+            calc(var(--vehicle-y) + var(--micro-car-y)),
+            0
+        )
+        scale(var(--vehicle-scale));
+    transition: transform .42s cubic-bezier(.2, .75, .25, 1), filter .35s ease;
+    will-change: transform, filter;
+}
+
+html.vehicle-micro-ready .stock-page .featured__card:hover .featured__img,
+html.vehicle-micro-ready .stock-page .featured__card:focus-within .featured__img,
+html.vehicle-micro-ready .stock-page .featured__card.is-micro-active .featured__img {
+    transform:
+        translate3d(
+            calc(var(--vehicle-x) + var(--micro-car-x)),
+            calc(var(--vehicle-y) - 4px + var(--micro-car-y)),
+            0
+        )
+        scale(var(--vehicle-scale-hover));
+    filter:
+        drop-shadow(0 23px 17px rgba(0, 0, 0, .58))
+        drop-shadow(0 0 14px rgba(93, 147, 244, .09));
+}
+
+.vehicle-micro-specs {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    margin: .25rem 0 .8rem;
+    padding: .72rem 0 .68rem;
+    border-top: 1px solid rgba(145, 180, 240, .14);
+    border-bottom: 1px solid rgba(145, 180, 240, .1);
+    transition: border-color .28s ease, background .28s ease;
+}
+
+.vehicle-micro-specs__item {
+    display: grid;
+    gap: .25rem;
+    min-width: 0;
+    margin: 0;
+    padding: 0 .55rem;
+    overflow: hidden;
+}
+
+.vehicle-micro-specs__item:first-child { padding-left: 0; }
+.vehicle-micro-specs__item:last-child { padding-right: 0; }
+.vehicle-micro-specs__item + .vehicle-micro-specs__item { border-left: 1px solid rgba(145, 180, 240, .12); }
+
+.vehicle-micro-specs dt,
+.vehicle-micro-specs dd {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vehicle-micro-specs dt {
+    color: #64738a;
+    font-size: .48rem;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.vehicle-micro-specs dd {
+    color: #cdd7e6;
+    font-size: .62rem;
+    font-weight: 650;
+    letter-spacing: .01em;
+}
+
+html.vehicle-micro-ready .stock-page .featured__card:hover .vehicle-micro-specs,
+html.vehicle-micro-ready .stock-page .featured__card:focus-within .vehicle-micro-specs,
+html.vehicle-micro-ready .stock-page .featured__card.is-micro-active .vehicle-micro-specs {
+    border-color: rgba(122, 166, 244, .25);
+    background: linear-gradient(90deg, rgba(66, 118, 218, .05), transparent);
+}
+
+/* The comparison control is injected after DOMContentLoaded. Keep it in the
+   same visual plane as the card controls and outside the reflective overlay. */
+html.vehicle-micro-ready .stock-page .compare-toggle,
+html.vehicle-micro-ready .stock-page .featured__button {
+    z-index: 6;
+    border-radius: .52rem;
+    border-color: rgba(132, 171, 239, .28);
+    color: #c8d5e8;
+    background: rgba(10, 16, 25, .72);
+    box-shadow: none;
+    backdrop-filter: blur(12px);
+}
+
+html.vehicle-micro-ready .stock-page .compare-toggle:hover,
+html.vehicle-micro-ready .stock-page .compare-toggle:focus-visible,
+html.vehicle-micro-ready .stock-page .featured__button:hover,
+html.vehicle-micro-ready .stock-page .featured__button:focus-visible {
+    color: #fff;
+    border-color: rgba(118, 166, 255, .7);
+    background: #356fdc;
+}
+
+html.vehicle-micro-ready .stock-page .compare-toggle.is-active {
+    color: #fff;
+    border-color: rgba(118, 166, 255, .82);
+    background: #356fdc;
+}
+
+@media (max-width: 520px), (hover: none), (pointer: coarse) {
+    html.vehicle-micro-ready .stock-page .featured__card {
+        --micro-lift: 0px;
+        --micro-tilt-x: 0deg !important;
+        --micro-tilt-y: 0deg !important;
+        --micro-car-x: 0px !important;
+        --micro-car-y: 0px !important;
+        grid-template-columns: minmax(0, 1fr) 45%;
+        grid-template-rows: auto auto auto auto;
+        min-height: 245px;
+        transform: none;
+        will-change: auto;
+    }
+
+    html.vehicle-micro-ready .stock-page .featured__card--signature {
+        grid-template-rows: auto auto auto auto auto;
+        min-height: 280px;
+    }
+
+    html.vehicle-micro-ready .stock-page .featured__media-link {
+        grid-column: 2;
+        grid-row: 1 / -1;
+    }
+
+    html.vehicle-micro-ready .stock-page .featured__card--signature .featured__media-link {
+        grid-row: 2 / -1;
+    }
+
+    .vehicle-micro-specs {
+        grid-column: 1;
+        margin: .75rem 0;
+        padding-block: .6rem;
+    }
+
+    .vehicle-micro-specs__item { padding-inline: .34rem; }
+    .vehicle-micro-specs dt { font-size: .43rem; }
+    .vehicle-micro-specs dd { font-size: .55rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html.vehicle-micro-ready .stock-page .featured__card,
+    html.vehicle-micro-ready .stock-page .featured__img,
+    html.vehicle-micro-ready .stock-page .featured__media-link::before,
+    .vehicle-micro-specs {
+        transition: none !important;
+        animation: none !important;
+        will-change: auto;
+    }
+
+    html.vehicle-micro-ready .stock-page .featured__card {
+        --micro-tilt-x: 0deg !important;
+        --micro-tilt-y: 0deg !important;
+        --micro-car-x: 0px !important;
+        --micro-car-y: 0px !important;
+    }
+}

@@ -17,7 +17,12 @@ const copy = {
         startConversation: 'Start the conversation', year: 'Year', mileage: 'Mileage', fuel: 'Fuel', drivetrain: 'Drivetrain',
         reference: 'Reference', vin: 'VIN', firstRegistration: 'First registration', warranty: 'Warranty', colour: 'Colour',
         basic: 'Identity', technical: 'Core specifications', performance: 'Performance', comfort: 'Comfort', safety: 'Safety', technology: 'Technology', design: 'Design',
-        photo: 'Vehicle photograph', viewVehicle: 'View vehicle', preparing: 'Preparing the dossier'
+        photo: 'Vehicle photograph', viewVehicle: 'View vehicle', preparing: 'Preparing the dossier',
+        missingVehicle: 'This vehicle could not be found.', backInventory: 'Return to inventory',
+        skip: 'Skip to content', navigation: 'Primary navigation', homeLabel: 'CarZone home',
+        languageLabel: 'Language selection', openMenu: 'Open navigation', closeMenu: 'Close navigation',
+        previousImage: 'Previous image', nextImage: 'Next image', thumbnails: 'Vehicle image thumbnails',
+        summary: 'Vehicle summary', dossier: 'CarZone vehicle dossier', description: 'Vehicle photographs, specifications and viewing enquiries.'
     },
     ro: {
         home: 'Acasă', inventory: 'Mașini pe stoc', customOrder: 'Mașini la comandă', sellCar: 'Vinde-ți mașina', navFinancing: 'Finanțare', contact: 'Contact',
@@ -37,7 +42,12 @@ const copy = {
         startConversation: 'Începe conversația', year: 'An', mileage: 'Kilometraj', fuel: 'Combustibil', drivetrain: 'Tracțiune',
         reference: 'Referință', vin: 'VIN', firstRegistration: 'Prima înmatriculare', warranty: 'Garanție', colour: 'Culoare',
         basic: 'Identitate', technical: 'Specificații esențiale', performance: 'Performanță', comfort: 'Confort', safety: 'Siguranță', technology: 'Tehnologie', design: 'Design',
-        photo: 'Fotografie automobil', viewVehicle: 'Vezi mașina', preparing: 'Pregătim dosarul'
+        photo: 'Fotografie automobil', viewVehicle: 'Vezi mașina', preparing: 'Pregătim dosarul',
+        missingVehicle: 'Acest automobil nu a fost găsit.', backInventory: 'Înapoi la stoc',
+        skip: 'Sari la conținut', navigation: 'Navigare principală', homeLabel: 'CarZone — pagina principală',
+        languageLabel: 'Selectare limbă', openMenu: 'Deschide meniul', closeMenu: 'Închide meniul',
+        previousImage: 'Imaginea anterioară', nextImage: 'Imaginea următoare', thumbnails: 'Miniaturi ale automobilului',
+        summary: 'Datele automobilului', dossier: 'Dosar auto CarZone', description: 'Fotografii, specificații și solicitări de vizionare pentru automobil.'
     }
 };
 
@@ -105,11 +115,11 @@ const genericEditorial = (car, lang) => {
             kicker: `${car.year} · selecție curatoriată`,
             statement: 'Un automobil ales pentru proporții, specificație și felul în care se simte dincolo de fișa tehnică.',
             heading: `${brand}, redus la ceea ce contează.`,
-            intro: `Acest ${brand} intră în selecție pentru echilibrul dintre prezență, performanță și utilizare reală. Fără promisiuni inutile: doar specificația, starea și caracterul care îl diferențiază.`,
+            intro: `Acest ${brand} intră în selecție pentru echilibrul dintre prezență, performanță și utilizarea de zi cu zi. Fără promisiuni inutile: doar configurația, starea și caracterul care îl diferențiază.`,
             reasons: [
-                ['Performanță relevantă', performance[0] || `${car.power} disponibili într-o configurație coerentă.`],
-                ['Configurație echilibrată', technical.Drivetrain || technical.Gearbox || 'O specificație aleasă pentru utilizare, nu doar pentru impresie.'],
-                ['Date clare', technical.Warranty || 'Identitatea și condițiile sunt verificate înainte de vizionare.']
+                ['Performanță relevantă', vehicleText(performance[0], lang) || `${vehicleText(car.power, lang)} într-o configurație echilibrată.`],
+                ['Configurație echilibrată', vehicleText(technical.Drivetrain || technical.Gearbox, lang) || 'O echipare aleasă pentru utilizare, nu doar pentru impresie.'],
+                ['Date clare', vehicleText(technical.Warranty, lang) || 'Identitatea și condițiile se verifică înainte de vizionare.']
             ],
             final: `Cunoaște acest ${brand} în persoană.`
         };
@@ -142,10 +152,10 @@ const closings = {
     'mercedes-g65-amg': ['A V12 in a box. Nothing about it is reasonable.', 'Un V12 într-o cutie. Nimic rezonabil la el.'],
     'mercedes-c63-amg': ['Hear the V8 before the numbers.', 'Ascultă V8-ul înaintea cifrelor.'],
     'mercedes-c43-amg': ['AMG, translated for every day.', 'AMG, tradus pentru fiecare zi.'],
-    'mercedes-cls63-amg': ['A four-door that never accepted the label.', 'Un patru-uși care n-a acceptat niciodată eticheta.'],
+    'mercedes-cls63-amg': ['A four-door that never accepted the label.', 'Un coupé cu patru uși, dincolo de etichete.'],
     'mercedes-s63-smg': ['The S-Class that stopped being polite.', 'S-ul care a încetat să mai fie politicos.'],
     'audi-r8': ['A V10 you hear before you see.', 'Un V10 pe care îl auzi înainte să îl vezi.'],
-    'audi-q3': ['Compact outside, generous where it counts.', 'Compact în afară, generos unde contează.'],
+    'audi-q3': ['Compact outside, generous where it counts.', 'Compact la exterior, generos unde contează.'],
     'audi-q7': ['Seven seats that ask for no compromise.', 'Șapte locuri care nu cer niciun compromis.'],
     'audi-rs4': ['An estate that hides its intentions.', 'Un break care își ascunde intențiile.'],
     'audi-rs5': ['Built for distance, not for display.', 'Făcut pentru distanță, nu pentru vitrină.'],
@@ -158,17 +168,17 @@ const closings = {
     'porsche-cayman': ['The purest shape Porsche builds.', 'Cea mai pură formă pe care o face Porsche.'],
     'lotus-emira': ['The last Lotus with a combustion heart.', 'Ultimul Lotus cu inimă termică.'],
     'lotus-seletre': ['Lotus, reinvented for the electric age.', 'Lotus, reinventat pentru era electrică.'],
-    'lotus-elise': ['Lightness, treated as a design philosophy.', 'Ușurința, tratată ca filozofie de design.'],
+    'lotus-elise': ['Lightness, treated as a design philosophy.', 'Greutatea redusă, o filozofie de design.'],
     'lexus-es': ['Quiet by design, not by accident.', 'Liniștit din construcție, nu din întâmplare.'],
     'lexus-is': ['A saloon that still wants to be driven.', 'Un sedan care încă vrea să fie condus.'],
     'lexus-lc': ['A concept car that reached the road unchanged.', 'Un concept ajuns pe șosea neschimbat.'],
     'lexus-lfa': ['The V10 that took a decade to build.', 'V10-ul construit într-un deceniu.'],
     'lexus-lx': ['Built to arrive, wherever that happens to be.', 'Construit să ajungă, oriunde ar fi.'],
-    'lexus-uxh': ['The city, taken quietly.', 'Orașul, luat în liniște.'],
+    'lexus-uxh': ['The city, taken quietly.', 'Prin oraș, în liniște.'],
     'alfa-romeo-4c': ['Carbon fibre, and nothing between you and the road.', 'Fibră de carbon, și nimic între tine și drum.'],
     'alfa-romeo-33-stradale': ['Thirty-three will be built. This is one.', 'Se vor construi treizeci și trei. Acesta e unul.'],
     'alfa-romeo-giulia': ['Italian temper, held to German discipline.', 'Temperament italian, ținut în disciplină germană.'],
-    'alfa-romeo-tonale': ['Alfa, answering for the everyday.', 'Alfa, răspunzând pentru fiecare zi.'],
+    'alfa-romeo-tonale': ['Alfa, answering for the everyday.', 'Alfa, pentru fiecare zi.'],
     'alfa-romeo-stelvio': ['An SUV that kept its driving licence.', 'Un SUV care și-a păstrat permisul.'],
     'genesis-g70-shooting-brake': ['The estate Europe asked for, built in Korea.', 'Break-ul cerut de Europa, construit în Coreea.'],
     'genesis-g80': ['Luxury, without the badge tax.', 'Lux, fără taxă de emblemă.'],
@@ -177,7 +187,7 @@ const closings = {
     'genesis-gv60': ['Electric, and unmistakably itself.', 'Electric, și inconfundabil el însuși.'],
     'genesis-gv70': ['Restraint, sized for a family.', 'Sobrietate, la dimensiunea unei familii.'],
     'bmw-x5': ['The SUV that started the argument.', 'SUV-ul care a început discuția.'],
-    'bmw-x6': ['Divisive, entirely on purpose.', 'Divizor, complet intenționat.'],
+    'bmw-x6': ['Divisive, entirely on purpose.', 'Stârnește controverse. Intenționat.'],
     'bmw-m3': ['The E92, and the last M3 to run a V8.', 'E92, și ultimul M3 cu V8.'],
     'bmw-m5': ['The saloon that never needed a second car.', 'Sedanul care n-a avut nevoie de a doua mașină.'],
     'bmw-m6': ['Grand touring, with a V8 accent.', 'Grand touring, cu accent de V8.'],
@@ -246,8 +256,8 @@ const looseFraming = new Set([
 // corpuri care repetau valori deja prezente in acordeonul de specificatii.
 const reasonsByCar = {
     'tesla-model-x': {
-        en: [["Quick, despite the size", "3.1 seconds to 100 km/h is startling for a full-size SUV, helped by adaptive air suspension that keeps the ride composed."], ["The falcon-door Tesla", "Falcon wing doors are unique to the X within Tesla's range, marking it as the showpiece SUV rather than merely the practical one."], ["Full self-driving included", "Full self-driving capability is fitted here rather than left as a checkbox option, alongside a 48-month warranty and 15,000 km covered."]],
-        ro: [["Rapid, în ciuda dimensiunii", "3,1 secunde până la 100 km/h e surprinzător pentru un SUV de dimensiuni mari, ajutat de suspensia pneumatică adaptivă care păstrează mersul echilibrat."], ["Tesla cu uși falcon", "Ușile falcon sunt unice pentru X în gama Tesla, semnul clar că aceasta e SUV-ul-vedetă, nu doar varianta practică."], ["Condus autonom complet, inclus", "Capacitatea de condus autonom complet e montată aici, nu lăsată ca opțiune bifabilă separat, alături de o garanție de 48 de luni și 15.000 km parcurși."]]
+        en: [["Quick, despite the size", "3.1 seconds to 100 km/h is startling for a full-size SUV, helped by adaptive air suspension that keeps the ride composed."], ["The falcon-door Tesla", "Falcon wing doors are unique to the X within Tesla's range, marking it as the showpiece SUV rather than merely the practical one."], ["Full Self-Driving package included", "The Full Self-Driving assistance package appears in the published specification, alongside a listed 48-month warranty and 15,000 km covered. Feature availability should be verified for this vehicle."]],
+        ro: [["Rapid, în ciuda dimensiunii", "3,1 secunde până la 100 km/h e surprinzător pentru un SUV de dimensiuni mari, ajutat de suspensia pneumatică adaptivă care păstrează mersul echilibrat."], ["Tesla cu uși falcon", "Ușile falcon sunt unice pentru X în gama Tesla, semnul clar că aceasta e SUV-ul-vedetă, nu doar varianta practică."], ["Pachet Full Self-Driving inclus", "Pachetul de asistență Full Self-Driving apare în configurația publicată, alături de o garanție de 48 de luni și un rulaj de 15.000 km. Disponibilitatea funcțiilor se verifică pentru această mașină."]]
     },
     'mercedes-s580': {
         en: [["Quiet authority", "The 4.0-litre V8 with EQ Boost delivers effortless pace without disturbing the cabin."], ["Top of the range", "Sits above every S-Class but the AMG and Maybach versions, without their added bulk or price."], ["Low yearly mileage", "Thirty thousand kilometres in three years points to occasional use, not the daily grind typical of big saloons."]],
@@ -255,7 +265,7 @@ const reasonsByCar = {
     },
     'audi-r8': {
         en: [["Ten cylinders, no turbo", "The 5.2-litre V10 makes its power without turbos or hybrid assistance, revving with a directness few remaining engines offer."], ["Related to the Huracán", "This generation of R8 shares its naturally aspirated V10 with Lamborghini's Huracán, a rare link between the two brands."], ["Light use since 2022", "12,000 km since 2022 leaves this naturally aspirated V10 with most of its service life still ahead."]],
-        ro: [["Zece cilindri, fără turbo", "V10-ul de 5,2 litri își face puterea fără turbine sau asistență hibridă, turează cu o directețe pe care puține motoare o mai oferă."], ["Rudă cu Huracán", "Această generație de R8 împarte V10-ul aspirat natural cu Huracán de la Lamborghini, o legătură rară între cele două mărci."], ["Puțin folosit din 2022", "12.000 km din 2022 lasă acestui V10 aspirat natural cea mai mare parte din durata de viață încă neconsumată."]]
+        ro: [["Zece cilindri, fără turbo", "V10-ul de 5,2 litri își face puterea fără turbine sau asistență hibridă, turează cu o răspuns direct pe care puține motoare o mai oferă."], ["Rudă cu Huracán", "Această generație de R8 împarte V10-ul aspirat natural cu Huracán de la Lamborghini, o legătură rară între cele două mărci."], ["Puțin folosit din 2022", "12.000 km din 2022 lasă acestui V10 aspirat natural cea mai mare parte din durata de viață încă neconsumată."]]
     },
     'porsche-911-turbo-s': {
         en: [["Grip over spectacle", "Twin-turbo flat-six and all-wheel drive put 650 hp down without drama, in the wet or the dry."], ["Everyday flagship", "Turbo S sits above Carrera and GTS as the 911 built to be daily-usable and still the quickest in the range."], ["Barely run in", "At 8,000 km, it has covered a fraction of what a typical 911 sees in two years, with dealer warranty still active."]],
@@ -267,11 +277,11 @@ const reasonsByCar = {
     },
     'tesla-model-s': {
         en: [["The tri-motor Tesla", "A third motor and a 322 km/h top speed set the S apart from the dual-motor X and Y in this range."], ["Tesla's original flagship", "The S is the model that first proved Tesla could build a genuine luxury performance sedan, not just a promising startup's concept."], ["Ventilated seats, lowest mileage", "Ventilated front seats are fitted, a detail the X and Y lack here, and it has covered the least distance of the three."]],
-        ro: [["Tesla cu trei motoare", "Al treilea motor și viteza maximă de 322 km/h separă S-ul de X și Y, ambele cu două motoare, în această gamă."], ["Flagshipul original al Tesla", "S e modelul care a dovedit primul că Tesla poate construi un sedan de lux cu adevărat performant, nu doar conceptul unui startup promițător."], ["Scaune ventilate, cel mai mic kilometraj", "Scaunele față ventilate sunt montate aici, un detaliu pe care X și Y din această gamă nu-l au, iar mașina a parcurs cea mai mică distanță dintre cele trei."]]
+        ro: [["Tesla cu trei motoare", "Al treilea motor și viteza maximă de 322 km/h separă S-ul de X și Y, ambele cu două motoare, în această gamă."], ["Primul vârf de gamă Tesla", "S e modelul care a dovedit primul că Tesla poate construi un sedan de lux cu adevărat performant, nu doar conceptul unui startup promițător."], ["Scaune ventilate, cel mai mic kilometraj", "Scaunele față ventilate sunt montate aici, un detaliu pe care X și Y din această gamă nu-l au, iar mașina a parcurs cea mai mică distanță dintre cele trei."]]
     },
     'lotus-emira': {
         en: [["Balance over brute force", "A mid-mounted engine and limited-slip differential give the Emira classic sports-car balance, built to reward technique rather than raw power."], ["Lotus's last petrol car", "Lotus has said the Emira will be its final combustion-engined model, closing out a chapter before the brand goes fully electric."], ["Essentially unworn", "5,000 km on a 2023 car means this Emira has barely left its first owner's driveway, backed by a 36-month warranty."]],
-        ro: [["Echilibru, nu forță brută", "Motorul central și diferențialul cu alunecare limitată dau Emirei echilibrul clasic al unei mașini sport, gândit să recompenseze tehnica, nu puterea brută."], ["Ultima Lotus pe benzină", "Lotus a declarat că Emira va fi ultimul său model cu motor termic, închizând un capitol înainte ca marca să treacă integral pe electric."], ["Practic neumblată", "5.000 km pe o mașină din 2023 înseamnă că această Emira abia a ieșit din curtea primului proprietar, cu o garanție de 36 de luni în spate."]]
+        ro: [["Echilibru, nu forță brută", "Motorul central și diferențialul cu alunecare limitată dau Emirei echilibrul clasic al unei mașini sport, gândit să recompenseze tehnica, nu puterea brută."], ["Ultima Lotus pe benzină", "Lotus a declarat că Emira va fi ultimul său model cu motor termic, închizând un capitol înainte ca marca să treacă integral pe electric."], ["Rulaj foarte redus", "Această Emira din 2023 are un rulaj publicat de 5.000 km și o garanție declarată de 36 de luni."]]
     },
     'lotus-seletre': {
         en: [["Torque vectoring, SUV body", "Torque vectoring and active aerodynamics keep a tall, heavy SUV composed in corners, applying Lotus's chassis knowledge to an unfamiliar shape."], ["Lotus's first SUV", "Eletre is the first SUV Lotus has ever built, a sharp turn for a brand historically defined by small, light sports cars."], ["Nearly new, well covered", "8,000 km since 2023 is a light start for this SUV, backed by one of the longer warranty terms in this collection."]],
@@ -363,7 +373,7 @@ const reasonsByCar = {
     },
     'genesis-g90-long-wheelbase': {
         en: [["More power, less urgency", "This long-wheelbase car actually carries more power than the standard G90, 409 hp against 380, despite being built for the back seat."], ["The chauffeur-focused flagship", "The stretched wheelbase exists for one reason, rear legroom, putting this car against long-wheelbase S-Class and 7 Series, not standard executive sedans."], ["Rear compartment, fully equipped", "Executive rear seats with individual tablets make clear who this car was configured for, and it has covered only 15,000 km."]],
-        ro: [["Mai multă putere, mai puțină grabă", "Această versiune cu ampatament lung are de fapt mai multă putere decât G90-ul standard, 409 CP față de 380, deși e gândită pentru bancheta din spate."], ["Flagshipul gândit pentru mers cu șofer", "Ampatamentul prelungit există dintr-un singur motiv, spațiul pentru picioare în spate, situând această mașină alături de Clasa S și Seria 7 cu ampatament lung, nu de sedanurile executive standard."], ["Compartimentul spate, complet echipat", "Scaunele spate executive cu tablete individuale arată clar pentru cine a fost configurată această mașină, iar ea are la bord doar 15.000 km."]]
+        ro: [["Mai multă putere, mai puțină grabă", "Această versiune cu ampatament lung are de fapt mai multă putere decât G90-ul standard, 409 CP față de 380, deși e gândită pentru bancheta din spate."], ["Limuzina gândită pentru călătoria cu șofer", "Ampatamentul prelungit există dintr-un singur motiv, spațiul pentru picioare în spate, situând această mașină alături de Clasa S și Seria 7 cu ampatament lung, nu de sedanurile executive standard."], ["Compartimentul spate, complet echipat", "Scaunele spate executive cu tablete individuale arată clar pentru cine a fost configurată această mașină, iar ea are la bord doar 15.000 km."]]
     },
     'genesis-gv60': {
         en: [["Dual motor, no drama", "Dual motors and a 77.4 kWh battery give confident, immediate response without chasing the performance model's more extreme numbers."], ["Genesis's first ground-up EV", "Built on a dedicated electric platform, not a converted combustion chassis, the GV60 is Genesis's first true ground-up EV."], ["Battery health, low mileage", "For an electric car, low mileage matters even more than usual, and this GV60 has covered only 12,000 km since new."]],
@@ -375,7 +385,7 @@ const reasonsByCar = {
     },
     'mercedes-s400d': {
         en: [["Diesel for distance", "The inline-six diesel trades outright power for the torque and range that suit long motorway journeys."], ["The distance-driver's S-Class", "Where the S580 chases effortless power, the S400d is built for owners who actually cover big yearly mileages."], ["Executive-line specification", "Fitted with the Executive line package, which leans the car toward rear-seat comfort rather than driver focus."]],
-        ro: [["Diesel pentru distanțe lungi", "Motorul diesel în șase cilindri în linie renunță la putere brută în favoarea cuplului și autonomiei pe autostradă."], ["S-Class-ul pentru kilometraj mare", "Acolo unde S580 mizează pe putere lejeră, S400d e gândit pentru proprietari care chiar acoperă mulți kilometri anual."], ["Pachet Executive Line", "Vine cu pachetul Executive Line, care înclină mașina spre confortul din spate, nu spre plăcerea șoferului."]]
+        ro: [["Diesel pentru distanțe lungi", "Motorul diesel în șase cilindri în linie renunță la putere brută în favoarea cuplului și autonomiei pe autostradă."], ["S-Class-ul pentru kilometraj mare", "Acolo unde S580 mizează pe putere livrată fără efort, S400d e gândit pentru proprietari care chiar acoperă mulți kilometri anual."], ["Pachet Executive Line", "Vine cu pachetul Executive Line, care înclină mașina spre confortul din spate, nu spre plăcerea șoferului."]]
     },
     'mercedes-e55-amg': {
         en: [["Supercharged, not turbocharged", "The Kompressor's belt-driven blower answers the throttle instantly, with none of a turbo's characteristic lag."], ["The last supercharged AMG", "Built in the final years before AMG retired the supercharger altogether, in favor of naturally aspirated, then turbocharged V8s."], ["Two decades, modest use", "145,000 km over nearly twenty years averages about 7,000 km a year, not a hard life."]],
@@ -447,7 +457,7 @@ const reasonsByCar = {
     },
     'koenigsegg-jesko-attack': {
         en: [["Any gear, directly", "The transmission can jump straight to any gear from any other, skipping the sequential shifting that conventional gearboxes are built around."], ["Downforce over top speed", "Where a sibling variant chases top speed, Attack trades that for a fixed wing and downforce built to hold a line."], ["Minimal mileage, full telemetry", "At 200 km, this Jesko Attack has hardly been driven, its telemetry system still waiting for a first real track day."]],
-        ro: [["Orice treaptă, direct", "Transmisia poate trece direct în orice treaptă din oricare alta, fără schimbările secvențiale pe care se bazează cutiile clasice."], ["Presiune aerodinamică, nu viteză", "Acolo unde o variantă înrudită vânează viteza maximă, Attack renunță la asta pentru o aripă fixă și presiune aerodinamică menite să țină mașina pe traiectorie."], ["Kilometraj minim, telemetrie completă", "Cu 200 km la bord, acest Jesko Attack a fost abia folosit, sistemul de telemetrie așteptând încă prima zi reală de pistă."]]
+        ro: [["Orice treaptă, direct", "Transmisia poate trece direct în orice treaptă din oricare alta, fără schimbările secvențiale pe care se bazează cutiile clasice."], ["Apăsare aerodinamică, nu doar viteză", "Acolo unde o variantă înrudită vânează viteza maximă, Attack renunță la asta pentru o aripă fixă și o forță de apăsare menite să țină mașina pe traiectorie."], ["Kilometraj minim, telemetrie completă", "Cu 200 km la bord, acest Jesko Attack a fost abia folosit, sistemul de telemetrie așteptând încă prima zi reală de pistă."]]
     },
     'porsche-taycan': {
         en: [["Built around 800 volts", "Porsche built the Taycan around 800-volt architecture ahead of most rivals, meaning faster charging and less power loss under repeated hard use."], ["Porsche's first electric", "The Taycan was Porsche's first series-production EV, built to prove the brand's driving feel could survive the switch to batteries."], ["Light annual use", "10,000 km since 2023 works out to roughly 3,300 km a year, well below typical use, backed by a 48-month warranty."]],
@@ -660,11 +670,11 @@ const finalNotes = {
     ],
     'bmw-m5': [
         "Take it past four thousand revs, once. That is the entire reason to choose this generation.",
-        "Du-o o dată peste patru mii de turații. Ăsta e tot motivul pentru care alegi generația asta."
+        "Du-o o dată peste patru mii de rotații pe minut. Ăsta e tot motivul pentru care alegi generația asta."
     ],
     'bmw-m8': [
         "Worth driving in both modes, back to back. It is really two cars sharing one body.",
-        "Merită condusă în ambele moduri, una după alta. Sunt de fapt două mașini într-o singură caroserie."
+        "Merită condusă în ambele moduri, unul după altul. Sunt de fapt două mașini într-o singură caroserie."
     ],
     'bmw-m3': [
         "Come and hear it before the market decides what this generation is worth.",
@@ -680,7 +690,7 @@ const finalNotes = {
     ],
     'corvette-stingray-c7': [
         "Drive it while cars like this are still ordinary to find. That window is closing.",
-        "Condu-o cât mașinile ca ea se mai găsesc ușor. Fereastra aia se închide."
+        "Condu-o cât mașinile ca ea se mai găsesc ușor. Aceste modele devin tot mai rare."
     ],
     'koenigsegg-cc850': [
         "Enquiries are private. The gearbox alone justifies making the trip to see it.",
@@ -688,11 +698,11 @@ const finalNotes = {
     ],
     'koenigsegg-gemera': [
         "Bring three passengers. That sentence is not usually possible with a car like this.",
-        "Adu trei pasageri. Propoziția asta nu e de obicei posibilă cu o mașină ca asta."
+        "Adu trei pasageri. Puține mașini cu asemenea performanțe oferă această posibilitate."
     ],
     'koenigsegg-jesko-attack': [
         "Viewings are arranged privately, with specification and delivery confirmed in advance.",
-        "Vizionările se fac privat, cu specificația și livrarea confirmate din timp."
+        "Vizionările se fac privat, cu configurația și livrarea confirmate din timp."
     ]
 };
 
@@ -730,6 +740,7 @@ function setLanguage(lang) {
 }
 
 function t(key) { return copy[state.lang][key] || copy.en[key] || key; }
+function vehicleText(value, lang = state.lang) { return window.carzoneVehicleI18n.text(value, lang); }
 function getEditorial() {
     const base = editorial[state.car.id]?.[state.lang] || genericEditorial(state.car, state.lang);
     // Motivele scrise de mana bat intotdeauna pe cele compuse din specs.
@@ -754,7 +765,18 @@ function resolveImages(car) {
 }
 
 function updateStaticCopy() {
+    document.documentElement.lang = state.lang;
     $$('[data-copy]').forEach((node) => { node.textContent = t(node.dataset.copy); });
+    $$('[data-dossier-lang]').forEach(button => {
+        const active = button.dataset.dossierLang === state.lang;
+        button.classList.toggle('active-lang', active);
+        button.setAttribute('aria-pressed', String(active));
+    });
+    const labels = { '.dossier-nav':'navigation', '.nav__logo':'homeLabel', '.nav__lang':'languageLabel', '#nav-toggle':'openMenu', '#nav-close':'closeMenu', '#gallery-prev':'previousImage', '#gallery-next':'nextImage', '#gallery-rail':'thumbnails', '.dossier-purchase':'summary' };
+    Object.entries(labels).forEach(([selector, key]) => $(selector)?.setAttribute('aria-label', t(key)));
+    const text = { '.skip-link':'skip', '#dossier-loading p':'preparing', '#dossier-error h1':'missingVehicle', '#dossier-error a':'backInventory' };
+    Object.entries(text).forEach(([selector, key]) => { const node = $(selector); if (node) node.textContent = t(key); });
+    document.querySelector('meta[name="description"]')?.setAttribute('content', t('description'));
 }
 
 // Camera 3D: iframe-ul se creeaza la primul click si se distruge la inchidere.
@@ -766,7 +788,7 @@ function updateStaticCopy() {
 const roomCopy = {
     'mercedes-s580': [
         'The S-Class hides its size in its proportions. From above the roofline you can see how little of the car announces itself.',
-        'Clasa S isi ascunde dimensiunea in proportii. De deasupra liniei acoperisului se vede cat de putin din masina se anunta singura.'
+        'Clasa S își ascunde dimensiunile în proporții. Privită de sus, silueta își păstrează discreția.'
     ]
 };
 
@@ -775,8 +797,8 @@ function roomCopyFor(car, lang) {
     if (line) return line[lang === 'ro' ? 1 : 0];
     const name = `${car.make} ${car.model}`;
     return lang === 'ro'
-        ? `Ocoleste ${name} din orice unghi: proportiile, garzile si detaliile care nu incap intr-o fotografie.`
-        : `Take ${name} from any angle: the proportions, the stance and the details a single photograph cannot hold.`;
+        ? `Explorează ${name} din orice unghi: proporțiile, postura și detaliile pe care o singură fotografie nu le poate surprinde.`
+        : `Explore ${name} from every angle: the proportions, the stance and the details a single photograph cannot hold.`;
 }
 
 // Sectiunea 3D exista doar daca masina are model. Posterul e prima poza din
@@ -867,8 +889,7 @@ function keyFactsFor(car, lang) {
     // warranty", "RWD"). Pe versiunea romaneasca ar ramane fragmente in engleza
     // in mijlocul unei liste traduse, asa ca le rescriem aici.
     if (technical.Warranty) {
-        const months = technical.Warranty.match(/(\d+)/);
-        facts.push(ro && months ? `Garanție ${months[1]} de luni` : technical.Warranty);
+        facts.push(vehicleText(technical.Warranty, lang));
     }
     if (technical.Drivetrain) {
         const drive = technical.Drivetrain;
@@ -877,10 +898,10 @@ function keyFactsFor(car, lang) {
         const plain = ro
             ? { RWD: 'Tracțiune spate', FWD: 'Tracțiune față', AWD: 'Tracțiune integrală', '4WD': 'Tracțiune integrală', '4x4': 'Tracțiune integrală' }
             : { RWD: 'Rear-wheel drive', FWD: 'Front-wheel drive', AWD: 'All-wheel drive', '4WD': 'Four-wheel drive', '4x4': 'Four-wheel drive' };
-        facts.push(plain[drive] || drive);
+        facts.push(plain[drive] || vehicleText(drive, lang));
     }
     if (technical.Color) {
-        facts.push(ro ? `Finisaj exterior ${technical.Color}` : `Finished in ${technical.Color}`);
+        facts.push(ro ? `Culoare exterioară: ${vehicleText(technical.Color, lang)}` : `Finished in ${technical.Color}`);
     }
     if (basic['First registration']) {
         facts.push(ro
@@ -905,8 +926,8 @@ function renderFacts() {
     const facts = [
         [t('year'), state.car.year],
         [t('mileage'), formatKm(state.car.km)],
-        [t('fuel'), state.car.fuel],
-        [t('drivetrain'), state.car.specs?.technical?.Drivetrain || state.car.specs?.technical?.Gearbox || '—']
+        [t('fuel'), vehicleText(state.car.fuel)],
+        [t('drivetrain'), vehicleText(state.car.specs?.technical?.Drivetrain || state.car.specs?.technical?.Gearbox || '—')]
     ];
     const root = $('#key-facts');
     root.replaceChildren(...facts.map(([label, value]) => {
@@ -1067,7 +1088,7 @@ function renderTrust() {
     ];
     $('#trust-list').replaceChildren(...rows.map(([label, value]) => {
         const row = element('div', 'dossier-trust__row');
-        row.append(element('dt', '', label), element('dd', '', value));
+        row.append(element('dt', '', label), element('dd', '', vehicleText(value)));
         return row;
     }));
 }
@@ -1076,14 +1097,14 @@ function accordionContent(key, value) {
     const content = element('div', 'dossier-accordion__content');
     if (Array.isArray(value)) {
         const list = element('ul', 'dossier-feature-list');
-        value.forEach((item) => list.append(element('li', '', item)));
+        value.forEach((item) => list.append(element('li', '', vehicleText(item))));
         content.append(list);
         return content;
     }
     const grid = element('div', 'dossier-spec-grid');
     Object.entries(value || {}).forEach(([label, item]) => {
         const row = element('div', 'dossier-spec-row');
-        row.append(element('span', '', label), element('span', '', String(item)));
+        row.append(element('span', '', vehicleText(label)), element('span', '', ['Make', 'Model', 'model', 'VIN'].includes(label) ? String(item) : vehicleText(item)));
         grid.append(row);
     });
     content.append(grid);
@@ -1125,7 +1146,7 @@ function renderRelated() {
         img.loading = 'lazy';
         media.append(img);
         const body = element('div', 'dossier-related-card__body');
-        body.append(element('p', '', `${car.year} · ${car.fuel}`), element('h3', '', `${car.make} ${car.model}`), element('strong', '', car.price));
+        body.append(element('p', '', `${car.year} · ${vehicleText(car.fuel)}`), element('h3', '', `${car.make} ${car.model}`), element('strong', '', window.carzoneVehicleI18n.price(car.price, state.lang)));
         link.append(media, body);
         return link;
     }));
@@ -1148,14 +1169,56 @@ function setupReveal() {
     nodes.forEach((node) => observer.observe(node));
 }
 
+// Fit the actual rendered type, not a guess based on character count. The
+// natural CSS size is restored first so wider viewports can grow it again.
+function fitHeroTitle() {
+    const title = $('#hero-title');
+    if (!title?.textContent || !title.clientWidth) return;
+    title.style.removeProperty('font-size');
+    const baseSize = parseFloat(getComputedStyle(title).fontSize);
+    const range = document.createRange();
+    range.selectNodeContents(title);
+    const textWidth = range.getBoundingClientRect().width;
+    const availableWidth = title.clientWidth - 2;
+    if (textWidth > availableWidth) {
+        title.style.fontSize = `${baseSize * availableWidth / textWidth}px`;
+    }
+}
+
+function setupHeroTitle() {
+    let lastWidth = 0;
+    let frame;
+    const scheduleFit = () => {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(fitHeroTitle);
+    };
+    if ('ResizeObserver' in window) {
+        const observer = new ResizeObserver(([entry]) => {
+            if (entry.contentRect.width === lastWidth) return;
+            lastWidth = entry.contentRect.width;
+            scheduleFit();
+        });
+        observer.observe($('.dossier-hero__content'));
+    } else {
+        window.addEventListener('resize', scheduleFit, { passive: true });
+    }
+    document.fonts?.ready.then(scheduleFit);
+    document.fonts?.addEventListener('loadingdone', scheduleFit);
+}
+
 function render() {
     if (!state.car) return;
     const edit = getEditorial();
     const fullName = `${state.car.make} ${state.car.model}`;
     const isSignature = isSignatureCar(state.car, state.images);
+    const brandClass = `brand-${state.car.make.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+    [...document.body.classList]
+        .filter((className) => className.startsWith('brand-'))
+        .forEach((className) => document.body.classList.remove(className));
+    document.body.classList.add(brandClass);
     document.body.classList.toggle('is-signature', isSignature);
     document.body.classList.toggle('is-standard', !isSignature);
-    document.title = `${fullName} — CarZone Dossier`;
+    document.title = `${fullName} — ${t('dossier')}`;
     updateStaticCopy();
     $('#hero-image').src = state.images[0] || state.car.image;
     $('#hero-image').alt = fullName;
@@ -1173,21 +1236,21 @@ function render() {
     $('#hero-tier').textContent = isSignature ? t('signatureTier') : t('available');
     $('#hero-kicker').textContent = edit.kicker;
     const heroTitle = $('#hero-title');
-    // Spatiul e nod de text, nu pseudo-element: pe treapta signature cele doua
-    // span-uri stau inline pe acelasi rand si au nevoie de un separator real.
-    heroTitle.replaceChildren(element('span', '', state.car.make), document.createTextNode(' '), element('span', '', state.car.model));
+    heroTitle.setAttribute('aria-label', fullName);
+    heroTitle.textContent = fullName;
+    fitHeroTitle();
     $('#hero-statement').textContent = edit.statement;
     // Declaratia masinii inchide pagina in loc sa o intrerupa: pe banda de dupa
     // hero rupea ritmul, la final aduna. Inlocuieste randul generic despre
     // programarea vizionarii, care era acelasi pentru toate cele 55.
     const finalNote = $('#final-note');
     if (finalNote) finalNote.textContent = finalNoteFor(state.car, state.lang) || edit.statement;
-    $('#hero-price').textContent = state.car.price;
-    $('#hero-power').textContent = state.car.power;
+    $('#hero-price').textContent = window.carzoneVehicleI18n.price(state.car.price, state.lang);
+    $('#hero-power').textContent = vehicleText(state.car.power);
     $('#intro-heading').textContent = edit.heading;
     $('#intro-copy').textContent = edit.intro;
-    $('#summary-price').textContent = state.car.price;
-    $('#mobile-price').textContent = state.car.price;
+    $('#summary-price').textContent = window.carzoneVehicleI18n.price(state.car.price, state.lang);
+    $('#mobile-price').textContent = window.carzoneVehicleI18n.price(state.car.price, state.lang);
     $('#final-heading').textContent = closingFor(state.car, state.lang) || edit.final;
     // Poza decupata de pe card, ca la .offer din index.html. Cade pe galerie
     // doar daca masina nu are imagine de lista.
@@ -1234,6 +1297,7 @@ function render() {
 
 async function init() {
     state.lang = getLanguage();
+    updateStaticCopy();
     const id = new URLSearchParams(window.location.search).get('id') || 'mercedes-c63-amg';
     try {
         // Inventory data changes independently of this module. Avoid keeping an
@@ -1249,6 +1313,7 @@ async function init() {
         $('#dossier-content').hidden = false;
         $('#mobile-cta').hidden = false;
         render();
+        setupHeroTitle();
     } catch (error) {
         console.error('Car dossier failed to initialize.', error);
         $('#dossier-loading').hidden = true;

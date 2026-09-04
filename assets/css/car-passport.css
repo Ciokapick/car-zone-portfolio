@@ -1,0 +1,466 @@
+.car-passport {
+    --passport-blue: var(--d-blue, var(--first-color));
+    --passport-line: hsla(219, 30%, 92%, .14);
+    --passport-soft-line: hsla(219, 30%, 92%, .08);
+    position: relative;
+    padding-block: clamp(6rem, 11vw, 10rem);
+    color: var(--d-text, var(--title-color));
+    overflow: clip;
+}
+
+.car-passport::before {
+    content: "";
+    position: absolute;
+    top: 9rem;
+    right: 0;
+    width: min(35vw, 32rem);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--passport-blue) 65%, transparent));
+    pointer-events: none;
+}
+
+.car-passport__header {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, .7fr);
+    gap: clamp(3rem, 9vw, 9rem);
+    align-items: end;
+    padding-bottom: clamp(3rem, 6vw, 5.5rem);
+}
+
+.car-passport__header .eyebrow {
+    margin-bottom: 1.3rem;
+    color: var(--passport-blue);
+    font-size: .65rem;
+    letter-spacing: .22em;
+}
+
+.car-passport__header h2 {
+    max-width: 780px;
+    margin: 0;
+    font-size: clamp(3rem, 6.2vw, 6.4rem);
+    font-weight: 400;
+    line-height: .91;
+    letter-spacing: -.055em;
+}
+
+.is-signature .car-passport__header h2 { font-family: var(--mercedes-font); }
+
+.car-passport__intro {
+    max-width: 530px;
+    padding-left: clamp(0rem, 2vw, 2rem);
+    color: var(--d-muted, var(--text-color));
+    font-size: clamp(.92rem, 1.15vw, 1.05rem);
+    line-height: 1.75;
+}
+
+.car-passport__intro > p { margin: 0 0 2rem; }
+
+.car-passport__source {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .75rem 1.2rem;
+    align-items: center;
+    margin: 0;
+    color: var(--d-muted-soft, var(--text-color-light));
+    font-size: .62rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+.car-passport__source::after {
+    content: "";
+    grid-column: 1 / -1;
+    height: 1px;
+    background: var(--passport-line);
+}
+
+.car-passport__source span { color: var(--d-text, var(--title-color)); font-weight: 700; }
+
+.car-passport__cards {
+    position: relative;
+    isolation: isolate;
+    margin-top: 0;
+    overflow: hidden;
+    border: 1px solid var(--passport-line);
+    background:
+        linear-gradient(135deg, hsla(219, 40%, 92%, .045), transparent 42%),
+        var(--d-bg-deep, hsl(219, 6%, 2%));
+}
+
+.car-passport__cards::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -11rem;
+    bottom: -15rem;
+    width: 34rem;
+    height: 34rem;
+    border: 1px solid hsla(219, 40%, 92%, .06);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5rem hsla(219, 40%, 92%, .018);
+    pointer-events: none;
+}
+
+.car-passport__chapter-index {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-bottom: 1px solid var(--passport-line);
+}
+
+.car-passport__chapter-tab {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: .55rem 1rem;
+    min-height: 126px;
+    padding: 1.8rem clamp(1.25rem, 2.7vw, 2.8rem);
+    overflow: hidden;
+    border: 0;
+    color: var(--d-muted, var(--text-color));
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: color .3s ease, background .35s ease;
+}
+
+.car-passport__chapter-tab + .car-passport__chapter-tab { border-left: 1px solid var(--passport-line); }
+
+.car-passport__chapter-tab::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: var(--passport-blue);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .45s cubic-bezier(.2, .8, .2, 1);
+}
+
+.car-passport__chapter-tab:hover,
+.car-passport__chapter-tab:focus-visible,
+.car-passport__chapter-tab.is-active {
+    color: var(--d-text, var(--title-color));
+    background: hsla(219, 40%, 92%, .035);
+    outline: none;
+}
+
+.car-passport__chapter-tab.is-active::after { transform: scaleX(1); }
+
+.car-passport__chapter-number {
+    grid-row: 1 / span 2;
+    padding-top: .27rem;
+    color: var(--passport-blue);
+    font: 700 .57rem/1 var(--d-sans, inherit);
+    letter-spacing: .18em;
+}
+
+.car-passport__chapter-title {
+    font-family: var(--brand-display-font, var(--d-sans));
+    font-weight: var(--brand-display-weight, 400);
+    font-size: clamp(1.15rem, 1.7vw, 1.55rem);
+    line-height: 1.05;
+    letter-spacing: -.025em;
+}
+
+.car-passport__chapter-label {
+    align-self: end;
+    color: var(--d-muted-soft, var(--text-color-light));
+    font-size: .52rem;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.car-passport__chapter-panels { position: relative; }
+
+.car-passport__card {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(250px, .72fr) minmax(420px, 1.28fr);
+    grid-template-rows: auto 1fr;
+    gap: 1.75rem clamp(3rem, 8vw, 8rem);
+    align-items: start;
+    min-width: 0;
+    min-height: 455px;
+    padding: clamp(3rem, 6vw, 5.75rem);
+    background: transparent;
+}
+
+.car-passport__card[hidden] { display: none; }
+
+.car-passport__card.is-active { animation: passport-sheet-in .58s cubic-bezier(.2, .8, .2, 1) both; }
+
+.car-passport__card::after {
+    content: attr(data-chapter);
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    color: hsla(219, 40%, 92%, .035);
+    font-family: var(--mercedes-font, serif);
+    font-size: clamp(8rem, 16vw, 15rem);
+    font-weight: 400;
+    line-height: .8;
+    pointer-events: none;
+}
+
+@keyframes passport-sheet-in {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.car-passport__card-head {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.car-passport__card-title {
+    min-width: 0;
+}
+
+.car-passport__number { display: none; }
+
+.car-passport__card h3,
+.car-passport__journey h3 {
+    margin: 0;
+    color: var(--d-text, var(--title-color));
+    font-size: clamp(1.5rem, 2.25vw, 2.35rem);
+    font-family: var(--brand-display-font, var(--d-sans));
+    font-weight: var(--brand-display-weight, 400);
+    line-height: 1.02;
+    letter-spacing: -.035em;
+}
+
+.is-signature .car-passport__card h3,
+.is-signature .car-passport__journey h3 { font-family: var(--brand-display-font); }
+
+.car-passport__card-note {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 310px;
+    margin: 0;
+    color: var(--d-muted, var(--text-color));
+    font-size: .88rem;
+    line-height: 1.75;
+}
+
+.car-passport__status {
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    width: fit-content;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: var(--d-muted-soft, var(--text-color-light));
+    background: transparent;
+    font-size: .53rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    line-height: 1.25;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.car-passport__status-dot {
+    width: 16px;
+    height: 1px;
+    border-radius: 0;
+    background: currentColor;
+    box-shadow: none;
+    opacity: .9;
+    transform: none;
+}
+
+.car-passport__status--declared,
+.car-passport__status--request,
+.car-passport__status--before { color: var(--d-muted-soft, var(--text-color-light)); }
+
+.car-passport__data {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 clamp(1.5rem, 3vw, 3rem);
+    margin: 0;
+}
+
+.car-passport__data-row {
+    display: block;
+    min-width: 0;
+    min-height: 92px;
+    padding: 1rem 0 1.35rem;
+    border-top: 1px solid var(--passport-soft-line);
+}
+
+.car-passport__data-row:nth-child(-n + 2) { border-top-color: var(--passport-line); }
+.car-passport__data-row > div { min-width: 0; }
+.car-passport__data dt { margin-bottom: .5rem; color: var(--d-muted-soft, var(--text-color-light)); font-size: .56rem; letter-spacing: .15em; text-transform: uppercase; }
+.car-passport__data dd { overflow: hidden; margin: 0; color: var(--d-text, var(--title-color)); font-size: .94rem; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.car-passport__data-row > .car-passport__status { display: none; }
+
+.car-passport__request-list {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 clamp(1.5rem, 3vw, 3rem);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.car-passport__request-row {
+    display: block;
+    min-height: 106px;
+    padding: 1.1rem 0 1.45rem;
+    border-top: 1px solid var(--passport-soft-line);
+}
+
+.car-passport__request-row:nth-child(-n + 2) { border-top-color: var(--passport-line); }
+.car-passport__request-marker,
+.car-passport__request-row > .car-passport__status { display: none; }
+.car-passport__request-body { display: flex; flex-direction: column; gap: .38rem; min-width: 0; }
+.car-passport__request-body strong { font-size: .89rem; font-weight: 600; }
+.car-passport__request-body small { color: var(--d-muted, var(--text-color)); font-size: .73rem; line-height: 1.45; }
+
+.car-passport__journey {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(235px, .46fr) minmax(0, 1.54fr);
+    gap: clamp(3rem, 8vw, 8rem);
+    padding: clamp(5rem, 9vw, 8.5rem) 0 clamp(4rem, 7vw, 6.5rem);
+}
+
+.car-passport__journey-head .eyebrow { margin-bottom: 1rem; color: var(--passport-blue); }
+.car-passport__journey-head h3 { max-width: 8ch; font-size: clamp(2rem, 3.6vw, 3.7rem); line-height: .98; }
+
+.car-passport__timeline {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--passport-line);
+    list-style: none;
+}
+
+.car-passport__step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4.5rem minmax(170px, .72fr) minmax(240px, 1.28fr);
+    gap: clamp(1rem, 3vw, 3rem);
+    align-items: start;
+    padding: 1.7rem 3rem 1.7rem 0;
+    border-bottom: 1px solid var(--passport-line);
+    transition: padding-left .3s ease, background .3s ease;
+}
+
+.car-passport__step::after {
+    content: "↗";
+    position: absolute;
+    top: 1.65rem;
+    right: .25rem;
+    color: var(--d-muted-soft, var(--text-color-light));
+    font-size: .9rem;
+    transition: color .3s ease, transform .3s ease;
+}
+
+.car-passport__step:hover { padding-left: .75rem; background: hsla(219, 40%, 92%, .025); }
+.car-passport__step:hover::after { color: var(--passport-blue); transform: translate(3px, -3px); }
+.car-passport__step:not(:last-child)::before { display: none; }
+.car-passport__step-number { display: block; color: var(--passport-blue); font-size: .58rem; font-weight: 700; letter-spacing: .18em; }
+.car-passport__step > div { display: contents; padding: 0; }
+.car-passport__step h4 { margin: 0; font-family: var(--brand-display-font, var(--d-sans)); font-size: clamp(1.05rem, 1.55vw, 1.35rem); font-weight: var(--brand-display-weight, 400); line-height: 1.2; letter-spacing: var(--brand-display-tracking, -.02em); }
+.car-passport__step p { max-width: 470px; margin: 0; color: var(--d-muted, var(--text-color)); font-size: .78rem; line-height: 1.65; }
+.car-passport__step .car-passport__status { display: none; }
+
+.car-passport__footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 3rem;
+    align-items: center;
+    padding: 1.6rem 0;
+    border-top: 1px solid var(--passport-line);
+    border-bottom: 1px solid var(--passport-line);
+    background: transparent;
+}
+
+.car-passport__disclosure { display: grid; grid-template-columns: 3rem minmax(0, 720px); gap: 1rem; align-items: start; }
+.car-passport__disclosure-mark { display: block; width: auto; height: auto; border: 0; border-radius: 0; color: var(--passport-blue); font: 600 .72rem/1 var(--d-sans, inherit); }
+.car-passport__disclosure-mark::before { content: "NOTE"; font-size: .53rem; letter-spacing: .16em; }
+.car-passport__disclosure-mark { font-size: 0; }
+.car-passport__disclosure p { margin: 0; color: var(--d-muted, var(--text-color)); font-size: .72rem; line-height: 1.6; }
+.car-passport__disclosure strong { display: block; margin-bottom: .25rem; color: var(--d-text, var(--title-color)); font-size: .56rem; letter-spacing: .15em; text-transform: uppercase; }
+
+.car-passport__cta {
+    display: inline-flex;
+    gap: 1.25rem;
+    align-items: center;
+    min-height: 48px;
+    padding: .8rem 1.1rem;
+    color: var(--d-text, var(--title-color));
+    border: 1px solid var(--passport-line);
+    border-radius: .22rem;
+    font-size: .62rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    transition: border-color .25s ease, background .25s ease, color .25s ease;
+}
+
+.car-passport__cta:hover,
+.car-passport__cta:focus-visible { color: var(--d-bg, var(--body-color)); border-color: var(--d-text, var(--title-color)); background: var(--d-text, var(--title-color)); outline: none; }
+.car-passport__cta-arrow { color: var(--passport-blue); font-size: .9rem; }
+.car-passport__cta:hover .car-passport__cta-arrow,
+.car-passport__cta:focus-visible .car-passport__cta-arrow { color: inherit; }
+
+@media (max-width: 1080px) {
+    .car-passport__card { grid-template-columns: minmax(220px, .65fr) minmax(0, 1.35fr); }
+    .car-passport__card-head { grid-column: 1; grid-row: 1; }
+    .car-passport__card-note { grid-column: 1; grid-row: 2; }
+    .car-passport__data,
+    .car-passport__request-list { grid-column: 2; grid-row: 1 / span 2; }
+}
+
+@media (max-width: 760px) {
+    .car-passport { padding-block: 5rem; }
+    .car-passport::before { top: 6rem; width: 42vw; }
+    .car-passport__header { grid-template-columns: 1fr; gap: 2rem; padding-bottom: 3rem; }
+    .car-passport__header h2 { font-size: clamp(2.8rem, 14vw, 4.8rem); }
+    .car-passport__intro { padding-left: 0; }
+    .car-passport__cards { margin-inline: -1rem; }
+    .car-passport__chapter-index { display: flex; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; scroll-snap-type: x mandatory; }
+    .car-passport__chapter-index::-webkit-scrollbar { display: none; }
+    .car-passport__chapter-tab { flex: 0 0 min(72vw, 250px); min-height: 112px; padding: 1.45rem 1.35rem; scroll-snap-align: start; }
+    .car-passport__card { display: block; min-height: 0; padding: 2.8rem 1.35rem 3.25rem; }
+    .car-passport__card::after { top: 2rem; right: .75rem; font-size: 8rem; }
+    .car-passport__card-note { max-width: 36rem; margin: 1.25rem 0 2rem; }
+    .car-passport__data,
+    .car-passport__request-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .car-passport__journey { grid-template-columns: 1fr; gap: 2.5rem; padding-block: 4rem; }
+    .car-passport__journey-head h3 { max-width: 11ch; }
+    .car-passport__step { grid-template-columns: 3rem 1fr; gap: .55rem 1rem; padding: 1.5rem 2.25rem 1.5rem 0; }
+    .car-passport__step-number { grid-column: 1; grid-row: 1 / span 2; padding-top: .35rem; }
+    .car-passport__step h4 { grid-column: 2; }
+    .car-passport__step p { grid-column: 2; }
+    .car-passport__step p { min-height: 0; }
+    .car-passport__footer { grid-template-columns: 1fr; gap: 1.5rem; }
+    .car-passport__cta { justify-content: space-between; width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .car-passport__data,
+    .car-passport__request-list { grid-template-columns: 1fr; }
+    .car-passport__data-row:nth-child(2),
+    .car-passport__request-row:nth-child(2) { border-top-color: var(--passport-soft-line); }
+    .car-passport__disclosure { grid-template-columns: 1fr; gap: .65rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .car-passport *, .car-passport *::before, .car-passport *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}

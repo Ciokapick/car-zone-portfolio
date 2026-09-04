@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "check": "node scripts/validate-site.mjs"
+    "check": "node scripts/validate-site.mjs && node scripts/validate-translations.mjs"
   }
 }

@@ -47,10 +47,19 @@ function initFinancingPage() {
         const monthlyPayment = totalPayment / (loanTerm * 12);
 
         // Afișăm rezultatele
-        totalInterestOutput.textContent = totalInterest.toFixed(2);
-        monthlyPaymentOutput.textContent = monthlyPayment.toFixed(2);
-        totalPaymentOutput.textContent = totalPayment.toFixed(2);
+        [totalInterestOutput, monthlyPaymentOutput, totalPaymentOutput].forEach((output, index) => {
+            output.dataset.amount = [totalInterest, monthlyPayment, totalPayment][index];
+        });
+        formatResults();
     }
+
+    function formatResults() {
+        const format = new Intl.NumberFormat(document.documentElement.lang === 'ro' ? 'ro-RO' : 'en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        [totalInterestOutput, monthlyPaymentOutput, totalPaymentOutput].forEach(output => {
+            if (output.dataset.amount !== undefined) output.textContent = format.format(Number(output.dataset.amount));
+        });
+    }
+    window.addEventListener('carzone:languagechange', formatResults);
 
     calculatorForm.addEventListener("submit", calculateFinancing);
     calculateButton.addEventListener("click", calculateFinancing);
