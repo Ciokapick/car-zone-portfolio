@@ -1,0 +1,2106 @@
+{
+  "generatedAt": "2026-09-04T12:23:39.189Z",
+  "source": "Wikimedia Commons",
+  "rule": "Only complete four-image runs from one photographer and filename family are eligible for replacement.",
+  "cars": {
+    "tesla-model-x": {
+      "status": "cohesive-candidate",
+      "searchName": "Tesla Model X",
+      "series": "no swan so fine::crashed tesla model x nether street finchley july 2021",
+      "sourceCount": 6,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Crashed Tesla Model X, Nether Street, Finchley, July 2021 04.jpg",
+          "width": 4032,
+          "height": 3024,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crashed_Tesla_Model_X,_Nether_Street,_Finchley,_July_2021_04.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_04.jpg/1920px-Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "No Swan So Fine",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Crashed Tesla Model X, Nether Street, Finchley, July 2021 03.jpg",
+          "width": 4032,
+          "height": 3024,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crashed_Tesla_Model_X,_Nether_Street,_Finchley,_July_2021_03.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_03.jpg/1920px-Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "No Swan So Fine",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Crashed Tesla Model X, Nether Street, Finchley, July 2021 01.jpg",
+          "width": 4032,
+          "height": 3024,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crashed_Tesla_Model_X,_Nether_Street,_Finchley,_July_2021_01.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_01.jpg/1920px-Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "No Swan So Fine",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Crashed Tesla Model X, Nether Street, Finchley, July 2021 06.jpg",
+          "width": 4032,
+          "height": 3024,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crashed_Tesla_Model_X,_Nether_Street,_Finchley,_July_2021_06.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_06.jpg/1920px-Crashed_Tesla_Model_X%2C_Nether_Street%2C_Finchley%2C_July_2021_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "No Swan So Fine",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "audi-r8": {
+      "status": "cohesive-candidate",
+      "searchName": "Audi R8 4S",
+      "series": "ows photography::audi r8 4s washington dc metro area usa",
+      "sourceCount": 4,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Audi R8 (4S) Washington DC Metro Area, USA (4).jpg",
+          "width": 3240,
+          "height": 2160,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_R8_(4S)_Washington_DC_Metro_Area,_USA_(4).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%284%29.jpg/1920px-Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "OWS Photography",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Audi R8 (4S) Washington DC Metro Area, USA (1).jpg",
+          "width": 2700,
+          "height": 2160,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_R8_(4S)_Washington_DC_Metro_Area,_USA_(1).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%281%29.jpg/1920px-Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "OWS Photography",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Audi R8 (4S) Washington DC Metro Area, USA (2).jpg",
+          "width": 2700,
+          "height": 2160,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_R8_(4S)_Washington_DC_Metro_Area,_USA_(2).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%282%29.jpg/1920px-Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "OWS Photography",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Audi R8 (4S) Washington DC Metro Area, USA (3).jpg",
+          "width": 2700,
+          "height": 2160,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_R8_(4S)_Washington_DC_Metro_Area,_USA_(3).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%283%29.jpg/1920px-Audi_R8_%284S%29_Washington_DC_Metro_Area%2C_USA_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "OWS Photography",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "porsche-911-turbo-s": {
+      "status": "needs-source",
+      "searchName": "Porsche 911 992 Turbo S",
+      "candidateCount": 21
+    },
+    "tesla-model-y": {
+      "status": "cohesive-candidate",
+      "searchName": "Tesla Model Y",
+      "series": "damian b oh::tesla model y dual motor first edition juniper quicksilver",
+      "sourceCount": 5,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Tesla Model Y Dual Motor First Edition Juniper Quicksilver (10).jpg",
+          "width": 3981,
+          "height": 2986,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_(10).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%2810%29.jpg/1920px-Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Tesla Model Y Dual Motor First Edition Juniper Quicksilver (8).jpg",
+          "width": 3954,
+          "height": 2966,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_(8).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%288%29.jpg/1920px-Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Tesla Model Y Dual Motor First Edition Juniper Quicksilver (2).jpg",
+          "width": 3910,
+          "height": 2932,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_(2).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%282%29.jpg/1920px-Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Tesla Model Y Dual Motor First Edition Juniper Quicksilver (14).jpg",
+          "width": 3867,
+          "height": 2900,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_(14).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%2814%29.jpg/1920px-Tesla_Model_Y_Dual_Motor_First_Edition_Juniper_Quicksilver_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "tesla-model-s": {
+      "status": "needs-source",
+      "searchName": "Tesla Model S",
+      "candidateCount": 43
+    },
+    "lotus-emira": {
+      "status": "cohesive-candidate",
+      "searchName": "Lotus Emira",
+      "series": "calreyn88::2023 lotus emira first edition",
+      "sourceCount": 8,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:2023 Lotus Emira First Edition 13.jpg",
+          "width": 16320,
+          "height": 11284,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lotus_Emira_First_Edition_13.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/2023_Lotus_Emira_First_Edition_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/2023_Lotus_Emira_First_Edition_13.jpg/1920px-2023_Lotus_Emira_First_Edition_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:2023 Lotus Emira First Edition 8.jpg",
+          "width": 16320,
+          "height": 10764,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lotus_Emira_First_Edition_8.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/2023_Lotus_Emira_First_Edition_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/2023_Lotus_Emira_First_Edition_8.jpg/1920px-2023_Lotus_Emira_First_Edition_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:2023 Lotus Emira First Edition 11.jpg",
+          "width": 11340,
+          "height": 6166,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lotus_Emira_First_Edition_11.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/2023_Lotus_Emira_First_Edition_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/2023_Lotus_Emira_First_Edition_11.jpg/1920px-2023_Lotus_Emira_First_Edition_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:2023 Lotus Emira First Edition 16.jpg",
+          "width": 4000,
+          "height": 2424,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lotus_Emira_First_Edition_16.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/2023_Lotus_Emira_First_Edition_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/2023_Lotus_Emira_First_Edition_16.jpg/1920px-2023_Lotus_Emira_First_Edition_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "lotus-seletre": {
+      "status": "cohesive-candidate",
+      "searchName": "Lotus Eletre",
+      "series": "calreyn88::2023 lotus eletre",
+      "sourceCount": 7,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:2023 Lotus Eletre 7.jpg",
+          "width": 13394,
+          "height": 8398,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lotus_Eletre_7.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/2023_Lotus_Eletre_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/2023_Lotus_Eletre_7.jpg/1920px-2023_Lotus_Eletre_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:2023 Lotus Eletre 2.jpg",
+          "width": 4080,
+          "height": 2574,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lotus_Eletre_2.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/2023_Lotus_Eletre_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/2023_Lotus_Eletre_2.jpg/1920px-2023_Lotus_Eletre_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:2023 Lotus Eletre.jpg",
+          "width": 3911,
+          "height": 2653,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lotus_Eletre.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/2023_Lotus_Eletre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/2023_Lotus_Eletre.jpg/1920px-2023_Lotus_Eletre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:2023 Lotus Eletre 3.jpg",
+          "width": 4080,
+          "height": 2166,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lotus_Eletre_3.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/2023_Lotus_Eletre_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/2023_Lotus_Eletre_3.jpg/1920px-2023_Lotus_Eletre_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "lotus-elise": {
+      "status": "needs-source",
+      "searchName": "Lotus Elise",
+      "candidateCount": 47
+    },
+    "audi-q3": {
+      "status": "cohesive-candidate",
+      "searchName": "Audi Q3",
+      "series": "bindydad123::2018 audi q3 2 0 tfsi quattro",
+      "sourceCount": 15,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:2018 Audi Q3 2.0 TFSI Quattro (3).jpg",
+          "width": 3264,
+          "height": 2448,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Audi_Q3_2.0_TFSI_Quattro_(3).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/2018_Audi_Q3_2.0_TFSI_Quattro_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/2018_Audi_Q3_2.0_TFSI_Quattro_%283%29.jpg/1920px-2018_Audi_Q3_2.0_TFSI_Quattro_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Bindydad123",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:2018 Audi Q3 2.0 TFSI Quattro (14).jpg",
+          "width": 3264,
+          "height": 2448,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Audi_Q3_2.0_TFSI_Quattro_(14).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/2018_Audi_Q3_2.0_TFSI_Quattro_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/2018_Audi_Q3_2.0_TFSI_Quattro_%2814%29.jpg/1920px-2018_Audi_Q3_2.0_TFSI_Quattro_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Bindydad123",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:2018 Audi Q3 2.0 TFSI Quattro (19).jpg",
+          "width": 3264,
+          "height": 2448,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Audi_Q3_2.0_TFSI_Quattro_(19).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/2018_Audi_Q3_2.0_TFSI_Quattro_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/2018_Audi_Q3_2.0_TFSI_Quattro_%2819%29.jpg/1920px-2018_Audi_Q3_2.0_TFSI_Quattro_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Bindydad123",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:2018 Audi Q3 2.0 TFSI Quattro (23).jpg",
+          "width": 3264,
+          "height": 2448,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Audi_Q3_2.0_TFSI_Quattro_(23).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/2018_Audi_Q3_2.0_TFSI_Quattro_%2823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/2018_Audi_Q3_2.0_TFSI_Quattro_%2823%29.jpg/1920px-2018_Audi_Q3_2.0_TFSI_Quattro_%2823%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Bindydad123",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "audi-q7": {
+      "status": "cohesive-candidate",
+      "searchName": "Audi Q7 4M",
+      "series": "ows photography::audi q7 4m washington dc metro area usa",
+      "sourceCount": 28,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Audi Q7 (4M) Washington DC Metro Area, USA (5).jpg",
+          "width": 2700,
+          "height": 2160,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Q7_(4M)_Washington_DC_Metro_Area,_USA_(5).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%285%29.jpg/1920px-Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "OWS Photography",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Audi Q7 (4M) Washington DC Metro Area, USA (19).jpg",
+          "width": 2700,
+          "height": 2160,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Q7_(4M)_Washington_DC_Metro_Area,_USA_(19).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%2819%29.jpg/1920px-Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "OWS Photography",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Audi Q7 (4M) Washington DC Metro Area, USA (28).jpg",
+          "width": 2700,
+          "height": 2160,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Q7_(4M)_Washington_DC_Metro_Area,_USA_(28).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%2828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%2828%29.jpg/1920px-Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%2828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "OWS Photography",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Audi Q7 (4M) Washington DC Metro Area, USA (29).jpg",
+          "width": 2700,
+          "height": 2160,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Q7_(4M)_Washington_DC_Metro_Area,_USA_(29).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%2829%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%2829%29.jpg/1920px-Audi_Q7_%284M%29_Washington_DC_Metro_Area%2C_USA_%2829%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "OWS Photography",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "audi-rs4": {
+      "status": "needs-source",
+      "searchName": "Audi RS4 B8",
+      "candidateCount": 5
+    },
+    "audi-rs5": {
+      "status": "needs-source",
+      "searchName": "Audi RS5",
+      "candidateCount": 49
+    },
+    "audi-rsq8": {
+      "status": "cohesive-candidate",
+      "searchName": "Audi RS Q8",
+      "series": "vauxford::2020 audi rs q8",
+      "sourceCount": 5,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:2020 Audi RS Q8 Front.jpg",
+          "width": 5100,
+          "height": 2839,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Audi_RS_Q8_Front.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/2020_Audi_RS_Q8_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/2020_Audi_RS_Q8_Front.jpg/1920px-2020_Audi_RS_Q8_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Vauxford",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:2020 Audi RS Q8 Rear (1).jpg",
+          "width": 4799,
+          "height": 3153,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Audi_RS_Q8_Rear_(1).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/2020_Audi_RS_Q8_Rear_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/2020_Audi_RS_Q8_Rear_%281%29.jpg/1920px-2020_Audi_RS_Q8_Rear_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Vauxford",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:2020 Audi RS Q8 Interior.jpg",
+          "width": 3981,
+          "height": 2986,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Audi_RS_Q8_Interior.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/2020_Audi_RS_Q8_Interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/2020_Audi_RS_Q8_Interior.jpg/1920px-2020_Audi_RS_Q8_Interior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Vauxford",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:2020 Audi RS Q8 Front (1).jpg",
+          "width": 5056,
+          "height": 2733,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Audi_RS_Q8_Front_(1).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/2020_Audi_RS_Q8_Front_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/2020_Audi_RS_Q8_Front_%281%29.jpg/1920px-2020_Audi_RS_Q8_Front_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Vauxford",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "lexus-es": {
+      "status": "cohesive-candidate",
+      "searchName": "Lexus ES 300h",
+      "series": "dinkun chen::lexus es 300h xz10 china",
+      "sourceCount": 19,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:LEXUS ES 300h(XZ10) China (132).jpg",
+          "width": 7330,
+          "height": 4589,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_ES_300h(XZ10)_China_(132).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/LEXUS_ES_300h%28XZ10%29_China_%28132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/LEXUS_ES_300h%28XZ10%29_China_%28132%29.jpg/1920px-LEXUS_ES_300h%28XZ10%29_China_%28132%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:LEXUS ES 300h(XZ10) China (173).jpg",
+          "width": 7268,
+          "height": 4180,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_ES_300h(XZ10)_China_(173).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/LEXUS_ES_300h%28XZ10%29_China_%28173%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/LEXUS_ES_300h%28XZ10%29_China_%28173%29.jpg/1920px-LEXUS_ES_300h%28XZ10%29_China_%28173%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:LEXUS ES 300h(XZ10) China (157).jpg",
+          "width": 7849,
+          "height": 3637,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_ES_300h(XZ10)_China_(157).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/LEXUS_ES_300h%28XZ10%29_China_%28157%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/LEXUS_ES_300h%28XZ10%29_China_%28157%29.jpg/1920px-LEXUS_ES_300h%28XZ10%29_China_%28157%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:LEXUS ES 300h(XZ10) China (134).jpg",
+          "width": 7396,
+          "height": 3843,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_ES_300h(XZ10)_China_(134).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/LEXUS_ES_300h%28XZ10%29_China_%28134%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/LEXUS_ES_300h%28XZ10%29_China_%28134%29.jpg/1920px-LEXUS_ES_300h%28XZ10%29_China_%28134%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "lexus-is": {
+      "status": "needs-source",
+      "searchName": "Lexus IS 500",
+      "candidateCount": 20
+    },
+    "lexus-lc": {
+      "status": "needs-source",
+      "searchName": "Lexus LC 500",
+      "candidateCount": 50
+    },
+    "lexus-lfa": {
+      "status": "needs-source",
+      "searchName": "Lexus LFA",
+      "candidateCount": 49
+    },
+    "lexus-lx": {
+      "status": "cohesive-candidate",
+      "searchName": "Lexus LX",
+      "series": "dinkun chen::lexus lx 570 j200 china",
+      "sourceCount": 7,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:LEXUS LX 570 (J200) China (6).jpg",
+          "width": 7321,
+          "height": 3831,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_LX_570_(J200)_China_(6).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/LEXUS_LX_570_%28J200%29_China_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/LEXUS_LX_570_%28J200%29_China_%286%29.jpg/1920px-LEXUS_LX_570_%28J200%29_China_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:LEXUS LX 570 (J200) China (19).jpg",
+          "width": 7623,
+          "height": 3596,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_LX_570_(J200)_China_(19).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/LEXUS_LX_570_%28J200%29_China_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/LEXUS_LX_570_%28J200%29_China_%2819%29.jpg/1920px-LEXUS_LX_570_%28J200%29_China_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:LEXUS LX 570 (J200) China (5).jpg",
+          "width": 6720,
+          "height": 3914,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_LX_570_(J200)_China_(5).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/LEXUS_LX_570_%28J200%29_China_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/LEXUS_LX_570_%28J200%29_China_%285%29.jpg/1920px-LEXUS_LX_570_%28J200%29_China_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:LEXUS LX 570 (J200) China (17).jpg",
+          "width": 6186,
+          "height": 3211,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_LX_570_(J200)_China_(17).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/LEXUS_LX_570_%28J200%29_China_%2817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/LEXUS_LX_570_%28J200%29_China_%2817%29.jpg/1920px-LEXUS_LX_570_%28J200%29_China_%2817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "lexus-uxh": {
+      "status": "cohesive-candidate",
+      "searchName": "Lexus UX 250h",
+      "series": "dinkun chen::lexus ux 250h ux 260h china",
+      "sourceCount": 23,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:LEXUS UX 250h UX 260h China (1).jpg",
+          "width": 7789,
+          "height": 5262,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_UX_250h_UX_260h_China_(1).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/LEXUS_UX_250h_UX_260h_China_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/LEXUS_UX_250h_UX_260h_China_%281%29.jpg/1920px-LEXUS_UX_250h_UX_260h_China_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:LEXUS UX 250h UX 260h China (9).jpg",
+          "width": 8050,
+          "height": 4731,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_UX_250h_UX_260h_China_(9).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/LEXUS_UX_250h_UX_260h_China_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/LEXUS_UX_250h_UX_260h_China_%289%29.jpg/1920px-LEXUS_UX_250h_UX_260h_China_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:LEXUS UX 250h UX 260h China (20).jpg",
+          "width": 6857,
+          "height": 4544,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_UX_250h_UX_260h_China_(20).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/LEXUS_UX_250h_UX_260h_China_%2820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/LEXUS_UX_250h_UX_260h_China_%2820%29.jpg/1920px-LEXUS_UX_250h_UX_260h_China_%2820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:LEXUS UX 250h UX 260h China (2).jpg",
+          "width": 6631,
+          "height": 4437,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_UX_250h_UX_260h_China_(2).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/LEXUS_UX_250h_UX_260h_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/LEXUS_UX_250h_UX_260h_China_%282%29.jpg/1920px-LEXUS_UX_250h_UX_260h_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "porsche-918-spyder": {
+      "status": "cohesive-candidate",
+      "searchName": "Porsche 918 Spyder",
+      "series": "thesupermat::festival automobile international 2014 porsche 918 spyder",
+      "sourceCount": 10,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Festival automobile international 2014 - Porsche 918 Spyder - 010.jpg",
+          "width": 5184,
+          "height": 3456,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Festival_automobile_international_2014_-_Porsche_918_Spyder_-_010.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Festival_automobile_international_2014_-_Porsche_918_Spyder_-_010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Festival_automobile_international_2014_-_Porsche_918_Spyder_-_010.jpg/1920px-Festival_automobile_international_2014_-_Porsche_918_Spyder_-_010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Thesupermat",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Festival automobile international 2014 - Porsche 918 Spyder - 012.jpg",
+          "width": 5184,
+          "height": 3456,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Festival_automobile_international_2014_-_Porsche_918_Spyder_-_012.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Festival_automobile_international_2014_-_Porsche_918_Spyder_-_012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Festival_automobile_international_2014_-_Porsche_918_Spyder_-_012.jpg/1920px-Festival_automobile_international_2014_-_Porsche_918_Spyder_-_012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Thesupermat",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Festival automobile international 2014 - Porsche 918 Spyder - 014.jpg",
+          "width": 5184,
+          "height": 3456,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Festival_automobile_international_2014_-_Porsche_918_Spyder_-_014.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Festival_automobile_international_2014_-_Porsche_918_Spyder_-_014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Festival_automobile_international_2014_-_Porsche_918_Spyder_-_014.jpg/1920px-Festival_automobile_international_2014_-_Porsche_918_Spyder_-_014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Thesupermat",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Festival automobile international 2014 - Porsche 918 Spyder - 015.jpg",
+          "width": 5184,
+          "height": 3456,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Festival_automobile_international_2014_-_Porsche_918_Spyder_-_015.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Festival_automobile_international_2014_-_Porsche_918_Spyder_-_015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Festival_automobile_international_2014_-_Porsche_918_Spyder_-_015.jpg/1920px-Festival_automobile_international_2014_-_Porsche_918_Spyder_-_015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "artist": "Thesupermat",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "alfa-romeo-4c": {
+      "status": "cohesive-candidate",
+      "searchName": "Alfa Romeo 4C",
+      "series": "calreyn88::2016 alfa romeo 4c spider tbi",
+      "sourceCount": 5,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:2016 Alfa Romeo 4C Spider TBi 2.jpg",
+          "width": 14938,
+          "height": 9072,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Alfa_Romeo_4C_Spider_TBi_2.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/2016_Alfa_Romeo_4C_Spider_TBi_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/2016_Alfa_Romeo_4C_Spider_TBi_2.jpg/1920px-2016_Alfa_Romeo_4C_Spider_TBi_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:2016 Alfa Romeo 4C Spider TBi 1.jpg",
+          "width": 13756,
+          "height": 8106,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Alfa_Romeo_4C_Spider_TBi_1.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/2016_Alfa_Romeo_4C_Spider_TBi_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/2016_Alfa_Romeo_4C_Spider_TBi_1.jpg/1920px-2016_Alfa_Romeo_4C_Spider_TBi_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:2016 Alfa Romeo 4C Spider TBi 6.jpg",
+          "width": 12240,
+          "height": 8036,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Alfa_Romeo_4C_Spider_TBi_6.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/2016_Alfa_Romeo_4C_Spider_TBi_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/2016_Alfa_Romeo_4C_Spider_TBi_6.jpg/1920px-2016_Alfa_Romeo_4C_Spider_TBi_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:2016 Alfa Romeo 4C Spider TBi.jpg",
+          "width": 11654,
+          "height": 5866,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Alfa_Romeo_4C_Spider_TBi.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/2016_Alfa_Romeo_4C_Spider_TBi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/2016_Alfa_Romeo_4C_Spider_TBi.jpg/1920px-2016_Alfa_Romeo_4C_Spider_TBi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC0",
+          "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "alfa-romeo-33-stradale": {
+      "status": "needs-source",
+      "searchName": "Alfa Romeo 33 Stradale",
+      "candidateCount": 26
+    },
+    "alfa-romeo-giulia": {
+      "status": "cohesive-candidate",
+      "searchName": "Alfa Romeo Giulia Quadrifoglio",
+      "series": "calreyn88::2021 alfa romeo giulia quadrifoglio verde alfa romeo racing edition",
+      "sourceCount": 5,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:2021 Alfa Romeo Giulia Quadrifoglio Verde Alfa Romeo Racing Edition 5.jpg",
+          "width": 16320,
+          "height": 11074,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_5.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_5.jpg/1920px-2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:2021 Alfa Romeo Giulia Quadrifoglio Verde Alfa Romeo Racing Edition 2.jpg",
+          "width": 15956,
+          "height": 11228,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_2.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_2.jpg/1920px-2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:2021 Alfa Romeo Giulia Quadrifoglio Verde Alfa Romeo Racing Edition 1.jpg",
+          "width": 14748,
+          "height": 10000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_1.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ee/2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_1.jpg/1920px-2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:2021 Alfa Romeo Giulia Quadrifoglio Verde Alfa Romeo Racing Edition 4.jpg",
+          "width": 11056,
+          "height": 15478,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_4.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_4.jpg/1920px-2021_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Alfa_Romeo_Racing_Edition_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "alfa-romeo-tonale": {
+      "status": "cohesive-candidate",
+      "searchName": "Alfa Romeo Tonale",
+      "series": "alexander migl::2026 alfa romeo tonale phev auto zuerich 2025 dsc",
+      "sourceCount": 4,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:2026 Alfa Romeo Tonale PHEV Auto Zuerich 2025 DSC 3534.jpg",
+          "width": 5543,
+          "height": 3705,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3534.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3534.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3534.jpg/1920px-2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3534.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:2026 Alfa Romeo Tonale PHEV Auto Zuerich 2025 DSC 3533.jpg",
+          "width": 5524,
+          "height": 3692,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3533.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3533.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3533.jpg/1920px-2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3533.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:2026 Alfa Romeo Tonale PHEV Auto Zuerich 2025 DSC 3008.jpg",
+          "width": 5392,
+          "height": 3654,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3008.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3008.jpg/1920px-2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:2026 Alfa Romeo Tonale PHEV Auto Zuerich 2025 DSC 3012.jpg",
+          "width": 4263,
+          "height": 2895,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3012.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3012.jpg/1920px-2026_Alfa_Romeo_Tonale_PHEV_Auto_Zuerich_2025_DSC_3012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "alfa-romeo-stelvio": {
+      "status": "needs-source",
+      "searchName": "Alfa Romeo Stelvio",
+      "candidateCount": 47
+    },
+    "genesis-g70-shooting-brake": {
+      "status": "cohesive-candidate",
+      "searchName": "Genesis G70 Shooting Brake",
+      "series": "damian b oh::genesis g70 shooting brake 2 0t awd premium iksb uyuni white",
+      "sourceCount": 10,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Genesis G70 Shooting Brake 2.0T AWD Premium IKSB Uyuni White (26).jpg",
+          "width": 3988,
+          "height": 2991,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_(26).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%2826%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%2826%29.jpg/1920px-Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%2826%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Genesis G70 Shooting Brake 2.0T AWD Premium IKSB Uyuni White (4).jpg",
+          "width": 3977,
+          "height": 2982,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_(4).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%284%29.jpg/1920px-Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Genesis G70 Shooting Brake 2.0T AWD Premium IKSB Uyuni White (7).jpg",
+          "width": 3972,
+          "height": 2979,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_(7).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%287%29.jpg/1920px-Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Genesis G70 Shooting Brake 2.0T AWD Premium IKSB Uyuni White (3).jpg",
+          "width": 3927,
+          "height": 2945,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_(3).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%283%29.jpg/1920px-Genesis_G70_Shooting_Brake_2.0T_AWD_Premium_IKSB_Uyuni_White_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "genesis-g80": {
+      "status": "cohesive-candidate",
+      "searchName": "Genesis G80",
+      "series": "damian b oh::genesis g80 3 5t awd rg3 pe vik black",
+      "sourceCount": 7,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Genesis G80 3.5T AWD RG3 PE Vik Black (153).jpg",
+          "width": 4000,
+          "height": 3000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_(153).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28153%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28153%29.jpg/1920px-Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28153%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Genesis G80 3.5T AWD RG3 PE Vik Black (204).jpg",
+          "width": 4000,
+          "height": 3000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_(204).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28204%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28204%29.jpg/1920px-Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28204%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Genesis G80 3.5T AWD RG3 PE Vik Black (109).jpg",
+          "width": 3963,
+          "height": 2972,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_(109).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28109%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28109%29.jpg/1920px-Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28109%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Genesis G80 3.5T AWD RG3 PE Vik Black (133).jpg",
+          "width": 3953,
+          "height": 2965,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_(133).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28133%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28133%29.jpg/1920px-Genesis_G80_3.5T_AWD_RG3_PE_Vik_Black_%28133%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "genesis-g90": {
+      "status": "cohesive-candidate",
+      "searchName": "Genesis G90 RS4",
+      "series": "damian b oh::genesis g90 rs4 maui black",
+      "sourceCount": 9,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Genesis G90 RS4 Maui Black (354).jpg",
+          "width": 4000,
+          "height": 3000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G90_RS4_Maui_Black_(354).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Genesis_G90_RS4_Maui_Black_%28354%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Genesis_G90_RS4_Maui_Black_%28354%29.jpg/1920px-Genesis_G90_RS4_Maui_Black_%28354%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Genesis G90 RS4 Maui Black (288).jpg",
+          "width": 3777,
+          "height": 2832,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G90_RS4_Maui_Black_(288).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Genesis_G90_RS4_Maui_Black_%28288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Genesis_G90_RS4_Maui_Black_%28288%29.jpg/1920px-Genesis_G90_RS4_Maui_Black_%28288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Genesis G90 RS4 Maui Black (273).jpg",
+          "width": 3650,
+          "height": 2738,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G90_RS4_Maui_Black_(273).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Genesis_G90_RS4_Maui_Black_%28273%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Genesis_G90_RS4_Maui_Black_%28273%29.jpg/1920px-Genesis_G90_RS4_Maui_Black_%28273%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Genesis G90 RS4 Maui Black (106).jpg",
+          "width": 3526,
+          "height": 2644,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G90_RS4_Maui_Black_(106).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Genesis_G90_RS4_Maui_Black_%28106%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Genesis_G90_RS4_Maui_Black_%28106%29.jpg/1920px-Genesis_G90_RS4_Maui_Black_%28106%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "genesis-g90-long-wheelbase": {
+      "status": "cohesive-candidate",
+      "searchName": "Genesis G90 LWB",
+      "series": "damian b oh::genesis g90 lwb black 3 5t 48v awd rs4l vik black",
+      "sourceCount": 16,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Genesis G90 LWB Black 3.5T 48V AWD RS4L Vik Black (16).jpg",
+          "width": 4000,
+          "height": 3000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_(16).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2816%29.jpg/1920px-Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Genesis G90 LWB Black 3.5T 48V AWD RS4L Vik Black (14).jpg",
+          "width": 4000,
+          "height": 3000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_(14).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2814%29.jpg/1920px-Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Genesis G90 LWB Black 3.5T 48V AWD RS4L Vik Black (18).jpg",
+          "width": 4000,
+          "height": 3000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_(18).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2818%29.jpg/1920px-Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Genesis G90 LWB Black 3.5T 48V AWD RS4L Vik Black (17).jpg",
+          "width": 4000,
+          "height": 3000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_(17).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2817%29.jpg/1920px-Genesis_G90_LWB_Black_3.5T_48V_AWD_RS4L_Vik_Black_%2817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "genesis-gv60": {
+      "status": "cohesive-candidate",
+      "searchName": "Genesis GV60",
+      "series": "damian b oh::genesis gv60 jw1 uyuni white",
+      "sourceCount": 5,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Genesis GV60 JW1 Uyuni White (30).jpg",
+          "width": 3862,
+          "height": 2896,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_GV60_JW1_Uyuni_White_(30).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Genesis_GV60_JW1_Uyuni_White_%2830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Genesis_GV60_JW1_Uyuni_White_%2830%29.jpg/1920px-Genesis_GV60_JW1_Uyuni_White_%2830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Genesis GV60 JW1 Uyuni White (27).jpg",
+          "width": 3779,
+          "height": 2834,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_GV60_JW1_Uyuni_White_(27).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Genesis_GV60_JW1_Uyuni_White_%2827%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Genesis_GV60_JW1_Uyuni_White_%2827%29.jpg/1920px-Genesis_GV60_JW1_Uyuni_White_%2827%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Genesis GV60 JW1 Uyuni White (35).jpg",
+          "width": 3770,
+          "height": 2828,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_GV60_JW1_Uyuni_White_(35).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Genesis_GV60_JW1_Uyuni_White_%2835%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Genesis_GV60_JW1_Uyuni_White_%2835%29.jpg/1920px-Genesis_GV60_JW1_Uyuni_White_%2835%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Genesis GV60 JW1 Uyuni White (3).jpg",
+          "width": 3496,
+          "height": 2622,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_GV60_JW1_Uyuni_White_(3).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Genesis_GV60_JW1_Uyuni_White_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Genesis_GV60_JW1_Uyuni_White_%283%29.jpg/1920px-Genesis_GV60_JW1_Uyuni_White_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "genesis-gv70": {
+      "status": "cohesive-candidate",
+      "searchName": "Genesis GV70",
+      "series": "damian b oh::genesis gv70 2 2d jk1 uyuni white",
+      "sourceCount": 8,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Genesis GV70 2.2D JK1 Uyuni White (1).jpg",
+          "width": 4032,
+          "height": 3024,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_GV70_2.2D_JK1_Uyuni_White_(1).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Genesis_GV70_2.2D_JK1_Uyuni_White_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Genesis_GV70_2.2D_JK1_Uyuni_White_%281%29.jpg/1920px-Genesis_GV70_2.2D_JK1_Uyuni_White_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Genesis GV70 2.2D JK1 Uyuni White (19).jpg",
+          "width": 3981,
+          "height": 2986,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_GV70_2.2D_JK1_Uyuni_White_(19).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Genesis_GV70_2.2D_JK1_Uyuni_White_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Genesis_GV70_2.2D_JK1_Uyuni_White_%2819%29.jpg/1920px-Genesis_GV70_2.2D_JK1_Uyuni_White_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Genesis GV70 2.2D JK1 Uyuni White (26).jpg",
+          "width": 3957,
+          "height": 2968,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_GV70_2.2D_JK1_Uyuni_White_(26).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Genesis_GV70_2.2D_JK1_Uyuni_White_%2826%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Genesis_GV70_2.2D_JK1_Uyuni_White_%2826%29.jpg/1920px-Genesis_GV70_2.2D_JK1_Uyuni_White_%2826%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Genesis GV70 2.2D JK1 Uyuni White (18).jpg",
+          "width": 3945,
+          "height": 2959,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Genesis_GV70_2.2D_JK1_Uyuni_White_(18).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Genesis_GV70_2.2D_JK1_Uyuni_White_%2818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Genesis_GV70_2.2D_JK1_Uyuni_White_%2818%29.jpg/1920px-Genesis_GV70_2.2D_JK1_Uyuni_White_%2818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Damian B Oh",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "mercedes-s400d": {
+      "status": "cohesive-candidate",
+      "searchName": "Mercedes-Benz W223",
+      "series": "alexander migl::mercedes benz w223",
+      "sourceCount": 22,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Mercedes-Benz W223 IMG 4035.jpg",
+          "width": 4979,
+          "height": 3314,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W223_IMG_4035.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/35/Mercedes-Benz_W223_IMG_4035.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Mercedes-Benz_W223_IMG_4035.jpg/1920px-Mercedes-Benz_W223_IMG_4035.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Mercedes-Benz W223 IMG 4034.jpg",
+          "width": 4914,
+          "height": 3271,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W223_IMG_4034.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/Mercedes-Benz_W223_IMG_4034.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Mercedes-Benz_W223_IMG_4034.jpg/1920px-Mercedes-Benz_W223_IMG_4034.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Mercedes-Benz W223 IMG 3950.jpg",
+          "width": 4908,
+          "height": 3267,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W223_IMG_3950.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Mercedes-Benz_W223_IMG_3950.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Mercedes-Benz_W223_IMG_3950.jpg/1920px-Mercedes-Benz_W223_IMG_3950.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Mercedes-Benz W223 IMG 3659.jpg",
+          "width": 4890,
+          "height": 3250,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W223_IMG_3659.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Mercedes-Benz_W223_IMG_3659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Mercedes-Benz_W223_IMG_3659.jpg/1920px-Mercedes-Benz_W223_IMG_3659.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "mercedes-e55-amg": {
+      "status": "needs-source",
+      "searchName": "Mercedes-Benz E 55 AMG W211",
+      "candidateCount": 7
+    },
+    "mercedes-g65-amg": {
+      "status": "needs-source",
+      "searchName": "Mercedes-Benz G 65 AMG",
+      "candidateCount": 5
+    },
+    "mercedes-c63-amg": {
+      "status": "cohesive-candidate",
+      "searchName": "Mercedes-Benz C 63 AMG",
+      "series": "alexandre prevot from nancy france::mercedes benz c 63 amg break flickr alexandre prevot",
+      "sourceCount": 9,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Mercedes-Benz C 63 AMG Break - Flickr - Alexandre Prévot (5).jpg",
+          "width": 3000,
+          "height": 2001,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_(5).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_%285%29.jpg/1920px-Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "artist": "Alexandre Prévot from Nancy, France",
+          "credit": "Mercedes-Benz C 63 AMG Break"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Mercedes-Benz C 63 AMG Break - Flickr - Alexandre Prévot.jpg",
+          "width": 3000,
+          "height": 2000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg/1920px-Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "artist": "Alexandre Prévot from Nancy, France",
+          "credit": "Mercedes-Benz C 63 AMG Break"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Mercedes-Benz C 63 AMG Break - Flickr - Alexandre Prévot (1).jpg",
+          "width": 3000,
+          "height": 2000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_(1).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_%281%29.jpg/1920px-Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "artist": "Alexandre Prévot from Nancy, France",
+          "credit": "Mercedes-Benz C 63 AMG Break"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Mercedes-Benz C 63 AMG Break - Flickr - Alexandre Prévot (2).jpg",
+          "width": 3000,
+          "height": 2000,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_(2).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_%282%29.jpg/1920px-Mercedes-Benz_C_63_AMG_Break_-_Flickr_-_Alexandre_Pr%C3%A9vot_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "artist": "Alexandre Prévot from Nancy, France",
+          "credit": "Mercedes-Benz C 63 AMG Break"
+        }
+      ]
+    },
+    "mercedes-c43-amg": {
+      "status": "needs-source",
+      "searchName": "Mercedes-AMG C 43 W206",
+      "candidateCount": 8
+    },
+    "mercedes-cls63-amg": {
+      "status": "needs-source",
+      "searchName": "Mercedes-Benz CLS 63 AMG",
+      "candidateCount": 25
+    },
+    "mercedes-s63-smg": {
+      "status": "needs-source",
+      "searchName": "Mercedes-Benz W221",
+      "candidateCount": 12
+    },
+    "bmw-x5": {
+      "status": "cohesive-candidate",
+      "searchName": "BMW X5 G05",
+      "series": "dinkun chen::bmw x5 g05 china",
+      "sourceCount": 32,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:BMW X5 (G05) China (30).jpg",
+          "width": 6840,
+          "height": 4748,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_X5_(G05)_China_(30).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/BMW_X5_%28G05%29_China_%2830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/BMW_X5_%28G05%29_China_%2830%29.jpg/1920px-BMW_X5_%28G05%29_China_%2830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:BMW X5 (G05) China (5).jpg",
+          "width": 7255,
+          "height": 4367,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_X5_(G05)_China_(5).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/BMW_X5_%28G05%29_China_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/BMW_X5_%28G05%29_China_%285%29.jpg/1920px-BMW_X5_%28G05%29_China_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:BMW X5 (G05) China (28).jpg",
+          "width": 7516,
+          "height": 4067,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_X5_(G05)_China_(28).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/BMW_X5_%28G05%29_China_%2828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/BMW_X5_%28G05%29_China_%2828%29.jpg/1920px-BMW_X5_%28G05%29_China_%2828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:BMW X5 (G05) China (29).jpg",
+          "width": 6397,
+          "height": 4771,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_X5_(G05)_China_(29).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/BMW_X5_%28G05%29_China_%2829%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/BMW_X5_%28G05%29_China_%2829%29.jpg/1920px-BMW_X5_%28G05%29_China_%2829%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "bmw-m6": {
+      "status": "needs-source",
+      "searchName": "BMW M6 F13",
+      "candidateCount": 7
+    },
+    "bmw-x6": {
+      "status": "cohesive-candidate",
+      "searchName": "BMW X6 G06",
+      "series": "dinkun chen::bmw x6 g06 china",
+      "sourceCount": 8,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:BMW X6 (G06) China (2).jpg",
+          "width": 7355,
+          "height": 4774,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_X6_(G06)_China_(2).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/BMW_X6_%28G06%29_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/BMW_X6_%28G06%29_China_%282%29.jpg/1920px-BMW_X6_%28G06%29_China_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:BMW X6 (G06) China (7).jpg",
+          "width": 6896,
+          "height": 4146,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_X6_(G06)_China_(7).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/BMW_X6_%28G06%29_China_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/BMW_X6_%28G06%29_China_%287%29.jpg/1920px-BMW_X6_%28G06%29_China_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:BMW X6 (G06) China (8).jpg",
+          "width": 6716,
+          "height": 4101,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_X6_(G06)_China_(8).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/BMW_X6_%28G06%29_China_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/BMW_X6_%28G06%29_China_%288%29.jpg/1920px-BMW_X6_%28G06%29_China_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:BMW X6 (G06) China (4).jpg",
+          "width": 6604,
+          "height": 3431,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_X6_(G06)_China_(4).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/af/BMW_X6_%28G06%29_China_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/BMW_X6_%28G06%29_China_%284%29.jpg/1920px-BMW_X6_%28G06%29_China_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "bmw-m5": {
+      "status": "cohesive-candidate",
+      "searchName": "BMW M5 E60",
+      "series": "nakhon100::bmw m5 e60",
+      "sourceCount": 6,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:BMW M5 E60 (14099506959).jpg",
+          "width": 1600,
+          "height": 1200,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M5_E60_(14099506959).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/BMW_M5_E60_%2814099506959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/BMW_M5_E60_%2814099506959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "nakhon100",
+          "credit": "BMW M5 E60"
+        },
+        {
+          "slot": "rear",
+          "title": "File:BMW M5 E60 (14099507119).jpg",
+          "width": 1600,
+          "height": 1200,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M5_E60_(14099507119).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/BMW_M5_E60_%2814099507119%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/BMW_M5_E60_%2814099507119%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "nakhon100",
+          "credit": "BMW M5 E60"
+        },
+        {
+          "slot": "interior",
+          "title": "File:BMW M5 E60 (14099507139).jpg",
+          "width": 1600,
+          "height": 1200,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M5_E60_(14099507139).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/BMW_M5_E60_%2814099507139%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/BMW_M5_E60_%2814099507139%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "nakhon100",
+          "credit": "BMW M5 E60"
+        },
+        {
+          "slot": "detail",
+          "title": "File:BMW M5 E60 (14099507239).jpg",
+          "width": 1600,
+          "height": 1200,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M5_E60_(14099507239).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/BMW_M5_E60_%2814099507239%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/BMW_M5_E60_%2814099507239%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "artist": "nakhon100",
+          "credit": "BMW M5 E60"
+        }
+      ]
+    },
+    "bmw-m8": {
+      "status": "needs-source",
+      "searchName": "BMW M8",
+      "candidateCount": 49
+    },
+    "bmw-m3": {
+      "status": "needs-source",
+      "searchName": "BMW M3 E92",
+      "candidateCount": 44
+    },
+    "corvette-z51": {
+      "status": "needs-source",
+      "searchName": "Chevrolet Corvette C8 Z51",
+      "candidateCount": 0
+    },
+    "corvette-c8": {
+      "status": "cohesive-candidate",
+      "searchName": "Chevrolet Corvette C8",
+      "series": "calreyn88::chevrolet corvette c8",
+      "sourceCount": 7,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Chevrolet Corvette C8 4.jpg",
+          "width": 16320,
+          "height": 12240,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_4.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Chevrolet_Corvette_C8_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Chevrolet_Corvette_C8_4.jpg/1920px-Chevrolet_Corvette_C8_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Chevrolet Corvette C8 5.jpg",
+          "width": 16320,
+          "height": 12240,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_5.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Chevrolet_Corvette_C8_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Chevrolet_Corvette_C8_5.jpg/1920px-Chevrolet_Corvette_C8_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Chevrolet Corvette C8 3.jpg",
+          "width": 14736,
+          "height": 7506,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_3.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Chevrolet_Corvette_C8_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Chevrolet_Corvette_C8_3.jpg/1920px-Chevrolet_Corvette_C8_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Chevrolet Corvette C8 6.jpg",
+          "width": 15038,
+          "height": 7196,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_6.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Chevrolet_Corvette_C8_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Chevrolet_Corvette_C8_6.jpg/1920px-Chevrolet_Corvette_C8_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "corvette-stingray-c7": {
+      "status": "needs-source",
+      "searchName": "Chevrolet Corvette Stingray C7",
+      "candidateCount": 7
+    },
+    "koenigsegg-cc850": {
+      "status": "cohesive-candidate",
+      "searchName": "Koenigsegg CC850",
+      "series": "alexander migl::koenigsegg cc850 auto zuerich 2025 dsc",
+      "sourceCount": 7,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:Koenigsegg CC850 Auto Zuerich 2025 DSC 3666.jpg",
+          "width": 5879,
+          "height": 3929,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3666.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3666.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3666.jpg/1920px-Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3666.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:Koenigsegg CC850 Auto Zuerich 2025 DSC 3675.jpg",
+          "width": 5876,
+          "height": 3927,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3675.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/81/Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3675.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3675.jpg/1920px-Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3675.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:Koenigsegg CC850 Auto Zuerich 2025 DSC 3665.jpg",
+          "width": 5785,
+          "height": 3867,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3665.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3665.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3665.jpg/1920px-Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3665.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:Koenigsegg CC850 Auto Zuerich 2025 DSC 3655.jpg",
+          "width": 5226,
+          "height": 3541,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3655.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/62/Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3655.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3655.jpg/1920px-Koenigsegg_CC850_Auto_Zuerich_2025_DSC_3655.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Alexander Migl",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "koenigsegg-gemera": {
+      "status": "needs-source",
+      "searchName": "Koenigsegg Gemera",
+      "candidateCount": 35
+    },
+    "koenigsegg-jesko-attack": {
+      "status": "cohesive-candidate",
+      "searchName": "Koenigsegg Jesko Attack",
+      "series": "calreyn88::2024 koenigsegg jesko attack",
+      "sourceCount": 4,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:2024 Koenigsegg Jesko Attack 3.jpg",
+          "width": 16320,
+          "height": 11110,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Koenigsegg_Jesko_Attack_3.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/2024_Koenigsegg_Jesko_Attack_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/2024_Koenigsegg_Jesko_Attack_3.jpg/1920px-2024_Koenigsegg_Jesko_Attack_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:2024 Koenigsegg Jesko Attack.jpg",
+          "width": 15828,
+          "height": 8498,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Koenigsegg_Jesko_Attack.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/2024_Koenigsegg_Jesko_Attack.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/2024_Koenigsegg_Jesko_Attack.jpg/1920px-2024_Koenigsegg_Jesko_Attack.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:2024 Koenigsegg Jesko Attack 4.jpg",
+          "width": 15076,
+          "height": 8580,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Koenigsegg_Jesko_Attack_4.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/2024_Koenigsegg_Jesko_Attack_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2024_Koenigsegg_Jesko_Attack_4.jpg/1920px-2024_Koenigsegg_Jesko_Attack_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:2024 Koenigsegg Jesko Attack 2.jpg",
+          "width": 13580,
+          "height": 8498,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Koenigsegg_Jesko_Attack_2.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/2024_Koenigsegg_Jesko_Attack_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/2024_Koenigsegg_Jesko_Attack_2.jpg/1920px-2024_Koenigsegg_Jesko_Attack_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "porsche-taycan": {
+      "status": "needs-source",
+      "searchName": "Porsche Taycan",
+      "candidateCount": 49
+    },
+    "porsche-turbo-s-cross": {
+      "status": "needs-source",
+      "searchName": "Porsche Taycan Turbo S Cross Turismo",
+      "candidateCount": 4
+    },
+    "porsche-boxster-718": {
+      "status": "cohesive-candidate",
+      "searchName": "Porsche 718 Boxster",
+      "series": "dinkun chen::porsche 718 boxster spyder china",
+      "sourceCount": 9,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:PORSCHE 718 BOXSTER SPYDER China (14).jpg",
+          "width": 7653,
+          "height": 3646,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:PORSCHE_718_BOXSTER_SPYDER_China_(14).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/PORSCHE_718_BOXSTER_SPYDER_China_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/PORSCHE_718_BOXSTER_SPYDER_China_%2814%29.jpg/1920px-PORSCHE_718_BOXSTER_SPYDER_China_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:PORSCHE 718 BOXSTER SPYDER China (9).jpg",
+          "width": 6497,
+          "height": 4285,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:PORSCHE_718_BOXSTER_SPYDER_China_(9).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/PORSCHE_718_BOXSTER_SPYDER_China_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/PORSCHE_718_BOXSTER_SPYDER_China_%289%29.jpg/1920px-PORSCHE_718_BOXSTER_SPYDER_China_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:PORSCHE 718 BOXSTER SPYDER China (12).jpg",
+          "width": 6789,
+          "height": 3732,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:PORSCHE_718_BOXSTER_SPYDER_China_(12).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/PORSCHE_718_BOXSTER_SPYDER_China_%2812%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/PORSCHE_718_BOXSTER_SPYDER_China_%2812%29.jpg/1920px-PORSCHE_718_BOXSTER_SPYDER_China_%2812%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:PORSCHE 718 BOXSTER SPYDER China (10).jpg",
+          "width": 6863,
+          "height": 3657,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:PORSCHE_718_BOXSTER_SPYDER_China_(10).jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/PORSCHE_718_BOXSTER_SPYDER_China_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/PORSCHE_718_BOXSTER_SPYDER_China_%2810%29.jpg/1920px-PORSCHE_718_BOXSTER_SPYDER_China_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Dinkun Chen",
+          "credit": "Own work"
+        }
+      ]
+    },
+    "porsche-cayman": {
+      "status": "cohesive-candidate",
+      "searchName": "Porsche 718 Cayman",
+      "series": "calreyn88::2022 porsche 718 cayman gt4",
+      "sourceCount": 7,
+      "images": [
+        {
+          "slot": "hero",
+          "title": "File:2022 Porsche 718 Cayman GT4 9.jpg",
+          "width": 16320,
+          "height": 10718,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Porsche_718_Cayman_GT4_9.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/2022_Porsche_718_Cayman_GT4_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/2022_Porsche_718_Cayman_GT4_9.jpg/1920px-2022_Porsche_718_Cayman_GT4_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "rear",
+          "title": "File:2022 Porsche 718 Cayman GT4 8.jpg",
+          "width": 14798,
+          "height": 8270,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Porsche_718_Cayman_GT4_8.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/2022_Porsche_718_Cayman_GT4_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/2022_Porsche_718_Cayman_GT4_8.jpg/1920px-2022_Porsche_718_Cayman_GT4_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "interior",
+          "title": "File:2022 Porsche 718 Cayman GT4 13.jpg",
+          "width": 3360,
+          "height": 2338,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Porsche_718_Cayman_GT4_13.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/2022_Porsche_718_Cayman_GT4_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/2022_Porsche_718_Cayman_GT4_13.jpg/1920px-2022_Porsche_718_Cayman_GT4_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        },
+        {
+          "slot": "detail",
+          "title": "File:2022 Porsche 718 Cayman GT4 3.jpg",
+          "width": 2769,
+          "height": 1720,
+          "mime": "image/jpeg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Porsche_718_Cayman_GT4_3.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/2022_Porsche_718_Cayman_GT4_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/2022_Porsche_718_Cayman_GT4_3.jpg/1920px-2022_Porsche_718_Cayman_GT4_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "artist": "Calreyn88",
+          "credit": "Own work"
+        }
+      ]
+    }
+  }
+}
